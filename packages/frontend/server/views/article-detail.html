@@ -64,14 +64,14 @@
                                 {{extract.text}}
                             </div>
                             <div class="image">
-                                <img src="/system/assets/img/{{extract.image}}" alt="{{extract.image}}" />
+                                <img src="/upload/img/{{extract.image}}" alt="{{extract.image}}" />
                             </div>
                         </div><!-- /text-image -->
                         {% endif %}
                         {% if extract.style == 3 %}
                         <div class="image-text clearfix">
                             <div class="image">
-                                <img src="/system/assets/img/{{extract.image}}" alt="{{extract.image}}" />
+                                <img src="/upload/img/{{extract.image}}" alt="{{extract.image}}" />
                             </div>
                             <div class="text">
                                 {{extract.text}}
@@ -79,7 +79,7 @@
                         </div><!-- /text-image -->
                         {% endif %}
                         {% if extract.style == 4 %}
-                        <div class="content-news-detail-image"><img src="/system/assets/img/{{extract.image}}" alt="{{article.heading}}"></div>
+                        <div class="content-news-detail-image"><img src="/upload/img/{{extract.image}}" alt="{{article.heading}}"></div>
                         {% endif %}
                         {% endfor %}
                     </div>
@@ -95,7 +95,7 @@
                             {% if !!relatedArticle.avatar %}
                             <a href="{{__enhance.mount('/article/') + relatedArticle.id}}" class="news-top-title">{{relatedArticle.heading}}</a>
                             <p class="date">{{relatedArticle.time|date('H:i d/m/Y', timezoneOffset)}}</p>
-                            <a href="{{__enhance.mount('/article/') + relatedArticle.id}}" class="news-top-image"><img src="/system/assets/img/{{relatedArticle.avatar}}" alt="{{relatedArticle.heading}}"></a>
+                            <a href="{{__enhance.mount('/article/') + relatedArticle.id}}" class="news-top-image"><img src="/upload/img/{{relatedArticle.avatar}}" alt="{{relatedArticle.heading}}"></a>
                             {% else %}
                             <a href="{{__enhance.mount('/article/') + relatedArticle.id}}" class="news-top-title no-image">{{relatedArticle.heading}}</a>
                             <p class="date no-image">{{relatedArticle.time|date('H:i d/m/Y', timezoneOffset)}}</p>
@@ -105,7 +105,7 @@
                         {% else %}
                         <div class="news-right clearfix">
                             {% if !!relatedArticle.avatar %}
-                            <a href="{{__enhance.mount('/article/') + relatedArticle.id}}" class="news-right-image"><img src="/system/assets/img/{{relatedArticle.avatar}}" alt="{{relatedArticle.heading}}"></a>
+                            <a href="{{__enhance.mount('/article/') + relatedArticle.id}}" class="news-right-image"><img src="/upload/img/{{relatedArticle.avatar}}" alt="{{relatedArticle.heading}}"></a>
                             <a href="{{__enhance.mount('/article/') + relatedArticle.id}}">{{relatedArticle.heading}}</a>
                             <p class="date">{{relatedArticle.time|date('H:i d/m/Y', timezoneOffset)}}</p>
                             {% else %}

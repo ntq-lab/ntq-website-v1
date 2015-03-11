@@ -2,7 +2,7 @@
     <div class="content-news-box clearfix">
         <p class="date-left pull-left"><strong>{{normalArticle.time|date('d', timezoneOffset)}}</strong><span>{{normalArticle.time|date('m', timezoneOffset)}}</span></p>
         {% if !!normalArticle.avatar %}
-        <a class="text-center pull-left content-news-box-image" href="{{__enhance.mount('/article/') + normalArticle.id}}"><img src="/system/assets/img/{{normalArticle.avatar}}" alt="{{normalArticle.heading}}"></a>
+        <a class="text-center pull-left content-news-box-image" href="{{__enhance.mount('/article/') + normalArticle.id}}"><img src="/upload/img/{{normalArticle.avatar}}" alt="{{normalArticle.heading}}"></a>
         <div class="content-news-box-right pull-left">
             <h2><a href="{{__enhance.mount('/article/') + normalArticle.id}}">{{normalArticle.heading}}</a></h2>
             <p class="category">

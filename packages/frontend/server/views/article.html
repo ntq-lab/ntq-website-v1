@@ -32,7 +32,7 @@
             {% for highlightedArticle in highlightedArticles %}
                 {% if !!highlightedArticle.avatar %}
                 <div id="tabs-{{highlightedArticle.id}}" class="slideshow-news-left pull-left">
-                    <div class="slideshow-news-left-image"><img src="/system/assets/img/{{highlightedArticle.avatar}}" alt="{{highlightedArticle.heading}}"/></div>
+                    <div class="slideshow-news-left-image"><img src="/upload/img/{{highlightedArticle.avatar}}" alt="{{highlightedArticle.heading}}"/></div>
                     <div class="overlay">
                         <h3 class="h2">{{highlightedArticle.heading}}</h3>
                         <p>{{highlightedArticle.bulletin}}</p>
@@ -102,7 +102,7 @@
                             {% if !!mediaArticle.avatar %}
                             <a href="{{__enhance.mount('/article/') + mediaArticle.id}}" class="news-top-title">{{mediaArticle.heading}}</a>
                             <p class="date">{{mediaArticle.time|date('H:i d/m/Y', timezoneOffset)}}</p>
-                            <a href="{{__enhance.mount('/article/') + mediaArticle.id}}" class="news-top-image"><img src="/system/assets/img/{{mediaArticle.avatar}}" alt="{{mediaArticle.heading}}"></a>
+                            <a href="{{__enhance.mount('/article/') + mediaArticle.id}}" class="news-top-image"><img src="/upload/img/{{mediaArticle.avatar}}" alt="{{mediaArticle.heading}}"></a>
                             {% else %}
                             <a href="{{__enhance.mount('/article/') + mediaArticle.id}}" class="news-top-title no-image">{{mediaArticle.heading}}</a>
                             <p class="date no-image">{{mediaArticle.time|date('H:i d/m/Y', timezoneOffset)}}</p>
@@ -111,7 +111,7 @@
                         {% else %}
                         <div class="news-right clearfix">
                             {% if !!mediaArticle.avatar %}
-                            <a href="{{__enhance.mount('/article/') + mediaArticle.id}}" class="news-right-image"><img src="/system/assets/img/{{mediaArticle.avatar}}" alt="{{mediaArticle.heading}}"></a>
+                            <a href="{{__enhance.mount('/article/') + mediaArticle.id}}" class="news-right-image"><img src="/upload/img/{{mediaArticle.avatar}}" alt="{{mediaArticle.heading}}"></a>
                             <a href="{{__enhance.mount('/article/') + mediaArticle.id}}">{{mediaArticle.heading}}</a>
                             <p class="date">{{mediaArticle.time|date('H:i d/m/Y', timezoneOffset)}}</p>
                             {% else %}
