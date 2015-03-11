@@ -1,16 +1,30 @@
 {% extends 'layout/base.html' %}
+
 {% block title %}
 {{__('title-website.contract-models')}}
 {% endblock %}
+
 {% block stylesheet %}
+{% for file in assets['/css/contract-models.css'] %}
+    <link href="{{file}}" rel="stylesheet">
+{% endfor %}
+<!--
 <link href="/frontend/assets/css/menu-white.css" rel="stylesheet">
 <link href="/frontend/assets/css/submenu-common.css" rel="stylesheet">
 <link href="/frontend/assets/css/contract-models.css" rel="stylesheet">
+-->
 {% endblock %}
+
 {% block script %}
+{% for file in assets['/js/contract-models.js'] %}
+    <script src="{{file}}"></script>
+{% endfor %}
+<!--
 <script src="/frontend/assets/js/jquery.nav.js"></script>
 <script src="/frontend/assets/js/main-nav.js"></script>
+-->
 {% endblock %}
+
 {% block content %}
 <div class="container-fluid page-top-container-fluid contract-models-page-top-container-fluid">
     <div class="container">
@@ -23,7 +37,8 @@
             <table class="table">
                 <thead>
                     <tr>
-                        <th width="335px" class="bg-blue-light">{{__('page-contract-models.box1.title.text1')}}<br/>                            {{__('page-contract-models.box1.title.text2')}}</th>
+                        <th width="335px" class="bg-blue-light">{{__('page-contract-models.box1.title.text1')}}<br/>
+                            {{__('page-contract-models.box1.title.text2')}}</th>
                         <th width="330px" class="bg-blue-medium">{{__('page-contract-models.box2.title')}}</th>
                         <th width="335px" class="bg-blue-light">{{__('page-contract-models.box3.title')}}</th>
                     </tr>
@@ -42,12 +57,18 @@
                     <tr>
                         <td class="bg-grey-light">
                             <ul>
-                                <li>{{__('page-contract-models.box1.benefits.paragraph1')}}</li>                                <li>{{__('page-contract-models.box1.benefits.paragraph2')}}</li>                                <li>{{__('page-contract-models.box1.benefits.paragraph3')}}</li>                                <li>{{__('page-contract-models.box1.benefits.paragraph4')}}</li>                                <li>{{__('page-contract-models.box1.benefits.paragraph5')}}</li>                                <li>{{__('page-contract-models.box1.benefits.paragraph6')}}</li>
+                                <li>{{__('page-contract-models.box1.benefits.paragraph1')}}</li>
+                                <li>{{__('page-contract-models.box1.benefits.paragraph2')}}</li>
+                                <li>{{__('page-contract-models.box1.benefits.paragraph3')}}</li>
+                                <li>{{__('page-contract-models.box1.benefits.paragraph4')}}</li>
+                                <li>{{__('page-contract-models.box1.benefits.paragraph5')}}</li>
+                                <li>{{__('page-contract-models.box1.benefits.paragraph6')}}</li>
                             </ul>
                         </td>
                         <td class="bg-white">
                             <ul>
-                                <li>{{__('page-contract-models.box2.benefits.paragraph1')}}</li>                                <li>{{__('page-contract-models.box2.benefits.paragraph2')}}</li>
+                                <li>{{__('page-contract-models.box2.benefits.paragraph1')}}</li>
+                                <li>{{__('page-contract-models.box2.benefits.paragraph2')}}</li>
                             </ul>
                         </td>
                         <td class="bg-grey-light">

@@ -123,7 +123,8 @@ module.exports = function (app, passport, db) {
         res.locals.timezoneOffset = new Date().getTimezoneOffset();
         res.locals.autoSaveLatency = 1000;
 
-        req.__uploadDir = __dirname + '/../packages/system/public/assets/';
+        //req.__uploadDir = __dirname + '/../packages/system/public/assets/';
+        req.__uploadDir = __dirname + '/upload/';
         next();
     });
 

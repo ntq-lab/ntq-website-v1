@@ -1,17 +1,31 @@
 {% extends 'layout/base.html' %}
+
 {% block title %}
 {{__('title-website.domains')}}
 {% endblock %}
+
 {% block stylesheet %}
+{% for file in assets['/css/domains.css'] %}
+    <link href="{{file}}" rel="stylesheet">
+{% endfor %}
+<!--
 <link href="/frontend/assets/css/services.css" rel="stylesheet">
 <link href="/frontend/assets/css/menu-black.css" rel="stylesheet">
+-->
 {% endblock %}
+
 {% block script %}
+{% for file in assets['/js/domains.js'] %}
+    <script src="{{file}}"></script>
+{% endfor %}
+<!--
 <script src="/frontend/assets/js/jquery.nav.js"></script>
 <script src="/frontend/assets/js/main-nav.js"></script>
 <script src="/frontend/assets/js/scroll-jumpto-fixed.js"></script>
 <script src="/frontend/assets/js/services.js"></script>
+-->
 {% endblock %}
+
 {% block content %}
 <div class="container-fluid page-top-container-fluid domains-page-top-container-fluid">
     <div class="container">
@@ -36,11 +50,11 @@
                             <tbody>
                                 <tr>
                                     <td>
-                                        <img src="/frontend/assets/img/services/mobile-app/img1.png" alt="IOS" />
+                                        <img src="/img/services/mobile-app/img1.png" alt="IOS" />
                                         <a href="{{__enhance.mount('/download')}}">{{__('page-domains.mobile-app-development.description.paragraph3')}}</a>
                                     </td>
                                     <td>
-                                        <img src="/frontend/assets/img/services/mobile-app/img2.png" alt="Android" />
+                                        <img src="/img/services/mobile-app/img2.png" alt="Android" />
                                         <a href="{{__enhance.mount('/download')}}">{{__('page-domains.mobile-app-development.description.paragraph4')}}</a>
                                     </td>
                                 </tr>
@@ -82,11 +96,11 @@
                         <table>
                             <tbody>
                                 <tr>
-                                    <td><img src="/frontend/assets/img/services/web-app/img1.png" alt="java" /></td>
-                                    <td><img src="/frontend/assets/img/services/web-app/img2.png" alt="javascript" /></td>
-                                    <td><img src="/frontend/assets/img/services/web-app/img3.png" alt="php" /></td>
-                                    <td><img src="/frontend/assets/img/services/web-app/img4.png" alt=".net" /></td>
-                                    <td><img src="/frontend/assets/img/services/web-app/img5.png" alt="dart" /></td>
+                                    <td><img src="/img/services/web-app/img1.png" alt="java" /></td>
+                                    <td><img src="/img/services/web-app/img2.png" alt="javascript" /></td>
+                                    <td><img src="/img/services/web-app/img3.png" alt="php" /></td>
+                                    <td><img src="/img/services/web-app/img4.png" alt=".net" /></td>
+                                    <td><img src="/img/services/web-app/img5.png" alt="dart" /></td>
                                 </tr>
                             </tbody>
                         </table>
@@ -97,11 +111,11 @@
                         <table>
                             <tbody>
                                 <tr>
-                                    <td><img src="/frontend/assets/img/services/web-app/img6.png" alt="html5&css3" /></td>
-                                    <td><img src="/frontend/assets/img/services/web-app/img7.png" alt="jquery" /></td>
-                                    <td><img src="/frontend/assets/img/services/web-app/img8.png" alt="silverlight" /></td>
-                                    <td><img src="/frontend/assets/img/services/web-app/img9.png" alt="angularjs" /></td>
-                                    <td><img src="/frontend/assets/img/services/web-app/img10.png" alt="bootstrap" /></td>
+                                    <td><img src="/img/services/web-app/img6.png" alt="html5&css3" /></td>
+                                    <td><img src="/img/services/web-app/img7.png" alt="jquery" /></td>
+                                    <td><img src="/img/services/web-app/img8.png" alt="silverlight" /></td>
+                                    <td><img src="/img/services/web-app/img9.png" alt="angularjs" /></td>
+                                    <td><img src="/img/services/web-app/img10.png" alt="bootstrap" /></td>
                                 </tr>
                             </tbody>
                         </table>
@@ -112,7 +126,8 @@
                     <h2>{{__('page-domains.embedded-software-and-system-development.title.title-large')}}</h2>
                     <h3>{{__('page-domains.embedded-software-and-system-development.title.title-medium')}}</h3>
                     <h4>{{__('page-domains.embedded-software-and-system-development.title.title-small1')}}</h4>
-                    <div class="text-only">{{__('page-domains.embedded-software-and-system-development.description.paragraph1')}}<br/>    {{__('page-domains.embedded-software-and-system-development.description.paragraph2')}}</div>
+                    <div class="text-only">{{__('page-domains.embedded-software-and-system-development.description.paragraph1')}}<br/>
+    {{__('page-domains.embedded-software-and-system-development.description.paragraph2')}}</div>
                     <table width="628px" class="table table-services table-domains">
                         <tbody>
                             <tr>
@@ -147,7 +162,7 @@
                     <h4>{{__('page-domains.healthcare-software-development.title.title-small')}}</h4>
                     <div class="text-only">{{__('page-domains.healthcare-software-development.description.paragraph2')}}</div>
                     <div class="image-text clearfix">
-                        <div class="image"><img src="/frontend/assets/img/services/img1.png" alt="Multi-layout DICOM Viewer" /></div>
+                        <div class="image"><img src="/img/services/img1.png" alt="Multi-layout DICOM Viewer" /></div>
                         <div class="text">
                             <p><strong>{{__('page-domains.healthcare-software-development.description.paragraph3.text1')}}</strong> {{__('page-domains.healthcare-software-development.description.paragraph3.text2')}}</p>
                             <p>{{__('page-domains.healthcare-software-development.description.paragraph4')}}</p>
@@ -158,13 +173,14 @@
                         <div class="text">
                             <p><strong>{{__('page-domains.healthcare-software-development.description.paragraph5.text1')}}</strong> {{__('page-domains.healthcare-software-development.description.paragraph5.text2')}}</p>
                             <p>{{__('page-domains.healthcare-software-development.description.paragraph6')}}</p>
-                            <p>{{__('page-domains.healthcare-software-development.description.paragraph7')}}<br/>    {{__('page-domains.healthcare-software-development.description.paragraph8')}}</p>
+                            <p>{{__('page-domains.healthcare-software-development.description.paragraph7')}}<br/>
+    {{__('page-domains.healthcare-software-development.description.paragraph8')}}</p>
                         </div>
-                        <div class="image"><img src="/frontend/assets/img/services/img2.png" alt="Console advanced system" /></div>
+                        <div class="image"><img src="/img/services/img2.png" alt="Console advanced system" /></div>
                     </div><!-- /text-image -->
                     <div class="border"></div>
                     <div class="image-text clearfix">
-                        <div class="image"><img src="/frontend/assets/img/services/img3.png" alt="Multi-layout DICOM Viewer" /></div>
+                        <div class="image"><img src="/img/services/img3.png" alt="Multi-layout DICOM Viewer" /></div>
                         <div class="text">
                             <p><strong>{{__('page-domains.healthcare-software-development.description.paragraph9.text1')}}</strong> {{__('page-domains.healthcare-software-development.description.paragraph9.text2')}}</p>
                             <p>{{__('page-domains.healthcare-software-development.description.paragraph10')}}</p>
@@ -189,8 +205,9 @@
                     <h2>{{__('page-domains.enterprise-application-development.title.title-large')}}</h2>
                     <h3>{{__('page-domains.enterprise-application-development.title.title-medium')}}</h3>
                     <h4>{{__('page-domains.enterprise-application-development.title.title-small1')}}</h4>
-                    <div class="text-only">{{__('page-domains.enterprise-application-development.description.paragraph1')}}<br/>    {{__('page-domains.enterprise-application-development.description.paragraph2')}}</div>
-                    
+                    <div class="text-only">{{__('page-domains.enterprise-application-development.description.paragraph1')}}<br/>
+    {{__('page-domains.enterprise-application-development.description.paragraph2')}}</div>
+
                     <div class="text-only">{{__('page-domains.enterprise-application-development.description.paragraph3')}}</div>
                     <h4>{{__('page-domains.enterprise-application-development.title.title-small2')}}</h4>
                     <div class="text-only">{{__('page-domains.enterprise-application-development.description.paragraph4')}}</div>

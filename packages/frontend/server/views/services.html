@@ -1,18 +1,32 @@
 {% extends 'layout/base.html' %}
+
 {% block title %}
 {{__('title-website.services')}}
 {% endblock %}
+
 {% block stylesheet %}
+{% for file in assets['/css/services.css'] %}
+    <link href="{{file}}" rel="stylesheet">
+{% endfor %}
+<!--
 <link href="/frontend/assets/css/menu-white.css" rel="stylesheet">
 <link href="/frontend/assets/css/submenu-common.css" rel="stylesheet">
 <link href="/frontend/assets/css/services.css" rel="stylesheet">
+-->
 {% endblock %}
+
 {% block script %}
+{% for file in assets['/js/services.js'] %}
+    <script src="{{file}}"></script>
+{% endfor %}
+<!--
 <script src="/frontend/assets/js/jquery.nav.js"></script>
 <script src="/frontend/assets/js/main-nav.js"></script>
 <script src="/frontend/assets/js/scroll-jumpto-fixed.js"></script>
 <script src="/frontend/assets/js/services.js"></script>
+-->
 {% endblock %}
+
 {% block content %}
 <div class="container-fluid page-top-container-fluid services-page-top-container-fluid">
     <div class="container">
@@ -101,7 +115,7 @@
                     <div class="text-only">{{__('page-services.web-app-graphic-design.description.paragraph5')}}</div>
                     <div class="text-only">{{__('page-services.web-app-graphic-design.description.paragraph6')}}</div>
                 </div><!-- /services-right-box -->
-            
+
             </div><!-- /services-right -->
         </div><!-- /page-bottom-container -->
     </div>
