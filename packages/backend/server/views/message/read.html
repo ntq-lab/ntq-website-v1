@@ -1,0 +1,38 @@
+{% extends '../layout/restrict.html' %}
+
+{% block title %}{{__('Read Message')}}{% endblock %}
+
+{% block head %}
+<title>{{__('Read Message')}}</title>
+<link rel="stylesheet" href="/backend/assets/css/inbox.css">
+{% endblock %}
+
+{% block panel %}
+<li class="has-form">
+    <a href="{{__enhance.mount('/message/inbox')}}" class="button secondary">{{__('Back')}}</a>
+</li>
+<li class="divider"></li>
+<li class="has-form">
+    <a href="mailto:{{message.email}}" class="button">{{__('Reply')}}</a>
+</li>
+{% endblock %}
+
+{% block body %}
+<div class="row full-width">
+    <div class="small-8 medium-8 large-8 column">
+        <h2 class="subheader">{{message.subject}}</h2>
+    </div>
+    <div class="small-4 medium-4 large-4 column text-right">
+        <b>{{message.name}}</b><br>
+        <a href="mailto:{{message.email}}"><small>{{message.email}}</small></a><br>
+        <small>{{message.time|date('Y-m-d H:i:s', timezoneOffset)}}</small>
+    </div>
+</div>
+<br>
+<div class="row full-width">
+    <div class="small-12 medium-12 large-12 column panel">
+        <pre class="message-body">{{message.body}}</pre>
+    </div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,124 @@
+{% extends 'layout/base.html' %}
+
+{% block title %}
+{{article.heading}}
+{% endblock %}
+
+{% block stylesheet %}
+{% for file in assets['/css/article-detail.css'] %}
+    <link href="{{file}}" rel="stylesheet">
+{% endfor %}
+<!--
+<link href="/frontend/assets/css/article.css" rel="stylesheet">
+-->
+{% endblock %}
+
+{% block script %}
+<!--
+<script src="/frontend/assets/js/main-nav.js"></script>
+-->
+<div id="fb-root"></div>
+<script>
+<!--
+(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/vi_VN/sdk.js#xfbml=1&appId=318946454949666&version=v2.0";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
+-->
+</script>
+{% for file in assets['/js/article-detail.js'] %}
+    <script src="{{file}}"></script>
+{% endfor %}
+{% endblock %}
+
+{% block content %}
+<div class="container-fluid news-page-container-fluid">
+    <div class="container">
+        <div class="breadcrumb">
+            <a href="{{__enhance.mount('/')}}">{{__('page-news.home')}}</a><span>/</span><a href="{{__enhance.mount('/articles')}}">{{__('page-news.news')}}</a><span>/</span><a class="active">{{article.heading}}</a>
+        </div><!-- /breadcrumb -->
+
+        <div class="content-news clearfix">
+            <div class="content-news-left pull-left">
+                <div class="content-news-detail">
+                    <div class="date-share clearfix">
+                        <p class="pull-left">{{article.time|date('l, d/m/Y | H:i')}}</p>
+                        <div class="pull-right share"><div class="fb-like" data-href="{{__enhance.mount('/article/' + article.id)}}" data-layout="button_count" data-action="like" data-show-faces="false" data-share="true"></div></div>
+                    </div><!-- /date-share -->
+
+                    <div class="content-news-detail-post">
+                        <h1 class="h3">{{article.heading}}</h1>
+
+                        <p class="description">{{article.bulletin}}</p>
+
+                        {% for extract in article.extracts %}
+                        {% if extract.style == 1 %}
+                        <p>{{extract.text}}</p>
+                        {% endif %}
+                        {% if extract.style == 2 %}
+                        <div class="text-image clearfix">
+                            <div class="text">
+                                {{extract.text}}
+                            </div>
+                            <div class="image">
+                                <img src="/system/assets/img/{{extract.image}}" alt="{{extract.image}}" />
+                            </div>
+                        </div><!-- /text-image -->
+                        {% endif %}
+                        {% if extract.style == 3 %}
+                        <div class="image-text clearfix">
+                            <div class="image">
+                                <img src="/system/assets/img/{{extract.image}}" alt="{{extract.image}}" />
+                            </div>
+                            <div class="text">
+                                {{extract.text}}
+                            </div>
+                        </div><!-- /text-image -->
+                        {% endif %}
+                        {% if extract.style == 4 %}
+                        <div class="content-news-detail-image"><img src="/system/assets/img/{{extract.image}}" alt="{{article.heading}}"></div>
+                        {% endif %}
+                        {% endfor %}
+                    </div>
+                </div><!-- /content-news-detail -->
+            </div><!-- /content-news-left -->
+
+            <div class="content-news-right pull-left">
+                <h3>{{__('page-news.related-news')}}</h3>
+                {% if listRelatedArticle.length > 0 %}
+                    {% for relatedArticle in listRelatedArticle %}
+                        {% if loop.first %}
+                        <div class="news-right-top">
+                            {% if !!relatedArticle.avatar %}
+                            <a href="{{__enhance.mount('/article/') + relatedArticle.id}}" class="news-top-title">{{relatedArticle.heading}}</a>
+                            <p class="date">{{relatedArticle.time|date('H:i d/m/Y', timezoneOffset)}}</p>
+                            <a href="{{__enhance.mount('/article/') + relatedArticle.id}}" class="news-top-image"><img src="/system/assets/img/{{relatedArticle.avatar}}" alt="{{relatedArticle.heading}}"></a>
+                            {% else %}
+                            <a href="{{__enhance.mount('/article/') + relatedArticle.id}}" class="news-top-title no-image">{{relatedArticle.heading}}</a>
+                            <p class="date no-image">{{relatedArticle.time|date('H:i d/m/Y', timezoneOffset)}}</p>
+                            {% endif %}
+
+                        </div><!-- /news-right-top -->
+                        {% else %}
+                        <div class="news-right clearfix">
+                            {% if !!relatedArticle.avatar %}
+                            <a href="{{__enhance.mount('/article/') + relatedArticle.id}}" class="news-right-image"><img src="/system/assets/img/{{relatedArticle.avatar}}" alt="{{relatedArticle.heading}}"></a>
+                            <a href="{{__enhance.mount('/article/') + relatedArticle.id}}">{{relatedArticle.heading}}</a>
+                            <p class="date">{{relatedArticle.time|date('H:i d/m/Y', timezoneOffset)}}</p>
+                            {% else %}
+                            <a href="{{__enhance.mount('/article/') + relatedArticle.id}}" class="no-image">{{relatedArticle.heading}}</a>
+                            <p class="date no-image">{{relatedArticle.time|date('H:i d/m/Y', timezoneOffset)}}</p>
+                            {% endif %}
+                        </div><!-- /news-right -->
+                        {% endif %}
+                    {% endfor %}
+                {% endif %}
+
+            </div><!-- /content-news-right -->
+        </div><!-- /content-news -->
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,101 @@
+{% extends '../layout/restrict.html' %}
+
+{% block head %}
+<title>{{__('Downloadables')}}</title>
+<link rel="stylesheet" href="/backend/assets/css/downloadable.css">
+<link rel="stylesheet" href="/backend/assets/css/mtext.css">
+<link rel="stylesheet" href="/backend/assets/css/upload-file.css">
+{% endblock %}
+
+{% block title %}{{__('Downloadables')}}{% endblock %}
+
+{% block angular %}data-ng-controller="DownloadableController"{% endblock %}
+
+{% block panel %}
+<li class="has-form">
+    <button type="button" ng-click="createFolder()">{{__('Create new Folder')}}</button>
+</li>
+{% endblock %}
+
+{% block body %}
+<section>
+    <div ng-repeat="folder in folders" class="folder">
+        <div class="text-right">
+            <a data-ng-click="moveFolderDown(folder)"><i class="fi-arrow-down size-16"></i></a>
+            <a data-ng-click="moveFolderUp(folder)"><i class="fi-arrow-up size-16"></i></a>
+            <a data-ng-click="removeFolder(folder)"><i class="fi-x size-16"></i></a>
+        </div>
+        <div class="row full-width">
+            <div class="small-6 medium-6 large-6 column">
+                <fieldset x-upload-file data-on-files-add="onFilesAdd(folder, files, callback)"
+                    data-on-process="onUploadProcess(id, percent)" data-on-file-upload="onFileUpload(id, folder, file)"
+                    data-on-upload-complete="onUploadComplete(folder)">
+                    <legend>{{__('Files')}}</legend>
+                    <a class="button tiny secondary" upload-file-trigger>{{__('Choose Files')}}</a>
+                    <div class="drop-zone" upload-file-dropzone>
+                        <div class="upload-mask-dock">
+                            <div class="file" data-ng-repeat="file in folder.files">
+                                <div class="text-right">
+                                    <a data-ng-click="moveFileDown(folder, file)"><i class="fi-arrow-down size-16"></i></a>
+                                    <a data-ng-click="moveFileUp(folder, file)"><i class="fi-arrow-up size-16"></i></a>
+                                    <a data-ng-click="removeFile(folder, file)"><i class="fi-x size-16"></i></a>
+                                </div>
+                                <div class="file-info row full-width">
+                                    <div class="small-9 medium-9 large-9 column">
+                                        <x-mtext data-ng-name="file.name" ng-value-change="saveFile(folder, file)"></x-mtext>
+                                    </div>
+                                    <div class="small-3 medium-3 large-3 column text-right">
+                                        <kbd class="file-size no-wrap">{% raw %}{{file.size|readableSize}}{% endraw %}</kbd>
+                                    </div>
+                                </div>
+                                <div class="file-upload-process" ng-if="file.client" style="width: {% raw %}{{file.client.percent}}{% endraw %}%">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+            </div>
+            <div class="small-6 medium-6 large-6 column">
+                <fieldset>
+                    <legend>{{__('Folder Information')}}</legend>
+                    <label>
+                        <span>{{__('Folder Name')}}</span>
+                        <x-mtext data-ng-name="folder.name" ng-value-change="saveFolder(folder)"></x-mtext>
+                    </label>
+                    <label>
+                        <span>{{__('Enabled')}}</span>
+                        <div class="switch">
+                            <input type="checkbox" id="enabled-folder-{% raw %}{{folder._id}}{% endraw %}"
+                                data-ng-change="saveFolder(folder)" data-ng-model="folder.enabled">
+                            <label for="enabled-folder-{% raw %}{{folder._id}}{% endraw %}"></label>
+                        </div>
+                    </label>
+                </fieldset>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
+{% block script %}
+<script src="/bower_components/plupload/js/plupload.full.min.js"></script>
+<script src="/bower_components/angular/angular.js"></script>
+<script>
+'use strict';
+if (typeof angular !== 'undefined') {
+    angular.module('backend', ['backend.downloadable']);
+
+    angular.module('backend').factory('Global', [function () {
+        return {
+            mount: {{__enhance.mount('')|json|safe}},
+            languages: {{__locale.languages|json|safe}},
+            defaultLocale: {{__locale.defaultLocale|json|safe}},
+            autoSaveLatency: {{autoSaveLatency|json|safe}}
+        };
+    } ]);
+    angular.element(document).ready(function () {
+        angular.bootstrap(document, ['backend']);
+    });
+}
+</script>
+<script src="/modules/aggregated.js"></script>
+{% endblock %}

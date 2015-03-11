@@ -1,0 +1,56 @@
+<div class="services-left" id="jump-to">
+    <div class="services-left-box {{active.services_active}}">
+        {% if active.services_active != '' %}
+        <h1>{{__('common.list-services-domains.services.title')}}</h1>
+        <ul>
+            <li><a href="{{__enhance.mount('/services#software-outsourcing-service')}}">{{__('common.list-services-domains.services.list.software-outsourcing')}}</a></li>
+            <li><a href="{{__enhance.mount('/services#software-solutions-consultancy')}}">{{__('common.list-services-domains.services.list.solutions-consultancy')}}</a></li>
+            <li><a href="{{__enhance.mount('/services#web-app-graphic-design')}}">{{__('common.list-services-domains.services.list.graphic-design')}}</a></li>
+        </ul>
+        {% else %}
+        <a href="{{__enhance.mount('/services')}}" class="services-left-box-title">{{__('common.list-services-domains.services.title')}}</a>
+        {% endif %}
+    </div><!-- /services-left-box -->
+
+    <div class="services-left-box {{active.domains_active}}">
+        {% if active.domains_active != '' %}
+        <h1>{{__('common.list-services-domains.domains.title')}}</h1>
+        <ul>
+            <li><a href="{{__enhance.mount('/domains#mobile-app-development')}}">{{__('common.list-services-domains.domains.list.mobile-application-development')}}</a></li>
+            <li><a href="{{__enhance.mount('/domains#web-app-development')}}">{{__('common.list-services-domains.domains.list.web-application-development')}}</a></li>
+            <li><a href="{{__enhance.mount('/domains#embedded-software-and-system-development')}}">{{__('common.list-services-domains.domains.list.embedded-software-development')}}</a></li>
+            <li><a href="{{__enhance.mount('/domains#medical-image-visualization')}}">{{__('common.list-services-domains.domains.list.healthcare-software-development')}}</a></li>
+            <li><a href="{{__enhance.mount('/domains#system-integration')}}">{{__('common.list-services-domains.domains.list.system-integration')}}</a></li>
+            <li><a href="{{__enhance.mount('/domains#enterprise-application-development')}}">{{__('common.list-services-domains.domains.list.enterprise-application-development')}}</a></li>
+            <li><a href="{{__enhance.mount('/domains#cloud-basedssoftware-development')}}">{{__('common.list-services-domains.domains.list.cloud-based-software-development')}}</a></li>
+            <li><a href="{{__enhance.mount('/domains#e-commerce-software-development')}}">{{__('common.list-services-domains.domains.list.e-commerce-software-development')}}</a></li>
+        </ul>
+        {% else %}
+        <a href="{{__enhance.mount('/domains')}}" class="services-left-box-title">{{__('common.list-services-domains.domains.title')}}</a>
+        {% endif %}
+    </div><!-- /services-left-box -->
+
+    <div class="services-left-box {{active.technologies_active}}">
+        {% if active.technologies_active != '' %}
+        <h1>{{__('common.list-services-domains.technologies.title')}}</h1>
+        <ul>
+            <li><a href="{{__enhance.mount('/technologies#java')}}">{{__('common.list-services-domains.technologies.list.item1')}}</a></li>
+            <li><a href="{{__enhance.mount('/technologies#javascript')}}">{{__('common.list-services-domains.technologies.list.item2')}}</a></li>
+            <li><a href="{{__enhance.mount('/technologies#dot-net')}}">{{__('common.list-services-domains.technologies.list.item3')}}</a></li>
+            <li><a href="{{__enhance.mount('/technologies#php')}}">{{__('common.list-services-domains.technologies.list.item4')}}</a></li>
+            <li><a href="{{__enhance.mount('/technologies#ios')}}">{{__('common.list-services-domains.technologies.list.item5')}}</a></li>
+            <li><a href="{{__enhance.mount('/technologies#android')}}">{{__('common.list-services-domains.technologies.list.item6')}}</a></li>
+            <li><a href="{{__enhance.mount('/technologies#dart')}}">{{__('common.list-services-domains.technologies.list.item7')}}</a></li>
+            <li><a href="{{__enhance.mount('/technologies#servers')}}">{{__('common.list-services-domains.technologies.list.item8')}}</a></li>
+            <li><a href="{{__enhance.mount('/technologies#databases')}}">{{__('common.list-services-domains.technologies.list.item9')}}</a></li>
+            <li><a href="{{__enhance.mount('/technologies#others')}}">{{__('common.list-services-domains.technologies.list.item10')}}</a></li>
+        </ul>
+        {% else %}
+        <a href="{{__enhance.mount('/technologies')}}" class="services-left-box-title">{{__('common.list-services-domains.technologies.title')}}</a>
+        {% endif %}
+    </div><!-- /services-left-box -->
+
+    <div class="services-left-box">
+        <a href="{{__enhance.mount('/contract-models')}}" class="services-left-box-title">{{__('common.list-services-domains.contract-models.title')}}</a>
+    </div><!-- /services-left-box -->
+</div><!-- /services-left -->

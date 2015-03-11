@@ -1,0 +1,124 @@
+.article-avatar {
+    margin-bottom: 1rem;
+}
+.article-avatar .th {
+    min-height: 120px;
+}
+.gallery-dock {
+    position: relative;
+    height: 160px;
+}
+.gallery {
+    padding: 10px 0;
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    position: absolute;
+    left: 140px;
+    right: 0;
+}
+.gallery-area .add-gallery {
+    padding: 10px 0;
+}
+.gallery-area .add-gallery .gallery-thumb {
+    cursor: pointer;
+    display: inline-block;
+}
+.gallery-area .add-gallery .upload-control i {
+    line-height: 115px;
+    color: #222;
+    opacity: .3;
+    -webkit-transition: opacity linear .2s;
+    transition: opacity linear .2s;
+    margin: 0;
+}
+.gallery-area .add-gallery .gallery-thumb:hover i {
+    opacity: 1;
+}
+.gallery-area .th.gallery-thumb {
+    width: 120px;
+    height: 120px;
+    overflow: hidden;
+    margin: 0 10px;
+    position: relative;
+    line-height: 110px;
+    display: inline-block;
+}
+.gallery-area .gallery-thumb .image-preview {
+    display: block;
+}
+.gallery-area .gallery-thumb img {
+    max-height: 100%;
+    max-width: 100%;
+    width: auto;
+    height: auto;
+}
+.article-extracts {
+    min-height: 450px;
+    background: #fff;
+    border: 1px solid rgb(221, 221, 221);
+}
+.article-extract {
+    border-top: 1px solid rgb(221, 221, 221);
+}
+.article-extract:first-of-type {
+    border: none;
+}
+.article-extract .th {
+    display: block;
+    line-height: initial;
+}
+.article-extract .th {
+    min-height: 120px;
+}
+.article-extract textarea {
+    margin: -1px 0 0 0;
+    min-height: 122px;
+}
+.article-extract .heading {
+    min-height: initial;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+.article-extract .content {
+    padding: 5px 10px 20px;
+}
+.article-extract .controls {
+    padding: 10px 5px;
+    text-align: right;
+}
+.th[upload-image] {
+    display: table;
+    position: relative;
+    width: 100%;
+}
+[upload-image] .image-preview {
+    display: table-cell;
+    vertical-align: middle;
+}
+[upload-image] .image-mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #000;
+    background: rgba(0, 0, 0, .7);
+    opacity: 0;
+    color: #eee;
+    padding: 10px;
+    -webkit-transition: opacity linear .2s;
+    transition: opacity linear .2s;
+}
+[upload-image]:hover .image-mask {
+    opacity: 1;
+}
+[upload-image] .image-mask i {
+    cursor: pointer;
+    opacity: .7;
+    -webkit-transition: opacity linear .2s;
+    transition: opacity linear .2s;
+}
+[upload-image] .image-mask i:hover {
+    opacity: 1;
+}

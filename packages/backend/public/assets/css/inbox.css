@@ -1,0 +1,23 @@
+.inbox {
+    border: 1px solid rgb(221, 221, 221);
+}
+.message {
+    border-top: 1px solid rgb(221, 221, 221);
+    padding: 10px 0;
+    background: #f2f2f2;
+}
+.message:first-child {
+    border-top: none;
+}
+.message.unread {
+    background: #fff;
+}
+.message.unread .message-time {
+    font-weight: bold;
+}
+.message-body {
+    font-weight: normal;
+    font-family: inherit;
+    font-size: inherit;
+    white-space: pre-wrap
+}

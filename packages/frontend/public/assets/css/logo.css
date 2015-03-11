@@ -1,0 +1,31 @@
+.loading-mask {
+    z-index: 9999999;
+    position: fixed;
+    background: white;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+body {
+    background: #eaeaea;
+}
+.logo-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 0;
+    background: #eaeaea;
+    min-height: 600px;
+    -webkit-transition: height linear .1s;
+    transition: height linear .1s;
+}
+.canvas-container {
+    position: absolute;
+    top: 0;
+    bottom: 100px;
+    left: 0;
+    right: 0;
+}

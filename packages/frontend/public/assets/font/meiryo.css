@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Meiryo';
+    src: url('Meiryo.eot');
+    src: url('Meiryo.eot?#iefix') format('embedded-opentype'),
+         url('Meiryo.ttf') format('truetype'),
+         url('Meiryo.svg#Meiryo') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}

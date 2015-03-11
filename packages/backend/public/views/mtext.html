@@ -1,0 +1,12 @@
+<div>
+    <div class="mtext-select right">
+        <select ng-model="selectedLocale" ng-options="lang for lang in languages">
+        </select>
+    </div>
+    <div class="mtext-input">
+        <input type="text" data-ng-repeat="lang in languages"
+            data-ng-model="name[lang]" data-ng-show="selectedLocale === lang"
+            data-ng-change="onChange()">
+    </div>
+    <span class="clear">
+</div>

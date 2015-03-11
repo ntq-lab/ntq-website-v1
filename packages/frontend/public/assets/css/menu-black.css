@@ -1,0 +1,24 @@
+.main-nav-container-fluid {
+    background: transparent;
+    position: fixed;
+    color: #000;
+    border-bottom: 1px solid #c5c1be;
+}
+.main-nav-container-fluid .container a {
+    color: #000 !important;
+}
+.main-nav-container-fluid .container ul li:hover a {
+    color: #fff !important;
+}
+.main-nav-container-fluid.fixed a {
+    color: #fff !important;
+}
+.main-nav-container-fluid .container .languages a {
+    border: 1px solid #000 !important;
+}
+.main-nav-container-fluid.fixed .languages a {
+    border: 1px solid #fff !important;
+}
+.main-nav-container li .sub-main-nav li a {
+    color: #fff !important;
+}

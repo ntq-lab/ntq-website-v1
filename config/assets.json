@@ -1,0 +1,68 @@
+{
+    "css": {
+        "build/tmp/css/base.css": [
+            "packages/frontend/public/assets/css/bootstrap/bootstrap.css",
+            "packages/frontend/public/assets/font/meiryo.css",
+            "packages/frontend/public/assets/css/header.css",
+            "packages/frontend/public/assets/css/footer.css",
+            "packages/frontend/public/assets/css/common.css"
+        ],
+        "build/tmp/css/index.css": [
+            "packages/frontend/public/assets/css/animate-home.css",
+            "packages/frontend/public/assets/css/home.css",
+            "packages/frontend/public/assets/css/logo.css"
+        ],
+        "build/tmp/css/about.css": [
+            "packages/frontend/public/assets/css/menu-white.css",
+            "packages/frontend/public/assets/css/submenu-common.css",
+            "packages/frontend/public/assets/css/about-20150129.css"
+        ],
+        "build/tmp/css/article-detail.css": [
+            "packages/frontend/public/assets/css/article.css"
+        ],
+        "build/tmp/css/article.css": [
+            "packages/frontend/public/assets/css/article.css"
+        ],
+        "build/tmp/css/career.css": [
+            "packages/frontend/public/assets/css/menu-white.css",
+            "packages/frontend/public/assets/css/submenu-common.css",
+            "packages/frontend/public/assets/css/career.css"
+        ]
+    },
+    "js": {
+        "build/tmp/js/index.js": [
+            "bower_components/jquery/dist/jquery.min.js",
+            "bower_components/bluebird/browser/bluebird.min.js",
+            "bower_components/tweenjs/build/tween.min.js",
+            "packages/frontend/public/assets/js/libs/three.min.js",
+            "packages/frontend/public/assets/js/jquery.nav.js",
+            "packages/frontend/public/assets/js/slideshow.js",
+            "packages/frontend/public/assets/js/home.js",
+            "packages/frontend/public/assets/js/detector.js",
+            "packages/frontend/public/assets/js/logo-effect.js"
+        ],
+        "build/tmp/js/about.js": [
+            "bower_components/jquery/dist/jquery.min.js",
+            "bower_components/jquery-ui/ui/jquery-ui.js",
+            "packages/frontend/public/assets/js/main-nav.js",
+            "packages/frontend/public/assets/js/max-height-element.js",
+            "packages/frontend/public/assets/js/about.js"
+        ],
+        "build/tmp/js/article-detail.js": [
+            "bower_components/jquery/dist/jquery.min.js",
+            "packages/frontend/public/assets/js/main-nav.js"
+        ],
+        "build/tmp/js/article.js": [
+            "bower_components/jquery/dist/jquery.min.js",
+            "bower_components/jquery-ui/ui/jquery-ui.js",
+            "packages/frontend/public/assets/js/jquery-tabs-rotate.js",
+            "packages/frontend/public/assets/js/main-nav.js",
+            "packages/frontend/public/assets/js/article.js"
+        ],
+        "build/tmp/js/career.js": [
+            "bower_components/jquery/dist/jquery.min.js",
+            "packages/frontend/public/assets/js/main-nav.js",
+            "packages/frontend/public/assets/js/career.js"
+        ]
+    }
+}

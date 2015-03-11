@@ -1,0 +1,54 @@
+{% extends '../layout/restrict.html' %}
+{% block head %}
+<title>{{__('Categories')}}</title>
+{% endblock %}
+
+{% block title %}{{__('Category Detail')}}{% endblock %}
+
+{% block panel %}
+<li class="has-form">
+    <button form="category-form" type="submit" class="button">Save</button>
+</li>
+{% endblock %}
+
+{% block body %}
+<form action="{{__enhance.mount('/category/' + category.id)}}" method="post" id="category-form">
+    <div class="panel">
+        {% for language in __locale.languages %}
+        <div class="row full-width">
+            <div class="large-2 column">
+                <label class="left inline">
+                    <span>{{__('Name in')}}</span>
+                    <kbd class="language-notation">{{language}}</kbd>
+                </label>
+            </div>
+            <div class="large-10 column">
+                <input type="text" name="name[{{language}}]" value="{{category.name[language]}}">
+            </div>
+        </div>
+        {% endfor %}
+        <div class="row full-width">
+            <div class="large-2 column">
+                <label class="left inline">{{__('Enabled')}}</label>
+            </div>
+            <div class="large-10 column">
+                <div class="switch">
+                    <input type="checkbox" id="category-enabled" name="enabled"{% if category.enabled %} checked="checked"{% endif %}>
+                    <label for="category-enabled"></label>
+                </div>
+            </div>
+        </div>
+        <div class="row full-width">
+            <div class="large-2 column">
+                <label class="left inline">{{__('Media')}}</label>
+            </div>
+            <div class="large-10 column">
+                <div class="switch">
+                    <input type="checkbox" id="media-flag" name="media"{% if category.media %} checked="checked"{% endif %}>
+                    <label for="media-flag"></label>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+{% endblock %}

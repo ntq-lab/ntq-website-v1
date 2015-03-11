@@ -1,0 +1,934 @@
+{
+    "menu": {
+        "home": "Home",
+        "company": "Company",
+        "services": "Services",
+        "career": "Career",
+        "news": "News",
+        "contact": "Contact",
+        "success-story": "Success Stories",
+        "download": "Downloads",
+        "about": "About us",
+        "domains": "Development Domains",
+        "technologies": "Technologies",
+        "contract-models": "Contract Models"
+    },
+    "title-website": {
+        "home": "Vietnam software development company | Software outsourcing company | NTQ Solution",
+        "about": "About us | Mobile, web, healthcare and embedded application development | NTQ Solution",
+        "articles": "Press releases | Company news | NTQ Solution",
+        "career": "Develop career with NTQ Solution",
+        "contact": "Contact us | NTQ Solution",
+        "contract-models": "Contract models | Engagement models | NTQ Solution",
+        "domains": "Development domains | Areas of expertise | NTQ Solution",
+        "download": "Downloads | NTQ Solution",
+        "services": "Software outsourcing services | Software development services | NTQ Solution",
+        "success-stories": "NTQ Solution success stories | Project case studies",
+        "technologies": "Technologies | Competition strengths | NTQ Solution"
+    },
+    "common": {
+        "address": {
+            "hanoi": {
+                "title": "Head office in Hanoi",
+                "address": "6th Floor HH3 Building, Me Tri Street, Nam Tu Liem District, Hanoi City, Vietnam",
+                "name": "Pham Thai Son",
+                "position": "Chief Executive Officer",
+                "tel": "Tel",
+                "email": "Email"
+            },
+            "japan": {
+                "title": "Representative in Japan",
+                "address": "〒150-0043 Tōkyō to Shibuya ku Dōgenzaka 1 - 20 - 2 Araiansubiru Shibuya Ichi Bandate 5F",
+                "name": "To Quang Cong",
+                "position": "Representative",
+                "tel": "Tel",
+                "email": "Email"
+            }
+        },
+        "support": "Support",
+        "download-documents": "Download Documents",
+        "map": {
+            "usa": "USA",
+            "uk": "UK",
+            "belarus": "Belarus",
+            "japan": "Japan",
+            "vietnam": "Vietnam",
+            "australia": "Australia"
+        },
+        "company-name": "NTQ Solution",
+        "read-more": "Read more",
+        "list-services-domains": {
+            "services": {
+                "title": "Services",
+                "list": {
+                    "software-outsourcing": "Software Outsourcing",
+                    "solutions-consultancy": "Solutions Consultancy",
+                    "graphic-design": "Graphic Design"
+                }
+            },
+            "domains": {
+                "title": "Domains",
+                "list": {
+                    "mobile-application-development": "Mobile application development",
+                    "web-application-development": "Web application development",
+                    "embedded-software-development": "Embedded software development",
+                    "healthcare-software-development": "Healthcare software development",
+                    "system-integration": "System integration",
+                    "enterprise-application-development": "Enterprise application development",
+                    "cloud-based-software-development": "Cloud-based software development",
+                    "e-commerce-software-development": "E-commerce software development"
+                }
+            },
+            "technologies": {
+                "title": "Technologies",
+                "list": {
+                    "item1": "Java",
+                    "item2": "Javascript",
+                    "item3": ".Net",
+                    "item4": "PHP",
+                    "item5": "iOS",
+                    "item6": "Android",
+                    "item7": "Dart",
+                    "item8": "Servers",
+                    "item9": "Databases",
+                    "item10": "Others"
+                }
+            },
+            "contract-models": {
+                "title": "Contract Models"
+            }
+        },
+        "form-contact": {
+            "name": "Name",
+            "email": "Email",
+            "subject": "Subject",
+            "message": "Message",
+            "send": "Send",
+            "message-success": "Your message has been sent successfully. Thank you for contacting us!",
+            "message-error": "Please input valid data!"
+        }
+    },
+    "footer": {
+        "contact": "Contact us",
+        "or": "Or",
+        "enter-your-email": "Enter your email…",
+        "copyright": "Copyright"
+    },
+    "page-home": {
+        "tooltip": {
+            "home": "Home",
+            "services": "Services",
+            "about": "About us",
+            "technology": "Technologies",
+            "partner": "Partners",
+            "news": "News",
+            "testimonials": "Testimonials"
+        },
+        "download-brochure": "Download brochure",
+        "page-one": {
+            "scroll-down": "Scroll Down"
+        },
+        "page-services": {
+            "services": {
+                "title": "Services",
+                "description": "Act for your needs",
+                "box1": {
+                    "title": {
+                        "text1": "Software outsourcing",
+                        "text2": " "
+                    },
+                    "description": "Gain advantages through outsourcing a part or a whole software development work."
+                },
+                "box2": {
+                    "title": {
+                        "text1": "Solutions consultancy",
+                        "text2": " "
+                    },
+                    "description": "We render solutions consultancy service to you totally COST FREE."
+                },
+                "box3": {
+                    "title": {
+                        "text1": "Graphic design",
+                        "text2": " "
+                    },
+                    "description": "Complete your software with our most trendy mobile and web app graphic design."
+                }
+            },
+            "domains": {
+                "title": "Domains",
+                "description": "Turn your ideas into reality",
+                "box1": {
+                    "title": {
+                        "text1": "Mobile app",
+                        "text2": "development"
+                    },
+                    "description": "Seize your business flexibility through iPhone/iPad and Android apps."
+                },
+                "box2": {
+                    "title": {
+                        "text1": "Web app",
+                        "text2": "development"
+                    },
+                    "description": "Your expectation is visual through every application that we deliver to you."
+                },
+                "box3": {
+                    "title": {
+                        "text1": "Embedded software",
+                        "text2": "development"
+                    },
+                    "description": "Enable you to achieve business excellence through embedded intelligence."
+                },
+                "box4": {
+                    "title": {
+                        "text1": "Healthcare software",
+                        "text2": "development"
+                    },
+                    "description": "We serve better analysis results in health-care sector."
+                },
+                "box5": {
+                    "title": {
+                        "text1": "System integration",
+                        "text2": " "
+                    },
+                    "description": "Have your existing computing systems linked together to act as one large complete system."
+                },
+                "box6": {
+                    "title": {
+                        "text1": "Enterprise application",
+                        "text2": "development"
+                    },
+                    "description": "Own enterprise apps to win challenges and to adapt rapid changes of market demand."
+                },
+                "box7": {
+                    "title": {
+                        "text1": "Cloud-based software",
+                        "text2": "development"
+                    },
+                    "description": "Make your most important software accessible from any computer or mobile device."
+                },
+                "box8": {
+                    "title": {
+                        "text1": "E-commerce software",
+                        "text2": "development"
+                    },
+                    "description": "Implement e-commerce softwares to bring your online business to success."
+                }
+            }
+        },
+        "page-technologies": {
+            "title": "Technologies",
+            "box1": {
+                "title-large": "Database"
+            },
+            "box2": {
+                "title-large": "Languages"
+            },
+            "box3": {
+                "title-large": "Cloud",
+                "title-small": "Platforms"
+            },
+            "box4": {
+                "title-large": "Mobile",
+                "title-small": "Platforms"
+            },
+            "box5": {
+                "title": "Technology is the key to our success",
+                "description": {
+                    "paragraph": "NTQ Solution is keeping updated with latest technologies and continuously enhancing our depth knowledge of every technology that we consult or support our customers in our projects."
+                }
+            }
+        },
+        "page-about-us": {
+            "title": "About us",
+            "description": {
+                "paragraph1": "NTQ Solution",
+                "paragraph2": "is a collective of",
+                "paragraph3": "passionate and creative young talents"
+            },
+            "founders": "Founders",
+            "staffs": "Staffs",
+            "founded-on": "13/6/2011"
+        },
+        "page-partners": {
+            "title": "Our Partners",
+            "slogan": "We are a part of you"
+        },
+        "page-testimonials": {
+            "title": "Client Testimonials",
+            "description": {
+                "box1": {
+                    "name": "Dean Sutcliffe – CIO, iMyVenue, Australia.",
+                    "content": "“iMyVenue has worked with NTQ on some projects. I have found NTQ technically sound, and reliable. The quality of work is of a standard that matches our expectation, and is equal to that of local developers in Australia. They are cost effective and efficient solution for our needs.“"
+                },
+                "box2": {
+                    "name": "Linh Nguyen – Technical Manager, ROI Marketing Solutions Ltd , UK.",
+                    "content": "“ROI Marketing Solutions Ltd has worked with NTQ Solutions to develop an online marketing application over the past 1 year. During this time, NTQ has demonstrated good technical and communication skills over different parts of the software development cycle such requirement gathers and development. I would not hesitate recommending NTQ Solution for software development.”"
+                },
+                "box3": {
+                    "name": "Yusuke Akinaga – Account Manager, ITSherpa - Japan.",
+                    "content": "“Staffs of NTQ Solution are very dynamic. They create a fun atmosphere while working. About quality, they have captured our Japanese psyche and produced good software products. Nowadays, many Japanese companies are looking for foreign partners in software industry. Our company has luckily found a good partner like NTQ Solution.“"
+                }
+            }
+        }
+    },
+    "page-about": {
+        "download-link": "Click to download our documents",
+        "title": "About us",
+        "box1": {
+            "who-we-are": {
+                "title": "Who we are?",
+                "description": {
+                    "paragraph1": "We were addressed “crazy” since we decided to separate from a bigger company, holding distinctive dreams along with many passionate young people, taking every single step to build a family, which helps those who are in love with technology reach perfection.",
+                    "paragraph2": "We dedicatedly spent time to come down with the company’s name: “NTQ”.",
+                    "paragraph3": "To our honorable customers, NTQ stands for “Next Top Quality” bringing customers perfection is our company belief.",
+                    "paragraph4": "To us colleagues, NTQ means “Nha Toi Quan”, literally it’s “My Family”. From inside, we are simply not just a company, we are a BIG family."
+                }
+            },
+            "what-we-do": {
+                "title": "What we do?",
+                "description": {
+                    "paragraph1": "We do not basically develop applications and software, but we love technology, we do investigation, research so as to provide customers with the best solutions, technically and economically.",
+                    "paragraph2": "We are now running our own R&D Center with 8 “crazy” experts dedicated in researching technical solutions for customers. At the R&D Center we form a team to develop our own embedded software projects.",
+                    "paragraph3": "We guarantee customers’ benefits by reasonable-cost services brought about by Vietnamese enthusiastic technicians working in strict Japanese and Western operational processes."
+                }
+            },
+            "why-we-are-different": {
+                "title": "Why we are different?",
+                "description": {
+                    "paragraph1": "We provide you with the “Smart Offshore Development” service rather than the mere Offshore Development service.",
+                    "paragraph2": "Firstly “Smart offshore development” means that NTQ Solutions not only does coding, but also provides solutions, architecture design and detail design. We do detailed design while our customers only need to care about business requirements. For medium size projects 50-100MM we can take care of a complete architecture design for our customers.",
+                    "paragraph3": "Secondly instead of accepting the detailed design and carrying out what the documents show, we always aim for bilateral communications. We study, share out ideas and suggestion, so as to become a part of our customers, together with our customers we plan and work closely on the products."
+                }
+            }
+        },
+        "box2": {
+            "title": "Vision",
+            "description": {
+                "paragraph1": "To become a leading software development company and",
+                "paragraph2": "globally recognized in the IT industry."
+            }
+        },
+        "box3": {
+            "title": "We are a part of you."
+        },
+        "box4": {
+            "title": "Strategic goals until end of 2016",
+            "box1": {
+                "title": "Total revenue",
+                "description": "$2.5 Million"
+            },
+            "box2": {
+                "title": "Human resources",
+                "description": "Over 100 staffs"
+            }
+        },
+        "box5": {
+            "title": "Mission",
+            "description": {
+                "paragraph1": "We are committed to always providing high quality products and services, and continuously improving to bring satisfaction to our customers.",
+                "paragraph2": "We evoke passion and train programmers at the world class level."
+            }
+        },
+        "box6": {
+            "title": "Policy",
+            "description": {
+                "paragraph1": {
+                    "text1": "Being a family means “",
+                    "text2": "Solidarity",
+                    "text3": "”."
+                },
+                "paragraph2": {
+                    "text1": "Being engineers, we are “",
+                    "text2": "Passionate",
+                    "text3": "”."
+                },
+                "paragraph3": {
+                    "text1": "Being partners, we always “",
+                    "text2": "Share",
+                    "text3": "”."
+                }
+            }
+        },
+        "box7": {
+            "title": "Press releases",
+            "description": {
+                "paragraph1": "On December 6th 2014, VTV4, a Vietnam science and technology TV channel, during the celebration of Vietnam-Japan 40 years of relationship, had an interview with NTQ Company about the Outsource sector as regards its role in the Japanese economy. It came as a surprise when NTQ became the main focus of the TV program. We considered this opportunity as our reward for all those years working with the Japanese market; it wasn’t because we’re a big company, our working principles do match both countries’ diplomatic relationship standards.",
+                "paragraph2": "We are so happy and proud of this, yet a great motivation to keep moving forward."
+            }
+        },
+        "box8": {
+            "company-information": {
+                "title": "Company Information:",
+                "company-name-title": "Company Name",
+                "company-name-content": "NTQ Solution,.Jsc",
+                "head-office-title": "Head office",
+                "head-office-content": "6th Floor HH3 Building, Me Tri Street, Nam Tu Liem District, Hanoi City, Vietnam",
+                "founded-on-title": "Founded on",
+                "founded-on-content": "13/6/2011"
+            },
+            "members": {
+                "title": "Members:",
+                "cto-title": "CTO",
+                "cto-content": "Tô Hải Sơn (Son To Hai)",
+                "ceo-title": "CEO",
+                "ceo-content": "Phạm Thái Sơn (Son Pham Thai)",
+                "cco-title": "CCO",
+                "cco-content": "Nguyễn Kim Soan (Soan Nguyen Kim)",
+                "human-resources-title": "Human resources",
+                "human-resources-content": "70 staffs"
+            }
+        }
+    },
+    "page-contract-models": {
+        "title": "Contract Models",
+        "download-constracts": "Download Constracts",
+        "benefits": "Benefits:",
+        "box1": {
+            "title": {
+                "text1": "Offshore Development Center",
+                "text2": "(Dedicated team)"
+            },
+            "description": "If you are looking for sustainable offshore support on a long term basis, which can deliver a dedicated team, accumulated knowledge, and customized processes to improve productivity, infrastructure facilities and great flexibility, our ODC model is the best option.",
+            "benefits": {
+                "paragraph1": "Retention of know-how and knowledge",
+                "paragraph2": "Integration with customer’s practices and methodology",
+                "paragraph3": "Retention and development of resources to suit the customers’ needs",
+                "paragraph4": "Easily established capabilities for new requirements",
+                "paragraph5": "Customized training programs according to the customers’ specific requests",
+                "paragraph6": "Dedicated hardware and software infrastructure"
+            }
+        },
+        "box2": {
+            "title": "Effort-Based Pricing",
+            "description": "In this model, the cost is calculated based on the total project execution time and the corresponding effort used. The model is particularly suitable when the specifications of the project are complex.",
+            "benefits": {
+                "paragraph1": "Greater flexibility, we provide customers with the necessary resources and team to meet their requirements and their needs",
+                "paragraph2": "Our high quality software process ensures reliability and optimizes the performance of the projects to deliver on time, on budget, and on target"
+            }
+        },
+        "box3": {
+            "title": "Project-Based Pricing",
+            "description": "This model is the best choice when your project requirements, scope and specifications are clear & detailed.",
+            "benefits": {
+                "paragraph1": "The best development team suitable for the domains of your expertise",
+                "paragraph2": "Low risk",
+                "paragraph3": "No long term commitment",
+                "paragraph4": "Potential cost savings"
+            }
+        }
+    },
+    "page-success-stories": {
+        "title": "Success Stories",
+        "menu-left": {
+            "roi-marketing-solutions": "ROI Marketing Solutions",
+            "it-sherpa-ltd": "IT Sherpa Ltd",
+            "spicy-cinnamon-pte-ltd": "Spicy Cinnamon Pte. Ltd."
+        },
+        "menu-tab-right": {
+            "the-challenge": "The Challenge",
+            "competition": "Competition",
+            "solution": "Solution",
+            "technologies": "Technologies",
+            "result": "Result"
+        },
+        "box1": {
+            "title": "Development of “Personalized marketing materials system” for ROI Marketing Solutions from UK.",
+            "description": "ROI Marketing Solutions – a leading provider of web to print, variable data publishing and cross media software based in UK. ROI Marketing Solutions has helped over 500 print providers, agencies and marketing departments to win new business, secure customers loyalty and improve operational efficiencies such as Perivan Solutions, Platinum Print, Northend Creative Print, Creazy and others.",
+            "the-challenge": {
+                "paragraph1": "ROI marketing solutions owns a personalized marketing materials system which provides comprehensive list of 37 million UK consumers and in-depth information for marketing purpose. Users of the system are business owners or marketers.",
+                "paragraph2": "With a huge number of data, the existing system was very slow in returning search results to users (2 to 10 seconds). ROI marketing solutions by that time was seeking for a software company who could assess their existing system and improve the performance."
+            },
+            "competition": {
+                "paragraph1": "NTQ Solution had to compete with 6 other companies: 5 companies from Vietnam and 1 company from the Czech republic."
+            },
+            "solution": {
+                "paragraph1": "NTQ Solution built our own complicated algorithms based on bitwise operators. More specifically we moved all data and store them in memory, implemented indexing for faster queries, after that we processed the data in bit-wise operators. And to improve disk I/O performance, simple cache file mechanics was implemented."
+            },
+            "technologies": {
+                "paragraph1": "ASP.NET",
+                "paragraph2": "JQuery",
+                "paragraph3": "MySQL",
+                "paragraph4": "MongoDB"
+            },
+            "result": {
+                "paragraph1": "We went through the challenge by obtaining a speed of 0.1 to 0.5 seconds from proceeding a search request to returning results and our results impressed customers as all other competitors came out with slower performance. Thanks to that, NTQ Solution was selected and has been collaborating with ROI Marketing Solutions in a long period of time in the current OSDC contract."
+            }
+        },
+        "box2": {
+            "title": "Development of a mobile social network system (SNS) for IT Sherpa Ltd a Japanese Company.",
+            "description": "IT Sherpa is a software company based in Japan and was established in 2000. Their main focus is providing internet solutions, hosting & system consulting service, ASP (Application service provider) service and mobile/smartphone application development. NTQ Solution participated in a business matching conference in Japan and we became aware of IT Sherpa Company at the conference. After that NTQ Solution paid a visit to IT Sherpa office.",
+            "the-challenge": {
+                "paragraph1": "The customer required NTQ Solution to study an existing SNS in one month and after that we had created specifications for the customers. The project requires newest technologies for real-time video call, voice call functionalities.",
+                "paragraph2": "There were two most time-consuming features of the project: the first one is “Chat” feature which requires managing a huge amount of data at the same time between client & server; and the second one is “Meet people” feature ensuring access at a high-speed with a large volume of data and complex search conditions. It requires a capability to support a huge number of users up to 100000 users per day and up to 3 million chat messages every day."
+            },
+            "solution": {
+                "paragraph1": "About the video and conference call, at the client side we used API of PortSIP and at the server side we used FreeSWITCH. For better performance at the client side we had to handle the image caching to ensure that the application is not slow at some screens which display a large number of images. For better performance of huge data being exchanged every day, we used 3 shading databases. And we also use our own algorithms based on bitwise operators to process data in memory."
+            },
+            "technologies": {
+                "paragraph1": "Cocoa touch, Core services, core Media, coreTelephony, StoreKit, Message framework, ImageIO",
+                "paragraph2": "C/C++, PHP webservice, MongoDB database"
+            },
+            "result": {
+                "paragraph1": "NTQ Solution built for ITSherpa a complete state of the art Social Network System."
+            }
+        },
+        "box3": {
+            "title": "Development of photo sharing iOS and Android applications for Spicy Cinnamon Pte. Ltd.",
+            "description": "Spicy Cinnamon is a software company based in Thailand specializing development of software for interactive digital media. The company was established in 2012. Came up with idea of a photo group sharing application, Cinnamon was seeking for a software development partner. By that time via a mutual friend, Cinnamon was introduced to NTQ Solution, and right after that Spicy Cinnamon decided to visit NTQ Solution office in Vietnam and requested us to build the photo sharing app.",
+            "the-challenge": {
+                "paragraph1": "The first challenge we met is technical requirement related to processing continuous upload of many high quality images with big size and assuring the uploading images not been lost in case of slow or disconnected Internet connection.",
+                "paragraph2": "The second challenge is to view a big number of images on one screen and to make sure the screen works smooth and without memory overflow."
+            },
+            "solution": {
+                "paragraph1": "For the first challenge, we come up of with the solution: dividing images into low quality and high quality then put the low quality images at high priority; using Core Data to handle caching, images are only deleted from cache when it is uploaded successfully; and process background uploading to avoid blocking other activities of users.",
+                "paragraph2": "With the second challenge, we use the asynchronous mechanism to upload images and use ARC to manage memory and release memory area right when the process is done. Applying the same technique as uploading images, we also view low quality image first and then the high quality ones."
+            },
+            "technologies": {
+                "paragraph1": "iOS:",
+                "paragraph2": "Cocoa touch, core services, core graphics & location, Facebook SDK",
+                "paragraph3": "C/C++",
+                "paragraph4": "Android:",
+                "paragraph5": "Standard Layout / View, fragment & loader",
+                "paragraph6": "Google Maps, Google play services, Facebook SDK",
+                "paragraph7": "Server:",
+                "paragraph8": "PHP webservice, MySQL database"
+            },
+            "result": {
+                "paragraph1": "NTQ Solution successfully built for Spicy Cinnamon a complete state of the photo group sharing iOS and Android apps.",
+                "paragraph2": "Seconds become one of the world's fastest and easiest ways to chat photos and share photos with friends and families. Seconds application got an Award from SONY at Mobile World Congress in Spain 2013."
+            }
+        }
+    },
+    "page-career": {
+        "title": "Career",
+        "box1": {
+            "title": {
+                "text1": "Develop your career",
+                "text2": "with NTQ Solution"
+            },
+            "description": {
+                "paragraph1": "If you have been exposed to NTQ Solution people, visit NTQ facebook or join an event of NTQ, you will realize that NTQ Solution has created not only a working environment for people to work together, strieve and develop.",
+                "paragraph2": "Besides work, we build for entire company members playing fields through periodic teambuilding activities. In addition, we broadcast own VON program every month and the “NTQ's i Muzik” music gift program weekly and organize other activities to bring balance between life and work for every member of the company.",
+                "paragraph3": "Each NTQ person sees the company as a family, where we feel the closeness, friendlyness and sharing, where we can have opportunities to express and define ourselves.",
+                "paragraph4": "So if you want to see how really different Solution NTQ is to consider working in our company, you can study us, visit us, and talk with us. We believe that you will see NTQ Solution is an attractive destination for business and for something more that you are looking for."
+            }
+        },
+        "box2": {
+            "title": {
+                "text1": "We are",
+                "text2": "now recruiting"
+            },
+            "career1": {
+                "title": "Java developers",
+                "deadline": "1/6/2014 - 30/7/2014",
+                "box1": {
+                    "title": "Job description",
+                    "description": "NTQ Solution recruits Java developers to join web development projects on Java platforms or other projects with the back-end is required to developed on Java platform for Japanese and European customers and partners."
+                },
+                "box2": {
+                    "title": "Job requirements",
+                    "description": {
+                        "paragraph1": "Participate in development of Java projects",
+                        "paragraph2": "Develop both back-end and front-end",
+                        "paragraph3": "Ensure progress and quality of projects in accordance with development process and the project requirements",
+                        "paragraph4": "Report task progress periodicly to team leader",
+                        "paragraph5": "Participate in training courses, group discussions to share and enhance professional experiences and soft skills",
+                        "paragraph6": "Work abroad long-term or short-term in accordance with work requirements"
+                    }
+                },
+                "box3": {
+                    "title": "Skills/Qualifications required:",
+                    "description": {
+                        "paragraph1": "Have bachelor degree in Information Technology/Computer Science or similar",
+                        "paragraph2": "At least 2 years experience with Spring and Hibernate",
+                        "paragraph3": "Have a good understanding of OOP",
+                        "paragraph4": "Experience in HTML, CSS, JavaScript (jQuery / Prototype / DOJO), XML, JSON, and AJAX",
+                        "paragraph5": "Experience of work with MVC web application model",
+                        "paragraph6": "Experienced in working with foreign partners",
+                        "paragraph7": "Have good English or Japanese skills in writing, reading, speaking and listening",
+                        "paragraph8": "Ability to work independently or in team"
+                    }
+                }
+            },
+            "career2": {
+                "title": "iOS developers",
+                "deadline": "1/6/2014 - 30/7/2014",
+                "box1": {
+                    "title": "Job description",
+                    "description": "NTQ solution recruits iOS developers for mobile application development projects on iOS operating system for the Japanese and European customers and partners."
+                },
+                "box2": {
+                    "title": "Job requirements",
+                    "description": {
+                        "paragraph1": "Participate in iOS projects of the company",
+                        "paragraph2": "Perform tasks assignments following the work plan of team leader or PM",
+                        "paragraph3": "Ensure progress and quality of projects in accordance with development process and the project requirements",
+                        "paragraph4": "Report task progress periodicly to team leader",
+                        "paragraph5": "Participate in training courses, group discussions to share and enhance professional experiences and soft skills",
+                        "paragraph6": "Work abroad long-term or short-term in accordance with work requirements"
+                    }
+                },
+                "box3": {
+                    "title": "Skills/Qualifications required:",
+                    "description": {
+                        "paragraph1": "Experience with Objective-C",
+                        "paragraph2": "Knowledgeble and experience working with MVC (Model View Controller) for iOS apps",
+                        "paragraph3": "Ability to work with:",
+                        "paragraph4": "Database: SQLite, SQL ",
+                        "paragraph5": "Core Location, Core Graphics",
+                        "paragraph6": "Bluetooth 4.0 + iBeacon on",
+                        "paragraph7": "Json, XML, Google Analytics",
+                        "paragraph8": "Quickblox",
+                        "paragraph9": "VOIP, Crash report: Test Flight, Hockey, ...",
+                        "paragraph10": "Experience working with HTTP server: Cocoa HTTP Server 7.x on IOS, IOS Route HTTP on 7.x",
+                        "paragraph11": "Have an understanding of multiple thread and Networking (socket ...)",
+                        "paragraph12": "Knowledge of System Platform",
+                        "paragraph13": "Ability to work with PNS (Push Notification Service)",
+                        "paragraph14": "Experience working with tools & OS:",
+                        "paragraph15": "Xcode 5.x +, Source Tree, SVN, Asana Tool, iPhone Configuration Utility, Mac OS X 10.x, SQLite Database Browser, Linux, ...",
+                        "paragraph16": "Have English or Japanese Skills in writing and speaking is an advantage",
+                        "paragraph17": "Ability to work independently or in team"
+                    }
+                }
+            }
+        },
+        "box3": {
+            "title": {
+                "text1": "To",
+                "text2": "apply"
+            },
+            "description": "Please send your CV and application letter to our HR recruitment department via email address:"
+        }
+    },
+    "page-news": {
+        "headlines": "Headlines",
+        "press-releases": "Press releases",
+        "latest": "Latest",
+        "all": "All",
+        "load-more": "Load more",
+        "home": "Home",
+        "news": "News",
+        "related-news": "Related news"
+    },
+    "page-downloads": {
+        "title": "Downloads"
+    },
+    "page-contact": {
+        "title": "Contact",
+        "form": {
+            "title": {
+                "text1": "We are",
+                "text2": "always ready",
+                "text3": "to help you"
+            }
+        }
+    },
+    "page-services": {
+        "title": "Services",
+        "software-outsourcing-service": {
+            "title": {
+                "title-large": "Software outsourcing service",
+                "title-small": "Gain advantages through outsourcing your software development to us"
+            },
+            "description": {
+                "paragraph1": "NTQ Solution is always updated with the latest development technologies to develop for you a software standing out from others and therefore help you competing in the market and taking advantage of economies scale.",
+                "paragraph2": "When you don’t have enough engineering resources or there is no software engineer available to work for your software development, hiring a software development vendor is the best strategy for you. NTQ Solution has been serving many product development projects and we believe that we have our available expertise in software development to adapt your resources needs.",
+                "paragraph3": "Or you plan to save costs by hiring offshore software developers at reasonable rates. You can consider us as one of the best candidates as we are a Vietnam-based software company. And the medium rate in Vietnam is definitely reasonable comparing to other software outsourcing destinations.",
+                "paragraph4": "The other reason for you to outsource your software development work to us is when you want to have all your current resources focusing on your core business. Outsource your non-core software development to us will enable the efficiency for your core business and at the same time reduce your operational cost."
+            },
+            "table": {
+                "contract-models": {
+                    "title": "Contract models",
+                    "item1": "Offshore development center (ODC)",
+                    "item2": "Effort-based pricing",
+                    "item3": "Project-based pricing"
+                },
+                "domains-of-expertise": {
+                    "title": "Domains of expertise",
+                    "item1": "Mobile application development",
+                    "item2": "Web application development",
+                    "item3": "Embedded software development",
+                    "item4": "Healthcare software development",
+                    "item5": "System integration",
+                    "item6": "Enterprise application development",
+                    "item7": "Cloud-based software development",
+                    "item8": "E-commerce software development"
+                }
+            }
+        },
+        "software-solutions-consultancy": {
+            "title": {
+                "title-large": "Software Solutions consultancy for FREE",
+                "title-small": "When you need a solutions consultancy service, you can contact us. We serve this service for you with NO COST at all"
+            },
+            "description": {
+                "paragraph1": "Practically it’s not always easy for you to find optimal software solutions or to answer the technical questions for your current software projects or software projects that you plan to develop in the future. Especially when your questions concern one of the latest technologies that not many people know or when it’s not within your knowledge expertise.",
+                "paragraph2": "Once you are not quite ready for your projects yet or you may concern to pay for a consultancy service to support for your decision, then you simply want to find a solution for free. You may find what you look for somewhere on the Internet, on a book or with support from people that you know. But what if those sources can not help? Our free-cost consultancy will soothe your worries.",
+                "paragraph3": "You can contact us to let us help you. Our expertises will support you to solve all your concerns related to technical problems or solutions for your software projects."
+            },
+            "form": {
+                "title": {
+                    "text1": "Send us your questions and",
+                    "text2": "get answers",
+                    "text3": "for",
+                    "text4": "FREE!"
+                }
+            }
+        },
+        "web-app-graphic-design": {
+            "title": {
+                "title-large": "Web/app graphic design",
+                "title-small": "Complete your software with our most trendy mobile and web app graphic design"
+            },
+            "description": {
+                "paragraph1": "To provide you completed software solutions and development service pack including not only technical design and development but also UI graphic design, we have in-house graphic designers.",
+                "paragraph2": "NTQ Solution understands the increasingly higher and higher requirements on the graphic design bringing more and more exciting experience for users, so our design team always try our best to bring creativity into your products in order to satisfy you as well your customers.",
+                "paragraph3": "Our graphic design team has over 8 years of experience working with customers in different countries. So in terms of graphic design quality, we guarantee to deliver quality products designed in accordance with modern trend as flat design or general trend for future is simple-oriented design while ensuring high aesthetic and convenience for users.",
+                "paragraph4": "Our graphic design service are for web, mobile and desktop applications.",
+                "paragraph5": "In terms of web design, if you plan to have a web running on all screen sizes of different devices, you can request a responsive web design. Your responsive site will be easy to read or navigated with a minimum of resizing, panning and scrolling.",
+                "paragraph6": "To optimize your manpower and communication time for the project, we recommend you choose full service pack including graphic design so that we can give you an overall solution fullestly."
+            }
+        }
+    },
+    "page-domains": {
+        "title": "Domains",
+        "mobile-app-development": {
+            "title": {
+                "title-large": "Mobile app development",
+                "title-medium": "Go with mobile",
+                "title-small1": "Seize your business flexibility through iPhone/ iPad and Android apps",
+                "title-small2": "iPhone/ iPad development – One of the most secured and stable platforms of mobile app development",
+                "title-small3": "Android app development - One of the top most chosen platforms for stylish and wonderful utility apps"
+            },
+            "description": {
+                "paragraph1": "You may wonder the reason to go for a mobile native app and for which reasons native mobile apps have advantages over web applications? The answer is because a mobile application is faster than a web app and it has better user experience. And for the first two reasons more and more people just prefer native. Besides a native app takes advantages of microphones, cameras, GPS, etc. Last but not least, a mobile native app can run without Internet connection.",
+                "paragraph2": "So you may choose a mobile application for the reasons above. If you are looking for a mobile development team to build mobile applications for your business, let NTQ Solution adapt to your needs!",
+                "paragraph3": "Download NTQ Solution iOS profile",
+                "paragraph4": "Download NTQ Solution Android profile",
+                "paragraph5": "Our qualified iOS developers with solid experience and thorough understanding of Apple development resources will make you totally confident to let us work for your projects right from the beginning.",
+                "paragraph6": "A trial project is also could be an option if you want to smooth any of other concern before proceeding on your real or big project.",
+                "paragraph7": "We guarantee to bring you outstanding iPhone/iPad applications that make your business differed from others and impressively recognized.",
+                "paragraph8": "iPhone/iPad technologies and frameworks:",
+                "paragraph9": "Cocoa Touch",
+                "paragraph10": "Objective-C",
+                "paragraph11": "iOS SDK",
+                "paragraph12": "xCode IDE",
+                "paragraph13": "Android’s market share is being increased still further. With convenience features to bring stylish, wide range of feasibility and few restrictions for users, Android application could be chosen by you, in order to access to other large number of users besides iPhone/ iPad users.",
+                "paragraph14": "Our Android developers are expert in Android application technologies and will hand over you Android applications that make you or your clients happy to use and love it.",
+                "paragraph15": "We focus on improving stability and improving responsiveness of Android app by taking care of avoiding memory leaks, moving long-running operations off the main thread to worker threads, minimizing complexity of layouts, etc.",
+                "paragraph16": "Android technologies and frameworks:",
+                "paragraph17": "Android Studio",
+                "paragraph18": "Eclipse ADT"
+            }
+        },
+        "web-app-development": {
+            "title": {
+                "title-large": "Web app development",
+                "title-medium": "Powerful and beautiful web apps",
+                "title-small": "Your expectation is visual through every application that we deliver to you"
+            },
+            "description": {
+                "paragraph1": "Since recognize your need of creating powerful and innovative web applications, which bring your business closer to the audience, and at the same time distinct your value from competitors, we think about that need thoroughly to accomplish your technical requirements and use our depth understanding of UI/UX to apply the best user experience for your apps.",
+                "paragraph2": "If your need is not just to have your web running on desktop, but also on mobile web browsers, then you will need responsive web apps. We will plan, design, develop and deliver your web application that can be boosted in every browser and on number of devices that you desire. Our developers will work closely with graphic designers to turn your ideas into life.",
+                "paragraph3": "Most popular programming languages for web that NTQ Solution experience with:",
+                "paragraph4": "Popular frameworks & technologies for web user interface:"
+            }
+        },
+        "embedded-software-and-system-development": {
+            "title": {
+                "title-large": "Embedded software and system development",
+                "title-medium": "Embedding intelligence in your products",
+                "title-small1": "Enable you to achieve business excellence through embedded intelligence",
+                "title-small2": "R&D Center at NTQ Solution"
+            },
+            "description": {
+                "paragraph1": "At NTQ Solution, we provide a full range of embedded software development service including concept development, design and implementation. ",
+                "paragraph2": "With our expertise in 8bit microchip, Intelligence sensor, LPF, Kalman Filter, PID controller and other embedded technologies, Aim at turning your design into a fully functional system. More information about 8-bit microchip and intelligence sencor that we have been working on can be found here:",
+                "paragraph3": "We are proud of our R&D center where our embedded software team has successfully created a remote control airplane. Our team wrote a stabilizer software for this plane and with its own stabilizer the plane can auto balance vertically and horizontally. Besides, the team has also developed a streaming software, that transmits real-time video from the airplane to personal computer through Wi-Fi signal.",
+                "paragraph4": "Currently our embedded software team is now working on 2 embedded software projects to develop 2 products for ourselves.",
+                "paragraph5": "The objective of one project is to produce a robot which can move like a gecko and clean the whole windows of a tower or building. In the other project, we are going to make a flying car - a RF controlled model, conceptual design, but moves like a champ."
+            },
+            "table": {
+                "8bit-microchip": {
+                    "title": "8bit microchip",
+                    "description": "Atmega32A, Atmega328, PIC 16F887, 16F877. Raspberry PI, Arduino"
+                },
+                "intelligence-sensor": {
+                    "title": "Intelligence sensor",
+                    "description": "Accelerometer, Gyrometer, Magnetometer, Barometer, Ultrasound distance sensor, Hall-effect sensor."
+                }
+            }
+        },
+        "healthcare-software-development": {
+            "title": {
+                "title-large": "Healthcare software development",
+                "title-medium": "Medical image visualization",
+                "title-small": "We serve better analysis results in health-care sector"
+            },
+            "description": {
+                "paragraph1": "NTQ Solution staffs have about five years experience working in healthcare software projects. Our people have been participated in number of healthcare software projects for Fujifilm – a leading healthcare company in Japan.",
+                "paragraph2": "We are familiar with medical image processing, visualization and analysis. The applications that we have worked on enable quantitative analysis of medical image based on enthancement of its visualization.",
+                "paragraph3": {
+                    "text1": "Multi-layout DICOM Viewer",
+                    "text2": "application supports doctors in disease diagnosis. It reads images from different modalities, displays multi images in one screen and supports user to be able to arrange images with customized layouts. With multi-layout view doctors can easily compare images to perform diagnosis."
+                },
+                "paragraph4": "Besides, the application provides full range of image processing features such as lookup table (LUT) processing, zoom in/out, panning, image exchanging, image inverting, rotating, cropping, etc as well as annotation processing such as text marker, line, rectangle, polygon, circle, etc.",
+                "paragraph5": {
+                    "text1": "Console advanced system",
+                    "text2": "was aimed to be simplified with new graphic user interface of an existing system for better user experience and get upgraded with new applications."
+                },
+                "paragraph6": "The receipt application is developed for registering patient information and it is connected to many devices/systems such as BRC, MCR, RIS, HIS, Synapse (PACS), etc.",
+                "paragraph7": "And the QA application is developed for technologists in order to edit and adjust medical images and base on the final result they will decide the image quality and whether to re-take.",
+                "paragraph8": "The developers also need to migrate the existing system to the modern development platforms to enable future maintenance. It's actually a big volume of development tasks.",
+                "paragraph9": {
+                    "text1": "Biopsy system",
+                    "text2": "provides features to examine images, determine breast cancer in women more precisely and support breast cancer operation."
+                },
+                "paragraph10": "With high-resolution monitor and enhanced image processing of Fujifilm, the system improves the ability to highlight observed objects and decide the suspected position.",
+                "paragraph11": "After detecting the object position, calculation of the coordinates is processed and the real distance from the need tip to the operation table is displayed on the screen. The systems allows performing operations horizontally and veritically."
+            }
+        },
+        "system-integration": {
+            "title": {
+                "title-large": "System integration",
+                "title-medium": "Several components integrated in one whole system",
+                "title-small1": "Implementing system integration, physically or functionally you can have your existing computing systems and software applications linked together to act as one large complete system",
+                "title-small2": "Enterprise application integration"
+            },
+            "description": {
+                "paragraph1": "NTQ Solution works with you to understand your business goals and we will find a way to seamlessly integrate an accelerated solution to help you meet those goals.",
+                "paragraph2": "We help businesses cross into the high performance area at an accelerated speed. Moreover, we understand that new solutions must scale fast and supplement a part of or all existing systems and business processes for adding more value.",
+                "paragraph3": "Our system integration engineers with a broad range of skills including software engineering, interface protocols, and problem solving skills have adapted to solve difficulties in integration projects that they have been working on.",
+                "paragraph4": "Enterprise application integration is the process of linking business software within a single enterprise together in order to simplify and automate business processes to the greatest extent possible, while at the same time avoiding having to make sweeping changes to the existing applications or data structures. Applications can be linked either at the back-end (database/DB) or the front-end (Graphic User Interface/GUI).",
+                "paragraph5": "We have recently developed a middleware to enable integration of systems and applications of IT service management system across an enterprise."
+            }
+        },
+        "enterprise-application-development": {
+            "title": {
+                "title-large": "Enterprise application development",
+                "title-medium": "Innovation and comprehensive enterprise applications",
+                "title-small1": "We develop applications for your enterprise to win challenges and to adapt rapid changes of market demand",
+                "title-small2": "Continuous maintenance & support"
+            },
+            "description": {
+                "paragraph1": "Enterprise solutions are software applications that allow your staff to access and manage real-time information and transaction processes across your entire organization. Innovative and comprehensive solutions deliver value by increasing business process efficiency, enhancing workforce productivity, saving operating costs, boosting employee and customer satisfaction, and supporting better and more quickly business decisions.",
+                "paragraph2": "Our comprehensive capabilities enable cross-functional teams to define your business process, implement application logic and integrate existing applications or databases. Moreover, the cross-functional teams work collaboratively with intuitive and graphical team to design and control business logics and application workflows.",
+                "paragraph3": "We find that it's hard to earn a business trust from you at the very first time, so we propose a trial project in this case. As far as you see the results, you can rely on a NTQ Enterprise software development team to bring the most challenging enterprise projects to launch.",
+                "paragraph4": "We understand that simple development of applications is not enough especially for enterprise applications. It requires continuous support and maintenance along with periodic upgrades. We'd like us to be partners in a long-term trust in this regard."
+            }
+        },
+        "cloud-based-software-development": {
+            "title": {
+                "title-large": "Cloud-based software development",
+                "title-medium": "The cloud helps your business more effective",
+                "title-small": "Cloud computing makes your most important software accessible from any computer or mobile device"
+            },
+            "description": {
+                "paragraph1": "You may notice that more and more people are getting to know about cloud and ask for it.",
+                "paragraph2": "A cloud-based software does not require to be installed on any desktop computer or any other device and it’s known as software as a service (SaaS). The cloud-based software helps your business available and accessible from anywhere and at any time, therefore you serve your clients more efficiently. Besides, a cloud-based software supports instant updates, and track project progress in real-time.",
+                "paragraph3": "We help you build and maintain your application in the cloud. We use Azure (from Microsoft), Google AppEngine and other Platforms as a Service (PaaS) for application development and deployment.",
+                "paragraph4": "We use cloud and other advanced technologies and techniques to enable your business opportunities and to increase the projects’ ROI for you while high quality is guaranteed."
+            }
+        },
+        "e-commerce-software-development": {
+            "title": {
+                "title-large": "E-commerce software development",
+                "title-medium": "Develop e-commerce software for your online business",
+                "title-small": "We assist you in the implementation of all E-commerce softwares in order to bring your online business to success"
+            },
+            "description": {
+                "paragraph1": "Starting an online business can be a profitable venture if it is planned and executed correctly. One of the essential step is to choose a software development vendor to develop the e-commerce system for you, and you can consider us as your trusted vendor.",
+                "paragraph2": "We can provide you a custom design for your e-commerce site or software that builds a sustainable long-term unique brand identity for your business. By doing so, a sustainable customer base is formed because people are attracted to appealing and compelling designs and if it is unique, it will be more memorable.",
+                "paragraph3": "To develop for you a success e-commerce software, we care about other elements related to your online business. Those elements include choosing for you a CMS for managing your Blog, Creating Articles and Press Releases and developing necessary features for your e-commerce such as Marketing and Upsell Features, SEO features, Security, Online payment, Performance and Scalability for a big volume of consumers, etc.",
+                "paragraph4": "We also offer you mobile e-commerce app development when you want to access the huge number of users who are using their mobile devices to research and find products online.",
+                "paragraph5": "Team up with us to start your e-commerce project now."
+            }
+        }
+    },
+    "page-technologies": {
+        "title": "Technologies",
+        "platforms": "Platforms",
+        "frameworks": "Frameworks",
+        "ides": "IDEs",
+        "ide": "IDE",
+        "libraries": "Libraries",
+        "cmss": "CMSs",
+        "sdks": "SDKs",
+        "tools": "Tools",
+        "web-technologies": "Web technologies",
+        "java": "Java",
+        "javascript": "Javascript",
+        "net": ".Net",
+        "ios": "iOS",
+        "android": "Android",
+        "dart": "Dart",
+        "servers": "Servers",
+        "databases": "Databases",
+        "others": "Others",
+        "java-enterprise-edition": "Java Enterprise Edition",
+        "google-app-engine": "Google App Engine",
+        "spring": "Spring",
+        "jboss": "JBoss",
+        "hibernate": "Hibernate",
+        "struts": "Struts",
+        "netbeans": "NetBeans",
+        "eclipse": "Eclipse",
+        "angularjs": "AngularJS",
+        "mean-io": "mean.io",
+        "jquery": "Jquery",
+        "windows": "Windows",
+        "asp-net-mvc": "ASP.NET MVC",
+        "asp-net": "ASP.NET",
+        "c-net": "C#.Net",
+        "ado-net": "ADO.Net",
+        "wcf": "WCF",
+        "visual-studio": "Visual Studio",
+        "entity-framework": "Entity Framework",
+        "linq-library": "LINQ Library",
+        "linux": "Linux",
+        "cakephp": "CakePHP",
+        "codeignitor": "CodeIgnitor",
+        "macosx": "Mac OSX",
+        "solaris": "Solaris",
+        "laravel": "Laravel",
+        "symphony": "Symphony",
+        "prestashop": "Prestashop",
+        "wordpress": "WordPress",
+        "magento": "Magento",
+        "ios-sdk": "iOS SDK",
+        "google-admob": "Google Admob",
+        "facebook-sdk": "Facebook SDK",
+        "twitter-sdk": "Twitter SDK",
+        "af-networking": "AFNetworking",
+        "sd-web-image": "SDWebImage",
+        "gpu-image": "GPUImage",
+        "i-carousel": "iCarousel",
+        "path-fast-image-cache": "Path FastImageCache",
+        "linphone": "Linphone",
+        "port-sip": "PortSIP",
+        "iad": "iAD",
+        "paypal-sdk": "Paypal SDK",
+        "qr-barcode-sdk": "QR Barcode SDK",
+        "x-code-ide": "xCode IDE",
+        "instruments": "Instruments",
+        "testflight": "Testflight",
+        "corona-sdk": "Corona SDK",
+        "titanium": "Titanium",
+        "eclipse-adt": "Eclipse ADT",
+        "android-studio": "Android Studio",
+        "dart-sdk-dart-editor": "Dart SDK & Dart Editor",
+        "apache-tomcat": "Apache Tomcat",
+        "weblogic": "Weblogic",
+        "iis": "IIS",
+        "oracle": "Oracle",
+        "sql-server": "SQL Server",
+        "mysql": "MySQL",
+        "postgre-sql": "PostgreSQL",
+        "db2": "DB2",
+        "mongodb": "MongoDB",
+        "chrome-app-extension": "Chrome App/Extension",
+        "html5": "HTML5",
+        "css": "CSS",
+        "bootstraps": "Bootstraps"
+    }
+}

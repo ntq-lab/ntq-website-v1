@@ -1,0 +1,74 @@
+/* Download Top Page */
+.download-page-top-container-fluid {
+    background: url('../img/bg-top-download.jpg') #35bbe5 no-repeat center bottom;
+}
+.download-page-top-container-fluid h1 {
+    color: #000;
+}
+
+/* Success Stories Bottom Page */
+.download-page-bottom-container-fluid .download-container {
+    top: -60px;
+    background: #fff url('../img/bg-footer-download.png') no-repeat bottom center;
+}
+.page-bottom-container-fluid {
+    padding-bottom: 0;
+}
+.download-page-bottom-container-fluid .download-content {
+    padding: 40px 0 310px 0;
+}
+.download-content .download-box {
+    width: 327px;
+    margin-right: 20px;
+    padding-left: 44px;
+}
+.download-content .download-box:nth-child(3n+3) {
+    margin-right: 0;
+}
+.download-content .download-box h2 {
+    /*font-size: 24px;*/
+    font-size: 1.5em;
+    margin-bottom: 17px;
+}
+.download-content .download-box ul {
+    list-style: none;
+    padding: 0;
+}
+.download-content .download-box ul li {
+    background: url('../img/bullet-download.png') no-repeat left center;
+    padding-left: 27px;
+    display: block;
+    min-height: 16px;
+    margin-bottom: 13px;
+    /*font-size: 13px;*/
+    font-size: 0.813em;
+}
+.download-content .download-box li a {
+    display: block;
+}
+.download-content .download-box li:hover a {
+    color: #23b2e6;
+}
+.button-download-all {
+    margin: 65px auto 0 auto;
+    width: 180px;
+}
+.button-download-all a {
+    display: block;
+    padding: 0 30px;
+    height: 41px;
+    line-height: 41px;
+    color: #fff;
+    background: #35bbe5;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    border-radius: 20px;
+    /*font-size: 18px;*/
+    font-size: 1.125em;
+    text-align: center;
+}
+.button-download-all a:hover {
+    background: #2ba6cd;
+}

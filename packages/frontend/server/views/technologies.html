@@ -1,0 +1,577 @@
+{% extends 'layout/base.html' %}
+{% block title %}
+{{__('title-website.technologies')}}
+{% endblock %}
+{% block stylesheet %}
+<link href="/frontend/assets/css/services.css" rel="stylesheet">
+<link href="/frontend/assets/css/menu-black.css" rel="stylesheet">
+{% endblock %}
+{% block script %}
+<script src="/frontend/assets/js/jquery.nav.js"></script>
+<script src="/frontend/assets/js/main-nav.js"></script>
+<script src="/frontend/assets/js/scroll-jumpto-fixed.js"></script>
+<script src="/frontend/assets/js/services.js"></script>
+{% endblock %}
+{% block content %}
+<div class="container-fluid page-top-container-fluid technologies-page-top-container-fluid">
+    <div class="container">
+        <h1 class="text-center">{{__('page-technologies.title')}}</h1>
+    </div>
+</div><!-- /contact-page-top-container-fluid -->
+<div class="container-fluid page-bottom-container-fluid technologies-page-container-fluid">
+    <div class="container clearfix">
+        <div class="page-bottom-container services-container clearfix">
+            {% set active = {services_active: '', domains_active: '', technologies_active: 'services-left-box-active'} %}
+            {% include "./sidebar-services.html" with active %}
+
+            <div class="services-right">
+
+                <div class="services-right-box technologies-right-box" id="java">
+                    <h2><span>1</span>{{__('page-technologies.java')}}</h2>
+                    <table width="100%">
+                        <thead>
+                            <tr>
+                                <th colspan="2" width="228px" class="border-right">{{__('page-technologies.platforms')}}</th>
+                                <th colspan="2" width="261px" class="border-right">{{__('page-technologies.frameworks')}}</th>
+                                <th colspan="2" width="285px">{{__('page-technologies.ides')}}</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>{{__('page-technologies.java-enterprise-edition')}}</td>
+                                <td class="border-right">{{__('page-technologies.google-app-engine')}}</td>
+                                <td>{{__('page-technologies.spring')}}</td>
+                                <td class="border-right">{{__('page-technologies.jboss')}}</td>
+                                <td>{{__('page-technologies.netbeans')}}</td>
+                                <td>{{__('page-technologies.eclipse')}}</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img src="/frontend/assets/img/technology/java/java.png" alt="{{__('page-technologies.java-enterprise-edition')}}" />
+                                </td>
+                                <td class="border-right">
+                                    <img src="/frontend/assets/img/technology/java/google.png" alt="{{__('page-technologies.google-app-engine')}}" />
+                                </td>
+                                <td>
+                                    <img src="/frontend/assets/img/technology/java/spring.png" alt="{{__('page-technologies.spring')}}" />
+                                </td>
+                                <td class="border-right">
+                                    <img src="/frontend/assets/img/technology/java/jboss.png" alt="{{__('page-technologies.jboss')}}" />
+                                </td>
+                                <td>
+                                    <img src="/frontend/assets/img/technology/java/netbeans.png" alt="{{__('page-technologies.netbeans')}}" />
+                                </td>
+                                <td>
+                                    <img src="/frontend/assets/img/technology/java/eclipse.png" alt="{{__('page-technologies.eclipse')}}" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2"></td>
+                                <td class="border-left">{{__('page-technologies.hibernate')}}</td>
+                                <td class="border-right">{{__('page-technologies.struts')}}</td>
+                                <td colspan="2"></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2"></td>
+                                <td class="border-left">
+                                    <img src="/frontend/assets/img/technology/java/hibernate.png" alt="{{__('page-technologies.hibernate')}}" />
+                                </td>
+                                <td class="border-right">
+                                    <img src="/frontend/assets/img/technology/java/struts.png" alt="{{__('page-technologies.struts')}}" />
+                                </td>
+                                <td colspan="2"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div><!-- /services-right-box -->
+
+                <div class="services-right-box technologies-right-box" id="javascript">
+                    <h2><span>2</span>{{__('page-technologies.javascript')}}</h2>
+                    <table width="500px">
+                        <thead>
+                            <tr>
+                                <th colspan="2" width="301px" class="border-right">{{__('page-technologies.frameworks')}}</th>
+                                <th>{{__('page-technologies.libraries')}}</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>{{__('page-technologies.angularjs')}}</td>
+                                <td class="border-right">{{__('page-technologies.mean-io')}}</td>
+                                <td>{{__('page-technologies.jquery')}}</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img src="/frontend/assets/img/technology/javascript/angular.png" alt="{{__('page-technologies.angularjs')}}" />
+                                </td>
+                                <td class="border-right">
+                                    <img src="/frontend/assets/img/technology/javascript/meanio.png" alt="{{__('page-technologies.mean-io')}}" />
+                                </td>
+                                <td>
+                                    <img src="/frontend/assets/img/technology/javascript/jquery.png" alt="{{__('page-technologies.jquery')}}" />
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div><!-- /services-right-box -->
+
+                <div class="services-right-box technologies-right-box" id="dot-net">
+                    <h2><span>3</span>{{__('page-technologies.net')}}</h2>
+                    <table width="100%">
+                        <thead>
+                            <tr>
+                                <th width="161px" class="border-right">{{__('page-technologies.platforms')}}</th>
+                                <th colspan="5" width="585px">{{__('page-technologies.frameworks')}}</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="border-right">{{__('page-technologies.windows')}}</td>
+                                <td>{{__('page-technologies.asp-net-mvc')}}</td>
+                                <td>{{__('page-technologies.asp-net')}}</td>
+                                <td>{{__('page-technologies.c-net')}}</td>
+                                <td>{{__('page-technologies.ado-net')}}</td>
+                                <td>{{__('page-technologies.wcf')}}</td>
+                            </tr>
+                            <tr>
+                                <td class="border-right">
+                                    <img src="/frontend/assets/img/technology/dotnet/window.png" alt="{{__('page-technologies.windows')}}" />
+                                </td>
+                                <td>
+                                    <img src="/frontend/assets/img/technology/dotnet/aspnetmvc.png" alt="{{__('page-technologies.asp-net-mvc')}}" />
+                                </td>
+                                <td>
+                                    <img src="/frontend/assets/img/technology/dotnet/aspnet.png" alt="{{__('page-technologies.asp-net')}}" />
+                                </td>
+                                <td>
+                                    <img src="/frontend/assets/img/technology/dotnet/C.png" alt="{{__('page-technologies.c-net')}}" />
+                                </td>
+                                <td>
+                                    <img src="/frontend/assets/img/technology/dotnet/ADO.png" alt="{{__('page-technologies.ado-net')}}" />
+                                </td>
+                                <td>
+                                    <img src="/frontend/assets/img/technology/dotnet/wcf.png" alt="{{__('page-technologies.wcf')}}" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <th width="161px" class="border-right">{{__('page-technologies.ides')}}</th>
+                                <th colspan="5" width="585px"></th>
+                            </tr>
+                            <tr>
+                                <td class="border-right">{{__('page-technologies.visual-studio')}}</td>
+                                <td>{{__('page-technologies.entity-framework')}}</td>
+                                <td>{{__('page-technologies.linq-library')}}</td>
+                                <td colspan="3"></td>
+                            </tr>
+                            <tr>
+                                <td class="border-right">
+                                    <img src="/frontend/assets/img/technology/dotnet/visual.png" alt="{{__('page-technologies.visual-studio')}}" />
+                                </td>
+                                <td>
+                                    <img src="/frontend/assets/img/technology/dotnet/entity.png" alt="{{__('page-technologies.entity-framework')}}" />
+                                </td>
+                                <td>
+                                    <img src="/frontend/assets/img/technology/dotnet/linq.png" alt="{{__('page-technologies.linq-library')}}" />
+                                </td>
+                                <td colspan="3"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div><!-- /services-right-box -->
+
+                <div class="services-right-box technologies-right-box" id="php">
+                    <h2><span>4</span>PHP</h2>
+                    <table width="100%">
+                        <thead>
+                            <tr>
+                                <th colspan="2" width="269px" class="border-right">{{__('page-technologies.platforms')}}</th>
+                                <th colspan="2" width="267px" class="border-right">{{__('page-technologies.frameworks')}}</th>
+                                <th colspan="2" width="232px">{{__('page-technologies.ides')}}</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>{{__('page-technologies.windows')}}</td>
+                                <td class="border-right">{{__('page-technologies.linux')}}</td>
+                                <td>{{__('page-technologies.cakephp')}}</td>
+                                <td class="border-right">{{__('page-technologies.codeignitor')}}</td>
+                                <td>{{__('page-technologies.netbeans')}}</td>
+                                <td>{{__('page-technologies.eclipse')}}</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img src="/frontend/assets/img/technology/php/window.png" alt="{{__('page-technologies.windows')}}" />
+                                </td>
+                                <td class="border-right">
+                                    <img src="/frontend/assets/img/technology/php/linux.png" alt="{{__('page-technologies.linux')}}" />
+                                </td>
+                                <td>
+                                    <img src="/frontend/assets/img/technology/php/cakephp.png" alt="{{__('page-technologies.cakephp')}}" />
+                                </td>
+                                <td class="border-right">
+                                    <img src="/frontend/assets/img/technology/php/codeigniter.png" alt="{{__('page-technologies.codeignitor')}}" />
+                                </td>
+                                <td>
+                                    <img src="/frontend/assets/img/technology/php/netbeans.png" alt="{{__('page-technologies.netbeans')}}" />
+                                </td>
+                                <td>
+                                    <img src="/frontend/assets/img/technology/php/eclipse.png" alt="{{__('page-technologies.eclipse')}}" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>{{__('page-technologies.macosx')}}</td>
+                                <td class="border-right">{{__('page-technologies.solaris')}}</td>
+                                <td>{{__('page-technologies.laravel')}}</td>
+                                <td class="border-right">{{__('page-technologies.symphony')}}</td>
+                                <td colspan="2"></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img src="/frontend/assets/img/technology/php/macos.png" alt="{{__('page-technologies.macosx')}}" />
+                                </td>
+                                <td class="border-right">
+                                    <img src="/frontend/assets/img/technology/php/solaris.png" alt="{{__('page-technologies.solaris')}}" />
+                                </td>
+                                <td>
+                                    <img src="/frontend/assets/img/technology/php/laravel.png" alt="{{__('page-technologies.laravel')}}" />
+                                </td>
+                                <td class="border-right">
+                                    <img src="/frontend/assets/img/technology/php/symphony.png" alt="{{__('page-technologies.symphony')}}" />
+                                </td>
+                                <td colspan="2"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <table width="325px">
+                        <thead>
+                            <tr>
+                                <th>{{__('page-technologies.cmss')}}</th>
+                                <th colspan="2"></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>{{__('page-technologies.prestashop')}}</td>
+                                <td>{{__('page-technologies.wordpress')}}</td>
+                                <td>{{__('page-technologies.magento')}}</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img src="/frontend/assets/img/technology/php/prestashop.png" alt="{{__('page-technologies.prestashop')}}" />
+                                </td>
+                                <td>
+                                    <img src="/frontend/assets/img/technology/php/wordpress.png" alt="{{__('page-technologies.wordpress')}}" />
+                                </td>
+                                <td>
+                                    <img src="/frontend/assets/img/technology/php/magento.png" alt="{{__('page-technologies.magento')}}" />
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div><!-- /services-right-box -->
+
+                <div class="services-right-box technologies-right-box" id="ios">
+                    <h2><span>5</span>{{__('page-technologies.ios')}}</h2>
+                    <table width="100%">
+                        <thead>
+                            <tr>
+                                <th>{{__('page-technologies.sdks')}}</th>
+                                <th colspan="5"></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="line-height-60">
+                                <td>{{__('page-technologies.ios-sdk')}}</td>
+                                <td>{{__('page-technologies.google-admob')}}</td>
+                                <td>{{__('page-technologies.facebook-sdk')}}</td>
+                                <td>{{__('page-technologies.twitter-sdk')}}</td>
+                                <td>{{__('page-technologies.af-networking')}}</td>
+                                <td>{{__('page-technologies.sd-web-image')}}</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img src="/frontend/assets/img/technology/ios/iossdk.png" alt="{{__('page-technologies.ios-sdk')}}" />
+                                </td>
+                                <td>
+                                    <img src="/frontend/assets/img/technology/ios/googleadmob.png" alt="{{__('page-technologies.google-admob')}}" />
+                                </td>
+                                <td>
+                                    <img src="/frontend/assets/img/technology/ios/facebooksdk.png" alt="{{__('page-technologies.facebook-sdk')}}" />
+                                </td>
+                                <td>
+                                    <img src="/frontend/assets/img/technology/ios/twittersdk.png" alt="{{__('page-technologies.twitter-sdk')}}" />
+                                </td>
+                                <td>
+                                    <img src="/frontend/assets/img/technology/ios/afnetworking.png" alt="{{__('page-technologies.af-networking')}}" />
+                                </td>
+                                <td>
+                                    <img src="/frontend/assets/img/technology/ios/sdwebimage.png" alt="{{__('page-technologies.sd-web-image')}}" />
+                                </td>
+                            </tr>
+                            <tr class="line-height-60">
+                                <td>{{__('page-technologies.gpu-image')}}</td>
+                                <td>{{__('page-technologies.i-carousel')}}</td>
+                                <td>{{__('page-technologies.path-fast-image-cache')}}</td>
+                                <td>{{__('page-technologies.linphone')}}</td>
+                                <td>{{__('page-technologies.port-sip')}}</td>
+                                <td>{{__('page-technologies.iad')}}</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img src="/frontend/assets/img/technology/ios/gpuimage.png" alt="{{__('page-technologies.gpu-image')}}" />
+                                </td>
+                                <td>
+                                    <img src="/frontend/assets/img/technology/ios/icarousel.png" alt="{{__('page-technologies.i-carousel')}}" />
+                                </td>
+                                <td>
+                                    <img src="/frontend/assets/img/technology/ios/pathfastimagecache.png" alt="{{__('page-technologies.path-fast-image-cache')}}" />
+                                </td>
+                                <td>
+                                    <img src="/frontend/assets/img/technology/ios/linphone.png" alt="{{__('page-technologies.linphone')}}" />
+                                </td>
+                                <td>
+                                    <img src="/frontend/assets/img/technology/ios/portsip.png" alt="{{__('page-technologies.port-sip')}}" />
+                                </td>
+                                <td>
+                                    <img src="/frontend/assets/img/technology/ios/iad.png" alt="{{__('page-technologies.iad')}}" />
+                                </td>
+                            </tr>
+                            <tr class="line-height-60">
+                                <td>{{__('page-technologies.paypal-sdk')}}</td>
+                                <td>{{__('page-technologies.qr-barcode-sdk')}}</td>
+                                <td colspan="4"></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img src="/frontend/assets/img/technology/ios/paypal.png" alt="{{__('page-technologies.paypal-sdk')}}" />
+                                </td>
+                                <td>
+                                    <img src="/frontend/assets/img/technology/ios/qrbarcodesdk.png" alt="{{__('page-technologies.qr-barcode-sdk')}}" />
+                                </td>
+                                <td colspan="4"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <table width="395px" class="margin-top">
+                        <thead>
+                            <tr>
+                                <th width="160px" class="border-right">{{__('page-technologies.ides')}}</th>
+                                <th colspan="2">{{__('page-technologies.tools')}}</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="border-right">{{__('page-technologies.x-code-ide')}}</td>
+                                <td>{{__('page-technologies.instruments')}}</td>
+                                <td>{{__('page-technologies.testflight')}}</td>
+                            </tr>
+                            <tr>
+                                <td class="border-right">
+                                    <img src="/frontend/assets/img/technology/ios/xcodeide.png" alt="{{__('page-technologies.x-code-ide')}}" />
+                                </td>
+                                <td>
+                                    <img src="/frontend/assets/img/technology/ios/instruments.png" alt="{{__('page-technologies.instruments')}}" />
+                                </td>
+                                <td>
+                                    <img src="/frontend/assets/img/technology/ios/testflight.png" alt="{{__('page-technologies.testflight')}}" />
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div><!-- /services-right-box -->
+
+                <div class="services-right-box technologies-right-box" id="android">
+                    <h2><span>6</span>Android</h2>
+                    <table width="100%">
+                        <thead>
+                            <tr>
+                                <th class="border-right" width="173px">{{__('page-technologies.frameworks')}}</th>
+                                <th colspan="3" class="border-right" width="388px">{{__('page-technologies.sdks')}}</th>
+                                <th width="195px">{{__('page-technologies.ides')}}</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="border-right">{{__('page-technologies.corona-sdk')}}</td>
+                                <td>{{__('page-technologies.twitter-sdk')}}</td>
+                                <td>{{__('page-technologies.google-admob')}}</td>
+                                <td class="border-right">{{__('page-technologies.paypal-sdk')}}</td>
+                                <td>{{__('page-technologies.eclipse-adt')}}</td>
+                            </tr>
+                            <tr>
+                                <td class="border-right">
+                                    <img src="/frontend/assets/img/technology/android/coronasdk.png" alt="{{__('page-technologies.corona-sdk')}}" />
+                                </td>
+                                <td>
+                                    <img src="/frontend/assets/img/technology/android/twittersdk.png" alt="{{__('page-technologies.twitter-sdk')}}" />
+                                </td>
+                                <td>
+                                    <img src="/frontend/assets/img/technology/android/googleadmob.png" alt="{{__('page-technologies.google-admob')}}" />
+                                </td>
+                                <td class="border-right">
+                                    <img src="/frontend/assets/img/technology/android/paypal.png" alt="{{__('page-technologies.paypal-sdk')}}" />
+                                </td>
+                                <td>
+                                    <img src="/frontend/assets/img/technology/android/elipse.png" alt="{{__('page-technologies.eclipse-adt')}}" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="border-right">{{__('page-technologies.titanium')}}</td>
+                                <td>{{__('page-technologies.facebook-sdk')}}</td>
+                                <td>{{__('page-technologies.qr-barcode-sdk')}}</td>
+                                <td class="border-right"></td>
+                                <td>{{__('page-technologies.android-studio')}}</td>
+                            </tr>
+                            <tr>
+                                <td class="border-right">
+                                    <img src="/frontend/assets/img/technology/android/titanium.png" alt="{{__('page-technologies.titanium')}}" />
+                                </td>
+                                <td>
+                                    <img src="/frontend/assets/img/technology/android/facebooksdk.png" alt="{{__('page-technologies.facebook-sdk')}}" />
+                                </td>
+                                <td>
+                                    <img src="/frontend/assets/img/technology/android/qrbarcodesdk.png" alt="{{__('page-technologies.qr-barcode-sdk')}}" />
+                                </td>
+                                <td class="border-right"></td>
+                                <td>
+                                    <img src="/frontend/assets/img/technology/android/androidstudio.png" alt="{{__('page-technologies.android-studio')}}" />
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div><!-- /services-right-box -->
+
+                <div class="services-right-box technologies-right-box" id="dart">
+                    <h2><span>7</span>{{__('page-technologies.dart')}}</h2>
+                    <table width="100%">
+                        <thead>
+                            <tr>
+                                <th colspan="3" class="border-right" width="417px">{{__('page-technologies.platforms')}}</th>
+                                <th width="335px">{{__('page-technologies.ide')}}</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>{{__('page-technologies.windows')}}</td>
+                                <td>{{__('page-technologies.linux')}}</td>
+                                <td class="border-right">{{__('page-technologies.macosx')}}</td>
+                                <td>{{__('page-technologies.dart-sdk-dart-editor')}}</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img src="/frontend/assets/img/technology/dart/window.png" alt="{{__('page-technologies.windows')}}" />
+                                </td>
+                                <td>
+                                    <img src="/frontend/assets/img/technology/dart/linux.png" alt="{{__('page-technologies.linux')}}" />
+                                </td>
+                                <td class="border-right">
+                                    <img src="/frontend/assets/img/technology/dart/macos.png" alt="{{__('page-technologies.macosx')}}" />
+                                </td>
+                                <td>
+                                    <img src="/frontend/assets/img/technology/dart/dart.png" alt="{{__('page-technologies.dart-sdk-dart-editor')}}" />
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div><!-- /services-right-box -->
+
+                <div class="services-right-box technologies-right-box" id="servers">
+                    <h2><span>8</span>{{__('page-technologies.servers')}}</h2>
+                    <table width="400px">
+                        <tbody>
+                            <tr>
+                                <td>{{__('page-technologies.apache-tomcat')}}</td>
+                                <td>{{__('page-technologies.weblogic')}}</td>
+                                <td>{{__('page-technologies.iis')}}</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img src="/frontend/assets/img/technology/servers/tomcat.png" alt="{{__('page-technologies.apache-tomcat')}}" />
+                                </td>
+                                <td>
+                                    <img src="/frontend/assets/img/technology/servers/oracle.png" alt="{{__('page-technologies.weblogic')}}" />
+                                </td>
+                                <td>
+                                    <img src="/frontend/assets/img/technology/servers/iis.png" alt="{{__('page-technologies.iis')}}" />
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div><!-- /services-right-box -->
+
+                <div class="services-right-box technologies-right-box" id="databases">
+                    <h2><span>9</span>{{__('page-technologies.databases')}}</h2>
+                    <table width="100%">
+                        <tbody>
+                            <tr>
+                                <td>{{__('page-technologies.oracle')}}</td>
+                                <td>{{__('page-technologies.sql-server')}}</td>
+                                <td>{{__('page-technologies.mysql')}}</td>
+                                <td>{{__('page-technologies.postgre-sql')}}</td>
+                                <td>{{__('page-technologies.db2')}}</td>
+                                <td>{{__('page-technologies.mongodb')}}</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img src="/frontend/assets/img/technology/databases/oracle.png" alt="{{__('page-technologies.oracle')}}" />
+                                </td>
+                                <td>
+                                    <img src="/frontend/assets/img/technology/databases/sqlserver.png" alt="{{__('page-technologies.sql-server')}}" />
+                                </td>
+                                <td>
+                                    <img src="/frontend/assets/img/technology/databases/mysql.png" alt="{{__('page-technologies.mysql')}}" />
+                                </td>
+                                <td>
+                                    <img src="/frontend/assets/img/technology/databases/postgreSQL.png" alt="{{__('page-technologies.postgre-sql')}}" />
+                                </td>
+                                <td>
+                                    <img src="/frontend/assets/img/technology/databases/db2.png" alt="{{__('page-technologies.db2')}}" />
+                                </td>
+                                <td>
+                                    <img src="/frontend/assets/img/technology/databases/mongodb.png" alt="{{__('page-technologies.mongodb')}}" />
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div><!-- /services-right-box -->
+
+                <div class="services-right-box technologies-right-box" id="others">
+                    <h2><span>10</span>{{__('page-technologies.others')}}</h2>
+                    <table width="500px">
+                        <thead>
+                            <tr>
+                                <th colspan="4">{{__('page-technologies.web-technologies')}}</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>{{__('page-technologies.chrome-app-extension')}}</td>
+                                <td>{{__('page-technologies.html5')}}</td>
+                                <td>{{__('page-technologies.css')}}</td>
+                                <td>{{__('page-technologies.bootstraps')}}</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img src="/frontend/assets/img/technology/others/google.png" alt="{{__('page-technologies.chrome-app-extension')}}" />
+                                </td>
+                                <td>
+                                    <img src="/frontend/assets/img/technology/others/html5.png" alt="{{__('page-technologies.html5')}}" />
+                                </td>
+                                <td>
+                                    <img src="/frontend/assets/img/technology/others/css.png" alt="{{__('page-technologies.css')}}" />
+                                </td>
+                                <td>
+                                    <img src="/frontend/assets/img/technology/others/bootstrap.png" alt="{{__('page-technologies.bootstraps')}}" />
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div><!-- /services-right-box -->
+
+            </div><!-- /services-right -->
+        </div><!-- /page-bottom-container -->
+    </div>
+</div>
+{% endblock %}

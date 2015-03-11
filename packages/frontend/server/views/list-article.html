@@ -1,0 +1,30 @@
+{% for normalArticle in normalArticles %}
+    <div class="content-news-box clearfix">
+        <p class="date-left pull-left"><strong>{{normalArticle.time|date('d', timezoneOffset)}}</strong><span>{{normalArticle.time|date('m', timezoneOffset)}}</span></p>
+        {% if !!normalArticle.avatar %}
+        <a class="text-center pull-left content-news-box-image" href="{{__enhance.mount('/article/') + normalArticle.id}}"><img src="/system/assets/img/{{normalArticle.avatar}}" alt="{{normalArticle.heading}}"></a>
+        <div class="content-news-box-right pull-left">
+            <h2><a href="{{__enhance.mount('/article/') + normalArticle.id}}">{{normalArticle.heading}}</a></h2>
+            <p class="category">
+                <strong>
+                    {% for category in categoryMap[normalArticle.id] %}
+                    {{category.name[locale]}}
+                    {% endfor %}
+                </strong> - {{normalArticle.time|date('H:i d/m/Y', timezoneOffset)}}</p>
+            <p class="description">{{normalArticle.bulletin}}</p>
+        </div>
+        {% else %}
+        <div class="content-news-box-fulltext pull-left">
+            <h2><a href="{{__enhance.mount('/article/') + normalArticle.id}}">{{normalArticle.heading}}</a></h2>
+            <p class="category">
+                <strong>
+                    {% for category in categoryMap[normalArticle.id] %}
+                    {{category.name[locale]}}
+                    {% endfor %}
+                </strong> - {{normalArticle.time|date('H:i d/m/Y', timezoneOffset)}}</p>
+            <p class="description">{{normalArticle.bulletin}}</p>
+        </div>
+        {% endif %}
+    </div><!-- /content-news-box -->
+{% endfor %}
+<div id="total-page" data-count="{{totalPageArticle}}"></div>

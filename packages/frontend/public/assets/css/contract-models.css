@@ -1,0 +1,56 @@
+/* Contract model */
+.contract-models-page-top-container-fluid {
+    background: url('../img/bg-contract-model.jpg') no-repeat;
+    background-size: cover;
+}
+.contract-models-page-top-container-fluid h1 {
+    color: #fff;
+}
+.contract-models-page-container-fluid {
+    background: #f3f3f3;
+}
+.contract-models-container {
+    top: -60px;
+}
+.contract-models-container table th {
+    font-weight: 600 !important;
+    /*font-size: 16px;*/
+    font-size: 1em;
+}
+.contract-models-container td strong {
+    font-weight: 600;
+    /*font-size: 18px;*/
+    font-size: 1.125em;
+}
+
+/* Constract Model */
+.contract-models-container {
+    font-weight: 300;
+}
+.contract-models-container ul {
+    padding: 0;
+    margin-left: 18px;
+    list-style-image: url('../img/bullet-table.png');
+}
+.contract-models-container p {
+    margin-bottom: 27px;
+}
+.contract-models-container .download-constract {
+    height: 30px;
+    color: #fff;
+    background: #00a1e0;
+    line-height: 30px;
+    display: block;
+    width: 170px;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 20px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    border-radius: 15px;
+}
+.contract-models-container .download-constract:hover {
+    background: #0090c9;
+}

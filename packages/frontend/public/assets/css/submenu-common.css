@@ -1,0 +1,37 @@
+.main-nav-container li .sub-main-nav {
+    
+    border: 1px solid #fff;
+    border: 1px solid rgba(255,255,255,0.2);
+}
+.main-nav-container li .sub-main-nav li {
+    min-width: 223px;
+    background: transparent;
+    border-bottom: 1px solid #fff;
+    border-bottom: 1px solid rgba(255,255,255,.2);
+}
+.main-nav-container li .sub-main-nav li a {
+    background: transparent;
+}
+.main-nav-container li .sub-main-nav li:last-child {
+    border-bottom: none;
+}
+.main-nav-container-fluid.fixed .main-nav-container li .sub-main-nav {
+    /*background: #000;*/
+    border: none;
+    min-width: 225px;
+}
+.main-nav-container-fluid.fixed .main-nav-container li .sub-main-nav li {
+    border-bottom: none;
+}
+.main-nav-container-fluid.fixed .main-nav-container li .sub-main-nav li a {
+    background: #000;
+}
+.main-nav-container li:hover a,
+.main-nav-container li .sub-main-nav li:hover a {
+    background: #fff;
+    background: rgba(255,255,255,.2);
+}
+.main-nav-container-fluid.fixed .main-nav-container li:hover a,
+.main-nav-container-fluid.fixed .main-nav-container li .sub-main-nav li:hover a {
+    background: #005caa;
+}

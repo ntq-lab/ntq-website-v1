@@ -1,0 +1,36 @@
+{% extends '../layout/restrict.html' %}
+
+{% block title %}{{__('Inbox')}}{% endblock %}
+
+{% block head %}
+<title>{{__('Inbox')}}{% if _unreadMessageCount > 0 %} ({{_unreadMessageCount}}){% endif %}</title>
+<link rel="stylesheet" href="/backend/assets/css/inbox.css">
+{% endblock %}
+
+{% block body %}
+<section class="inbox">
+    {% for message in messages %}
+    <div class="message {% if message.unread %}unread{% endif %}">
+        <div class="row full-width">
+            <div class="small-1 medium-1 large-1 column text-center">
+                {% if message.unread %}
+                <kbd>{{__('NEW')}}</kbd>
+                {% endif %}
+            </div>
+            <div class="small-5 medium-5 large-5 column {% if !message.unread %}small-offset-1 medium-offset-1 large-offset-1{% endif %}">
+                <a class="message-subject" href="{{__enhance.mount('/message/read/' + message._id)}}">
+                    
+                    <span>{{message.subject}}</span>
+                </a>
+            </div>
+            <div class="small-4 medium-4 large-4 column">
+                <span>{{message.name}} - {{message.email}}</span>
+            </div>
+            <div class="small-2 medium-2 large-2 column text-right">
+                <small class="message-time">{{message.time|date('Y-m-d H:i:s', timezoneOffset)}}</small>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</section>
+{% endblock %}

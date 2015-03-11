@@ -1,0 +1,145 @@
+/* Success Stories Top Page */
+.success-stories-page-top-container-fluid {
+    background: url('../img/bg-success-stories.jpg') no-repeat bottom center;
+    background-size: cover;
+}
+.success-stories-page-top-container-fluid h1 {
+    color: #fff;
+}
+
+/* Success Stories Bottom Page */
+.success-stories-page-bottom-container-fluid h2 {
+    /*font-size: 30px;*/
+    font-size: 1.875em;
+    color: #000;
+    margin-bottom: 23px;
+    line-height: 1.2em;
+}
+.success-stories-page-bottom-container-fluid .success-stories-content {
+    /*min-height: 1049px;*/
+    background: #fff;
+    padding: 41px 40px 32px 24px;
+}
+.success-stories-page-bottom-container-fluid {
+    padding-bottom: 0;
+}
+.success-stories-content .success-stories-left {
+    width: 170px;
+    margin-right: 30px;
+    min-height: 1px;
+}
+.success-stories-content .success-stories-right {
+    width: 760px;
+}
+.success-stories-content .success-stories-left ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 5px;
+}
+.success-stories-content .success-stories-left .fixed {
+    position: fixed;
+    z-index: 10000;
+    top: 55px;
+}
+.success-stories-content .success-stories-left ul li {
+    margin-bottom: 12px;
+    padding-bottom: 9px;
+    border-bottom: 1px solid #e7e7e7;
+}
+.success-stories-content .success-stories-left ul li:last-child {
+    border-bottom: none;
+}
+.success-stories-content .success-stories-left ul li:hover a,
+.success-stories-content .success-stories-left ul li.current a {
+    color: #385dae;
+}
+.success-stories-content .success-stories-right p {
+    line-height: 1.2em;
+}
+.success-stories-content .success-stories-right .description {
+    line-height: 1.4em;
+    margin-bottom: 35px;
+}
+.success-stories-content .success-stories-right .success-stories-right-box {
+    margin-bottom: 50px;
+}
+.success-stories-content .success-stories-right .success-stories-right-box:last-child {
+    margin-bottom: 0;
+}
+.success-stories-content .success-stories-right .success-stories-right-box-slide ul {
+    list-style: none;
+    padding: 0;
+    width: 736px;
+}
+.success-stories-content .success-stories-right .success-stories-right-box-slide ul li {
+    float: left;
+}
+.success-stories-content .success-stories-right .success-stories-right-box-slide ul li a {
+    float: left;
+    padding: 0 30px 0 25px;
+    height: 50px;
+    line-height: 50px;
+    color: #385dae;
+    text-align: center;
+    /*font-size: 18px;*/
+    font-size: 1.125em;
+    position: relative;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+}
+.success-stories-content .success-stories-right .success-stories-right-box-slide ul li a:after {
+    content: ' ';
+    position: absolute;
+    width: 5px;
+    height: 9px;
+    background: url('../img/bullet-success-stories.png') no-repeat;
+    right: 12px;
+    top: 23px;
+}
+.success-stories-content .success-stories-right .success-stories-right-box-slide ul li:hover a,
+.success-stories-content .success-stories-right .success-stories-right-box-slide ul li.ui-state-active a {
+    background: #385dae;
+    color: #fff;
+}
+.success-stories-content .success-stories-right .success-stories-right-box-slide ul li a:focus,
+.success-stories-content .success-stories-right .success-stories-right-box-slide ul li a:active {
+    outline: none
+}
+.success-stories-content .success-stories-right .success-stories-right-box-slide ul li:hover a:after,
+.success-stories-content .success-stories-right .success-stories-right-box-slide ul li.ui-state-active a:after {
+    content: ' ';
+    position: absolute;
+    width: 9px;
+    height: 5px;
+    background: url('../img/bullet-success-stories-active.png') no-repeat;
+    top: 23px;
+    right: 10px;
+}
+.success-stories-content .success-stories-right .success-stories-right-box-slide-content {
+    padding: 35px;
+    min-height: 150px;
+    color: #fff;
+    background: #385dae;
+}
+.success-stories-content .success-stories-right .list-technologies li {
+    float: none !important;
+    margin-bottom: 5px;
+    background: url('../img/bullet-success-stories-content.png') no-repeat left center;
+    min-height: 10px;
+    padding-left: 15px;
+}
+.text-image .text {
+    float: left;
+    width: 557px;
+    margin-right: 20px;
+}
+.text-image .image {
+    float: left;
+    width: 113px;
+}
+.text-image .image img {
+    width: 100%;
+}

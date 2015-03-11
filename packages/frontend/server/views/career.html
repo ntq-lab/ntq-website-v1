@@ -1,0 +1,140 @@
+{% extends 'layout/base.html' %}
+
+{% block title %}
+{{__('title-website.career')}}
+{% endblock %}
+
+{% block stylesheet %}
+{% for file in assets['/css/career.css'] %}
+    <link href="{{file}}" rel="stylesheet">
+{% endfor %}
+<!--
+<link href="/frontend/assets/css/menu-white.css" rel="stylesheet">
+<link href="/frontend/assets/css/submenu-common.css" rel="stylesheet">
+<link href="/frontend/assets/css/career.css" rel="stylesheet">
+-->
+{% endblock %}
+
+{% block script %}
+{% for file in assets['/js/career.js'] %}
+    <script src="{{file}}"></script>
+{% endfor %}
+<!--
+<script src="/frontend/assets/js/main-nav.js"></script>
+<script src="/frontend/assets/js/career.js"></script>
+-->
+{% endblock %}
+
+{% block content %}
+<div class="container-fluid page-top-container-fluid career-page-top-container-fluid">
+    <div class="container">
+        <h1 class="text-center">{{__('page-career.title')}}</h1>
+    </div>
+</div><!-- /contact-page-top-container-fluid -->
+<div class="container-fluid page-bottom-container-fluid career-page-bottom-container-fluid">
+    <div class="container">
+        <div class="intro-career page-bottom-container">
+            <div class="intro-career-content page-bottom-content">
+                <h2><strong>{{__('page-career.box1.title.text1')}}</strong> {{__('page-career.box1.title.text2')}}</h2>
+                <p>{{__('page-career.box1.description.paragraph1')}}</p>
+                <p>{{__('page-career.box1.description.paragraph2')}}</p>
+                <p>{{__('page-career.box1.description.paragraph3')}}</p>
+                <p>{{__('page-career.box1.description.paragraph4')}}</p>
+            </div><!-- /intro-career-content -->
+        </div><!-- /intro-career -->
+        <div class="detail-career">
+            <h2>{{__('page-career.box2.title.text1')}} <strong>{{__('page-career.box2.title.text2')}}</strong></h2>
+
+            <div class="detail-career-box clearfix">
+                <div class="detail-career-box-head clearfix">
+                    <div class="detail-career-box-head-title clearfix">
+                        <h3 class="pull-left">{{__('page-career.box2.career1.title')}}</h3>
+                        <p class="pull-right deadline">{{__('page-career.box2.career1.deadline')}}</p>
+                    </div>
+                    <div class="detail-career-box-head-description">
+                        <h4>{{__('page-career.box2.career1.box1.title')}}</h4>
+                        <p>{{__('page-career.box2.career1.box1.description')}}</p>
+                    </div>
+                </div><!-- /detail-career-box-head -->
+                <div class="detail-career-box-content clearfix">
+                    <h4>{{__('page-career.box2.career1.box2.title')}}</h4>
+                    <ul>
+                        <li>{{__('page-career.box2.career1.box2.description.paragraph1')}}</li>
+                        <li>{{__('page-career.box2.career1.box2.description.paragraph2')}}</li>
+                        <li>{{__('page-career.box2.career1.box2.description.paragraph3')}}</li>
+                        <li>{{__('page-career.box2.career1.box2.description.paragraph4')}}</li>
+                        <li>{{__('page-career.box2.career1.box2.description.paragraph5')}}</li>
+                        <li>{{__('page-career.box2.career1.box2.description.paragraph6')}}</li>
+                    </ul>
+
+                    <h4>{{__('page-career.box2.career1.box3.title')}}</h4>
+                    <ul>
+                        <li>{{__('page-career.box2.career1.box3.description.paragraph1')}}</li>
+                        <li>{{__('page-career.box2.career1.box3.description.paragraph2')}}</li>
+                        <li>{{__('page-career.box2.career1.box3.description.paragraph3')}}</li>
+                        <li>{{__('page-career.box2.career1.box3.description.paragraph4')}}</li>
+                        <li>{{__('page-career.box2.career1.box3.description.paragraph5')}}</li>
+                        <li>{{__('page-career.box2.career1.box3.description.paragraph6')}}</li>
+                        <li>{{__('page-career.box2.career1.box3.description.paragraph7')}}</li>
+                        <li>{{__('page-career.box2.career1.box3.description.paragraph8')}}</li>
+                    </ul>
+                </div><!-- /detail-career-box-content -->
+            </div><!-- /detail-career-box -->
+
+            <div class="detail-career-box clearfix">
+                <div class="detail-career-box-head clearfix">
+                    <div class="detail-career-box-head-title clearfix">
+                        <h3 class="pull-left">{{__('page-career.box2.career2.title')}}</h3>
+                        <p class="pull-right deadline">{{__('page-career.box2.career2.deadline')}}</p>
+                    </div>
+                    <div class="detail-career-box-head-description">
+                        <h4>{{__('page-career.box2.career2.box1.title')}}</h4>
+                        <p>{{__('page-career.box2.career2.box1.description')}}</p>
+                    </div>
+                </div><!-- /detail-career-box-head -->
+                <div class="detail-career-box-content clearfix">
+                    <h4>{{__('page-career.box2.career2.box2.title')}}</h4>
+                    <ul>
+                        <li>{{__('page-career.box2.career2.box2.description.paragraph1')}}</li>
+                        <li>{{__('page-career.box2.career2.box2.description.paragraph2')}}</li>
+                        <li>{{__('page-career.box2.career2.box2.description.paragraph3')}}</li>
+                        <li>{{__('page-career.box2.career2.box2.description.paragraph4')}}</li>
+                        <li>{{__('page-career.box2.career2.box2.description.paragraph5')}}</li>
+                        <li>{{__('page-career.box2.career2.box2.description.paragraph6')}}</li>
+                    </ul>
+
+                    <h4>{{__('page-career.box2.career2.box3.title')}}</h4>
+                    <ul>
+                        <li>{{__('page-career.box2.career2.box3.description.paragraph1')}}</li>
+                        <li>{{__('page-career.box2.career2.box3.description.paragraph2')}}</li>
+                        <li>{{__('page-career.box2.career2.box3.description.paragraph3')}}<br/>
+                        + {{__('page-career.box2.career2.box3.description.paragraph4')}}<br/>
+                        + {{__('page-career.box2.career2.box3.description.paragraph5')}}<br/>
+                        {{__('page-career.box2.career2.box3.description.paragraph6')}}<br/>
+                        + {{__('page-career.box2.career2.box3.description.paragraph7')}}<br/>
+                        + {{__('page-career.box2.career2.box3.description.paragraph8')}}<br/>
+                        + {{__('page-career.box2.career2.box3.description.paragraph9')}}<br/>
+                        </li>
+                        <li>{{__('page-career.box2.career2.box3.description.paragraph10')}}</li>
+                        <li>{{__('page-career.box2.career2.box3.description.paragraph11')}}</li>
+                        <li>{{__('page-career.box2.career2.box3.description.paragraph12')}}</li>
+                        <li>{{__('page-career.box2.career2.box3.description.paragraph13')}}</li>
+                        <li>{{__('page-career.box2.career2.box3.description.paragraph14')}}<br/>
+                        {{__('page-career.box2.career2.box3.description.paragraph15')}}
+                        </li>
+                        <li>{{__('page-career.box2.career2.box3.description.paragraph16')}}</li>
+                        <li>{{__('page-career.box2.career2.box3.description.paragraph17')}}</li>
+                    </ul>
+                </div><!-- /detail-career-box-content -->
+            </div><!-- /detail-career-box -->
+        </div><!-- /detail-career -->
+
+        <div class="to-apply-career">
+            <h2>{{__('page-career.box3.title.text1')}} <strong>{{__('page-career.box3.title.text2')}}</strong></h2>
+            <p>{{__('page-career.box3.description')}}</p>
+            <a href="mailto:hr@ntq-solution.com.vn" class="apply">hr@ntq-solution.com.vn</a>
+        </div><!-- /to-apply-career -->
+    </div>
+</div><!-- /career-page-bottom-container-fluid -->
+<div class="clear"></div>
+{% endblock %}

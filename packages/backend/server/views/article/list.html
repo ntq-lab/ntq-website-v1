@@ -1,0 +1,52 @@
+{% extends '../layout/restrict.html' %}
+{% block title %}{{__('Articles')}}{% endblock %}
+{% block panel %}
+<li class="has-form">
+    <a href="{{__enhance.mount('/article')}}" class="button">{{__('Create new Article')}}</a>
+</li>
+{% endblock %}
+{% block body %}
+<div class="row full-width">
+    <div class="small-12 medium-12 large-12 column">
+        <table class="full-width">
+            <thead>
+                <tr>
+                    <th>{{__('Articles')}}</th>
+                    <th class="fit">{{__('Languages')}}</th>
+                    <th class="fit">{{__('Time')}}</th>
+                    <th class="fit">{{__('Enabled')}}</th>
+                    <th class="fit"></th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for article in articles %}
+                <tr>
+                    <td>
+                        <a href="{{__enhance.mount('/article/') + article.id}}">{{article.heading}}</a>
+                    </td>
+                    <td class="no-wrap">
+                        {% for language in article.languages %}
+                        <kbd class="language-notation">{{language}}</kbd>
+                        {% endfor %}
+                    </td>
+                    <td class="no-wrap">{{article.time|date('Y-m-d H:i:s', timezoneOffset)}}</td>
+                    <td class="text-center">
+                        {% if article.enabled %}
+                        <i class="fi-check size-36"></i>
+                        {% else %}
+                        <i class="fi-x size-36"></i>
+                        {% endif %}
+                    </td>
+                    <td>
+                        <form action="{{__enhance.mount('/article/') + article.id}}" method="post">
+                            <input type="hidden" name="_method" value="delete">
+                            <button type="submit" class="button alert tiny">Delete</button>
+                        </form>
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</div>
+{% endblock %}

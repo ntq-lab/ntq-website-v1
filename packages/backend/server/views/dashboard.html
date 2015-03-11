@@ -1,0 +1,26 @@
+{% extends 'layout/restrict.html' %}
+{% block title %}{{__('Dashboard')}}{% endblock %}
+{% block body %}
+<div class="row full-width">
+    <div class="small-8 medium-8 large-8 column">
+        <div class="panel">
+            <h4>{{__('Articles')}}</h4>
+            <hr>
+        </div>
+        <div class="panel">
+            <h4>{{__('Careers')}}</h4>
+            <hr>
+        </div>
+        <div class="panel">
+            <h4>{{__('Documents')}}</h4>
+            <hr>
+        </div>
+    </div>
+    <div class="small-4 medium-4 large-4 column">
+        <div class="panel callout">
+            <h4>Report & Statistics</h4>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

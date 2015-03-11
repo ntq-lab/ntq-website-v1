@@ -1,0 +1,15 @@
+x-mtext select, mtext option {
+    text-transform: uppercase;
+}
+x-mtext .clear {
+    clear: both;
+}
+x-mtext .mtext-input {
+    margin-right: 60px;
+}
+x-mtext .mtext-select {
+    width: 60px;
+}
+x-mtext select:focus {
+    outline: none;
+}

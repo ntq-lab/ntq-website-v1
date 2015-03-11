@@ -1,0 +1,10 @@
+<div class="image-preview text-center" ng-if="!control">
+    <img ng-if="image" ng-src="/system/assets/img/{{image}}">
+</div>
+<div class="image-mask" ng-if="!control">
+    <i class="fi-upload-cloud size-24 left upload-trigger"></i>
+    <i class="fi-x size-24 right remove-trigger" ng-show="image"></i>
+</div>
+<div class="upload-control upload-trigger text-center" ng-if="control">
+    <i class="fi-plus size-60"></i>
+</div>

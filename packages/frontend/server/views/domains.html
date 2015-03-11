@@ -1,0 +1,223 @@
+{% extends 'layout/base.html' %}
+{% block title %}
+{{__('title-website.domains')}}
+{% endblock %}
+{% block stylesheet %}
+<link href="/frontend/assets/css/services.css" rel="stylesheet">
+<link href="/frontend/assets/css/menu-black.css" rel="stylesheet">
+{% endblock %}
+{% block script %}
+<script src="/frontend/assets/js/jquery.nav.js"></script>
+<script src="/frontend/assets/js/main-nav.js"></script>
+<script src="/frontend/assets/js/scroll-jumpto-fixed.js"></script>
+<script src="/frontend/assets/js/services.js"></script>
+{% endblock %}
+{% block content %}
+<div class="container-fluid page-top-container-fluid domains-page-top-container-fluid">
+    <div class="container">
+        <h1 class="text-center">{{__('page-domains.title')}}</h1>
+    </div>
+</div><!-- /contact-page-top-container-fluid -->
+<div class="container-fluid services-page-container-fluid">
+    <div class="container clearfix">
+        <div class="page-bottom-container services-container clearfix">
+            {% set active = {services_active: '', domains_active: 'services-left-box-active', technologies_active: ''} %}
+            {% include "./sidebar-services.html" with active %}
+
+            <div class="services-right">
+                <div class="services-right-box" id="mobile-app-development">
+                    <h2>{{__('page-domains.mobile-app-development.title.title-large')}}</h2>
+                    <h3>{{__('page-domains.mobile-app-development.title.title-medium')}}</h3>
+                    <h4>{{__('page-domains.mobile-app-development.title.title-small1')}}</h4>
+                    <div class="text-only">{{__('page-domains.mobile-app-development.description.paragraph1')}}</div>
+                    <div class="text-only">{{__('page-domains.mobile-app-development.description.paragraph2')}}</div>
+                    <div class="images-only mobile-app">
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <img src="/frontend/assets/img/services/mobile-app/img1.png" alt="IOS" />
+                                        <a href="{{__enhance.mount('/download')}}">{{__('page-domains.mobile-app-development.description.paragraph3')}}</a>
+                                    </td>
+                                    <td>
+                                        <img src="/frontend/assets/img/services/mobile-app/img2.png" alt="Android" />
+                                        <a href="{{__enhance.mount('/download')}}">{{__('page-domains.mobile-app-development.description.paragraph4')}}</a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div><!-- /images-only -->
+
+                    <h4>{{__('page-domains.mobile-app-development.title.title-small2')}}</h4>
+                    <div class="text-only">{{__('page-domains.mobile-app-development.description.paragraph5')}}</div>
+                    <div class="text-only">{{__('page-domains.mobile-app-development.description.paragraph6')}}</div>
+                    <div class="text-only">{{__('page-domains.mobile-app-development.description.paragraph7')}}
+                    <br/>{{__('page-domains.mobile-app-development.description.paragraph8')}}</div>
+                    <ul class="list">
+                        <li>{{__('page-domains.mobile-app-development.description.paragraph9')}}</li>
+                        <li>{{__('page-domains.mobile-app-development.description.paragraph10')}}</li>
+                        <li>{{__('page-domains.mobile-app-development.description.paragraph11')}}</li>
+                        <li>{{__('page-domains.mobile-app-development.description.paragraph12')}}</li>
+                    </ul>
+
+                    <h4>{{__('page-domains.mobile-app-development.title.title-small3')}}</h4>
+                    <div class="text-only">{{__('page-domains.mobile-app-development.description.paragraph13')}}<br/>
+                    {{__('page-domains.mobile-app-development.description.paragraph14')}}</div>
+                    <div class="text-only">{{__('page-domains.mobile-app-development.description.paragraph15')}}</div>
+                    <div class="text-only">{{__('page-domains.mobile-app-development.description.paragraph16')}}</div>
+                    <ul class="list">
+                        <li>{{__('page-domains.mobile-app-development.description.paragraph17')}}</li>
+                        <li>{{__('page-domains.mobile-app-development.description.paragraph18')}}</li>
+                    </ul>
+                </div><!-- /services-right-box -->
+
+                <div class="services-right-box" id="web-app-development">
+                    <h2>{{__('page-domains.web-app-development.title.title-large')}}</h2>
+                    <h3>{{__('page-domains.web-app-development.title.title-medium')}}</h3>
+                    <h4>{{__('page-domains.web-app-development.title.title-small')}}</h4>
+                    <div class="text-only">{{__('page-domains.web-app-development.description.paragraph1')}}</div>
+                    <div class="text-only">{{__('page-domains.web-app-development.description.paragraph2')}}</div>
+                    <div class="text-only">{{__('page-domains.web-app-development.description.paragraph3')}}</div>
+                    <div class="images-only">
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td><img src="/frontend/assets/img/services/web-app/img1.png" alt="java" /></td>
+                                    <td><img src="/frontend/assets/img/services/web-app/img2.png" alt="javascript" /></td>
+                                    <td><img src="/frontend/assets/img/services/web-app/img3.png" alt="php" /></td>
+                                    <td><img src="/frontend/assets/img/services/web-app/img4.png" alt=".net" /></td>
+                                    <td><img src="/frontend/assets/img/services/web-app/img5.png" alt="dart" /></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div><!-- /images-only -->
+
+                    <div class="text-only">{{__('page-domains.web-app-development.description.paragraph4')}}</div>
+                    <div class="images-only">
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td><img src="/frontend/assets/img/services/web-app/img6.png" alt="html5&css3" /></td>
+                                    <td><img src="/frontend/assets/img/services/web-app/img7.png" alt="jquery" /></td>
+                                    <td><img src="/frontend/assets/img/services/web-app/img8.png" alt="silverlight" /></td>
+                                    <td><img src="/frontend/assets/img/services/web-app/img9.png" alt="angularjs" /></td>
+                                    <td><img src="/frontend/assets/img/services/web-app/img10.png" alt="bootstrap" /></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div><!-- /images-only -->
+                </div><!-- /services-right-box -->
+
+                <div class="services-right-box" id="embedded-software-and-system-development">
+                    <h2>{{__('page-domains.embedded-software-and-system-development.title.title-large')}}</h2>
+                    <h3>{{__('page-domains.embedded-software-and-system-development.title.title-medium')}}</h3>
+                    <h4>{{__('page-domains.embedded-software-and-system-development.title.title-small1')}}</h4>
+                    <div class="text-only">{{__('page-domains.embedded-software-and-system-development.description.paragraph1')}}<br/>    {{__('page-domains.embedded-software-and-system-development.description.paragraph2')}}</div>
+                    <table width="628px" class="table table-services table-domains">
+                        <tbody>
+                            <tr>
+                                <td width="50%">
+                                    <strong>{{__('page-domains.embedded-software-and-system-development.table.8bit-microchip.title')}}</strong>
+                                    <p>{{__('page-domains.embedded-software-and-system-development.table.8bit-microchip.description')}}</p>
+                                </td>
+                                <td width="50%">
+                                    <strong>{{__('page-domains.embedded-software-and-system-development.table.intelligence-sensor.title')}}</strong>
+                                    <p>{{__('page-domains.embedded-software-and-system-development.table.intelligence-sensor.description')}}</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <h4>{{__('page-domains.embedded-software-and-system-development.title.title-small2')}}</h4>
+                    <div class="video-text clearfix">
+                        <div class="video"><iframe width="400" height="225" src="//www.youtube.com/embed/zIHS1APpjXs" frameborder="0" allowfullscreen></iframe></div>
+                        <div class="text">
+                            <p>{{__('page-domains.embedded-software-and-system-development.description.paragraph3')}}</p>
+                            <p>{{__('page-domains.embedded-software-and-system-development.description.paragraph4')}}</p>
+                        </div>
+                    </div><!-- /video-text -->
+
+                    <div class="text-only">{{__('page-domains.embedded-software-and-system-development.description.paragraph5')}}</div>
+                </div><!-- /services-right-box -->
+
+                <div class="services-right-box" id="medical-image-visualization">
+                    <h2>{{__('page-domains.healthcare-software-development.title.title-large')}}</h2>
+                    <p class="description">{{__('page-domains.healthcare-software-development.description.paragraph1')}}</p>
+                    <h3>{{__('page-domains.healthcare-software-development.title.title-medium')}}</h3>
+                    <h4>{{__('page-domains.healthcare-software-development.title.title-small')}}</h4>
+                    <div class="text-only">{{__('page-domains.healthcare-software-development.description.paragraph2')}}</div>
+                    <div class="image-text clearfix">
+                        <div class="image"><img src="/frontend/assets/img/services/img1.png" alt="Multi-layout DICOM Viewer" /></div>
+                        <div class="text">
+                            <p><strong>{{__('page-domains.healthcare-software-development.description.paragraph3.text1')}}</strong> {{__('page-domains.healthcare-software-development.description.paragraph3.text2')}}</p>
+                            <p>{{__('page-domains.healthcare-software-development.description.paragraph4')}}</p>
+                        </div>
+                    </div><!-- /image-text -->
+                    <div class="border"></div>
+                    <div class="text-image clearfix">
+                        <div class="text">
+                            <p><strong>{{__('page-domains.healthcare-software-development.description.paragraph5.text1')}}</strong> {{__('page-domains.healthcare-software-development.description.paragraph5.text2')}}</p>
+                            <p>{{__('page-domains.healthcare-software-development.description.paragraph6')}}</p>
+                            <p>{{__('page-domains.healthcare-software-development.description.paragraph7')}}<br/>    {{__('page-domains.healthcare-software-development.description.paragraph8')}}</p>
+                        </div>
+                        <div class="image"><img src="/frontend/assets/img/services/img2.png" alt="Console advanced system" /></div>
+                    </div><!-- /text-image -->
+                    <div class="border"></div>
+                    <div class="image-text clearfix">
+                        <div class="image"><img src="/frontend/assets/img/services/img3.png" alt="Multi-layout DICOM Viewer" /></div>
+                        <div class="text">
+                            <p><strong>{{__('page-domains.healthcare-software-development.description.paragraph9.text1')}}</strong> {{__('page-domains.healthcare-software-development.description.paragraph9.text2')}}</p>
+                            <p>{{__('page-domains.healthcare-software-development.description.paragraph10')}}</p>
+<p>{{__('page-domains.healthcare-software-development.description.paragraph11')}}</p>
+                        </div>
+                    </div><!-- /image-text -->
+                </div><!-- /services-right-box -->
+
+                <div class="services-right-box" id="system-integration">
+                    <h2>{{__('page-domains.system-integration.title.title-large')}}</h2>
+                    <h3>{{__('page-domains.system-integration.title.title-medium')}}</h3>
+                    <h4>{{__('page-domains.system-integration.title.title-small1')}}</h4>
+                    <div class="text-only">{{__('page-domains.system-integration.description.paragraph1')}}</div>
+                    <div class="text-only">{{__('page-domains.system-integration.description.paragraph2')}}</div>
+                    <div class="text-only">{{__('page-domains.system-integration.description.paragraph3')}}</div>
+                    <h4>{{__('page-domains.system-integration.title.title-small2')}}</h4>
+                    <div class="text-only">{{__('page-domains.system-integration.description.paragraph4')}}</div>
+                    <div class="text-only">{{__('page-domains.system-integration.description.paragraph5')}}</div>
+                </div><!-- /services-right-box -->
+
+                <div class="services-right-box" id="enterprise-application-development">
+                    <h2>{{__('page-domains.enterprise-application-development.title.title-large')}}</h2>
+                    <h3>{{__('page-domains.enterprise-application-development.title.title-medium')}}</h3>
+                    <h4>{{__('page-domains.enterprise-application-development.title.title-small1')}}</h4>
+                    <div class="text-only">{{__('page-domains.enterprise-application-development.description.paragraph1')}}<br/>    {{__('page-domains.enterprise-application-development.description.paragraph2')}}</div>
+                    
+                    <div class="text-only">{{__('page-domains.enterprise-application-development.description.paragraph3')}}</div>
+                    <h4>{{__('page-domains.enterprise-application-development.title.title-small2')}}</h4>
+                    <div class="text-only">{{__('page-domains.enterprise-application-development.description.paragraph4')}}</div>
+                </div><!-- /services-right-box -->
+
+                <div class="services-right-box" id="cloud-basedssoftware-development">
+                    <h2>{{__('page-domains.cloud-based-software-development.title.title-large')}}</h2>
+                    <h3>{{__('page-domains.cloud-based-software-development.title.title-medium')}}</h3>
+                    <h4>{{__('page-domains.cloud-based-software-development.title.title-small')}}</h4>
+                    <div class="text-only">{{__('page-domains.cloud-based-software-development.description.paragraph1')}}</div>
+                    <div class="text-only">{{__('page-domains.cloud-based-software-development.description.paragraph2')}}</div>
+                    <div class="text-only">{{__('page-domains.cloud-based-software-development.description.paragraph3')}}</div>
+                    <div class="text-only">{{__('page-domains.cloud-based-software-development.description.paragraph4')}}</div>
+                </div><!-- /services-right-box -->
+
+                <div class="services-right-box" id="e-commerce-software-development">
+                    <h2>{{__('page-domains.e-commerce-software-development.title.title-large')}}</h2>
+                    <h3>{{__('page-domains.e-commerce-software-development.title.title-medium')}}</h3>
+                    <h4>{{__('page-domains.e-commerce-software-development.title.title-small')}}</h4>
+                    <div class="text-only">{{__('page-domains.e-commerce-software-development.description.paragraph1')}}</div>
+                    <div class="text-only">{{__('page-domains.e-commerce-software-development.description.paragraph2')}}</div>
+                    <div class="text-only">{{__('page-domains.e-commerce-software-development.description.paragraph3')}}</div>
+                    <div class="text-only">{{__('page-domains.e-commerce-software-development.description.paragraph4')}}</div>
+                    <div class="text-only">{{__('page-domains.e-commerce-software-development.description.paragraph5')}}</div>
+                </div><!-- /services-right-box -->
+            </div><!-- /services-right -->
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,68 @@
+/* Contact Page Top  */
+.contact-page-top-container-fluid {
+    background: #f6f1ee url('../img/bg-contact.jpg') no-repeat bottom center;
+    background-size: cover;
+}
+.contact-page-top-container-fluid h1 {
+    color: #171626;
+}
+
+/* Contact Page Bottom */
+.contact-page-bottom-container-fluid .form-contact .form-contact-content {
+    /*height: 383px;*/
+    background: #ebebeb;
+    padding: 48px 0 30px 0;
+}
+.contact-page-bottom-container-fluid .form-contact .form-contact-content h2 {
+    /*font-size: 24px;*/
+    font-size: 1.5em;
+    text-align: center;
+}
+.contact-page-bottom-container-fluid .form-contact .form-contact-content h2 strong {
+    font-weight: 700;
+}
+.contact-page-bottom-container-fluid .contact-address {
+    padding: 32px 20px;
+    background: #fff;
+    margin-top: -60px;
+}
+.contact-page-bottom-container-fluid .contact-address-box {
+    width: 465px;
+}
+.contact-page-bottom-container-fluid .contact-address-box h3 {
+    font-weight: 700;
+    /*font-size: 18px;*/
+    font-size: 1.125em;
+    margin-bottom: 15px;
+}
+.contact-page-bottom-container-fluid .contact-address-box p {
+    margin-bottom: 12px;
+    font-weight: 300;
+}
+.contact-page-bottom-container-fluid .contact-address-box p strong {
+    display: block;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+.contact-page-bottom-container-fluid .contact-address-box .address {
+    /*font-size: 15px;*/
+    font-size: 0.938em;
+    line-height: 1.2em;
+    min-height: 40px;
+}
+.contact-page-bottom-container-fluid .contact-address-box .map {
+    position: relative;
+    padding-bottom: 35px;
+    margin-top: 20px;
+}
+/*.contact-page-bottom-container-fluid .contact-address-box:last-child .map {
+    margin-top: 74px;
+}*/
+/*.contact-page-bottom-container-fluid .contact-address-box:last-child .address {
+    margin-bottom: 30px;
+}*/
+.contact-page-bottom-container-fluid .contact-address-box .map .img-company {
+    position: absolute;
+    top: 25px;
+    left: 15px;
+}

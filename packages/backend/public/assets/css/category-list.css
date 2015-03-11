@@ -1,0 +1,10 @@
+.category {
+    border-top: 1px solid rgb(221, 221, 221);
+    padding: 10px 0 20px;
+}
+.category:first-child {
+    border-top: none;
+}
+.category .category-info {
+    padding: 10px 0;
+}

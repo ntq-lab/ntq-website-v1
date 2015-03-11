@@ -1,0 +1,72 @@
+{% extends 'layout/base.html' %}
+{% block title %}
+{{__('title-website.contract-models')}}
+{% endblock %}
+{% block stylesheet %}
+<link href="/frontend/assets/css/menu-white.css" rel="stylesheet">
+<link href="/frontend/assets/css/submenu-common.css" rel="stylesheet">
+<link href="/frontend/assets/css/contract-models.css" rel="stylesheet">
+{% endblock %}
+{% block script %}
+<script src="/frontend/assets/js/jquery.nav.js"></script>
+<script src="/frontend/assets/js/main-nav.js"></script>
+{% endblock %}
+{% block content %}
+<div class="container-fluid page-top-container-fluid contract-models-page-top-container-fluid">
+    <div class="container">
+        <h1 class="text-center">{{__('page-contract-models.title')}}</h1>
+    </div>
+</div><!-- /contact-page-top-container-fluid -->
+<div class="container-fluid page-bottom-container-fluid contract-models-page-container-fluid">
+    <div class="container clearfix">
+        <div class="page-bottom-container contract-models-container clearfix">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th width="335px" class="bg-blue-light">{{__('page-contract-models.box1.title.text1')}}<br/>                            {{__('page-contract-models.box1.title.text2')}}</th>
+                        <th width="330px" class="bg-blue-medium">{{__('page-contract-models.box2.title')}}</th>
+                        <th width="335px" class="bg-blue-light">{{__('page-contract-models.box3.title')}}</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="bg-grey-light">{{__('page-contract-models.box1.description')}}</td>
+                        <td class="bg-white">{{__('page-contract-models.box2.description')}}</td>
+                        <td class="bg-grey-light">{{__('page-contract-models.box3.description')}}</td>
+                    </tr>
+                    <tr>
+                        <td class="bg-grey-light"><strong>{{__('page-contract-models.benefits')}}</strong></td>
+                        <td class="bg-white"><strong>{{__('page-contract-models.benefits')}}</strong></td>
+                        <td class="bg-grey-light"><strong>{{__('page-contract-models.benefits')}}</strong></td>
+                    </tr>
+                    <tr>
+                        <td class="bg-grey-light">
+                            <ul>
+                                <li>{{__('page-contract-models.box1.benefits.paragraph1')}}</li>                                <li>{{__('page-contract-models.box1.benefits.paragraph2')}}</li>                                <li>{{__('page-contract-models.box1.benefits.paragraph3')}}</li>                                <li>{{__('page-contract-models.box1.benefits.paragraph4')}}</li>                                <li>{{__('page-contract-models.box1.benefits.paragraph5')}}</li>                                <li>{{__('page-contract-models.box1.benefits.paragraph6')}}</li>
+                            </ul>
+                        </td>
+                        <td class="bg-white">
+                            <ul>
+                                <li>{{__('page-contract-models.box2.benefits.paragraph1')}}</li>                                <li>{{__('page-contract-models.box2.benefits.paragraph2')}}</li>
+                            </ul>
+                        </td>
+                        <td class="bg-grey-light">
+                            <ul>
+                                <li>{{__('page-contract-models.box3.benefits.paragraph1')}}</li>
+                                <li>{{__('page-contract-models.box3.benefits.paragraph2')}}</li>
+                                <li>{{__('page-contract-models.box3.benefits.paragraph3')}}</li>
+                                <li>{{__('page-contract-models.box3.benefits.paragraph4')}}</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="bg-grey-light"><a href="{{__enhance.mount('/download')}}" title="Download Contracts" class="download-constract">{{__('page-contract-models.download-constracts')}}</a></td>
+                        <td class="bg-white"><a href="{{__enhance.mount('/download')}}" title="Download Contracts" class="download-constract">{{__('page-contract-models.download-constracts')}}</a></td>
+                        <td class="bg-grey-light"><a href="{{__enhance.mount('/download')}}" title="Download Contracts" class="download-constract">{{__('page-contract-models.download-constracts')}}</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div><!-- /page-bottom-container -->
+    </div>
+</div>
+{% endblock %}

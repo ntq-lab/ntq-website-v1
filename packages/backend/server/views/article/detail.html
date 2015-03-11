@@ -1,0 +1,200 @@
+{% extends '../layout/restrict.html' %}
+{% block head %}
+<title>{{article.heading}}</title>
+<link rel="stylesheet" href="/backend/assets/css/article.css">
+{% endblock %}
+
+{% block angular %}data-ng-controller="ArticleController"{% endblock %}
+
+{% block title %}{{__('Article Detail')}}{% endblock %}
+
+{% block panel %}
+<li class="has-form" ng-if="!article.enabled">
+    <form action="{{__enhance.mount('/article/' + article._id)}}" method="post">
+        <button type="submit">{{__('Publish NOW')}}</button>
+    </form>
+</li>
+<li ng-if="article.enabled">
+    <a>
+        <i class="fi-check size-16"></i>
+        <span>{{__('Published')}}</span>
+    </a>
+</li>
+{% endblock %}
+
+{% block body %}
+<section>
+    <div class="row full-width">
+        <div class="small-12 medium-12 large-12 column">
+            <fieldset class="gallery-area">
+                <legend>{{__('Gallery')}}</legend>
+                <div class="gallery-dock">
+                    <div class="left add-gallery">
+                        <div class="gallery-thumb th" upload-image="" control="true" data-ng-upload="onGalleryImageAdd(id, image)"
+                             data-ng-add="onGalleryImageClientAdd(images)">
+                        </div>
+                    </div>
+                    <div class="gallery">
+                        <div class="gallery-thumb th" ng-repeat="image in article.gallery track by $index"
+                            upload-image="{% raw %}{{image}}{% endraw %}" ng-upload="onGalleryImageUpdate(image, $index)"
+                            ng-remove="onGalleryImageRemove($index)">
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+        </div>
+    </div>
+    <div class="row full-width">
+        <div class="small-8 medium-8 large-8 column">
+            <div class="row full-width">
+                <div class="small-12 medium-12 large-12 column">
+                    <fieldset>
+                        <legend>{{__('Article Content')}}</legend>
+                        <ul class="button-group">
+                            <li>
+                                <button class="button secondary tiny" ng-click="addSmallHeading()">{{__('Small Heading')}}</button>
+                            </li>
+                            <li>
+                                <button class="button secondary tiny" ng-click="addParagraphTextOnly()">{{__('Text Only')}}</button>
+                            </li>
+                            <li>
+                                <button class="button secondary tiny" ng-click="addParagraphTextLeft()">{{__('Text - Image')}}</button>
+                            </li>
+                            <li>
+                                <button class="button secondary tiny" ng-click="addParagraphTextRight()">{{__('Image - Text')}}</button>
+                            </li>
+                            <li>
+                                <button class="button secondary tiny" ng-click="addParagraphImageOnly()">{{__('Image Only')}}</button>
+                            </li>
+                        </ul>
+                        <div class="article-extracts">
+                            <div ng-repeat="extract in article.extracts track by $index" class="article-extract">
+                                <div class="controls">
+                                    <a ng-click="moveDown(extract)"><i class="fi-arrow-down size-16"></i></a>
+                                    <a ng-click="moveUp(extract)"><i class="fi-arrow-up size-16"></i></a>
+                                    <a ng-click="removeExtract(extract)"><i class="fi-x size-16"></i></a>
+                                </div>
+                                <div class="content">
+                                    <div ng-if="extract.style == 0">
+                                        <textarea class="heading" x-resize ng-model="extract.text" ng-change="saveExtract(extract)">{{extract.text}}</textarea>
+                                    </div>
+                                    <div ng-if="extract.style == 1">
+                                        <textarea x-resize ng-model="extract.text" ng-change="saveExtract(extract)">{{extract.text}}</textarea>
+                                    </div>
+                                    <div ng-if="extract.style == 2">
+                                        <div class="row full-width">
+                                            <div class="small-8 medium-8 large-8 column">
+                                                <textarea x-resize ng-model="extract.text" ng-change="saveExtract(extract)">{{extract.text}}</textarea>
+                                            </div>
+                                            <div class="small-4 medium-4 large-4 column">
+                                                <div class="th img text-center" upload-image="{% raw %}{{extract.image}}{% endraw %}"
+                                                        ng-upload="onImageUpload(extract, image)" ng-remove="onImageRemove(extract)">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div ng-if="extract.style == 3">
+                                        <div class="row full-width">
+                                            <div class="small-4 medium-4 large-4 column">
+                                                <div class="th img text-center" upload-image="{% raw %}{{extract.image}}{% endraw %}"
+                                                        ng-upload="onImageUpload(extract, image)" ng-remove="onImageRemove(extract)">
+                                                </div>
+                                            </div>
+                                            <div class="small-8 medium-8 large-8 column">
+                                                <textarea x-resize ng-model="extract.text" ng-change="saveExtract(extract)">{{extract.text}}</textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div ng-if="extract.style == 4">
+                                        <div class="th img text-center" upload-image="{% raw %}{{extract.image}}{% endraw %}"
+                                                ng-upload="onImageUpload(extract, image)" ng-remove="onImageRemove(extract)">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+                </div>
+            </div>
+        </div>
+        <div class="small-4 medium-4 large-4 column">
+            <fieldset>
+                <legend>{{__('Basic')}}</legend>
+                <label>
+                    <span>{{__('Heading')}}</span>
+                    <input type="text" ng-model="article.heading" ng-change="saveChanges()">
+                </label>
+                <label>
+                    <span>{{__('Bulletin')}}</span>
+                    <textarea class="resize-y" rows="5" ng-model="article.bulletin" ng-change="saveChanges()"></textarea>
+                </label>
+                <label>
+                    <span>{{__('Time')}}</span>
+                    <input type="text" ng-model="article.time" ng-change="saveChanges()">
+                </label>
+                <label>
+                    <span>{{__('Avatar')}}</span>
+                </label>
+                <div class="article-avatar">
+                    <div class="th text-center" upload-image="{% raw %}{{article.avatar}}{% endraw %}"
+                        ng-upload="onAvatarUpdate(image)" ng-remove="onAvatarRemove()">
+                    </div>
+                </div>
+                <label>
+                    <span>{{__('Highlight')}}</span>
+                    <div class="switch">
+                        <input type="checkbox" id="article-highlighted" ng-model="article.highlighted" ng-change="saveChanges()">
+                        <label for="article-highlighted"></label>
+                    </div>
+                </label>
+            </fieldset>
+            <fieldset>
+                <legend>{{__('Languages')}}</legend>
+                <label ng-repeat="language in languages">
+                    <input type="checkbox" ng-model="language.selected" ng-change="onLanguagesChange()">
+                    <kbd class="language-notation">{% raw %}{{language.text}}{% endraw %}</kbd>
+                </label>
+            </fieldset>
+            <fieldset>
+                <legend>{{__('Enabled Categories')}}</legend>
+                <label ng-repeat="category in categories">
+                    <input type="checkbox" ng-model="category.selected" ng-change="onCategoriesChange()">
+                    <span ng-repeat="(language, name) in category.name">
+                        <kbd class="language-notation">{% raw %}{{language}}{% endraw %}</kbd>
+                        <span>{% raw %}{{name}}{% endraw %}</span>
+                    </span>
+                </label>
+                <div ng-if="!categories.length">
+                    <span>{{__('No category enabled.')}}</span>
+                    <a href="{{__enhance.mount('/categories')}}">{{__('Click to enable one.')}}</a>
+                </div>
+            </fieldset>
+        </div>
+    </div>
+</section>
+{% endblock %}
+{% block script %}
+<script src="/bower_components/plupload/js/plupload.full.min.js"></script>
+<script src="/bower_components/angular/angular.js"></script>
+<script>
+<!--
+if (typeof angular !== 'undefined') {
+    angular.module('backend', ['backend.article', 'backend.category']);
+
+    angular.module('backend').factory('Global', [function () {
+        return {
+            articleID: {{article.id|json|safe}},
+            mount: {{__enhance.mount('')|json|safe}},
+            languages: {{__locale.languages|json|safe}},
+            defaultLocale: {{__local.defaultLocale|json|safe}},
+            autoSaveLatency: {{autoSaveLatency|json|safe}}
+        };
+    } ]);
+    angular.element(document).ready(function () {
+        angular.bootstrap(document, ['backend']);
+    });
+}
+-->
+</script>
+<script src="/modules/aggregated.js"></script>
+{% endblock %}

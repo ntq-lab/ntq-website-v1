@@ -1,0 +1,338 @@
+/* Common */
+.line-black {
+    display: block;
+    background: url('../img/line-black.png') repeat-y center center;
+    margin-bottom: 10px;
+}
+.line-white {
+    display: block;
+    background: url('../img/line-white.png') repeat-y center center;
+}
+.line-red {
+    display: block;
+    background: url('../img/line-red.png') repeat-y center center;
+}
+.overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 11;
+    color: #fff;
+    background: #000;
+    background: rgba(0,0,0,0.4);
+}
+.arrow-down,
+.arrow-right,
+.arrow-down-black {
+    height: 40px;
+    width: 40px;
+    display: block;
+}
+.arrow-down {
+    background: url('../img/arrow-down.png') center center;
+}
+.arrow-down-black {
+    background: url('../img/arrow-down-black.png') center center;
+}
+.arrow-right {
+    background: url('../img/arrow-right.png') center center;
+}
+.download-brochure {
+    color: #fff;
+    /*font-size: 16px;*/
+    font-size: 1em;
+    width: 190px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    border-radius: 15px;
+    text-align: center;
+    display: block;
+}
+.download-brochure:hover {
+    color: #fff;
+}
+.btn-slideshow {
+    position: absolute;
+    list-style: none;
+    padding: 0;
+}
+.btn-slideshow li {
+    display: inline-block;
+}
+.btn-slideshow a {
+    width: 50px;
+    height: 5px;
+    display: inline-block;
+    /*margin-right: 10px;*/
+    padding: 10px;
+}
+.read-more {
+    width: 78px;
+    height: 20px;
+    display: block;
+    text-align: center;
+    line-height: 20px;
+    /*font-size: 12px;*/
+    font-size: 0.750em;
+    position: absolute;
+}
+
+/* Page bottom content */
+.page-bottom-container {
+    position: relative;
+}
+.page-bottom-content {
+    position: relative;
+    top: -60px;
+    /*width: 1000px;*/
+}
+.page-bottom-container-fluid {
+    background: #f3f3f3;
+    padding-bottom: 71px;
+}
+/*.page-bottom-container-fluid .container {
+    width: 1000px;
+}*/
+
+/* Form common */
+.form-common {
+    margin: 25px auto;
+    width: 525px;
+    position: relative;
+}
+.form-common .icon-send-us-message {
+    position: absolute;
+    right: -45px;
+    bottom: -20px;
+    width: 127px;
+    height: 104px;
+    background: url('../img/sendusmessage.png') no-repeat;
+    z-index: 1;
+}
+.form-common .form-group {
+    margin-bottom: 8px;
+}
+.form-common .form-textarea {
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+.form-common .form-submit {
+    text-align: center
+}
+.form-common input[type="text"],
+.form-common input[type="email"],
+.form-common textarea {
+    border: none;
+    background: #fff;
+    color: #b3aaa5;
+    padding: 0 21px;
+}
+.form-common input[type="text"],
+.form-common input[type="email"] {
+    height: 40px;
+    width: 246px;
+    float: left;
+    margin: 0 8px;
+    line-height: 20px;
+    padding: 5px 21px;
+}
+.form-common textarea {
+    margin: 0 8px;
+    width: 508px;
+    height: 100px;
+    padding: 15px 21px;
+    resize: none;
+    position: relative;
+    z-index: 10;
+}
+.form-common .form-subject {
+    width: 508px !important;
+    margin: 0 8px;
+    height: 40px;
+    line-height: 40px;
+}
+.form-common input[type="text"]:focus,
+.form-common textarea:focus,
+.form-common input[type="email"]:focus {
+    outline: none;
+}
+.form-common input[type="submit"] {
+    width: 194px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    background: #385dae;
+    /*font-size: 18px;*/
+    font-size: 1.125em;
+    font-weight: 700;
+    color: #fff;
+    border: none;
+}
+
+/* List Background */
+.bg-pingo { 
+    background: #d73e3e !important;
+}
+.bg-orange {
+    background: #fda705 !important;
+}
+.bg-blue {
+    background: #024da1 !important;
+}
+.bg-green {
+    background: #2baf2b !important;
+}
+.bg-blue-light {
+    background: #0288d1 !important;
+}
+.bg-pingo,
+.bg-orange,
+.bg-blue,
+.bg-green,
+.bg-blue-light {
+    color: #fff;
+}
+.bg-pingo .read-more a,
+.bg-orange .read-more a,
+.bg-blue .read-more a,
+.bg-green .read-more a,
+.bg-blue-light .read-more a {
+    color: #fff !important;
+    border: 1px solid #fff !important;
+}
+
+/* Partner map */
+.partner-map {
+    height: 330px;
+    width: 100%;
+    position: relative;
+    background: url('../img/map-partner.png') no-repeat left top;
+}
+.partner-map p {
+    position: absolute;
+    color: #fff;
+    font-weight: 300;
+}
+.partner-map p .number {
+    float:left;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    text-align: center;
+    margin-right: 7px;
+}
+.partner-map p .country {
+    float:left;
+}
+.partner-map p.american {
+    /*top: 102px;
+    left: 26px;*/
+    top: 6px;
+    left: 131px;
+}
+.partner-map .american .number,
+.partner-map .england .number,
+.partner-map .australia .number {
+    /*font-size: 24px;*/
+    font-size: 1.5em;
+    height: 33px;
+    width: 33px;
+    line-height: 33px;
+}
+.partner-map .american .country,
+.partner-map .england .country,
+.partner-map .vietnam .country {
+    /*font-size: 25px;*/
+    font-size: 1.563em;
+}
+.partner-map .england {
+    /*top: 80px;
+    left: 270px;*/
+    top: 6px;
+    left: 364px;
+}
+
+.partner-map .belarus .number {
+    /*font-size: 17px;*/
+    font-size: 1.063em;
+    height: 23px;
+    width: 23px;
+    line-height: 23px;
+}
+.partner-map .belarus .country {
+    /*font-size: 25px;*/
+    font-size: 1.563em;
+}
+.partner-map .belarus {
+    /*top: 92px;
+    left: 393px;*/
+    top: -1px;
+    left: 497px;
+}
+
+.partner-map .japan .number,
+.partner-map .vietnam .number {
+    /*font-size: 28px;*/
+    font-size: 1.750em;
+    height: 39px;
+    width: 39px;
+    line-height: 39px;
+}
+.partner-map .japan .country {
+    /*font-size: 28px;*/
+    font-size: 1.750em;
+    margin-top: 6px;
+}
+.partner-map .japan {
+    /*top: 195px;
+    left: 598px;*/
+    top: 90px;
+    left: 716px;
+}
+
+.partner-map .vietnam {
+    /*top: 253px;
+    left: 552px;*/
+    top: 152px;
+    left: 679px;
+}
+.partner-map .vietnam .country {
+    margin-top: 3px;
+}
+
+.partner-map .australia .country {
+    /*font-size: 28px;*/
+    font-size: 1.750em;
+    margin-top: 4px;
+}
+.partner-map .australia {
+    /*top: 357px;
+    left: 578px;*/
+    top: 264px;
+    left: 705px;
+}
+
+/* Message contact */
+.message-contact {
+    width: 508px;
+    margin: 15px auto;
+    padding: 10px 15px;
+    border: 1px solid transparent;
+}
+.message-success {
+    color: #3c763d;
+    background-color: #dff0d8;
+    border-color: #d6e9c6;
+}
+.message-error {
+    color: #a94442;
+    background-color: #f2dede;
+    border-color: #ebccd1;
+}

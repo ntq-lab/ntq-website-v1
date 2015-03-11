@@ -1,0 +1,185 @@
+{% extends 'layout/base.html' %}
+
+{% block title %}
+{{__('title-website.about')}}
+{% endblock %}
+
+{% block stylesheet %}
+{% for file in assets['/css/about.css'] %}
+    <link href="{{file}}" rel="stylesheet">
+{% endfor %}
+<!--
+<link href="/frontend/assets/css/menu-white.css" rel="stylesheet">
+<link href="/frontend/assets/css/submenu-common.css" rel="stylesheet">
+<link href="/frontend/assets/css/about-20150129.css" rel="stylesheet">
+-->
+{% endblock %}
+
+{% block script %}
+{% for file in assets['/js/about.js'] %}
+    <script src="{{file}}"></script>
+{% endfor %}
+<!--
+<script src="/bower_components/jquery-ui/ui/jquery-ui.js"></script>
+<script src="/frontend/assets/js/main-nav.js"></script>
+<script src="/frontend/assets/js/max-height-element.js"></script>
+<script src="/frontend/assets/js/about.js"></script>
+-->
+{% endblock %}
+
+{% block content %}
+<div class="container-fluid page-top-container-fluid about-page-top-container-fluid">
+	<div class="container">
+		<h1 class="text-center">{{__('page-about.title')}}</h1>
+	</div>
+</div><!-- /about-page-top-container-fluid -->
+
+<div class="container-fluid about-page-bottom-container-fluid">
+	<div class="container">
+		<div class="main-nav-about">
+			<div class="main-nav-about-content" id="main-nav-about-content">
+				<ul>
+					<li><a href="#main-nav-about-1">{{__('page-about.box1.who-we-are.title')}}</a></li>
+					<li><a href="#main-nav-about-2" class="active">{{__('page-about.box1.what-we-do.title')}}</a></li>
+					<li><a href="#main-nav-about-3">{{__('page-about.box1.why-we-are-different.title')}}</a></li>
+				</ul>
+				<div class="main-nav-about-content-slide" id="main-nav-about-1">
+					<p>{{__('page-about.box1.who-we-are.description.paragraph1')}}</p>
+					<p>{{__('page-about.box1.who-we-are.description.paragraph2')}}</p>
+					<p>{{__('page-about.box1.who-we-are.description.paragraph3')}}</p>
+					<p>{{__('page-about.box1.who-we-are.description.paragraph4')}}</p>
+				</div><!-- /main-nav-about-content-slide -->
+				<div class="main-nav-about-content-slide" id="main-nav-about-2">
+					<p>{{__('page-about.box1.what-we-do.description.paragraph1')}}</p>
+					<p>{{__('page-about.box1.what-we-do.description.paragraph2')}}</p>
+					<p>{{__('page-about.box1.what-we-do.description.paragraph3')}}</p>
+				</div><!-- /main-nav-about-content-slide -->
+				<div class="main-nav-about-content-slide" id="main-nav-about-3">
+					<p>{{__('page-about.box1.why-we-are-different.description.paragraph1')}}</p>
+					<p>{{__('page-about.box1.why-we-are-different.description.paragraph2')}}</p>
+					<p>{{__('page-about.box1.why-we-are-different.description.paragraph3')}}</p>
+				</div><!-- /main-nav-about-content-slide -->
+
+			</div><!-- /main-nav-about-content -->
+		</div><!-- /main-nav-about -->
+
+		<div class="vision-box">
+			<h2>{{__('page-about.box2.title')}}</h2>
+			<div class="vision-content">
+				<p>{{__('page-about.box2.description.paragraph1')}}<br/> {{__('page-about.box2.description.paragraph2')}}</p>
+			</div>
+		</div><!-- /vision-box -->
+
+		<div class="map-box clearfix">
+			<p class="quote">{{__('page-about.box3.title')}}</p>
+			<div class="clear"></div>
+			<div class="partner-map">
+				{% include "./partner-map.html" %}
+			</div>
+		</div><!-- /map-box -->
+
+		<div class="strategic clearfix">
+			<h2>{{__('page-about.box4.title')}}</h2>
+			<div class="clear"></div>
+			<div class="strategic-box pull-left">
+				<div class="strategic-box-image pull-left">
+					<div class="strategic-box-image-container">
+						<img src="/img/icon-about-total-revenue.png" alt="Total revenue" width="48" height="52">
+					</div>
+				</div><!-- /strategic-box-image -->
+				<div class="strategic-box-text pull-left">
+					<p>{{__('page-about.box4.box1.title')}}</p>
+					<p><strong>{{__('page-about.box4.box1.description')}}</strong></p>
+				</div><!-- /strategic-box-text -->
+			</div><!-- /strategic-box -->
+
+			<div class="strategic-box pull-left">
+				 <div class="strategic-box-image pull-left">
+					<div class="strategic-box-image-container">
+						<img src="/img/icon-about-human-resources.png" alt="Human resources" width="59" height="56">
+					</div>
+				 </div><!-- /strategic-box-image -->
+				<div class="strategic-box-text pull-left">
+					<p>{{__('page-about.box4.box2.title')}}</p>
+					<p><strong>{{__('page-about.box4.box2.description')}}</strong></p>
+				</div><!-- /strategic-box-text -->
+			</div><!-- /strategic-box -->
+		</div><!-- /strategic -->
+
+		<div class="mission-policy clearfix">
+			<div class="mission pull-left">
+				<h2>{{__('page-about.box5.title')}}</h2>
+				<ul>
+					<li>{{__('page-about.box5.description.paragraph1')}}</li>
+					<li>{{__('page-about.box5.description.paragraph2')}}</li>
+				</ul>
+
+			</div><!-- /mission -->
+			<div class="policy pull-left">
+				<h2>{{__('page-about.box6.title')}}</h2>
+				<ul>
+					<li>{{__('page-about.box6.description.paragraph1.text1')}}<strong>{{__('page-about.box6.description.paragraph1.text2')}}</strong>{{__('page-about.box6.description.paragraph1.text3')}}</li>
+					<li>{{__('page-about.box6.description.paragraph2.text1')}}<strong>{{__('page-about.box6.description.paragraph2.text2')}}</strong>{{__('page-about.box6.description.paragraph2.text3')}}</li>
+					<li>{{__('page-about.box6.description.paragraph3.text1')}}<strong>{{__('page-about.box6.description.paragraph3.text2')}}</strong>{{__('page-about.box6.description.paragraph3.text3')}}</li>
+				</ul>
+			</div><!-- /policy -->
+		</div><!-- /mission-policy -->
+		<div class="tv-box clearfix">
+			<h2>{{__('page-about.box7.title')}}</h2>
+			<div class="clearfix">
+				<div class="tv-box-content">
+					<div class="clearfix">
+						<div class="strategic-box pull-left">
+							<div class="strategic-box-image pull-left">
+								<div class="strategic-box-image-container">
+									<a href="/download">
+										<img src="/img/icon-about-document.png" alt="Total revenue" width="48" height="52">
+									</a>
+								</div>
+							</div><!-- /strategic-box-image -->
+						 </div>
+						 <div class="download-quick-link pull-left">
+						 	<h3><a class="link" href="/download">{{__('page-about.download-link')}}</a></h3>
+						 </div>
+					</div>
+					<p>{{__('page-about.box7.description.paragraph1')}}</p>
+					<p>{{__('page-about.box7.description.paragraph2')}}</p>
+				</div>
+				<div class="tv-box-image">
+					<a href="#" id="play-video"><img src="/img/img-video.png" alt="TV" width="240" height="159"></a>
+				</div>
+			</div>
+		</div><!-- /tv-box -->
+		<div class="image-people-company-box">
+			<img src="/img/img-people-about.png" alt="Image people company" width="1000" height="496">
+		</div><!-- /image-people-company-box -->
+		<div class="information-company clearfix">
+			<div class="information-address pull-left">
+				<h3>{{__('page-about.box8.company-information.title')}}</h3>
+				<dl class="clearfix">
+					<dt>{{__('page-about.box8.company-information.company-name-title')}}</dt>
+					<dd>{{__('page-about.box8.company-information.company-name-content')}}</dd>
+					<dt>{{__('page-about.box8.company-information.head-office-title')}}</dt>
+					<dd>{{__('page-about.box8.company-information.head-office-content')}}</dd>
+					<dt>{{__('page-about.box8.company-information.founded-on-title')}}</dt>
+					<dd>{{__('page-about.box8.company-information.founded-on-content')}}</dd>
+				</dl>
+			</div><!-- /information-address -->
+			<div class="information-address information-members pull-left">
+				<h3>{{__('page-about.box8.members.title')}}</h3>
+				<dl class="clearfix">
+					<dt>{{__('page-about.box8.members.ceo-title')}}</dt>
+					<dd>{{__('page-about.box8.members.ceo-content')}}</dd>
+					<dt>{{__('page-about.box8.members.cto-title')}}</dt>
+					<dd>{{__('page-about.box8.members.cto-content')}}</dd>
+					<dt>{{__('page-about.box8.members.cco-title')}}</dt>
+					<dd>{{__('page-about.box8.members.cco-content')}}</dd>
+					<dt>{{__('page-about.box8.members.human-resources-title')}}</dt>
+					<dd>{{__('page-about.box8.members.human-resources-content')}}</dd>
+				</dl>
+			</div><!-- /information-address -->
+		</div><!-- /information-company -->
+
+	</div>
+</div><!-- /about-page-bottom-container-fluid -->
+{% endblock %}

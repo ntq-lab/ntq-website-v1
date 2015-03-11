@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Support Brower</title>
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800&subset=vietnamese' rel='stylesheet' type='text/css'>
+        <style>
+            * {padding: 0; margin: 0;}
+            body {
+                font-family: 'Open Sans', Arial, sans-serif;
+                font-weight: 400;
+                font-size: 14px;
+                background: #e9e9e9;
+                line-height: 1;
+            }
+            a { 
+                text-decoration: none;
+                color: #383838;
+            }
+            .container-fluid {
+                width: 100%;
+            }
+            .container {
+                width: 1000px;
+                margin: auto;
+            }
+            .main-nav-container-fluid {
+                height: 50px;
+                background: #000;
+                line-height: 50px;
+            }
+            .main-nav-container a {
+                color: #fff;
+                font-weight: 300;
+                font-size: 22px;
+            }
+            .main-nav-container a strong {
+                font-weight: 700;
+            }
+            .content {
+                height: 100%;
+                color: #383838;
+            }
+            .title {
+                position: relative;
+                padding-top: 60px;
+                background: url('/frontend/assets/img/brower/img-title.png') no-repeat center bottom;
+                height: 166px;
+                margin-bottom: 35px;
+            }
+            .title .spider {
+                position: absolute;
+                top: 0;
+                left: 650px;
+            }
+            .description {
+                margin-bottom: 8px;
+                font-size: 24px;
+                text-align: center;
+                font-weight: 300;
+            }
+            .list-brower {
+                margin-top: 15px;
+                list-style: none;
+                padding-top: 130px;
+                background: url('/frontend/assets/img/brower/brower-sprite.png') no-repeat center top;
+                font-size: 14px;
+                overflow: hidden;
+                padding-left: 124px;
+            }
+            .list-brower li {
+                float: left;
+                line-height: 1.3em;
+                text-align: center;
+                width: 120px;
+                margin-right: 40px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container-fluid main-nav-container-fluid">
+            <div class="container main-nav-container">
+                <a class="pull-left logo" href="{{__enhance.mount('/')}}"><strong>NTQ</strong> Solution</a>
+            </div><!-- /main-nav -->
+        </div>
+        <div class="container content">
+            <div class="title">
+                <div class="spider"><img src="/frontend/assets/img/spider.gif" alt="spider" /></div>
+            </div>
+            <p class="description">Your browser is obsolete, please upgrade to a newer version!</p>
+            <p class="description">あなたのブラウザが古過ぎ、新しいバージョンを更新してください</p>
+            <ul class="list-brower">
+                <li>
+                    <a href="http://windows.microsoft.com/en-us/internet-explorer/download-ie" target="_blank"><p>Internet Explorer<br/>9.0 or newer</p></a>
+                </li>
+                <li><a href="https://www.mozilla.org/en-US/firefox/new/#" target="_blank">Mozilla Firefox
+<br/>11.0 or newer<a/></li>
+                <li><a href="https://www.google.com/chrome/browser/" target="_blank">Google Chrome
+<br/>36.0 or newer<a/></li>
+                <li><a href="http://support.apple.com/downloads/#safari" target="_blank">Safari
+<br/>5.0.6 or newer<a/></li>
+                <li><a href="http://www.opera.com/computer/windows-alternate?utm_expid=8257061-31.twfoYTDdRR-RCFZ8r5wZ3A.1&utm_referrer=http%3A%2F%2Fwww.opera.com%2Fvi%2Fcomputer%2Fwindows" target="_blank">Opera
+<br/>18 or newer<a/></li>
+            </ul>
+        </div>
+    </body>
+</html>

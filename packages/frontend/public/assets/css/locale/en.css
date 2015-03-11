@@ -1,0 +1,12 @@
+body {
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-size: 14px;
+}
+.news-container .news-box h3 {
+    /*font-size: 25px;*/
+    font-size: 1.563em;
+}
+.footer-main-nav .footer-main-nav-col ul li a {
+    font-size: 13px;
+    /*font-size: 0.813em;*/
+}

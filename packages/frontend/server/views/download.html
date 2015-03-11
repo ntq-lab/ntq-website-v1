@@ -1,0 +1,43 @@
+{% extends 'layout/base.html' %}
+{% block title %}
+{{__('title-website.download')}}
+{% endblock %}
+{% block stylesheet %}
+<link href="/frontend/assets/css/menu-black.css" rel="stylesheet">
+<link href="/frontend/assets/css/download.css" rel="stylesheet">
+{% endblock %}
+{% block script %}
+<script src="/frontend/assets/js/main-nav.js"></script>
+{% endblock %}
+{% block content %}
+<div class="container-fluid page-top-container-fluid download-page-top-container-fluid">
+    <div class="container">
+        <h1 class="text-center">{{__('page-downloads.title')}}</h1>
+    </div>
+</div><!-- /download-page-top-container-fluid -->
+<div class="container-fluid page-bottom-container-fluid download-page-bottom-container-fluid">
+    <div class="container">
+        <div class="download-container page-bottom-container">
+            <div class="download-content clearfix">
+                {% for folder in listFolders %}
+                <div class="download-box pull-left">
+                    <h2>{{folder.name[locale]}}</h2>
+                    <ul>
+                        {% for file in folder.files %}
+                        <li>
+                            <a href="/asset/download/{{folder.id}}_{{file.id}}">{{file.name[locale]}}</a>
+                        </li>
+                        {% endfor %}
+                    </ul>
+                </div><!-- /download-box -->
+                {% endfor %}
+                <div class="clear"></div>
+                <!--<div class="button-download-all">
+                    <a href="#">Download all</a>
+                </div>--><!-- /button-download-all -->
+            </div><!-- /donwload-content -->
+        </div><!-- /download-container -->
+    </div>
+</div><!-- /download-page-bottom-container-fluid -->
+<div class="clear"></div>
+{% endblock %}

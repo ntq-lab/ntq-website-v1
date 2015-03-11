@@ -1,0 +1,129 @@
+{% extends 'layout/base.html' %}
+
+{% block title %}
+{{__('title-website.articles')}}
+{% endblock %}
+
+{% block stylesheet %}
+{% for file in assets['/css/article.css'] %}
+    <link href="{{file}}" rel="stylesheet">
+{% endfor %}
+<!--
+<link href="/frontend/assets/css/article.css" rel="stylesheet">
+-->
+{% endblock %}
+
+{% block script %}
+{% for file in assets['/js/article.js'] %}
+    <script src="{{file}}"></script>
+{% endfor %}
+<!--
+<script src="/bower_components/jquery-ui/ui/jquery-ui.js"></script>
+<script src="/frontend/assets/js/jquery-tabs-rotate.js"></script>
+<script src="/frontend/assets/js/main-nav.js"></script>
+<script src="/frontend/assets/js/article.js"></script>
+-->
+{% endblock %}
+
+{% block content %}
+<div class="container-fluid news-page-container-fluid">
+    <div class="container">
+        <div class="slideshow-news clearfix" id="slideshow-news">
+            {% for highlightedArticle in highlightedArticles %}
+                {% if !!highlightedArticle.avatar %}
+                <div id="tabs-{{highlightedArticle.id}}" class="slideshow-news-left pull-left">
+                    <div class="slideshow-news-left-image"><img src="/system/assets/img/{{highlightedArticle.avatar}}" alt="{{highlightedArticle.heading}}"/></div>
+                    <div class="overlay">
+                        <h3 class="h2">{{highlightedArticle.heading}}</h3>
+                        <p>{{highlightedArticle.bulletin}}</p>
+                        <div class="read-more"><a href="{{__enhance.mount('/article/') + highlightedArticle.id}}" class="">{{__('common.read-more')}}</a></div>
+                    </div>
+                </div><!-- /slideshow-news-left -->
+                {% else %}
+                <div id="tabs-{{highlightedArticle.id}}" class="slideshow-news-left pull-left {{color[loop.index]}}">
+                    <h3 class="h2">{{highlightedArticle.heading}}</h3>
+                    <p>{{highlightedArticle.bulletin}}</p>
+                    <div class="read-more"><a href="{{__enhance.mount('/article/') + highlightedArticle.id}}" class="">{{__('common.read-more')}}</a></div>
+                </div><!-- /slideshow-news-left -->
+                {% endif %}
+            {% endfor %}
+            <div class="slideshow-news-right pull-left">
+                <h3>{{__('page-news.headlines')}}</h3>
+                <ul>
+                    {% for highlightedArticle in highlightedArticles %}
+                    <li><a href="#tabs-{{highlightedArticle.id}}">{{highlightedArticle.heading}}</a></li>
+                    {% endfor %}
+                </ul>
+            </div><!-- /slideshow-news-right -->
+        </div><!-- /slideshow-news -->
+
+        <div class="content-news clearfix">
+            <div class="content-news-left pull-left">
+                <div class="display-month-year text-right">
+                    {% set yearNow = now|date('Y') %}
+                    {% set monthNow = now|date('m') %}
+                    <ul id="display-month-year">
+                        <li><a href="#" data-date="" class="active">{{__('page-news.latest')}}</a></li>
+                        <li><a href="#" data-date="{{yearNow}}" class="year">{{yearNow}}</a></li>
+                        <li><a href="#" data-date="{{monthNow}}" class="month">{{monthNow}}</a></li>
+                        <li><a href="#" data-date="{{monthNow - 1}}" class="month">{% if monthNow < 10 %}0{{monthNow - 1}}{% else %}{{monthNow - 1}}{% endif %}</a></li>
+                        <li><a href="#" data-date="{{monthNow - 2}}" class="month">{% if monthNow < 10 %}0{{monthNow - 2}}{% else %}{{monthNow - 2}}{% endif %}</a></li>
+                        <li><a href="#" data-date="{{yearNow - 1}}" class="year">{{yearNow - 1}}</a></li>
+                        <li><a href="#" data-date="{{yearNow - 2}}" class="year">{{yearNow - 2}}</a></li>
+                    </ul>
+                </div><!-- /display-month-year -->
+
+                <div class="categories-filter">
+                    <div class="select-style">
+                        <select id="filter-articles">
+                            <option value="">{{__('page-news.all')}}</option>
+                            {% for category in listCategories %}
+                            <option value="{{category.id}}">{{category.name[locale]}}</option>
+                            {% endfor %}
+                        </select>
+                    </div>
+                </div><!-- /categories-filter -->
+                <div class="clear"></div>
+
+                <div id="list-article">
+                    {% include "./list-article.html" %}
+                </div>
+                {% if totalPageArticle > 1 %}
+                <a class="load-more" id="load-more" href="#" data-page="{{totalPageArticle}}"><span>{{__('page-news.load-more')}}</span></a>
+                {% endif %}
+            </div><!-- /content-news-left -->
+
+            <div class="content-news-right pull-left">
+                <h3>{{__('page-news.press-releases')}}</h3>
+                {% if listMediaArticles.length > 0 %}
+                    {% for mediaArticle in listMediaArticles %}
+                        {% if loop.first %}
+                        <div class="news-right-top">
+                            {% if !!mediaArticle.avatar %}
+                            <a href="{{__enhance.mount('/article/') + mediaArticle.id}}" class="news-top-title">{{mediaArticle.heading}}</a>
+                            <p class="date">{{mediaArticle.time|date('H:i d/m/Y', timezoneOffset)}}</p>
+                            <a href="{{__enhance.mount('/article/') + mediaArticle.id}}" class="news-top-image"><img src="/system/assets/img/{{mediaArticle.avatar}}" alt="{{mediaArticle.heading}}"></a>
+                            {% else %}
+                            <a href="{{__enhance.mount('/article/') + mediaArticle.id}}" class="news-top-title no-image">{{mediaArticle.heading}}</a>
+                            <p class="date no-image">{{mediaArticle.time|date('H:i d/m/Y', timezoneOffset)}}</p>
+                            {% endif %}
+                        </div><!-- /news-right-top -->
+                        {% else %}
+                        <div class="news-right clearfix">
+                            {% if !!mediaArticle.avatar %}
+                            <a href="{{__enhance.mount('/article/') + mediaArticle.id}}" class="news-right-image"><img src="/system/assets/img/{{mediaArticle.avatar}}" alt="{{mediaArticle.heading}}"></a>
+                            <a href="{{__enhance.mount('/article/') + mediaArticle.id}}">{{mediaArticle.heading}}</a>
+                            <p class="date">{{mediaArticle.time|date('H:i d/m/Y', timezoneOffset)}}</p>
+                            {% else %}
+                            <a href="{{__enhance.mount('/article/') + mediaArticle.id}}" class="no-image">{{mediaArticle.heading}}</a>
+                            <p class="date no-image">{{mediaArticle.time|date('H:i d/m/Y', timezoneOffset)}}</p>
+                            {% endif %}
+                        </div><!-- /news-right -->
+                        {% endif %}
+                    {% endfor %}
+                {% endif %}
+            </div><!-- /content-news-right -->
+        </div><!-- /content-news -->
+    </div>
+</div>
+{% endblock %}

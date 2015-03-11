@@ -1,0 +1,13 @@
+{
+  "name": "mean",
+  "version": "0.3.3",
+  "dependencies": {
+    "foundation": "*",
+    "foundation-icon-fonts": "*",
+    "angular": "~1.2.20",
+    "plupload": "~2.1.2",
+    "jquery-ui": "1.10.3",
+    "tweenjs": "r14",
+    "bluebird": "~2.9.13"
+  }
+}

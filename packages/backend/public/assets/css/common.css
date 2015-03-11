@@ -1,0 +1,112 @@
+.container {
+    min-width: 64.063em;
+    position: relative;
+}
+.top-bar .title-area .name .title a {
+    line-height: inherit;
+}
+.off-canvas-list .label {
+    padding-bottom: 0.25rem;
+    line-height: inherit;
+}
+.mark {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #fff;
+    opacity: .5;
+    z-index: 9999;
+}
+.body {
+    margin-top:  40px;
+    overflow: auto;
+}
+.row.full-width {
+    max-width: initial;
+}
+table.full-width {
+    width: 100%;
+}
+.s-top, .s-body, .s-left {
+    position: fixed;
+    margin: 0!important;
+}
+.s-top {
+    height: 45px;
+    top: 0;
+    left: 15rem;
+    right: 0;
+}
+.s-body {
+    top: 45px;
+    left: 15rem;
+    right: 0;
+    bottom: 0;
+    overflow: auto;
+    padding: 20px;
+}
+.s-left {
+    top: 0;
+    left: 0;
+    width: 15rem;
+    bottom: 0;
+    background: #333;
+    overflow-y: auto;
+    border-right: 1px solid #000;
+}
+*[class*="fi-"] {
+    margin-right: 5px;
+    display: inline-block;
+    text-align: center;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+*[class*="fi-"].size-12 { font-size: 12px; line-height: 12px; width: 12px; }
+
+*[class*="fi-"].size-14 { font-size: 14px; line-height: 14px; width: 14px; }
+
+*[class*="fi-"].size-16 { font-size: 16px; line-height: 16px; width: 16px; }
+
+*[class*="fi-"].size-18 { font-size: 18px; line-height: 18px; width: 18px; }
+
+*[class*="fi-"].size-21 { font-size: 21px; line-height: 21px; width: 21px; }
+
+*[class*="fi-"].size-24 { font-size: 24px; line-height: 24px; width: 24px; }
+
+*[class*="fi-"].size-36 { font-size: 36px; line-height: 36px; width: 36px; }
+
+*[class*="fi-"].size-48 { font-size: 48px; line-height: 48px; width: 48px; }
+
+*[class*="fi-"].size-60 { font-size: 60px; line-height: 60px; width: 60px; }
+
+*[class*="fi-"].size-72 { font-size: 72px; line-height: 72px; width: 72px; }
+
+.language-notation {
+    text-transform: uppercase;
+}
+
+table td, table th {
+    vertical-align: top;
+}
+.no-wrap {
+    white-space: nowrap;
+}
+td.fit, th.fit {
+    width: 1px;
+}
+textarea {
+    resize: none;
+}
+textarea.resize-x {
+    resize: horizontal;
+}
+textarea.resize-y {
+    resize: vertical;
+}
+table .button {
+    margin:  0;
+}

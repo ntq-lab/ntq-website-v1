@@ -1,0 +1,934 @@
+{
+    "menu": {
+        "home": "ホーム",
+        "company": "会社",
+        "services": "事業紹介",
+        "career": "採用情報",
+        "news": "ニュース",
+        "contact": "お問い合わせ",
+        "success-story": "成功ストーリー",
+        "download": "ダウンロード",
+        "about": "企業情報",
+        "domains": "開発ドメイン",
+        "technologies": "技術",
+        "contract-models": "契約モデル"
+    },
+    "title-website": {
+        "home": "ベトナムのソフトウェア開発会社｜ソフトウェア開発会社 | NTQ Solution",
+        "about": "自分について | スマートフォン、WEB、クラウド、組み込みアプリ開発 | NTQ Solution",
+        "articles": "プレス｜ニュース | NTQ Solution",
+        "career": "NTQ Solutionとビジネス展開",
+        "contact": "問い合わせ | NTQ Solution",
+        "contract-models": "契約モデル｜協力モデル | NTQ Solution",
+        "domains": "開発分野｜専門分野 | NTQ Solution",
+        "download": "資料ダウンロード | NTQ Solution",
+        "services": "ソフトウェア開発サービス｜ソフトウェア開発サービス | NTQ Solution",
+        "success-stories": "成功ストーリー｜参考のプロジェクト | NTQ Solution",
+        "technologies": "テクノロジー｜能力 | NTQ Solution"
+    },
+    "common": {
+        "address": {
+            "hanoi": {
+                "title": "在ベトナムの本社",
+                "address": "6th Floor HH3 Building, Me Tri Street, Nam Tu Liem District, Hanoi City, Vietnam",
+                "name": "Pham Thai Son",
+                "position": "代表取締役",
+                "tel": "電話番号",
+                "email": "メール"
+            },
+            "japan": {
+                "title": "在日の代表者",
+                "address": "東京都渋谷区道玄坂1-20-2<br>アライアンスビル渋谷壱番館5F",
+                "name": "To Quang Cong",
+                "position": "代表者",
+                "tel": "電話番号",
+                "email": "メール"
+            }
+        },
+        "support": "サポート",
+        "download-documents": "資料ダウンロード",
+        "map": {
+            "usa": "アメリカ",
+            "uk": "イギリス",
+            "belarus": "ベラルーシ",
+            "japan": "日本",
+            "vietnam": "ベトナム",
+            "australia": "オーストラリア"
+        },
+        "company-name": "NTQ Solution",
+        "read-more": "もっと見る",
+        "list-services-domains": {
+            "services": {
+                "title": "サービス",
+                "list": {
+                    "software-outsourcing": "ソフトウェア・アウトソーシング",
+                    "solutions-consultancy": "ソリューションコンサルタント",
+                    "graphic-design": "グラフィックスデザイン"
+                }
+            },
+            "domains": {
+                "title": "開発ドメイン",
+                "list": {
+                    "mobile-application-development": "スマートーフォンアプリ開発",
+                    "web-application-development": "ウェアブアプリ開発",
+                    "embedded-software-development": "繰り込むソフトウェア開発",
+                    "healthcare-software-development": "メディカルソフトウェア開発",
+                    "system-integration": "システムインテグレーション",
+                    "enterprise-application-development": "企業アプリ開発",
+                    "cloud-based-software-development": "クラウドベースのソフトウェア開発",
+                    "e-commerce-software-development": "ECソフトウェア開発"
+                }
+            },
+            "technologies": {
+                "title": "技術",
+                "list": {
+                    "item1": "Java",
+                    "item2": "Javascript",
+                    "item3": ".Net",
+                    "item4": "PHP",
+                    "item5": "iOS",
+                    "item6": "Android",
+                    "item7": "Dart",
+                    "item8": "Servers",
+                    "item9": "データベース",
+                    "item10": "その他"
+                }
+            },
+            "contract-models": {
+                "title": "契約モデル"
+            }
+        },
+        "form-contact": {
+            "name": "氏名",
+            "email": "メール",
+            "subject": "タイトル",
+            "message": "内容",
+            "send": "送信",
+            "message-success": "あなたの要求を送信しました。ご連絡、まことに有難う御座います",
+            "message-error": "有効データをご入力ください。"
+        }
+    },
+    "footer": {
+        "contact": "お問い合わせ",
+        "or": "又は",
+        "enter-your-email": "メール入力",
+        "copyright": "Copyright"
+    },
+    "page-home": {
+        "tooltip": {
+            "home": "ホーム",
+            "services": "事業紹介",
+            "about": "企業情報",
+            "technology": "技術",
+            "partner": "パートナ",
+            "news": "ニュース",
+            "testimonials": "確認"
+        },
+        "download-brochure": "省略版ダウンロード",
+        "page-one": {
+            "scroll-down": "下に"
+        },
+        "page-services": {
+            "services": {
+                "title": "サービス",
+                "description": "みなさまのニーズに応えてご提案します",
+                "box1": {
+                    "title": {
+                        "text1": "ソフトウェア",
+                        "text2": "アウトソーシング"
+                    },
+                    "description": "ＮＴＱにアウトソーシングしていただければ<br>お客様の開発コストを削減します。"
+                },
+                "box2": {
+                    "title": {
+                        "text1": "ソリューション",
+                        "text2": "コンサルタント"
+                    },
+                    "description": "ソリューションコンサルタントが<br>必要なときに無料でご相談に応じます。"
+                },
+                "box3": {
+                    "title": {
+                        "text1": "グラフィックス",
+                        "text2": "デザイン"
+                    },
+                    "description": "最新のグラフィックスデザインで<br>お客様のウェブやスマートフォンなどの<br>インターフェイスを刷新します。"
+                }
+            },
+            "domains": {
+                "title": "ドメイン",
+                "description": "みなさまのアイデアを実現させます",
+                "box1": {
+                    "title": {
+                        "text1": "モバイルアプリ",
+                        "text2": "開発"
+                    },
+                    "description": "iPhone/iPad 及びAndroidアプリにて<br>ビジネスの柔軟性を向上させます。"
+                },
+                "box2": {
+                    "title": {
+                        "text1": "ウェブアプリ",
+                        "text2": "開発"
+                    },
+                    "description": "我々が提供するアプリはみなさまの<br>要求に応えます。"
+                },
+                "box3": {
+                    "title": {
+                        "text1": "組み込みソフトウェア",
+                        "text2": "開発"
+                    },
+                    "description": "組み込みソフトにて完璧なビジネスに<br>達成するのに貢献します。"
+                },
+                "box4": {
+                    "title": {
+                        "text1": "メディカルソフト",
+                        "text2": "開発"
+                    },
+                    "description": "メディカル分野により良い分析結果を<br>提供します。"
+                },
+                "box5": {
+                    "title": {
+                        "text1": "システム",
+                        "text2": "インテグレーション"
+                    },
+                    "description": "お互いに接続して完成的なシステムの様に動作しているコンピュータシステムを持っています。"
+                },
+                "box6": {
+                    "title": {
+                        "text1": "企業アプリケーション",
+                        "text2": "開発"
+                    },
+                    "description": "お客様の課題解決のために、市場のニーズやその変化に応じたビジネスソフトを開発します。"
+                },
+                "box7": {
+                    "title": {
+                        "text1": "クラウドベースソフト",
+                        "text2": "開発"
+                    },
+                    "description": "コンピュータやスマートフォンでどこでも最も重要なソフトにアクセス出来ます。"
+                },
+                "box8": {
+                    "title": {
+                        "text1": "E-コマースソフト",
+                        "text2": "開発"
+                    },
+                    "description": "E-コマースソフトを展開する<br>オンラインビジネスを成功させます。"
+                }
+            }
+        },
+        "page-technologies": {
+            "title": "技術",
+            "box1": {
+                "title-large": "データベース"
+            },
+            "box2": {
+                "title-large": "言語"
+            },
+            "box3": {
+                "title-large": "クラウド",
+                "title-small": " "
+            },
+            "box4": {
+                "title-large": "スマートフォン",
+                "title-small": " "
+            },
+            "box5": {
+                "title": "成功の鍵は、私たちの技術です。",
+                "description": {
+                    "paragraph": "お客様のビジネスが成功するように、ビジネス全体に対してシステムや技術が及ぼす影響を把握し理解する努力を怠りません。そして私たちは最新の技術だけ追うのではなく、お客様のご要望に応えられるようあらゆる技術を広く深く把握する努力を心がけています。"
+                }
+            }
+        },
+        "page-about-us": {
+            "title": "弊社について",
+            "description": {
+                "paragraph1": "NTQ",
+                "paragraph2": "は仕事に対する情熱と独自のアイディアと",
+                "paragraph3": "課題解決能力を持った若者たちの集団です。"
+            },
+            "founders": "設立者",
+            "staffs": "従業員",
+            "founded-on": "2011年6月13日"
+        },
+        "page-partners": {
+            "title": "NTQ Solutionの得意先",
+            "slogan": "NTQはあなたの一部です"
+        },
+        "page-testimonials": {
+            "title": "顧客からの評価",
+            "description": {
+                "box1": {
+                    "name": "Dean Sutcliffe – CIO, iMyVenue, Australia.",
+                    "content": "“iMyVenue は何件でNTQと協力していました。 NTQ は優秀な技術を持っていますし、信頼できる会社です。製品の品質はオーストラリアの開発会社に並んで、我々の期待に応えられています。安いコストで効果的なソリューションを提供していました。我々を満足させています。”"
+                },
+                "box2": {
+                    "name": "Linh Nguyen – Technical Manager, ROI Marketing Solutions Ltd , UK.",
+                    "content": "“1年間にわたって、ROI Marketing Solutions は NTQ Solutionと協力してオンラインマケッティングアプリを開発しました。その期間で、  他ソフト開発会社に比べると、NTQ Solutionの方は技術スキル及びコミュニケーションがずっと良いです。ソフトを開発する際にNTQ Solutionを選択した方が良いと遠慮なく肯定できます。”"
+                },
+                "box3": {
+                    "name": "Yusuke Akinaga – Account Manager, ITSherpa - Japan.",
+                    "content": "“ NTQ Solutionのメンバーはすべて 活発で、楽しい仕事環境を作っています。品質については日本人の習慣を知っていますので、良い製品を提供しています。現在、色々な日本企業はソフト分野で外国パートナを探していますが、幸いのはNTQ Solutionと協力できることです。”"
+                }
+            }
+        }
+    },
+    "page-about": {
+        "download-link": "リンクをクリックするとダウンロード",
+        "title": "企業情報",
+        "box1": {
+            "who-we-are": {
+                "title": "NTQについて",
+                "description": {
+                    "paragraph1": "「NTQ」という社名に創業の思いを込めています。",
+                    "paragraph2": "私は、自分なりの夢を持って大企業から独立した時、周囲からは「Crazy」と呼ばれました。私は熱い心を持っている若者と共に、高い技術レベルを持ったチームを作ることを目指したのです。",
+                    "paragraph3": "それゆえ、スタッフに対しては、NTQは “NHA TOI QUAN” の略語で「家族」という意味と伝えています。ベトナムは家族という単位が、最も強い協力関係が構築できて高いパフォーマンスを発揮できるからです。「我々は会社組織ではなく、我々は皆家族です」。ぜひ、いい意味でのご理解をいただきたいです。",
+                    "paragraph4": "そして顧客に対しては、NTQは『Next Top Quality』という意味で、お伝えしています。これは顧客を満足させる、という我々の家族全員の目的なのです。"
+                }
+            },
+            "what-we-do": {
+                "title": "NTQの基本方針",
+                "description": {
+                    "paragraph1": "我々は単にお客様のためのアプリを開発するだけではなく、一人ひとりが常に技術を研究し習得することにより、高いコストパフォーマンスを発揮する、最高のソリューションを提案します。",
+                    "paragraph2": "熱心なベトナム人技術者と安いコスト、そして日本流の品質を確保するための厳格なプロセスを提供することで、オフショア開発を利用するお客様の利益を保証します。",
+                    "paragraph3": " "
+                }
+            },
+            "why-we-are-different": {
+                "title": "NTQの独自性",
+                "description": {
+                    "paragraph1": "いわゆる「オフショア開発」ではなく、「ブレーン・オフショア開発」サービスを提供しています。",
+                    "paragraph2": "まず、「ブレーン・オフショア開発」とは?<br>それは、お客様のビジネス要求に対してNTQが詳細なデザインまで提供する、という意味です。50～100MMの案件に対し、NTQはアーキテクチャーデザインを提供できます。",
+                    "paragraph3": "また、お客様に詳細なデザイン書をいただいて、それに基づきそのまま実施する場合は、高いパフォーマンスを発揮できるように、より深い相互理解を目指します。<br><br>私たちはお客さまから学び、意見を交換し、そして提案します。従って、私たちはお客様の一部として、お客様とともに考えながら製品やシステムを作り上げます。"
+                }
+            }
+        },
+        "box2": {
+            "title": "ビジョン",
+            "description": {
+                "paragraph1": "先端的なソフト開発会社となり、",
+                "paragraph2": "世界のIT業界で認められることを目指しています。"
+            }
+        },
+        "box3": {
+            "title": "NTQはあなたの一部です"
+        },
+        "box4": {
+            "title": "2016年末までの戦略的な目的",
+            "box1": {
+                "title": "売上",
+                "description": "250万ドル"
+            },
+            "box2": {
+                "title": "人材",
+                "description": "100名以上"
+            }
+        },
+        "box5": {
+            "title": "使命",
+            "description": {
+                "paragraph1": "お客様の満足のために、高質の製品およびサービスを提供し、<br>継続的に改善すると確約します。",
+                "paragraph2": "情熱を持って仕事に向き合うメンバーたちを、<br>世界で通用するレベルの開発者へ育てるトレーニングしています。"
+            }
+        },
+        "box6": {
+            "title": "価値観",
+            "description": {
+                "paragraph1": {
+                    "text1": "家族の立場で、我々は「",
+                    "text2": "団結",
+                    "text3": "」"
+                },
+                "paragraph2": {
+                    "text1": "技術者の立場で、我々は「",
+                    "text2": "情熱",
+                    "text3": "」"
+                },
+                "paragraph3": {
+                    "text1": " パートナの立場で、我々は「",
+                    "text2": "分かり合う",
+                    "text3": "」"
+                }
+            }
+        },
+        "box7": {
+            "title": "新聞、テレビ",
+            "description": {
+                "paragraph1": "2013年12月6日、日越友好関係40周年記念にあたり、ベトナムの科学・技術のＴＶ放送局『VTV4』で、NTQが選ばれ番組に出演させていただき、日本とのアウトソーシング分野についての話ができました。選ばれた時は信じられないほど大変嬉しかったです。弊社を選んでいたいた理由は、大きな会社ではないが数年にわたり精一杯頑張って日本市場で顧客開拓をしているNTQの姿勢や方針が、日越両国の協力関係づくりの方針に合っている、とのことでした。このような評価は、困難な道を進んでいる私たちの原動力となっています。",
+                "paragraph2": " "
+            }
+        },
+        "box8": {
+            "company-information": {
+                "title": "基本情報:",
+                "company-name-title": "会社名",
+                "company-name-content": "NTQ Solution,.Jsc",
+                "head-office-title": "住所",
+                "head-office-content": "6th Floor HH3 Building, Me Tri Street, Nam Tu Liem District, Hanoi City, Vietnam",
+                "founded-on-title": "設立日",
+                "founded-on-content": "2011年6月13日"
+            },
+            "members": {
+                "title": "役員:",
+                "cto-title": "CTO",
+                "cto-content": "Tô Hải Sơn (Son To Hai)",
+                "ceo-title": "CEO",
+                "ceo-content": "Phạm Thái Sơn (Son Pham Thai)",
+                "cco-title": "CCO",
+                "cco-content": "Nguyễn Kim Soan (Soan Nguyen Kim)",
+                "human-resources-title": "従業員",
+                "human-resources-content": "70 名"
+            }
+        }
+    },
+    "page-contract-models": {
+        "title": "契約モデル",
+        "download-constracts": "ダウンロード",
+        "benefits": "メリット:",
+        "box1": {
+            "title": {
+                "text1": "ODC契約",
+                "text2": "(ラボ契約)"
+            },
+            "description": "そちらは生産性・インフラ設備改善及び偉大な柔軟性を改善するカスタムプロセス又は専門チームと蓄積知識を提供する長期的な持続可能オフショアサポートを探すれば、このモデルは最高の選択である。",
+            "benefits": {
+                "paragraph1": "ノウハウ・知識保持",
+                "paragraph2": "お客様の実務及び方法論との統合",
+                "paragraph3": "お客様のニーズに応じるリソース開発・保持",
+                "paragraph4": "新しい要件に対する簡単な設定可",
+                "paragraph5": "お客様の特定な要件に該当する注文に応じる作る教育プログラム。",
+                "paragraph6": "専用ハードウェア・ソフトウェアインフラ"
+            }
+        },
+        "box2": {
+            "title": "工数ベース契約",
+            "description": "このモデルには案件開発の時間及び対応工数によりコストが計算される。要求が複雑である案件に適合する。",
+            "benefits": {
+                "paragraph1": "必要なリソース及びお客様の要求に応じたチームを柔軟的に提供する。",
+                "paragraph2": "高質のソフト開発プロセスは信頼性を確保し、納品期間、予算、目的を守って案件のパフォーマンスを最適化する。"
+            }
+        },
+        "box3": {
+            "title": "プロジェクトベース契約",
+            "description": "明確で詳細なプロジェクト要件・範囲・仕様の場合、これは最高選択である。",
+            "benefits": {
+                "paragraph1": "そちらの業務・専門に応じる最高の開発チーム",
+                "paragraph2": "低リスク",
+                "paragraph3": "長期コミットメントなし",
+                "paragraph4": "コスト削減可"
+            }
+        }
+    },
+    "page-success-stories": {
+        "title": "成功ストーリー",
+        "menu-left": {
+            "roi-marketing-solutions": "ROI Marketing Solutions",
+            "it-sherpa-ltd": "IT Sherpa Ltd",
+            "spicy-cinnamon-pte-ltd": "Spicy Cinnamon Pte. Ltd."
+        },
+        "menu-tab-right": {
+            "the-challenge": "チャレンジ",
+            "competition": "競争",
+            "solution": "ソリューション",
+            "technologies": "テクノロジー",
+            "result": "結果"
+        },
+        "box1": {
+            "title": "英国ROIマーケティングソリューション株式会社の「個人化マーケティング材料システム」開発",
+            "description": "ROIマーケティングソリューション株式会社は、英国にて‐印刷、変数データ印行ウェブと、クロスメディアソフトウェアを提供する一流会社です。Perivan Solutions, Platinum Print, Northend Creative Print, Creazyなどの印刷提供者・代理者・マーケティング機関に操作が有効かどうかや、新事業のお客様の信義を取得することを、ROIマーケティングソリューション株式会社は応援してきました。",
+            "the-challenge": {
+                "paragraph1": "ROIマーケティングソリューションはマーケティング目標の為の十分な情報・英国のお客様の3700万件の一覧を提供できる個人化マーケティング材料システムを持つことです。システムのユーザーは企業経営者やマーケティング担当者などです。",
+                "paragraph2": "データーが膨大なので、現在システムは検索結果を遅れて戻していました(2-10分)。同時にROIマーケティングソリューションは前記システムを評価し、性能が常に更新可能な会社を探していました。"
+            },
+            "competition": {
+                "paragraph1": "NTQ Solutionの競争者は5社あります‐ベトナムに２社・英国に２社、そしてチェコに１社あります。"
+            },
+            "solution": {
+                "paragraph1": " NTQ Solutionはビット演算子に基づいて自分の複雑な演算法を構築しました。すなわち、もっと高速なクエリの為に索引作成を実現したり、データ（全体）をメモリーに移動したり、格納したりしました。その後、ビット演算子にデータが上書きされていました。ディスクI/Oパフォーマンスを更新させるようにシンプルキャッシュファイルの組合せが実現されています。"
+            },
+            "technologies": {
+                "paragraph1": "ASP.NET",
+                "paragraph2": "JQuery",
+                "paragraph3": "MySQL",
+                "paragraph4": "MongoDB"
+            },
+            "result": {
+                "paragraph1": "検索リクエストを操作してからサーバーにフィードバックがあるまでのタイムが0.1～0.5秒あまりかかるチャレンジを達成する事が出来ましたが、他の競争者のパフォーマンスが遅いので、お客様に良い評価を頂いています。そのために、NTQ SolutionとROI Marketing Solutionsは長期間協力し、現在のOSDCを締結しています。"
+            }
+        },
+        "box2": {
+            "title": "日本のIT Sherpa,.Ltdの携帯ソーシャルネットワークシステム開発（SNS)",
+            "description": "IT Sherpaは日本において2000年に確立されたソフトウェ会社である。インターネットソリューション、ホスティング・コンサルティングサービスシステム、ASP（アプリケーションサービスプロバイダ）サービス、もビール・スマートフォンアプリケーション開発などを主に提供しています。NTQ Solutionは日本で開催されたビジネスマッチング会議に参加した時、IT Sherpaと面識を持つことができたので、IT Sherpa本部を訪問いたしました。",
+            "the-challenge": {
+                "paragraph1": "NTQ Solutionが一ヶ月で既存のSNSを研究し、それから仕様書を作成することになりました。そしてプロジェクトの実施の為には、ビデオ通話・ヴォイス通話機能向けの最新のテクノロジーが必要でした。",
+                "paragraph2": "プロジェクトには2つの時間を要する機能がありました：クライアント・サーバーの間に巨大なデータを修理要件する「チャット」という機能が一つ；大量のデータ・複雑な検索条件をもって高速なアクセスを確保する「人々に出会う」という機能がもう一つです。毎日10万人・300万メッセージまでをサポートする可能性があることを要求されました。"
+            },
+            "solution": {
+                "paragraph1": " ビデオ・会議電話に関しては、クライアント側にPortSIPのAPIを利用しそしてサーバー側にFreeSWITCHを利用していました。もっといいパフォーマンスの為には、数イメージ表示の画面に遅くならないようなアプリケーションを確保するようにイメージキャッチングを修理しなければなりません。毎日交換される大量データのパフォーマンスがもっとよくなるよう、3つのシェーディングデータベースを利用していました。メモリーにデータを上書きするようにビット演算子に基づいて自分の複雑な演算法も用意していました"
+            },
+            "technologies": {
+                "paragraph1": "Cocoa touch, Core services, core Media, coreTelephony, StoreKit, Message framework, ImageIO",
+                "paragraph2": "C/C++, PHP webservice, MongoDB database"
+            },
+            "result": {
+                "paragraph1": "NTQ SolutionはITSherpaに最先端なソーシャルネットワークシステムを提供しました。"
+            }
+        },
+        "box3": {
+            "title": "Spice Cinnamon Pte.Ltd iOS及びAndroidの写真共有のソーシャルアプリ開発",
+            "description": "Spice Cinnamonはメディアアプリ開発しているタイ国の会社です。2012年に設立され、写真共有アイデアからSpice Cinnamonはソフトウェア開発パートナを探し、依頼しました。当時友達にNTQを紹介して頂きました。CinnamonはNTQのベトナムのオフィスまで訪問し、仕事を発注した。",
+            "the-challenge": {
+                "paragraph1": "一つの挑戦として技術関係の問題です。高品質画像を継続的にアップロードし、インタネットが遅かったり、アクセスがなくなったりした場合でも、画像がなくならないことを確保しなくてはなりません。",
+                "paragraph2": "もう一つの挑戦は多数の画像を見る時、メモリがオーバフローにならずスムーズに動けるよう確保しなくてはなりません。"
+            },
+            "solution": {
+                "paragraph1": "一目の挑戦に対して、3つのソリューションを提案しました。1．画像を高品質画像と低品質画像の2つに分けて、低品質を高優先度にします。2．コアデータを使用してキャッシング処理を行います。アップ成功した場合のみ画像はキャッシュから削除されます。3.ユーザの他の活動を妨げないように、バックグラウンドプロセスを行います。",
+                "paragraph2": "二目の挑戦に対して、非同期で画像をアップし、ARCでメモリを管理して、プロセスが完了したら、メモリをリリースする処理を行っています。画像アップ用技術のように、最初に低品質の画像を見て、それから高品質の画像を見ます。"
+            },
+            "technologies": {
+                "paragraph1": "iOS:",
+                "paragraph2": "Cocoa touch, core services, core graphics & location, Facebook SDK",
+                "paragraph3": "C/C++",
+                "paragraph4": "Android:",
+                "paragraph5": "Standard Layout / View, fragment & loader",
+                "paragraph6": "Google Maps, Google play services, Facebook SDK",
+                "paragraph7": "Server:",
+                "paragraph8": "PHP webservice, MySQL database"
+            },
+            "result": {
+                "paragraph1": "NTQSolutionはSpicy Cinnamonの為に写真共有の完璧なiOS& Androidアプリという「Seconds」を作り上げました。",
+                "paragraph2": "「Seconds」は写真チャットと写真共有の最も容易で急速な方法の一つです。「Seconds」は2013年にスペインにおけるモバイル業界コングレスにてSONYから受賞しました。"
+            }
+        }
+    },
+    "page-career": {
+        "title": "採用情報",
+        "box1": {
+            "title": {
+                "text1": "あたなの仕事を開発する",
+                "text2": "NTQ Solutionと一緒に"
+            },
+            "description": {
+                "paragraph1": "NTQ Solutionは、あなたにとって素晴らしい仕事環境を提供することができます。<br>NTQ Solutionのメンバーに直接会い、Fanpageをご覧になり、またはNTQ Solutionのイベントに参加いただければ、それに気づいていただけるかと思います。",
+                "paragraph2": "仕事環境のみではなく、社員間のコミュニケーション円滑化を図る為に、定期的な社員パーティを実施しています。さらに、1ヶ月1回VONというNTQのラジオ放送番組、毎週水曜日「NTQ’s  i muzik」という番組など、仕事と生活のバランスをもたらす為に色々な活動を行っています。",
+                "paragraph3": "NTQを設立した目的は、社員全員がお互いを家族のように「優しさ」・「思いやり」を感じられるようにするためです。",
+                "paragraph4": "他社を訪問された後にNTQを訪問して頂くと、他社との違いを良く理解して頂けると思います。NTQが貴方が求めている魅力的な最終地点であると確信しております。"
+            }
+        },
+        "box2": {
+            "title": {
+                "text1": "募集中",
+                "text2": " "
+            },
+            "career1": {
+                "title": "Java開発",
+                "deadline": "1/6/2014 - 30/7/2014",
+                "box1": {
+                    "title": "職務説明書",
+                    "description": "NTQ Solutionは日本パートナー及びヨーロッパパートナーに提供するJavaでのWebプロジェクト又はJavaでのバックエンドプロジェクトの開発者を募集しています。"
+                },
+                "box2": {
+                    "title": "仕事要求",
+                    "description": {
+                        "paragraph1": "Javaプロジェクト開発参加すること。",
+                        "paragraph2": "フロントエンドやバックエンド開発すること。",
+                        "paragraph3": "プロジェクトプロセス及びプロジェクト要件により進捗度・品質について責任があること。",
+                        "paragraph4": "リーダーに報告を定期的に実施すること。",
+                        "paragraph5": "自信経験を共有・高めるために、相談グループとか教育コースを参加ること。",
+                        "paragraph6": "事務要求による短期・長期海外出張すること。"
+                    }
+                },
+                "box3": {
+                    "title": "スキール・資格必須",
+                    "description": {
+                        "paragraph1": "IT専攻又は同様専攻大学から卒業。",
+                        "paragraph2": "SpringとHibernateで２年以上経験。",
+                        "paragraph3": "OOPが認識。",
+                        "paragraph4": "HTML, CSS, JavaScript (jQuery / Prototype / DOJO), XML, JSON, and AJAX の経験。",
+                        "paragraph5": "ウェブアプリケーションのMVCモデル開発可能。",
+                        "paragraph6": "海外パートナーと取引経験。",
+                        "paragraph7": "英語・日本語可能。",
+                        "paragraph8": "自分、またグループに仕事可能性。"
+                    }
+                }
+            },
+            "career2": {
+                "title": "iOS開発者",
+                "deadline": "1/6/2014 - 30/7/2014",
+                "box1": {
+                    "title": "職務説明",
+                    "description": "NTQ Solutionは日本パートナー及びヨーロッパパートナーに向けiOSのアプリケーション開発可能がある者を募集しています。"
+                },
+                "box2": {
+                    "title": "仕事要求",
+                    "description": {
+                        "paragraph1": "iOSプロジェクトを参加すること。",
+                        "paragraph2": "リーダー又はPMの開発プランにより割り当てられる仕事をすること。",
+                        "paragraph3": "開発プロセス及びプロジェクト要件により進捗・品質を確保すること。",
+                        "paragraph4": "リーダー・PMに定期的な報告をすること。",
+                        "paragraph5": "自分経験を共有・高めるために、相談グループと教育コースを参加ること。",
+                        "paragraph6": "事務要求による短期・長期海外出張すること。"
+                    }
+                },
+                "box3": {
+                    "title": "スキール・資格必須",
+                    "description": {
+                        "paragraph1": "Objective-Cの経験。",
+                        "paragraph2": "iOSアプリのMVC開発経験・知識。",
+                        "paragraph3": "下記のの経験：",
+                        "paragraph4": "Database: SQLite, SQL ",
+                        "paragraph5": "Core Location, Core Graphics",
+                        "paragraph6": "Bluetooth 4.0 + iBeacon on",
+                        "paragraph7": "Json, XML, Google Analytics",
+                        "paragraph8": "Quickblox",
+                        "paragraph9": "VOIP, Crash report: Test Flight, Hockey, ...",
+                        "paragraph10": "HTTP serverの経験：Cocoa HTTP Server on IOS 7.x, Route HTTP on IOS 7.x.",
+                        "paragraph11": "多条ねじそしてネットワーキング(socket...)の知識。",
+                        "paragraph12": "システムプラットフォームの知識。",
+                        "paragraph13": "PNSを利用可能。",
+                        "paragraph14": "下記のツールとOSを利用可能：",
+                        "paragraph15": "Xcode 5.x +, Source Tree, SVN, Asana Tool, iPhone Configuration Utility, Mac OS X 10.x, SQLite Database Browser, Linux, ...",
+                        "paragraph16": "日本語又は英語の知識がアドバンテージ。",
+                        "paragraph17": "独立、またグループにて仕事可能。"
+                    }
+                }
+            }
+        },
+        "box3": {
+            "title": {
+                "text1": "申し込む",
+                "text2": " "
+            },
+            "description": "ご興味がおありの方は下記メールアドレスまで履歴書と申込書をお送り下さい。"
+        }
+    },
+    "page-news": {
+        "headlines": "メインニュース",
+        "press-releases": "新聞",
+        "latest": "最新",
+        "all": "全部",
+        "load-more": "もっと見る",
+        "home": "ホーム",
+        "news": "ニュース",
+        "related-news": "関連ニュース"
+    },
+    "page-downloads": {
+        "title": "ダウンロード"
+    },
+    "page-contact": {
+        "title": "お問い合わせ",
+        "form": {
+            "title": {
+                "text1": "いつでもあなたをサポートします。",
+                "text2": " ",
+                "text3": " "
+            }
+        }
+    },
+    "page-services": {
+        "title": "サービス",
+        "software-outsourcing-service": {
+            "title": {
+                "title-large": "ソフトウェア アウトソーシング サービス",
+                "title-small": "ソフトウェア開発のアウトソーシングを通じて、お客様にメリットを提供します。"
+            },
+            "description": {
+                "paragraph1": "NTQソリューションは、お客様のソフトウェアを開発するため、常に最新の技術にアップデート。<br>お客様が市場での競争力を高めるとともに、ビジネスの規模拡大を支援します。",
+                "paragraph2": "社内や国内でのソフトウェア·エンジニアが足りない場合、ベトナムのソフトウェア開発ベンダーに依頼することが今や普通になりつつあります。<br>NTQソリューションは、プロジェクトの大小に関わらず、日本の様々な開発に携わってきたため、各種リソースやニーズに適応できます。",
+                "paragraph3": "また、ソフトウェア開発者をベトナムで確保（契約）することによりコストを節約できます。NTQソリューションは、ベトナムに本社のあるソフトウェア会社ですので、ベトナムへのアウトソーシングを提供する日本国内企業に比べ、コストにおいても自信があります。",
+                "paragraph4": "お客様が本来のコアビジネスに力を入れるために、弊社にソフト開発業務を委託することもお薦めです。弊社にノンコアソフト開発業務を委託することで、コアビジネスを効率化し、総コストの削減に繋げます。"
+            },
+            "table": {
+                "contract-models": {
+                    "title": "契約モデル",
+                    "item1": "オフショア開発センター(ODC)",
+                    "item2": "工数ベース契約",
+                    "item3": "プロジェクトベース契約"
+                },
+                "domains-of-expertise": {
+                    "title": "ドメインの専門知識",
+                    "item1": "スマートホンアプリケーション開発",
+                    "item2": "Webアプリケーション開発",
+                    "item3": "組込みソフトウェアとシステム開発",
+                    "item4": "健康保険ソフトウェア開発",
+                    "item5": "システム統合",
+                    "item6": " エンタープライズアプリケーション開発",
+                    "item7": "クラウドベースのソフトウェア開発",
+                    "item8": "ECソフトウェア開発"
+                }
+            }
+        },
+        "software-solutions-consultancy": {
+            "title": {
+                "title-large": "ソフトウェア・ソリューション コンサルタント",
+                "title-small": "相談したい時に、ご連絡ください。私たちは、無料でサービスを提供いたします。"
+            },
+            "description": {
+                "paragraph1": "常に進化と変化がともなうシステム環境のなかで、技術的問題を解決することや最適なソフトソリューションを見つけることは簡単ではありません。特に最新の技術情報を理解できる人は、それほど多くはありません。",
+                "paragraph2": "案件の技術又はコンサルタントサービスの料金を気になって、無料でソフトやソリューションが欲しい時は、インターネット、本、知人等から取得できるでしょう。それらのソースで問題解決にならなければ、NTQの無料コンサルタントがお客様の「困った」を解決致します。",
+                "paragraph3": " "
+            },
+            "form": {
+                "title": {
+                    "text1": "あなたの問題を解決します。",
+                    "text2": "質問ください！",
+                    "text3": " ",
+                    "text4": " "
+                }
+            }
+        },
+        "web-app-graphic-design": {
+            "title": {
+                "title-large": "ウェブやアプリのグラフィックをデザイン",
+                "title-small": "最新トレンドのデザインで、お客様のウェブやスマートフォンのアプリを開発。"
+            },
+            "description": {
+                "paragraph1": "システムの設計や開発のみならず、インタフェースのデザインまでもサービスを提供できるように、グラフィックデザイナーのチームを設立しました。ウェブ、モバイル、デスクトップアプリなど総合的なグラフィックデザインに対応いたします。多様なデバイスに対応できるよう、レスポンシブウェブデザインにも対応します。",
+                "paragraph2": "ユーザーに素晴らしい体験をもたらすには、システムだけでなくインターフェイスへの厳しい要求にも応えることが必要と考えます。お客様および、お客様の顧客やユーザーを満足させるために、私たちはビジュアル的にも創造的な要素を盛り込むことに取組んでいます。",
+                "paragraph3": "デザインチームは約8年の経験を持ち、日本はもちろ海外向けのデザインも制作しているため「フラットデザイン」などの最新のトレンドを理解しています。シンプルながらもセンスを感じさせるデザイナーたちを確保しています。",
+                "paragraph4": "グラフィックデザインを含めたワンストップでのサービス体制を整えることで、人的コストやコミュニケーション時間の節約も可能となります。",
+                "paragraph5": " ",
+                "paragraph6": " "
+            }
+        }
+    },
+    "page-domains": {
+        "title": "開発ドメイン",
+        "mobile-app-development": {
+            "title": {
+                "title-large": "モバイルアプリケーション開発",
+                "title-medium": "スマートフォンと一緒に同行しましょう",
+                "title-small1": "iPhone/ iPadとAndroidのアプリを通して、お客様のビジネスに柔軟に対応",
+                "title-small2": "iPhone/ iPadアプリ開発 - モバイルアプリ開発の定番、安定したプラットフォームを提供します。",
+                "title-small3": "Androidアプリ開発 - 今や世界№1のプラットフォーム。スタイリッシュで素敵なユーティリティアプリを開発いたします。"
+            },
+            "description": {
+                "paragraph1": "なぜ、モバイル専用アプリが必要なのか？　Webアプリよりもモバイル専用アプリはそんなに利点があるのか？　と疑問を持つお客様もいらっしゃるかもしれません。<br><br>その答えとしては、モバイルアプリケーションはWebアプリケーションより、スピードが速い、そして使いやすい。上記の二つの理由で、モバイル専用アプリの需要が高まっていると考えます。",
+                "paragraph2": "また、モバイル専用アプリは、マイク、カメラ、GPSなど、デバイスが持つ機能とダイレクトに連動します。さらに、モバイル専用アプリなら、インターネットに接続しなくても実行することができます。<br><br>上記の理由から、モバイルアプリケーションを選択することをおすすめします。お客様のビジネスに適応したモバイルアプリケーションを構築できるＮＴＱのモバイル専門チームにお任せください。",
+                "paragraph3": "NTQのiOSプロファイル資料のダウンロード",
+                "paragraph4": "NTQのプロファイル資料のダウンロード",
+                "paragraph5": "担当者はiOS開発経験が長く、アップルのアプリ開発のソースを詳しく理解しているため、早い段階からお客様に納得感と信頼感を提供します。",
+                "paragraph6": "もし、少しでも懸念があれば、大きなプロジェクトに進む前に、パイロットプロジェクトを行うことも良い選択かもしれません。",
+                "paragraph7": "お客様のビジネスならではの条件に応じて、取引先や顧客によりよいイメージを与えるために、優れたiPhone/ iPadアプリケーションを提供することを保証します。",
+                "paragraph8": "iPhone/iPadフレームワーク及び技術",
+                "paragraph9": "Cocoa Touch",
+                "paragraph10": "Objective-C",
+                "paragraph11": "iOS SDK",
+                "paragraph12": "xCode IDE",
+                "paragraph13": "Androidの市場占有率はますます増加しています。便利な機能と実現性が高くて制限性が少なくことで、Androidのアプリケーションは、iPhone/ iPadユーザー以外のユーザーは、他の多数のアクセスするために使用することによって選択することができます。",
+                "paragraph14": "Androidの開発担当者は、Androidアプリケーション技術の専門家であり、お客様そしてお客様の顧客を満足させます。",
+                "paragraph15": " ",
+                "paragraph16": "Androidフレームワークと技術：",
+                "paragraph17": "Android Studio",
+                "paragraph18": "Eclipse ADT"
+            }
+        },
+        "web-app-development": {
+            "title": {
+                "title-large": "Webアプリケーション開発",
+                "title-medium": "パワフルで美しいwebアプリ",
+                "title-small": "お客様の期待に応えるアプリケーションを。"
+            },
+            "description": {
+                "paragraph1": "お客様のビジネスの目標を達成するため、ウェブアプリケーションに求められる競争能力や価値などの作成要求を認識した上で、アプリのユーザ最高体験させるよう、その要求を満たすUI/UXに関する知識や技術を取得します。",
+                "paragraph2": "デスクトップのみではなくモバイル対応も希望される場合は、それに応えるウェブアプリが必要です。全てのブラウや希望のデバイスに対応出来るウェブアプリのデザインはもちろん、開発計画や、展開案の作成などのサービスも提供しています。完璧な製品を作成するため、NTQの開発者はグラフィックス設計者と連携し、お客様のアイデアを存分に製品に盛り込みます。",
+                "paragraph3": "NTQの一番普及ウェブ言語:",
+                "paragraph4": "Webユーザインタフェースのための一般的なフレームワーク及び技術："
+            }
+        },
+        "embedded-software-and-system-development": {
+            "title": {
+                "title-large": "組込みソフトウェアとシステム開発",
+                "title-medium": "製品にインテリジェンスを組み込む",
+                "title-small1": "組込みソフトウェアは膨大な専門知識があってはじめてお客様の目的が達成できます。",
+                "title-small2": "NTQソリューションのR＆Dセンター"
+            },
+            "description": {
+                "paragraph1": "NTQソリューションでは、コンセプト開発、設計、実装を含めて組込みソフトウェア開発サービスを提供しています。8ビットマイクロチップ、知能センサー、LPF、カルマンフィルタ、PIDコントローラやそのほか様々な組み込み開発の経験を活かして、完璧な機能のシステムを目指しています。8ビットマイクロチップ、知能センサーの詳細は以下の表を参照してください。",
+                "paragraph2": " ",
+                "paragraph3": "当社のR＆Dセンターの組込みソフトウェアチームがリモートコントロール飛行機を作成しました。我々のチームは、飛行機の安定機能を保つソフトウェアをつくり、飛行機自体が垂直・水平方向に対して自動でバランスを保ちます。さらに、Wi-Fiを使って、飛行機からパソコンにリアルタイムビデオを伝送するストリーミング·ソフトウェアを開発しました。",
+                "paragraph4": "当社の組込みソフトウェア·チームは現在、自分自身の2製品を開発するために2組み込みソフトウェアのプロジェクトに取り組んでいます。",
+                "paragraph5": "今後のプロジェクトとしては、カメレオンのように移動し、塔や高い建物の全体の窓をきれいにすることができるロボットを開発予定です。また、他のプロジェクトでは、RF制御モデルを組み込んだ空飛ぶ車を作る予定です。"
+            },
+            "table": {
+                "8bit-microchip": {
+                    "title": "8bit microchip",
+                    "description": "Atmega32A, Atmega328, PIC 16F887, 16F877. Raspberry PI, Arduino"
+                },
+                "intelligence-sensor": {
+                    "title": "Intelligence sensor",
+                    "description": "Accelerometer, Gyrometer, Magnetometer, Barometer, Ultrasound distance sensor, Hall-effect sensor."
+                }
+            }
+        },
+        "healthcare-software-development": {
+            "title": {
+                "title-large": "ドメイン/医療系ソフトウェア開発",
+                "title-medium": "医療画像の可視化",
+                "title-small": "健康保険セクターのためのより良い分析結果を提供します。"
+            },
+            "description": {
+                "paragraph1": "NTQソリューションのスタッフは、医療業界のソフトウェアプロジェクト開発に関して、５年以上の経験があり、過去、日本の一流企業である富士フィルム様の医療関係のソフトウェアプロジェクトに参加させていただきました。",
+                "paragraph2": "私たちは医療画像の処理、可視化、分析に精通しています。お客様の視覚可へのご要望に基づいて、医療画像の定量的な分析ができます。",
+                "paragraph3": {
+                    "text1": "Multi-layout DICOM Viewer",
+                    "text2": "アプリケーションは医師の病気の診断業務をサポートします。そのアプリは異なるモダリティから画像を読み込み、全画面に複数の画像を表示し、カスタマイズされたレイアウトに画像を配置することでユーザをサポートします。マルチレイアウトビューには、診断を実行するために必要な画像を簡単に比較する機能も付いています。"
+                },
+                "paragraph4": "又、アプリケーションは反映テーブル(LUT)処理、ズームイン/アウト、パンニング、画像反転、画像交換、回転、クロッピングという画像処理機能の全てとテキストマーカーやライン、矩形、多角形、円などの注釈処理機能を搭載します。",
+                "paragraph5": {
+                    "text1": "Console advanced system",
+                    "text2": "は医師にさらなる利便性を提供することを目的に開発されました。"
+                },
+                "paragraph6": "患者情報を登録するために開発されたもので、BRC、MCR、RIS、HIS、シナプス（PACS）などの多くの装置やシステムに接続されています。",
+                "paragraph7": "QAアプリケーションは、技術者が撮影した医療画像を編集や調整をするために開発され、最終的な結果に基づいて、画像の品質を評価し、再度行うかどうか検討します。",
+                "paragraph8": "また、将来、簡単にメンテナンスを実施するために、開発者は既存のシステムを最新の開発プラットフォームに移行する必要があります。それが開発作業において大きなボリュームを占めます。",
+                "paragraph9": {
+                    "text1": "Biopsy system",
+                    "text2": "は画像検査を提供し、女性の乳癌を正確に判断し、乳癌手術をサポートします。"
+                },
+                "paragraph10": "システムは、高解像度モニタと富士フイルムの先進の画像処理技術で観測されたオブジェクトを機能を向上させたマーカーで、問題となる位置を発見します。",
+                "paragraph11": "オブジェクトの位置を発見し、座標の計算をした後、針先端から手術テーブルの実際の距離が画面に表示されます。"
+            }
+        },
+        "system-integration": {
+            "title": {
+                "title-large": "システム統合",
+                "title-medium": "多くのコンポーネントを、全体のひとつのシステムとして統合",
+                "title-small1": "システム統合を実施し、物理的または機能的には、既存のコンピューティング·システムやソフトウェア·アプリケーションが大きなシステム一つとして動きだすようにリンクさせます。",
+                "title-small2": "エンタープライズアプリケーションインテグレーション"
+            },
+            "description": {
+                "paragraph1": "NTQソリューションはお客様のビジネスの目標把握を行い、それらの目標を達成することをシームレスに加速させるソリューション統合の方法を提供します。",
+                "paragraph2": "ビジネスを加速させハイスピードドで高いパフォーマンスを実現することは私たちの使命です。新しいソリューションはより価値を高め、高速で拡張し、システムとビジネスプロセスを補完しなければならないことを理解しています。",
+                "paragraph3": "システム統合技術者たちは、ソフトウェア工学、インターフェースプロトコル、問題解決能力などのスキルを持ち、統合プロジェクトでの困難な課題に対応できます。",
+                "paragraph4": "ビジネスプロセスの自動化、簡素化を進めながらも、既存のアプリケーションやデータ構造を全面的に変更することを回避するために、単一の企業内のビジネス·ソフトウェアをリンクさせるプロセスです。このアプリは管理画面（データバス・DB）とも（グラフィックユーザーインターフェース/ GUI）をリンクさせることができます。",
+                "paragraph5": "ITサービス管理システムのアプリケーションの統合を可能にするためのミドルウェアも開発しています。"
+            }
+        },
+        "enterprise-application-development": {
+            "title": {
+                "title-large": "エンタープライズアプリケーション開発",
+                "title-medium": "イノベーションと包括的なエンタープライズアプリケーション",
+                "title-small1": "私たちはお客様がチャレンジや市場需要の急激な変化に適応するために、エンタープライズ向けのアプリケーションを開発しています。",
+                "title-small2": "連続メンテナンス＆サポート"
+            },
+            "description": {
+                "paragraph1": "エンタープライズアプリケーションはスタッフがリアルタイムに情報およびびプロセスを管理できるようにするソフトウェアアプリケーションです。革新的と総合的なソリューションは、ビジネスプロセスの効率性の向上と、運用コストの節約、従業員と顧客の満足度を高め、より良いビジネス上の意思決定をサポートすることで、価値を提供します。<br>",
+                "paragraph2": "当社のクロスファンクショナルチームがビジネスプロセスを定義し、アプリケーション·ロジックを実装し、既存のアプリケーションやデータベースを統合します。また、直感的なグラフィカルを制作するチームと共に、ビジネスロジックとアプリケーションのワークフローを設計したり制御したりすることが可能です。",
+                "paragraph3": "当社は、最初からお客様の信頼を得ることは難しいと考え、まず、パイロットプロジェクトを提案します。その実施結果を検討していただいた上で、当社への信頼を獲得したいと考えます。",
+                "paragraph4": "単もアプリ開発だけでは信頼関係は構築できないと考えます。長期的で連続したメンテナンスやサポートを続けることが必要です。これらを通じて、良いパートナーになれることを私たちは期待しています。"
+            }
+        },
+        "cloud-based-software-development": {
+            "title": {
+                "title-large": "クラウドベースのソフトウェア",
+                "title-medium": "Cloudは、より効率的なビジネスに貢献します。",
+                "title-small": "クラウドコンピューティングは、コンピュータまたはモバイルデバイスから最も重要なソフトウェアにアクセスできるようにします。"
+            },
+            "description": {
+                "paragraph1": "Cloud について関心を持つ人が増えていることを、ここで説明する必要はないでしょう。",
+                "paragraph2": "私たちはCloudでアプリケーションを構築し、それを維持するのに役立つことができます。アプリケーションの開発ためにアズール（Microsoftから）、Google App Engine、サービス（PaaS）などの他のプラットフォームを使用します。",
+                "paragraph3": "私たちはお客様のビジネスチャンスを有効にすることだけではなく、プロジェクトの投資収益率を高めるために、クラウドはもちろん、その他の高度な技術や技法も合わせて構築しています。",
+                "paragraph4": " "
+            }
+        },
+        "e-commerce-software-development": {
+            "title": {
+                "title-large": "ECソフトウェア開発",
+                "title-medium": "オンラインビジネスのため、ECソフトウェアを開発",
+                "title-small": "お客様のオンラインビジネスの成功のために、最適なECソフトウェアで支援します。"
+            },
+            "description": {
+                "paragraph1": "オンラインビジネスのスタートアップにおける重要ステップの一つは、ECシステムを開発推進するために、最適なソフトウェア開発会社を選ぶことです。",
+                "paragraph2": "私たちがECソフトウェアやサイトの設計を提供する。この設計は持続可能で長期的でユニークなブランドに基づいて、ビジネスを定義します。ユニークな設計が人気があったら、持続可能な顧客システムが成立されます。",
+                "paragraph3": "良いECソフトウェアを開発ために、お客様のオンラインビジネスの要素に注目します。Blogを管理のためCMS を選ぶこと、記事とプレスリリースの作成といったことはもちろん、マーケティングとアップセル機能、SEO機能、セキュリティ、オンライン決済、などの必要な機能も開発できます。",
+                "paragraph4": "モバイルデバイスのユーザーをメインにアクセスしたい場合は、モバイルに特化したECアプリの開発も可能です。",
+                "paragraph5": "ECプロジェクトをはじめたい場合は、ぜひご相談してください。"
+            }
+        }
+    },
+    "page-technologies": {
+        "title": "技術",
+        "platforms": "プラットフォーム",
+        "frameworks": "フレームワーク",
+        "ides": "IDEs",
+        "ide": "IDE",
+        "libraries": "ライブラリ",
+        "cmss": "CMSs",
+        "sdks": "SDKs",
+        "tools": "ツール",
+        "web-technologies": "WEB技術",
+        "java": "Java",
+        "javascript": "Javascript",
+        "net": ".Net",
+        "ios": "iOS",
+        "android": "Android",
+        "dart": "Dart",
+        "servers": "Servers",
+        "databases": "データベース",
+        "others": "その他",
+        "java-enterprise-edition": "Java Enterprise Edition",
+        "google-app-engine": "Google App Engine",
+        "spring": "Spring",
+        "jboss": "JBoss",
+        "hibernate": "Hibernate",
+        "struts": "Struts",
+        "netbeans": "NetBeans",
+        "eclipse": "Eclipse",
+        "angularjs": "AngularJS",
+        "mean-io": "mean.io",
+        "jquery": "Jquery",
+        "windows": "Windows",
+        "asp-net-mvc": "ASP.NET MVC",
+        "asp-net": "ASP.NET",
+        "c-net": "C#.Net",
+        "ado-net": "ADO.Net",
+        "wcf": "WCF",
+        "visual-studio": "Visual Studio",
+        "entity-framework": "Entity Framework",
+        "linq-library": "LINQ Library",
+        "linux": "Linux",
+        "cakephp": "CakePHP",
+        "codeignitor": "CodeIgnitor",
+        "macosx": "Mac OSX",
+        "solaris": "Solaris",
+        "laravel": "Laravel",
+        "symphony": "Symphony",
+        "prestashop": "Prestashop",
+        "wordpress": "WordPress",
+        "magento": "Magento",
+        "ios-sdk": "iOS SDK",
+        "google-admob": "Google Admob",
+        "facebook-sdk": "Facebook SDK",
+        "twitter-sdk": "Twitter SDK",
+        "af-networking": "AFNetworking",
+        "sd-web-image": "SDWebImage",
+        "gpu-image": "GPUImage",
+        "i-carousel": "iCarousel",
+        "path-fast-image-cache": "Path FastImageCache",
+        "linphone": "Linphone",
+        "port-sip": "PortSIP",
+        "iad": "iAD",
+        "paypal-sdk": "Paypal SDK",
+        "qr-barcode-sdk": "QR Barcode SDK",
+        "x-code-ide": "xCode IDE",
+        "instruments": "Instruments",
+        "testflight": "Testflight",
+        "corona-sdk": "Corona SDK",
+        "titanium": "Titanium",
+        "eclipse-adt": "Eclipse ADT",
+        "android-studio": "Android Studio",
+        "dart-sdk-dart-editor": "Dart SDK & Dart Editor",
+        "apache-tomcat": "Apache Tomcat",
+        "weblogic": "Weblogic",
+        "iis": "IIS",
+        "oracle": "Oracle",
+        "sql-server": "SQL Server",
+        "mysql": "MySQL",
+        "postgre-sql": "PostgreSQL",
+        "db2": "DB2",
+        "mongodb": "MongoDB",
+        "chrome-app-extension": "Chrome App/Extension",
+        "html5": "HTML5",
+        "css": "CSS",
+        "bootstraps": "Bootstraps"
+    }
+}

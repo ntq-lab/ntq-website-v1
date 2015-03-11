@@ -1,0 +1,17 @@
+<form class="form-common" action="{{__enhance.mount('/' + url)}}" method="POST">
+    <input type="hidden" name="redirect" value="{{__enhance.mount('/' + url)}}" />
+    <div class="form-group clearfix">
+        <input type="text" name="name" placeholder="{{__('common.form-contact.name')}}" required />
+        <input type="email" name="email" placeholder="{{__('common.form-contact.email')}}" value="{{email}}" required />
+    </div>
+    <div class="form-group clearfix">
+        <input type="text" name="subject" class="form-subject" placeholder="{{__('common.form-contact.subject')}}" required />
+    </div>
+    <div class="form-group form-textarea">
+        <textarea name="body" placeholder="{{__('common.form-contact.message')}}" required></textarea>
+    </div>
+    <div class="form-submit">
+        <input type="submit" value="{{__('common.form-contact.send')}}" />
+    </div>
+    <div class="icon-send-us-message"></div>
+</form>

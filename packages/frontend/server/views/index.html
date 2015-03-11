@@ -1,0 +1,410 @@
+{% extends 'layout/base.html' %}
+
+{% block title %}
+{{__('title-website.home')}}
+{% endblock %}
+
+{% block stylesheet %}
+<style type="text/css">
+    .loading-mask {
+        background: #fff;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+</style>
+{% for file in assets['/css/index.css'] %}
+    <link href="{{file}}" rel="stylesheet">
+{% endfor %}
+<!--<link href="/frontend/assets/css/animate-home.css" rel="stylesheet">
+<link href="/frontend/assets/css/home.css" rel="stylesheet">
+<link href="/frontend/assets/css/logo.css" rel="stylesheet">-->
+{% endblock %}
+
+{% block script %}
+{% for file in assets['/js/index.js'] %}
+    <script src="{{file}}"></script>
+{% endfor %}
+<!--<script src="/bower_components/threejs/build/three.min.js"></script>
+<script src="/bower_components/tweenjs/build/tween.min.js"></script>
+<script src="/bower_components/q/q.js"></script>
+<script src="/frontend/assets/js/jquery.nav.js"></script>
+<script src="/frontend/assets/js/slideshow.js"></script>
+<script src="/frontend/assets/js/home.js"></script>
+<script src="/frontend/assets/js/detector.js"></script>
+<script src="/frontend/assets/js/logo-effect.js"></script>-->
+{% endblock %}
+
+{% block content %}
+<div class="loading-mask"></div>
+<div class="wrapper-parallax" id="wrapper-parallax">
+    <div id="welcome" class="logo-container">
+        <div id="canvas" class="canvas-container">
+        </div>
+        <div class="next-news text-center">
+            <a href="#services" id="serviceslink2" class="arrow-down-black"></a>
+            <span class="line-black line-black-1"></span>
+            <p>{{__('page-home.page-one.scroll-down')}}</p>
+            <span class="line-black line-black-2"></span>
+         </div><!-- /next-news -->
+    </div>
+
+    <div class="first-page fullpage" id="first-page"></div>
+
+    <div class="container-fluid services-container-fluid section fullpage" id="services">
+        <div class="container services-container">
+            <span class="line-black"></span>
+            <div class="slides clearfix">
+                <div class="slide-container">
+                    <div class="slide clearfix">
+                        <h2 class="h1 text-center">{{__('page-home.page-services.services.title')}}</h2>
+                        <p class="text-center description"><strong>{{__('page-home.page-services.services.description')}}</strong></p>
+                        <div class="service-box text-center">
+                            <div class="service-box-image">
+                                <a href="{{__enhance.mount('/services#software-outsourcing-service')}}" class="service-box-image-container">
+                                    <img src="/img/icon-outsource-services.png" alt="{{__('page-home.page-services.services.box1.title')}}" width="79" height="82">
+                                </a>
+                            </div>
+                            <h3 class="">{{__('page-home.page-services.services.box1.title.text1')}}<br/>{{__('page-home.page-services.services.box1.title.text2')}}</h3>
+                            <p>{{__('page-home.page-services.services.box1.description')}}</p>
+                            <a href="{{__enhance.mount('/services#software-outsourcing-service')}}" class="arrow-right"></a>
+                        </div><!-- /service-box -->
+
+                        <div class="service-box text-center">
+                            <div class="service-box-image">
+                                <a href="{{__enhance.mount('/services#software-solutions-consultancy')}}" class="service-box-image-container">
+                                    <img src="/img/icon-solution-consultion.png" alt="{{__('page-home.page-services.services.box2.title')}}" width="80" height="83">
+                                </a>
+                            </div>
+                            <h3 class="">{{__('page-home.page-services.services.box2.title.text1')}}<br/>{{__('page-home.page-services.services.box2.title.text2')}}</h3>
+                            <p>{{__('page-home.page-services.services.box2.description')}}</p>
+                            <a href="{{__enhance.mount('/services#software-solutions-consultancy')}}" class="arrow-right"></a>
+                        </div><!-- /service-box -->
+
+                        <div class="service-box text-center">
+                            <div class="service-box-image">
+                                <a href="{{__enhance.mount('/services#web-app-graphic-design')}}" class="service-box-image-container">
+                                    <img src="/img/icon-graphic-design.png" alt="{{__('page-home.page-services.services.box3.title')}}" width="84" height="86">
+                                </a>
+                            </div>
+                            <h3 class="">{{__('page-home.page-services.services.box3.title.text1')}}<br/>{{__('page-home.page-services.services.box3.title.text2')}}</h3>
+                            <p>{{__('page-home.page-services.services.box3.description')}}</p>
+                            <a href="{{__enhance.mount('/services#web-app-graphic-design')}}" class="arrow-right"></a>
+                        </div><!-- /service-box -->
+                    </div><!-- /slide -->
+
+                    <div class="slide clearfix">
+                        <h2 class="h1 text-center">{{__('page-home.page-services.domains.title')}}</h2>
+                        <p class="text-center description"><strong>{{__('page-home.page-services.domains.description')}}</strong></p>
+
+                        <div class="domain-box">
+                            <div class="domain-box-head clearfix">
+                                <div class="domain-box-image">
+                                    <a href="{{__enhance.mount('/domains#mobile-app-development')}}" class="domain-box-image-container">
+                                        <img src="/img/domains/mobile-app.png" alt="{{__('page-home.page-services.domains.box1.title')}}" width="24" height="41">
+                                    </a>
+                                </div>
+                                <div class="domain-box-title"><h3>{{__('page-home.page-services.domains.box1.title.text1')}}<br/>{{__('page-home.page-services.domains.box1.title.text2')}}</h3></div>
+                            </div><!-- /domain-box-head -->
+                            <div class="domain-box-content">
+                                {{__('page-home.page-services.domains.box1.description')}}
+                                <a href="{{__enhance.mount('/domains#mobile-app-development')}}" class="arrow-right"></a>
+                            </div><!-- /domain-box-content -->
+                        </div><!-- /domain-box -->
+
+                        <div class="domain-box">
+                            <div class="domain-box-head clearfix">
+                                <div class="domain-box-image">
+                                    <a href="{{__enhance.mount('/domains#web-app-development')}}" class="domain-box-image-container">
+                                        <img src="/img/domains/web-app.png" alt="{{__('page-home.page-services.domains.box2.title')}}" width="39" height="28">
+                                    </a>
+                                </div>
+                                <div class="domain-box-title"><h3>{{__('page-home.page-services.domains.box2.title.text1')}}<br/>{{__('page-home.page-services.domains.box2.title.text2')}}</h3></div>
+                            </div><!-- /domain-box-head -->
+                            <div class="domain-box-content">
+                                {{__('page-home.page-services.domains.box2.description')}}
+                                <a href="{{__enhance.mount('/domains#web-app-development')}}" class="arrow-right"></a>
+                            </div><!-- /domain-box-content -->
+                        </div><!-- /domain-box -->
+
+                        <div class="domain-box">
+                            <div class="domain-box-head clearfix">
+                                <div class="domain-box-image">
+                                    <a href="{{__enhance.mount('/domains#embedded-software-and-system-development')}}" class="domain-box-image-container">
+                                        <img src="/img/domains/embed-sofware.png" alt="{{__('page-home.page-services.domains.box3.title')}}" width="30" height="34">
+                                    </a>
+                                </div>
+                                <div class="domain-box-title"><h3>{{__('page-home.page-services.domains.box3.title.text1')}}<br/>{{__('page-home.page-services.domains.box3.title.text2')}}</h3></div>
+                            </div><!-- /domain-box-head -->
+                            <div class="domain-box-content">
+                                {{__('page-home.page-services.domains.box3.description')}}
+                                <a href="{{__enhance.mount('/domains#embedded-software-and-system-development')}}" class="arrow-right"></a>
+                            </div><!-- /domain-box-content -->
+                        </div><!-- /domain-box -->
+
+                        <div class="domain-box">
+                            <div class="domain-box-head clearfix">
+                                <div class="domain-box-image">
+                                    <a href="{{__enhance.mount('/domains#medical-image-visualization')}}" class="domain-box-image-container">
+                                        <img src="/img/domains/healthcare.png" alt="{{__('page-home.page-services.domains.box4.title')}}" width="31" height="32">
+                                    </a>
+                                </div>
+                                <div class="domain-box-title"><h3>{{__('page-home.page-services.domains.box4.title.text1')}}<br/>{{__('page-home.page-services.domains.box4.title.text2')}}</h3></div>
+                            </div><!-- /domain-box-head -->
+                            <div class="domain-box-content">
+                                {{__('page-home.page-services.domains.box4.description')}}
+                                <a href="{{__enhance.mount('/domains#medical-image-visualization')}}" class="arrow-right"></a>
+                            </div><!-- /domain-box-content -->
+                        </div><!-- /domain-box -->
+
+                        <div class="domain-box">
+                            <div class="domain-box-head clearfix">
+                                <div class="domain-box-image">
+                                    <a href="{{__enhance.mount('/domains#system-integration')}}" class="domain-box-image-container">
+                                        <img src="/img/domains/system-integration.png" alt="{{__('page-home.page-services.domains.box5.title')}}" width="35" height="35">
+                                    </a>
+                                </div>
+                                <div class="domain-box-title"><h3>{{__('page-home.page-services.domains.box5.title.text1')}}<br/>{{__('page-home.page-services.domains.box5.title.text2')}}</h3></div>
+                            </div><!-- /domain-box-head -->
+                            <div class="domain-box-content">
+                                {{__('page-home.page-services.domains.box5.description')}}
+                                <a href="{{__enhance.mount('/domains#system-integration')}}" class="arrow-right"></a>
+                            </div><!-- /domain-box-content -->
+                        </div><!-- /domain-box -->
+
+                        <div class="domain-box">
+                            <div class="domain-box-head clearfix">
+                                <div class="domain-box-image">
+                                    <a href="{{__enhance.mount('/domains#enterprise-application-development')}}" class="domain-box-image-container">
+                                        <img src="/img/domains/enterprise.png" alt="{{__('page-home.page-services.domains.box6.title')}}" width="38" height="38">
+                                    </a>
+                                </div>
+                                <div class="domain-box-title"><h3>{{__('page-home.page-services.domains.box6.title.text1')}}<br/>{{__('page-home.page-services.domains.box6.title.text2')}}</h3></div>
+                            </div><!-- /domain-box-head -->
+                            <div class="domain-box-content">
+                                {{__('page-home.page-services.domains.box6.description')}}
+                                <a href="{{__enhance.mount('/domains#enterprise-application-development')}}" class="arrow-right"></a>
+                            </div><!-- /domain-box-content -->
+                        </div><!-- /domain-box -->
+
+                        <div class="domain-box">
+                            <div class="domain-box-head clearfix">
+                                <div class="domain-box-image">
+                                    <a href="{{__enhance.mount('/domains#cloud-basedssoftware-development')}}" class="domain-box-image-container">
+                                        <img src="/img/domains/cloud-base.png" alt="{{__('page-home.page-services.domains.box7.title')}}" width="44" height="34">
+                                    </a>
+                                </div>
+                                <div class="domain-box-title"><h3>{{__('page-home.page-services.domains.box7.title.text1')}}<br/>{{__('page-home.page-services.domains.box7.title.text2')}}</h3></div>
+                            </div><!-- /domain-box-head -->
+                            <div class="domain-box-content">
+                                {{__('page-home.page-services.domains.box7.description')}}
+                                <a href="{{__enhance.mount('/domains#cloud-basedssoftware-development')}}" class="arrow-right"></a>
+                            </div><!-- /domain-box-content -->
+                        </div><!-- /domain-box -->
+
+                        <div class="domain-box">
+                            <div class="domain-box-head clearfix">
+                                <div class="domain-box-image">
+                                    <a href="{{__enhance.mount('/domains#e-commerce-software-development')}}" class="domain-box-image-container">
+                                        <img src="/img/domains/e-commerce.png" alt="{{__('page-home.page-services.domains.box8.title')}}" width="37" height="35">
+                                    </a>
+                                </div>
+                                <div class="domain-box-title"><h3>{{__('page-home.page-services.domains.box8.title.text1')}}<br/>{{__('page-home.page-services.domains.box8.title.text2')}}</h3></div>
+                            </div><!-- /domain-box-head -->
+                            <div class="domain-box-content">
+                                {{__('page-home.page-services.domains.box8.description')}}
+                                <a href="{{__enhance.mount('/domains#e-commerce-software-development')}}" class="arrow-right"></a>
+                            </div><!-- /domain-box-content -->
+                        </div><!-- /domain-box -->
+                    </div><!-- /slide -->
+                </div><!-- /slide-container -->
+            </div>
+            <ul class="btn-slideshow" id="sevices-pagination">
+                <li><a href="#" class="active" rel="0"></a></li>
+                <li><a href="#" rel="1"></a></li>
+            </ul>
+        </div><!-- /services-container -->
+    </div><!-- /services-container-fluid -->
+
+    <div class="container-fluid technology-container-fluid section fullpage" id="technology">
+        <div class="container technology-container">
+            <div class="technology-container-top">
+                <span class="line-white line-white-top"></span>
+                <h2 class="h1 text-center">{{__('page-home.page-technologies.title')}}</h2>
+
+                <div class="technologies clearfix">
+                    <div class="technology-box clearfix">
+                        <h4>{{__('page-home.page-technologies.box1.title-large')}}</h4>
+                        <div class="technology-box-container clearfix">
+                            <a class="technology-lg" href="{{__enhance.mount('/technologies')}}"><img src="/img/technology/mysql.png" alt="mysql" width="170" height="100"></a>
+                            <a class="technology-lg" href="{{__enhance.mount('/technologies')}}"><img src="/img/technology/mongodb.png" alt="mongodb" width="170" height="100"></a>
+                        </div>
+                    </div><!-- /technology-box -->
+
+                    <div class="technology-box clearfix">
+                        <h4>{{__('page-home.page-technologies.box2.title-large')}}</h4>
+                        <div class="technology-box-container clearfix">
+                            <a class="technology-sm" href="{{__enhance.mount('/technologies')}}"><img src="/img/technology/java.png" alt="Java" width="115" height="135"></a>
+                            <a class="technology-md" href="{{__enhance.mount('/technologies')}}"><img src="/img/technology/dotnet.png" alt=".NET" width="158" height="135"></a>
+                            <a class="technology-md" href="{{__enhance.mount('/technologies')}}"><img src="/img/technology/php.png" alt="php" width="158" height="135"></a>
+                            <a class="technology-sm" href="{{__enhance.mount('/technologies')}}"><img src="/img/technology/html5.png" alt="HTML5" width="115" height="135"></a>
+                        </div>
+                    </div><!-- /technology-box -->
+
+                    <div class="technology-box clearfix">
+                        <h4>{{__('page-home.page-technologies.box3.title-large')}} <span>{{__('page-home.page-technologies.box3.title-small')}}</span></h4>
+                        <div class="technology-box-container clearfix">
+                            <a class="technology-lg" href="{{__enhance.mount('/technologies')}}"><img src="/img/technology/amazonws.png" alt="AWS" width="170" height="100"></a>
+                            <a class="technology-lg" href="{{__enhance.mount('/technologies')}}"><img src="/img/technology/google.png" alt="GAE" width="170" height="140"></a>
+                        </div>
+                    </div><!-- /technology-box -->
+
+                    <div class="technology-box clearfix">
+                        <h4>{{__('page-home.page-technologies.box4.title-large')}} <span>{{__('page-home.page-technologies.box4.title-small')}}</span></h4>
+                        <div class="technology-box-container clearfix">
+                            <a class="technology-lg" href="{{__enhance.mount('/technologies')}}"><img src="/img/technology/android.png" alt="Android" width="170" height="100"></a>
+                            <a class="technology-lg" href="{{__enhance.mount('/technologies')}}"><img src="/img/technology/apple.png" alt="apple" width="170" height="100"></a>
+                        </div>
+                    </div><!-- /technology-box -->
+
+                </div><!-- /technologies -->
+            </div><!-- /technology-container-top -->
+
+            <div class="technology-post pull-right text-right">
+                <h3 class="h1">{{__('page-home.page-technologies.box5.title')}}</h3>
+                <p>{{__('page-home.page-technologies.box5.description.paragraph')}}</p>
+                <a href="{{__enhance.mount('/download')}}" title="{{__('page-home.download-brochure')}}" class="download-brochure pull-right">{{__('page-home.download-brochure')}}</a>
+            </div><!-- /technology-post -->
+            <div class="clear"></div>
+        </div><!-- /technology-container -->
+    </div><!-- /technology-container-fluid -->
+
+    <div class="container-fluid about-us-container-fluid section fullpage" id="about">
+        <div class="container about-us-container">
+            <span class="line-black"></span>
+            <hgroup>
+                <h1 class="h2 text-center">{{__('page-home.page-about-us.title')}}</h1>
+                <h1 class="h2 text-center"><strong>{{__('page-home.page-about-us.description.paragraph1')}} </strong> {{__('page-home.page-about-us.description.paragraph2')}} <br/>{{__('page-home.page-about-us.description.paragraph3')}}</h1>
+            </hgroup>
+            <div class="timeline">
+                <div class="year year-2011">
+                    <strong>5</strong>
+                    <p>{{__('page-home.page-about-us.founders')}}</p>
+                    <span>{{__('page-home.page-about-us.founded-on')}}</span>
+                </div>
+                <div class="year year-2014">
+                    <strong>70</strong>
+                    <p>{{__('page-home.page-about-us.staffs')}}</p>
+                    <span>2014</span>
+                </div>
+            </div><!-- /timeline -->
+        </div><!-- /about-us-container -->
+        <div class="founder-image">
+            <div class="founder-image-content text-center">
+                <img src="/img/home-about-us.png" alt="About us" width="890" height="443">
+            </div>
+        </div><!-- /founder-image -->
+    </div><!-- /about-us-container-fluid -->
+
+    <div class="container-fluid partner-container-fluid section fullpage" id="partner">
+        <div class="container partner-container">
+            <div class="partner-top">
+                <span class="line-white"></span>
+                <h2 class="h1 text-center">{{__('page-home.page-partners.title')}}</h2>
+            </div>
+            <div class="partner-bottom clearfix">
+                <div class="partner-map clearfix">
+                    {% include "./partner-map.html" %}
+
+                    <div class="partner-map-dot-strong">
+                        <p class="dot-american"><span></span></p>
+                        <p class="dot-england"><span></span></p>
+                        <p class="dot-belarus"><span></span></p>
+                        <p class="dot-japan"><span></span></p>
+                        <p class="dot-vietnam"><span></span></p>
+                        <p class="dot-australia"><span></span></p>
+                    </div><!-- /partner-map-dot-strong -->
+                </div><!-- /partner-map -->
+                <div class="clear"></div>
+                <div class="partner-right pull-right">
+                    <p class="text-right"><strong>{{__('common.company-name')}}</strong>
+        {{__('page-home.page-partners.slogan')}}</p>
+                    <a href="{{__enhance.mount('/download')}}" title="{{__('page-home.download-brochure')}}" class="download-brochure pull-right">{{__('page-home.download-brochure')}}</a></a>
+                </div><!-- /partner-right -->
+            </div>
+
+        </div><!-- /partner-container -->
+    </div><!-- /partner-container-fluid -->
+
+    <div class="container-fluid news-container-fluid section fullpage" id="news">
+        <div class="news-container clearfix">
+            {% for article in articles %}
+                {% if article.avatar %}
+                <div class="news-box">
+                    <div class="news-box-image"><img src="/system/assets/img/{{article.avatar}}" alt="{{article.heading}}"/></div>
+                    <div class="overlay">
+                        <h3 class="">{{article.heading}}</h3>
+                        <p>{{article.bulletin}}</p>
+                        <div class="read-more"><a href="{{__enhance.mount('/article/') + article.id}}" title="{{__('common.read-more')}}">{{__('common.read-more')}}</a></div>
+                    </div>
+                </div><!-- /news-box -->
+                {% else %}
+                <div class="news-box {{color[loop.index]}}">
+                    <h3>{{article.heading}}</h3>
+                    <p>{{article.bulletin}}</p>
+                    <div class="read-more"><a href="{{__enhance.mount('/article/') + article.id}}" title="{{__('common.read-more')}}">{{__('common.read-more')}}</a></div>
+                </div><!-- /news-box -->
+                {% endif %}
+            {% endfor %}
+        </div><!-- /news-container -->
+    </div><!-- /news-container-fluid -->
+
+    <div class="container-fluid testimonials-container-fluid section" id="testimonials">
+        <div class="container testimonials-container clearfix">
+            <div class="slides-testimonials clearfix">
+                <div class="slide-container">
+                    <div class="slide-testimonials clearfix">
+                        <div class="testimonial-box pull-left">
+                            <div class="testimonial-box-image"><img src="/img/tes-1.png" alt="{{__('page-home.page-testimonials.description.box1.name')}}" width="120" height="120"></div>
+                            <h3>{{__('page-home.page-testimonials.description.box1.name')}}</h3>
+                            <p>{{__('page-home.page-testimonials.description.box1.content')}}</p>
+                        </div><!-- /testimonial-box -->
+
+                        <div class="testimonial-box pull-left">
+                            <div class="testimonial-box-image"><img src="/img/tes-2.png" alt="{{__('page-home.page-testimonials.description.box2.name')}}" width="120" height="120"></div>
+                            <h3>{{__('page-home.page-testimonials.description.box2.name')}}</h3>
+                            <p>{{__('page-home.page-testimonials.description.box2.content')}}</p>
+                        </div><!-- /testimonial-box -->
+                    </div>
+                    <div class="slide-testimonials clearfix">
+                        <div class="testimonial-box pull-left">
+                            <div class="testimonial-box-image"><img src="/img/tes-3.png" alt="{{__('page-home.page-testimonials.description.box3.name')}}" width="120" height="120"></div>
+                            <h3>{{__('page-home.page-testimonials.description.box3.name')}}</h3>
+                            <p>{{__('page-home.page-testimonials.description.box3.content')}}</p>
+                        </div><!-- /testimonial-box -->
+                    </div>
+                </div><!-- /slide-container -->
+            </div><!-- /slides-testimonials -->
+            <ul class="btn-slideshow" id="testimonials-pagination">
+                <li><a href="#" class="active" rel="0"></a></li>
+                <li><a href="#" rel="1"></a></li>
+            </ul>
+        </div><!-- /testimonials-container -->
+    </div><!-- /testimonials-container-fluid -->
+</div>
+<div class="jump-to clearfix" id="jump-to">
+    <!--<div class="pull-right page-one" id="welcomeJumpTo"><span></span></div>
+    <div class="clear"></div>-->
+    <ul>
+        <li><span class="tooltip">{{__('page-home.tooltip.home')}}</span><a href="#first-page"><span class="icon"></span></a></li>
+        <li id="newsJumpTo"><span class="tooltip">{{__('page-home.tooltip.services')}}</span><a href="#services"><span class="icon"></span></a></li>
+        <li><span class="tooltip">{{__('page-home.tooltip.technology')}}</span><a href="#technology"><span class="icon"></span></a></li>
+        <li><span class="tooltip">{{__('page-home.tooltip.about')}}</span><a href="#about"><span class="icon"></span></a></li>
+        <li><span class="tooltip">{{__('page-home.tooltip.partner')}}</span><a href="#partner"><span class="icon"></span></a></li>
+        <li><span class="tooltip">{{__('page-home.tooltip.news')}}</span><a href="#news"><span class="icon"></span></a></li>
+        <li><span class="tooltip">{{__('page-home.tooltip.testimonials')}}</span><a href="#testimonials"><span class="icon"></span></a></li>
+    </ul><!-- /Jump to -->
+</div>
+{% endblock %}

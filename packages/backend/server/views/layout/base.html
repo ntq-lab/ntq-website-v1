@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<!--[if IE 9]><html class="lt-ie10" lang="en" > <![endif]-->
+<html class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        {% block head %}{% endblock %}
+        <link rel="stylesheet" href="/bower_components/foundation/css/foundation.css">
+        <link rel="stylesheet" href="/bower_components/foundation-icon-fonts/foundation-icons.css">
+        <!--<link rel="stylesheet" href="/bower_components/foundation/css/normalize.css">-->
+        <link rel="stylesheet" href="/modules/aggregated.css">
+        <script type="text/javascript">{{headerJs|raw}}</script>
+        {% for file in assets.core.css %}
+        <link rel="stylesheet" href="/{{file}}">
+        {% endfor %}
+        <script src="/bower_components/modernizr/modernizr.js"></script>
+    </head>
+    <body>
+        {% block content %}{% endblock %}
+        {% for file in assets.core.js %}
+        <script src="/{{file}}"></script>
+        {% endfor %}
+        <script src="/bower_components/jquery/dist/jquery.min.js"></script>
+        <script src="/bower_components/foundation/js/foundation.min.js"></script>
+        {% block script %}{% endblock %}
+        <script><!--
+            $(document).foundation();
+        --></script>
+    </body>
+</html>

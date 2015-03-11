@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>404</title>
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800&subset=vietnamese' rel='stylesheet' type='text/css'>
+        <style>
+            * {padding: 0; margin: 0;}
+            body {
+                font-family: 'Open Sans', Arial, sans-serif;
+                font-weight: 400;
+                font-size: 14px;
+                background: #e9e9e9 url('/frontend/assets/img/bg-404.png') no-repeat right top;
+                line-height: 1;
+            }
+            a { 
+                text-decoration: none;
+                color: #383838;
+            }
+            .container-fluid {
+                width: 100%;
+            }
+            .container {
+                width: 1000px;
+                margin: auto;
+            }
+            .main-nav-container-fluid {
+                height: 50px;
+                background: #000;
+                line-height: 50px;
+            }
+            .main-nav-container a {
+                color: #fff;
+                font-weight: 300;
+                font-size: 22px;
+            }
+            .main-nav-container a strong {
+                font-weight: 700;
+            }
+            .content {
+                height: 100%;
+                color: #383838;
+                padding-top: 165px;
+            }
+            .content h1 {
+                font-size: 200px;
+                font-weight: 800;
+                margin-bottom: 35px;
+                color: #0066B3;
+            }
+            .content .description {
+                line-height: 1.4em;
+                margin-bottom: 10px;
+                width: 395px;
+                font-size: 24px;
+                font-weight: 300;
+            }
+            .content .link {
+                font-size: 20px;
+                font-weight: 300;
+                padding-left: 18px;
+                margin-top: 20px;
+                background: url('/frontend/assets/img/bullet-404.png') no-repeat left center;
+                display: block;
+            }
+            .content .link span {
+                margin: 0 2px;
+            }
+        </style>
+        <script>
+            window.onload = function () {
+                var heightWindow = window.innerHeight;
+                document.getElementsByTagName('body')[0].style.height = heightWindow - 50 + 'px';
+                document.getElementsByClassName('content')[0].style.height = heightWindow - 50 - 165 + 'px';
+            };
+        </script>
+    </head>
+    <body>
+        <div class="container-fluid main-nav-container-fluid">
+            <div class="container main-nav-container">
+                <a class="pull-left logo" href="{{__enhance.mount('/')}}"><strong>NTQ</strong> Solution</a>
+            </div><!-- /main-nav -->
+        </div>
+        <div class="container-fluid content">
+            <div class="container">
+                <h1>404</h1>
+                <p class="description">The page you are looking for cannot be found.</p>
+                <p class="description">セッションが切れました</p>
+                <a href="{{__enhance.mount('/')}}" class="link">Back to home page<span>/</span>ホームに戻る</a>
+            </div>
+        </div>
+    </body>
+</html>

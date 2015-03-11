@@ -1,0 +1,5 @@
+{% if flagMessage == 1 %}
+    <p class="message-contact message-success">{{__('common.form-contact.message-success')}}</p>
+{% elseif flagMessage == 2 %}
+    <p class="message-contact message-error">{{__('common.form-contact.message-error')}}</p>
+{% endif %}

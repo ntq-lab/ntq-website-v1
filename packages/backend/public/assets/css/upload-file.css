@@ -1,0 +1,13 @@
+[x-upload-file] .upload-mask-dock {
+    position: relative;
+}
+[x-upload-file] .upload-mask {
+    background: #fff;
+    opacity: 0.5;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 10;
+}

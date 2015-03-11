@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+        <title>{% block title %}{% endblock %}</title>
+
+        <!-- Main -->
+        <link href='//fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900&subset=latin,vietnamese' rel='stylesheet' type='text/css'>
+        <link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800&subset=vietnamese' rel='stylesheet' type='text/css'>
+        {% for file in assets['/css/base.css'] %}
+            <link href="{{file}}" rel="stylesheet">
+        {% endfor %}
+        {% block stylesheet %}{% endblock %}
+        <link href="/frontend/assets/css/locale/{{locale}}.css" rel="stylesheet">
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+          <script src="//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+          <script src="//oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+        <link rel="alternate" href="//en.{{domain}}" hreflang="en">
+        <link rel="alternate" href="//jp.{{domain}}" hreflang="jp">
+        <link rel="alternate" href="//{{domain}}" hreflang="x-default" />
+        <meta name="description" content="NTQ Solution is a collective of passionate and creative young talents. We aim to deliver the best software development services to enable businesses achieving excellence through software intelligence." />
+        <meta property="fb:app_id" content="318946454949666" />
+        <meta property="og:locale" content="en_US" />
+        <meta property="og:locale:alternate" content="ja_JP" />
+        <meta property="og:title" content="NTQ Solution JSC"/>
+        <meta property="og:image" content="//{{domain}}/img/NTQ_S.png"/>
+        <meta property="og:site_name" content="NTQ Solution JSC"/>
+        <meta property="og:description" content="NTQ Solution is a collective of passionate and creative young talents. We aim to deliver the best software development services to enable businesses achieving excellence through software intelligence."/>
+        <meta property="og:url" content="//{{domain}}" />
+    </head>
+    <body>
+
+        <div class="container-fluid main-nav-container-fluid">
+            <div class="container main-nav-container">
+                <a class="pull-left logo" href="{{__enhance.mount('/')}}">NTQ Solution</a>
+                <ul class="pull-right clearfix">
+                    <li><a href="{{__enhance.mount('/about')}}">{{__('menu.about')}}</a></li>
+                    <li><a href="{{__enhance.mount('/services')}}">{{__('menu.services')}}</a>
+                        <ul class="sub-main-nav">
+                            <li><a href="{{__enhance.mount('/domains')}}">{{__('menu.domains')}}</a></li>
+                            <li><a href="{{__enhance.mount('/technologies')}}">{{__('menu.technologies')}}</a></li>
+                            <li><a href="{{__enhance.mount('/contract-models')}}">{{__('menu.contract-models')}}</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="{{__enhance.mount('/success-stories')}}">{{__('menu.success-story')}}</a></li>
+                    <li><a href="{{__enhance.mount('/career')}}">{{__('menu.career')}}</a></li>
+                    <li><a href="{{__enhance.mount('/articles')}}">{{__('menu.news')}}</a></li>
+                    <li><a href="{{__enhance.mount('/download')}}">{{__('menu.download')}}</a></li>
+                    <li><a href="{{__enhance.mount('/contact')}}">{{__('menu.contact')}}</a></li>
+                    <li class="languages">
+                        {% if locale == 'en' %}
+                        <a href="//jp.{{domain}}">JP</a>
+                        {% else %}
+                        <a href="//en.{{domain}}">EN</a>
+                        {% endif %}
+                    </li>
+                </ul>
+
+            </div><!-- /main-nav -->
+        </div><!-- /main-nav-fluid -->
+
+        {% block content %}{% endblock %}
+
+        <div class="container-fluid footer-container-fluid">
+        <div class="container footer-container clearfix">
+            <div class="footer-hotline clearfix">
+                <div class="hotline pull-left">
+                    <p>{{__('footer.contact')}}</p>
+                    <strong>(84) 985 529 229</strong>
+                </div>
+                <span class="line-white or pull-left"><strong>{{__('footer.or')}}</strong></span>
+                <div class="form-newsletter pull-right">
+                    <form action="{{__enhance.mount('/contact')}}" method="GET">
+                        <input type="email" name="email" class="pull-left" placeholder="{{__('footer.enter-your-email')}}">
+                        <input type="submit" class="pull-right" value="">
+                    </form>
+                </div>
+            </div><!-- /footer-hotline -->
+
+            <div class="footer-main-nav pull-left">
+                <span class="footer-main-nav-icon"></span>
+                <div class="footer-main-nav-col">
+                    <h4 class="h3">{{__('common.list-services-domains.services.title')}}</h4>
+                    <ul>
+                        <li><a href="{{__enhance.mount('/services#software-outsourcing-service')}}">{{__('common.list-services-domains.services.list.software-outsourcing')}}</a></li>
+                        <li><a href="{{__enhance.mount('/services#software-solutions-consultancy')}}">{{__('common.list-services-domains.services.list.solutions-consultancy')}}</a></li>
+                        <li><a href="{{__enhance.mount('/services#web-app-graphic-design')}}">{{__('common.list-services-domains.services.list.graphic-design')}}</a></li>
+                    </ul>
+                </div><!-- /footer-main-nav-col -->
+                <div class="footer-main-nav-col">
+                    <h4 class="h3">{{__('common.list-services-domains.domains.title')}}</h4>
+                    <ul>
+                        <li><a href="{{__enhance.mount('/domains#mobile-app-development')}}">{{__('common.list-services-domains.domains.list.mobile-application-development')}}</a></li>
+                        <li><a href="{{__enhance.mount('/domains#web-app-development')}}">{{__('common.list-services-domains.domains.list.web-application-development')}}</a></li>
+                        <li><a href="{{__enhance.mount('/domains#embedded-software-and-system-development')}}">{{__('common.list-services-domains.domains.list.embedded-software-development')}}</a></li>
+                        <li><a href="{{__enhance.mount('/domains#medical-image-visualization')}}">{{__('common.list-services-domains.domains.list.healthcare-software-development')}}</a></li>
+                        <li><a href="{{__enhance.mount('/domains#system-integration')}}">{{__('common.list-services-domains.domains.list.system-integration')}}</a></li>
+                        <li><a href="{{__enhance.mount('/domains#enterprise-application-development')}}">{{__('common.list-services-domains.domains.list.enterprise-application-development')}}</a></li>
+                        <li><a href="{{__enhance.mount('/domains#cloud-basedssoftware-development')}}">{{__('common.list-services-domains.domains.list.cloud-based-software-development')}}</a></li>
+                        <li><a href="{{__enhance.mount('/domains#e-commerce-software-development')}}">{{__('common.list-services-domains.domains.list.e-commerce-software-development')}}</a></li>
+                    </ul>
+                </div><!-- /footer-main-nav-col -->
+                <div class="clear"></div>
+                <div class="copyright">{{__('footer.copyright')}} © <strong>NTQ Solution</strong> 2014</div>
+            </div><!-- /footer-main-nav -->
+
+            <div class="footer-right pull-left">
+
+                <ul class="footer-navigation pull-left">
+                    <li><a href="{{__enhance.mount('/about')}}">{{__('menu.about')}}</a></li>
+                    <li><a href="{{__enhance.mount('/services')}}">{{__('menu.services')}}</a></li>
+                    <li><a href="{{__enhance.mount('/success-stories')}}">{{__('menu.success-story')}}</a></li>
+                    <li><a href="{{__enhance.mount('/career')}}">{{__('menu.career')}}</a></li>
+                    <li><a href="{{__enhance.mount('/articles')}}">{{__('menu.news')}}</a></li>
+                    <li><a href="{{__enhance.mount('/download')}}">{{__('menu.download')}}</a></li>
+                    <li><a href="{{__enhance.mount('/contact')}}">{{__('menu.contact')}}</a></li>
+                </ul><!-- /footer-navigation -->
+                <div class="clear"></div>
+                <div class="footer-address clearfix">
+                    <div class="footer-address-box-address clearfix">
+                        <div class="footer-address-box-address-content pull-left">
+                            <span class="icon-location"></span>
+                            <h5>{{__('common.address.hanoi.title')}}</h5>
+                            <p class="address">{{__('common.address.hanoi.address')}}</p>
+                        </div>
+                        <div class="footer-address-box-address-content pull-left">
+                            <span class="icon-location"></span>
+                            <h5>{{__('common.address.japan.title')}}</h5>
+                            <p class="address">{{__('common.address.japan.address')}}</p>
+                        </div>
+                    </div>
+                    <div class="footer-address-box pull-left">
+                        <p><strong>{{__('common.address.hanoi.name')}}</strong></p>
+                        <p>{{__('common.address.hanoi.position')}}</p>
+                        <p>{{__('common.address.hanoi.tel')}}: (+84) 985 529 229</p>
+                        <p>{{__('common.address.hanoi.email')}}: son.pham@ntq-solution.com.vn</p>
+                    </div><!-- /footer-address-box -->
+
+                    <div class="footer-address-box pull-left">
+                        <p><strong>{{__('common.address.japan.name')}}</strong></p>
+                        <p>{{__('common.address.japan.position')}}</p>
+                        <p>{{__('common.address.japan.tel')}}: (+81) 80 3409 8663</p>
+                        <p>{{__('common.address.japan.email')}}: cong.to@ntq-solution.com.vn</p>
+                    </div><!-- /footer-address-box -->
+
+                </div><!-- /footer-address -->
+            </div><!-- /footer-right -->
+
+        </div><!-- /footer-container -->
+    </div><!-- /footer-container-fluid -->
+    <div class="support">
+        <div class="support-head">
+            <h5>{{__('common.support')}}</h5>
+            <p>(84) 985 529 229</p>
+        </div>
+        <a href="{{__enhance.mount('/download')}}">{{__('common.download-documents')}}</a>
+    </div><!-- /support -->
+    <!--<div class="processbar" id="processbar">
+        <div class="peg"></div>
+    </div>-->
+    <!-- Script Files-->
+    <script>
+    <!--
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-53638451-1', 'auto');
+      ga('send', 'pageview');
+    -->
+    </script>
+    <!--<script src="/bower_components/jquery/dist/jquery.min.js"></script>-->
+    {% block script %}{% endblock %}
+    <!-- /Script -->
+    </body>
+</html>
