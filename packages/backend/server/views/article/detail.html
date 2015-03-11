@@ -4,6 +4,36 @@
 <link rel="stylesheet" href="/backend/assets/css/article.css">
 {% endblock %}
 
+{% block script %}
+<script src="/bower_components/plupload/js/plupload.full.min.js"></script>
+<script src="/bower_components/angular/angular.js"></script>
+<script type="text/javascript">
+<!--
+if (typeof angular !== 'undefined') {
+    angular.module('backend', ['backend.article', 'backend.category']);
+
+    angular.module('backend').constant('Global', {
+        articleID: {{article.id|json|safe}},
+        mount: {{__enhance.mount('')|json|safe}},
+        languages: {{__locale.languages|json|safe}},
+        defaultLocale: {{__local.defaultLocale|json|safe}},
+        autoSaveLatency: {{autoSaveLatency|json|safe}}
+    });
+
+    angular.element(document).ready(function () {
+        angular.bootstrap(document, ['backend']);
+    });
+}
+-->
+</script>
+{% for file in assets['/js/backend.js'] %}
+    <script src="{{file}}"></script>
+{% endfor %}
+<!--
+<script src="/modules/aggregated.js"></script>
+-->
+{% endblock %}
+
 {% block angular %}data-ng-controller="ArticleController"{% endblock %}
 
 {% block title %}{{__('Article Detail')}}{% endblock %}
@@ -172,29 +202,4 @@
         </div>
     </div>
 </section>
-{% endblock %}
-{% block script %}
-<script src="/bower_components/plupload/js/plupload.full.min.js"></script>
-<script src="/bower_components/angular/angular.js"></script>
-<script>
-<!--
-if (typeof angular !== 'undefined') {
-    angular.module('backend', ['backend.article', 'backend.category']);
-
-    angular.module('backend').factory('Global', [function () {
-        return {
-            articleID: {{article.id|json|safe}},
-            mount: {{__enhance.mount('')|json|safe}},
-            languages: {{__locale.languages|json|safe}},
-            defaultLocale: {{__local.defaultLocale|json|safe}},
-            autoSaveLatency: {{autoSaveLatency|json|safe}}
-        };
-    } ]);
-    angular.element(document).ready(function () {
-        angular.bootstrap(document, ['backend']);
-    });
-}
--->
-</script>
-<script src="/modules/aggregated.js"></script>
 {% endblock %}

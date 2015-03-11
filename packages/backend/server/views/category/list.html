@@ -16,20 +16,24 @@
 if (typeof angular !== 'undefined') {
     angular.module('backend', ['backend.category']);
 
-    angular.module('backend').factory('Global', [function () {
-        return {
-            mount: {{__enhance.mount('')|json|safe}},
-            languages: {{__locale.languages|json|safe}},
-            defaultLocale: {{__locale.defaultLocale|json|safe}},
-            autoSaveLatency: {{autoSaveLatency|json|safe}}
-        };
-    } ]);
+    angular.module('backend').constant('Global', {
+        mount: {{__enhance.mount('')|json|safe}},
+        languages: {{__locale.languages|json|safe}},
+        defaultLocale: {{__locale.defaultLocale|json|safe}},
+        autoSaveLatency: {{autoSaveLatency|json|safe}}
+    });
+
     angular.element(document).ready(function () {
         angular.bootstrap(document, ['backend']);
     });
 }
 </script>
+{% for file in assets['/js/backend.js'] %}
+    <script src="{{file}}"></script>
+{% endfor %}
+<!--
 <script src="/modules/aggregated.js"></script>
+-->
 {% endblock %}
 
 {% block panel %}

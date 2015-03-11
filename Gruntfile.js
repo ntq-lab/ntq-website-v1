@@ -8,9 +8,9 @@ var paths = {
 
 module.exports = function(grunt) {
 
-    if (process.env.NODE_ENV !== 'production') {
-        require('time-grunt')(grunt);
-    }
+    // if (process.env.NODE_ENV !== 'production') {
+    //     require('time-grunt')(grunt);
+    // }
 
     // Project Configuration
     grunt.initConfig({
@@ -150,6 +150,9 @@ module.exports = function(grunt) {
                     src: ['**/*'],
                     dest: 'build/public/img'
                 }]
+            },
+            common: {
+                files: '<%= assets.copy %>'
             }
         }
     });
