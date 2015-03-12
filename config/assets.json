@@ -1,72 +1,72 @@
 {
     "css": {
-        "build/tmp/css/base.css": [
+        "build/.tmp/css/base.css": [
             "packages/frontend/public/assets/css/bootstrap/bootstrap.css",
             "packages/frontend/public/assets/font/meiryo.css",
             "packages/frontend/public/assets/css/header.css",
             "packages/frontend/public/assets/css/footer.css",
             "packages/frontend/public/assets/css/common.css"
         ],
-        "build/tmp/css/index.css": [
+        "build/.tmp/css/index.css": [
             "packages/frontend/public/assets/css/animate-home.css",
             "packages/frontend/public/assets/css/home.css",
-            "packages/frontend/public/assets/css/logo.css"
+        "packages/frontend/public/assets/css/logo.css"
         ],
-        "build/tmp/css/about.css": [
+        "build/.tmp/css/about.css": [
             "packages/frontend/public/assets/css/menu-white.css",
             "packages/frontend/public/assets/css/submenu-common.css",
             "packages/frontend/public/assets/css/about-20150129.css"
         ],
-        "build/tmp/css/article-detail.css": [
+        "build/.tmp/css/article-detail.css": [
             "packages/frontend/public/assets/css/article.css"
         ],
-        "build/tmp/css/article.css": [
+        "build/.tmp/css/article.css": [
             "packages/frontend/public/assets/css/article.css"
         ],
-        "build/tmp/css/career.css": [
+        "build/.tmp/css/career.css": [
             "packages/frontend/public/assets/css/menu-white.css",
             "packages/frontend/public/assets/css/submenu-common.css",
             "packages/frontend/public/assets/css/career.css"
         ],
-        "build/tmp/css/contact.css": [
+        "build/.tmp/css/contact.css": [
             "packages/frontend/public/assets/css/menu-black.css",
             "packages/frontend/public/assets/css/contact.css"
         ],
-        "build/tmp/css/contract-models.css": [
+        "build/.tmp/css/contract-models.css": [
             "packages/frontend/public/assets/css/menu-white.css",
             "packages/frontend/public/assets/css/submenu-common.css",
             "packages/frontend/public/assets/css/contract-models.css"
         ],
-        "build/tmp/css/domains.css": [
+        "build/.tmp/css/domains.css": [
             "packages/frontend/public/assets/css/services.css",
             "packages/frontend/public/assets/css/menu-black.css"
         ],
-        "build/tmp/css/download.css": [
+        "build/.tmp/css/download.css": [
             "packages/frontend/public/assets/css/menu-black.css",
             "packages/frontend/public/assets/css/download.css"
         ],
-        "build/tmp/css/services.css": [
+        "build/.tmp/css/services.css": [
             "packages/frontend/public/assets/css/menu-white.css",
             "packages/frontend/public/assets/css/submenu-common.css",
             "packages/frontend/public/assets/css/services.css"
         ],
-        "build/tmp/css/success-stories.css": [
+        "build/.tmp/css/success-stories.css": [
             "packages/frontend/public/assets/css/menu-white.css",
             "packages/frontend/public/assets/css/submenu-common.css",
             "packages/frontend/public/assets/css/success-stories.css"
         ],
-        "build/tmp/css/technologies.css": [
+        "build/.tmp/css/technologies.css": [
             "packages/frontend/public/assets/css/services.css",
             "packages/frontend/public/assets/css/menu-black.css"
         ],
-        "build/tmp/css/base-backend.css": [
+        "build/.tmp/css/base-backend.css": [
             "bower_components/foundation/css/foundation.css",
             "bower_components/foundation-icon-fonts/foundation-icons.css",
             "packages/backend/public/assets/css/common.css"
         ]
     },
     "js": {
-        "build/tmp/js/index.js": [
+        "build/.tmp/js/index.js": [
             "bower_components/jquery/dist/jquery.min.js",
             "bower_components/bluebird/browser/bluebird.min.js",
             "bower_components/tweenjs/build/tween.min.js",
@@ -77,57 +77,57 @@
             "packages/frontend/public/assets/js/detector.js",
             "packages/frontend/public/assets/js/logo-effect.js"
         ],
-        "build/tmp/js/about.js": [
+        "build/.tmp/js/about.js": [
             "bower_components/jquery/dist/jquery.min.js",
             "bower_components/jquery-ui/ui/jquery-ui.js",
             "packages/frontend/public/assets/js/main-nav.js",
             "packages/frontend/public/assets/js/max-height-element.js",
             "packages/frontend/public/assets/js/about.js"
         ],
-        "build/tmp/js/article-detail.js": [
+        "build/.tmp/js/article-detail.js": [
             "bower_components/jquery/dist/jquery.min.js",
             "packages/frontend/public/assets/js/main-nav.js"
         ],
-        "build/tmp/js/article.js": [
+        "build/.tmp/js/article.js": [
             "bower_components/jquery/dist/jquery.min.js",
             "bower_components/jquery-ui/ui/jquery-ui.js",
             "packages/frontend/public/assets/js/jquery-tabs-rotate.js",
             "packages/frontend/public/assets/js/main-nav.js",
             "packages/frontend/public/assets/js/article.js"
         ],
-        "build/tmp/js/career.js": [
+        "build/.tmp/js/career.js": [
             "bower_components/jquery/dist/jquery.min.js",
             "packages/frontend/public/assets/js/main-nav.js",
             "packages/frontend/public/assets/js/career.js"
         ],
-        "build/tmp/js/contact.js": [
+        "build/.tmp/js/contact.js": [
             "bower_components/jquery/dist/jquery.min.js",
             "packages/frontend/public/assets/js/main-nav.js"
         ],
-        "build/tmp/js/contract-models.js": [
+        "build/.tmp/js/contract-models.js": [
             "bower_components/jquery/dist/jquery.min.js",
             "packages/frontend/public/assets/js/jquery.nav.js",
             "packages/frontend/public/assets/js/main-nav.js"
         ],
-        "build/tmp/js/domains.js": [
-            "bower_components/jquery/dist/jquery.min.js",
-            "packages/frontend/public/assets/js/jquery.nav.js",
-            "packages/frontend/public/assets/js/main-nav.js",
-            "packages/frontend/public/assets/js/scroll-jumpto-fixed.js",
-            "packages/frontend/public/assets/js/services.js"
-        ],
-        "build/tmp/js/download.js": [
-            "bower_components/jquery/dist/jquery.min.js",
-            "packages/frontend/public/assets/js/main-nav.js"
-        ],
-        "build/tmp/js/services.js": [
+        "build/.tmp/js/domains.js": [
             "bower_components/jquery/dist/jquery.min.js",
             "packages/frontend/public/assets/js/jquery.nav.js",
             "packages/frontend/public/assets/js/main-nav.js",
             "packages/frontend/public/assets/js/scroll-jumpto-fixed.js",
             "packages/frontend/public/assets/js/services.js"
         ],
-        "build/tmp/js/success-stories.js": [
+        "build/.tmp/js/download.js": [
+            "bower_components/jquery/dist/jquery.min.js",
+            "packages/frontend/public/assets/js/main-nav.js"
+        ],
+        "build/.tmp/js/services.js": [
+            "bower_components/jquery/dist/jquery.min.js",
+            "packages/frontend/public/assets/js/jquery.nav.js",
+            "packages/frontend/public/assets/js/main-nav.js",
+            "packages/frontend/public/assets/js/scroll-jumpto-fixed.js",
+            "packages/frontend/public/assets/js/services.js"
+        ],
+        "build/.tmp/js/success-stories.js": [
             "bower_components/jquery/dist/jquery.min.js",
             "bower_components/jquery-ui/ui/jquery-ui.js",
             "packages/frontend/public/assets/js/jquery.nav.js",
@@ -136,14 +136,14 @@
             "packages/frontend/public/assets/js/max-height-element.js",
             "packages/frontend/public/assets/js/success-stories.js"
         ],
-        "build/tmp/js/technologies.js": [
+        "build/.tmp/js/technologies.js": [
             "bower_components/jquery/dist/jquery.min.js",
             "packages/frontend/public/assets/js/jquery.nav.js",
             "packages/frontend/public/assets/js/main-nav.js",
             "packages/frontend/public/assets/js/scroll-jumpto-fixed.js",
             "packages/frontend/public/assets/js/services.js"
         ],
-        "build/tmp/js/backend.js": [
+        "build/.tmp/js/backend.js": [
             "packages/backend/public/init.js",
             "packages/backend/public/*/**/*.js"
         ]

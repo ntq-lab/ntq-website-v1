@@ -8,10 +8,6 @@ var paths = {
 
 module.exports = function(grunt) {
 
-    // if (process.env.NODE_ENV !== 'production') {
-    //     require('time-grunt')(grunt);
-    // }
-
     // Project Configuration
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
@@ -90,39 +86,9 @@ module.exports = function(grunt) {
             all: {
                 files: [{
                     expand: true,
-                    cwd: 'build/tmp',
+                    cwd: 'build/.tmp',
                     src: ['**/*'],
                     dest: 'build/public'
-                }]
-            },
-            img: {
-                files: [{
-                    expand: true,
-                    cwd: 'client/assets/img/',
-                    src: [
-                        '**/*'
-                    ],
-                    dest: 'build/public/img/'
-                }]
-            },
-            js: {
-                files: [{
-                    expand: true,
-                    cwd: 'build/.tmp/jsmin',
-                    src: [
-                        '**/*'
-                    ],
-                    dest: 'build/public/js/'
-                }]
-            },
-            css: {
-                files: [{
-                    expand: true,
-                    cwd: 'build/tmp/cssmin',
-                    src: [
-                        '**/*'
-                    ],
-                    dest: 'build/public/css/'
                 }]
             }
         },
@@ -163,7 +129,7 @@ module.exports = function(grunt) {
     //Default task(s).
     grunt.registerTask('verify', ['jshint', 'csslint']);
 
-    grunt.registerTask('build', ['clean', 'cssmin', 'uglify', 'copy', 'filerev:all', 'filerev_assets']);
+    grunt.registerTask('build', ['clean', 'cssmin', 'uglify', 'copy', 'filerev', 'filerev_assets']);
 
     grunt.registerTask('default', ['verify', 'build', 'concurrent']);
 };
