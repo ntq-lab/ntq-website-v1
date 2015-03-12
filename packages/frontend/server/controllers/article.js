@@ -5,7 +5,7 @@ var mongoose = require('mongoose'),
     Category = mongoose.model('Category'),
     q = require('q'),
     shuffle = require('../config/shuffle-array'),
-    pageSize = 2;
+    pageSize = 10;
 
 function getCategoryMap(articles, categories) {
     var categoryMap = {};
@@ -213,17 +213,15 @@ module.exports.individual = function (req, res, next) {
         }).sort({
             time: 'desc'
         }).limit(5).exec();
-    }).then(function (relatedArticles) {
+    }).then(function(relatedArticles) {
         // in case get all data succceed, render article page
         res.render(req.__enhance.view('article-detail'), {
             article: selectedArticle,
             listRelatedArticle: relatedArticles
         });
 
-    }, function (err) {
-        res.redirect(req.__enhance.mount('/404'));
-        res.status(404);
-        res.end();
+    }, function(err) {
+        res.status(404).redirect(req.__enhance.mount('/404'));
     });
 };
 
