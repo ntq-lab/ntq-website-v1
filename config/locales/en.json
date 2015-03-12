@@ -30,7 +30,7 @@
         "address": {
             "hanoi": {
                 "title": "Head office in Hanoi",
-                "address": "6th Floor HH3 Building, Me Tri Street, Nam Tu Liem District, Hanoi City, Vietnam",
+                "address": "6th Floor, Sudico Building (HH3)<br>Me Tri Street, Nam Tu Liem District<br>Hanoi City, Vietnam",
                 "name": "Pham Thai Son",
                 "position": "Chief Executive Officer",
                 "tel": "Tel",
@@ -362,7 +362,7 @@
                 "company-name-title": "Company Name",
                 "company-name-content": "NTQ Solution,.Jsc",
                 "head-office-title": "Head office",
-                "head-office-content": "6th Floor HH3 Building, Me Tri Street, Nam Tu Liem District, Hanoi City, Vietnam",
+                "head-office-content": "6th Floor, Sudico Building (HH3)<br>Me Tri Street, Nam Tu Liem District<br>Hanoi City, Vietnam",
                 "founded-on-title": "Founded on",
                 "founded-on-content": "13/6/2011"
             },

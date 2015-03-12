@@ -22,7 +22,7 @@
                 {% for article in articles %}
                 <tr>
                     <td>
-                        <a href="{{__enhance.mount('/article/') + article.id}}">{{article.heading}}</a>
+                        <a href="{{__enhance.mount('/article/') + article.id}}">{{article.heading || '(No title)'}}</a>
                     </td>
                     <td class="no-wrap">
                         {% for language in article.languages %}

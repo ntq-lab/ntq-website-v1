@@ -12,6 +12,10 @@ var ArticleSchema = new mongoose.Schema({
         type: Boolean,
         required: true
     },
+    created: {
+        type: Date,
+        default: Date.now
+    },
     time: {
         type: Date,
         required: true

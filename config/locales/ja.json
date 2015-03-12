@@ -30,7 +30,7 @@
         "address": {
             "hanoi": {
                 "title": "在ベトナムの本社",
-                "address": "6th Floor HH3 Building, Me Tri Street, Nam Tu Liem District, Hanoi City, Vietnam",
+                "address": "6th Floor, Sudico Building (HH3)<br>Me Tri Street, Nam Tu Liem District<br>Hanoi City, Vietnam",
                 "name": "Pham Thai Son",
                 "position": "代表取締役",
                 "tel": "電話番号",
@@ -38,7 +38,7 @@
             },
             "japan": {
                 "title": "在日の代表者",
-                "address": "東京都渋谷区道玄坂1-20-2<br>アライアンスビル渋谷壱番館5F",
+                "address": "〒150-0043<br>東京都渋谷区道玄坂1-20-2<br>アライアンスビル渋谷壱番館5F",
                 "name": "To Quang Cong",
                 "position": "代表者",
                 "tel": "電話番号",
@@ -258,15 +258,15 @@
             "description": {
                 "box1": {
                     "name": "Dean Sutcliffe – CIO, iMyVenue, Australia.",
-                    "content": "“iMyVenue は何件でNTQと協力していました。 NTQ は優秀な技術を持っていますし、信頼できる会社です。製品の品質はオーストラリアの開発会社に並んで、我々の期待に応えられています。安いコストで効果的なソリューションを提供していました。我々を満足させています。”"
+                    "content": "“「iMyVenue」 は幾つかの案件でNTQと協業しました。 NTQさん は高度技術を備えており、信頼できる会社です。製品品質はオーストラリアの開発会社に匹敵し、我々の期待を裏切りませんでした。低コストかつ効果的なソリューションはとても魅力的でした。我々を満足させました。”"
                 },
                 "box2": {
                     "name": "Linh Nguyen – Technical Manager, ROI Marketing Solutions Ltd , UK.",
-                    "content": "“1年間にわたって、ROI Marketing Solutions は NTQ Solutionと協力してオンラインマケッティングアプリを開発しました。その期間で、  他ソフト開発会社に比べると、NTQ Solutionの方は技術スキル及びコミュニケーションがずっと良いです。ソフトを開発する際にNTQ Solutionを選択した方が良いと遠慮なく肯定できます。”"
+                    "content": "“1年間にわたって、ROI Marketing Solutions は NTQ Solutio JSCと協業し、オンラインマケッティングアプリを開発しました。その間、 他のソフト開発会社に比べて、NTQ Solution JSCの方が技術的にもコミュニケーションスキルが上と評価します。今後のソフト開発を委託する際、NTQ Solution JSCを第一候補として私は迷わずに推薦します。選択した方が良いと遠慮なく肯定できます。”"
                 },
                 "box3": {
                     "name": "Yusuke Akinaga – Account Manager, ITSherpa - Japan.",
-                    "content": "“ NTQ Solutionのメンバーはすべて 活発で、楽しい仕事環境を作っています。品質については日本人の習慣を知っていますので、良い製品を提供しています。現在、色々な日本企業はソフト分野で外国パートナを探していますが、幸いのはNTQ Solutionと協力できることです。”"
+                    "content": "“NTQ Solutionのメンバーはすべて 活発で、楽しい仕事環境を作っています。品質については日本人の習慣を知っていますので、良い製品を提供しています。現在、色々な日本企業はソフト分野で外国パートナを探していますが、幸いのはNTQ Solutionと協力できることです。”"
                 }
             }
         }
@@ -362,7 +362,7 @@
                 "company-name-title": "会社名",
                 "company-name-content": "NTQ Solution,.Jsc",
                 "head-office-title": "住所",
-                "head-office-content": "6th Floor HH3 Building, Me Tri Street, Nam Tu Liem District, Hanoi City, Vietnam",
+                "head-office-content": "6th Floor, Sudico Building (HH3)<br>Me Tri Street, Nam Tu Liem District<br>Hanoi City, Vietnam",
                 "founded-on-title": "設立日",
                 "founded-on-content": "2011年6月13日"
             },

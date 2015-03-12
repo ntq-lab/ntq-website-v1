@@ -37,7 +37,9 @@ module.exports.create = function (req, res, next) {
 	});
 };
 module.exports.all = function (req, res, next) {
-	Article.find().exec().then(function (articles) {
+	var query = Article.find().sort('-time');
+
+	query.exec().then(function (articles) {
 		res.render(req.__enhance.view('article/list'), {
 			articles: articles
 		});
