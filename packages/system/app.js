@@ -4,7 +4,7 @@
  * Defining the Package
  */
 var mean = require('meanio'),
-    Module = mean.Module;
+	Module = mean.Module;
 
 var SystemPackage = new Module('system');
 
@@ -13,15 +13,15 @@ var SystemPackage = new Module('system');
  * Dependency injection is used to define required modules
  */
 SystemPackage.register(function (app, auth) {
-    app.param('id', function (req, res, next, id) {
-        req._params = req._params || {};
-        req._params.id = id;
-        next();
-    });
+	app.param('id', function (req, res, next, id) {
+		req._params = req._params || {};
+		req._params.id = id;
+		next();
+	});
 
-    SystemPackage.enhance = require('./server/conf/enhance');
+	SystemPackage.enhance = require('./server/conf/enhance');
 
-    SystemPackage.routes(app);
+	SystemPackage.routes(app);
 
-    return SystemPackage;
+	return SystemPackage;
 });

@@ -4,7 +4,7 @@ var assetmanager = require('assetmanager');
 
 // var debug = process.env.NODE_ENV !== 'production';
 var debug = false;
-var tempFolder = 'build/tmp';
+var tempFolder = 'build/.tmp';
 var assets;
 
 if (debug) {

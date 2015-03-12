@@ -16,7 +16,7 @@ module.exports = function(grunt) {
         watch: {
             js: {
                 files: paths.js,
-                tasks: ['jshint', 'build'],
+                tasks: ['jshint'],
                 options: {
                     livereload: true
                 }
@@ -30,7 +30,7 @@ module.exports = function(grunt) {
             },
             css: {
                 files: paths.css,
-                tasks: ['csslint', 'build'],
+                tasks: ['csslint'],
                 options: {
                     livereload: true
                 }

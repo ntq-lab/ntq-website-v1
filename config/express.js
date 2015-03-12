@@ -18,6 +18,7 @@ var mean = require('meanio'),
     flash = require('connect-flash'),
     locale = require('./locale'),
     express = require('express'),
+    path = require('path'),
     config = mean.loadConfig();
 
 module.exports = function (app, passport, db) {
@@ -32,15 +33,15 @@ module.exports = function (app, passport, db) {
     app.set('showStackError', true);
 
     // Prettify HTML
-    app.locals.pretty = true;
+    // app.locals.pretty = true;
 
     // cache=memory or swig dies in NODE_ENV=production
     app.locals.cache = 'memory';
 
     // Only use logger for development environment
-    // if (process.env.NODE_ENV === 'development') {
-    //     app.use(morgan('dev'));
-    // }
+    if (process.env.NODE_ENV === 'development') {
+        app.use(morgan('dev'));
+    }
 
     // assign the template engine to .html files
     app.engine('html', consolidate[config.templateEngine]);
@@ -63,24 +64,11 @@ module.exports = function (app, passport, db) {
     app.use(methodOverride());
 
     // Import the assets file and add to locals
-    // var assets = assetmanager.process({
-    //     assets: require('./assets.json'),
-    //     debug: false, //process.env.NODE_ENV !== 'production',
-    //     webroot: /public\/|packages\//g
-    // });
-
     var assets = require('./assets');
-
-    // app.use(express.static('build/public'));
 
     // Add assets to local variables
     app.use(function (req, res, next) {
         res.locals.assets = assets;
-
-        // mean.aggregated('js', 'header', function (data) {
-        //     res.locals.headerJs = data;
-        //     next();
-        // });
 
         next();
     });
@@ -123,8 +111,8 @@ module.exports = function (app, passport, db) {
         res.locals.timezoneOffset = new Date().getTimezoneOffset();
         res.locals.autoSaveLatency = 1000;
 
-        //req.__uploadDir = __dirname + '/../packages/system/public/assets/';
-        req.__uploadDir = __dirname + '/upload/';
+        req.__uploadDir = path.resolve(config.root, 'upload');
+
         next();
     });
 
