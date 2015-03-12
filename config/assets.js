@@ -1,18 +1,12 @@
 'use strict';
 
-var assetmanager = require('assetmanager');
-
-// var debug = process.env.NODE_ENV !== 'production';
-var debug = false;
+var debug = process.env.NODE_ENV !== 'production';
+// var debug = false;
 var tempFolder = 'build/.tmp';
 var assets;
 
 if (debug) {
-	assets = assetmanager.process({
-	    assets: require('./assets.json'),
-	    debug: debug,
-	    webroot: /public\/|packages\//g
-	});
+	assets = require('./assets.json');
 
 	[assets.css, assets.js].forEach(function iterate(collection) {
 		Object.keys(collection).forEach(function iterate(key) {

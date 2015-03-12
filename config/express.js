@@ -11,7 +11,6 @@ var mean = require('meanio'),
     expressValidator = require('express-validator'),
     bodyParser = require('body-parser'),
     methodOverride = require('method-override'),
-    assetmanager = require('assetmanager'),
     session = require('express-session'),
     mongoStore = require('connect-mongo')(session),
     helpers = require('view-helpers'),
@@ -39,8 +38,12 @@ module.exports = function (app, passport, db) {
     app.locals.cache = 'memory';
 
     // Only use logger for development environment
-    if (process.env.NODE_ENV === 'development') {
+    if (process.env.NODE_ENV !== 'production') {
         app.use(morgan('dev'));
+        app.use(express.static(__dirname + '/../', {
+            index: false,
+            dotfiles: 'allow'
+        }));
     }
 
     // assign the template engine to .html files

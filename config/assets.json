@@ -10,7 +10,7 @@
         "build/.tmp/css/index.css": [
             "packages/frontend/public/assets/css/animate-home.css",
             "packages/frontend/public/assets/css/home.css",
-        "packages/frontend/public/assets/css/logo.css"
+            "packages/frontend/public/assets/css/logo.css"
         ],
         "build/.tmp/css/about.css": [
             "packages/frontend/public/assets/css/menu-white.css",
@@ -68,8 +68,9 @@
     "js": {
         "build/.tmp/js/index.js": [
             "bower_components/jquery/dist/jquery.min.js",
-            "bower_components/bluebird/browser/bluebird.min.js",
+            "bower_components/bluebird/js/browser/bluebird.min.js",
             "bower_components/tweenjs/build/tween.min.js",
+            "packages/frontend/public/assets/data/logo-data.js",
             "packages/frontend/public/assets/js/libs/three.min.js",
             "packages/frontend/public/assets/js/jquery.nav.js",
             "packages/frontend/public/assets/js/slideshow.js",

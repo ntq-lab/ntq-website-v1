@@ -1,9 +1,22 @@
 'use strict';
 
 var paths = {
-    js: ['*.js', 'test/**/*.js', '!test/coverage/**', '!bower_components/**', 'packages/**/*.js', '!packages/**/node_modules/**', '!packages/**/public/assets/js/libs/**'],
-    html: ['packages/**/public/**/views/**', 'packages/**/server/views/**'],
-    css: ['!bower_components/**', 'packages/**/public/**/css/*.css']
+    js: [
+        '*.js',
+        '!bower_components/**',
+        'packages/**/*.js',
+        '!packages/**/node_modules/**',
+        '!packages/**/public/assets/js/libs/**',
+        '!**/logo-data.js'
+    ],
+    html: [
+        'packages/**/public/**/views/**',
+        'packages/**/server/views/**'
+    ],
+    css: [
+        '!bower_components/**',
+        'packages/**/public/**/css/*.css'
+    ]
 };
 
 module.exports = function(grunt) {
@@ -120,6 +133,11 @@ module.exports = function(grunt) {
             common: {
                 files: '<%= assets.copy %>'
             }
+        },
+        env: {
+            prod: {
+                NODE_ENV: 'production'
+            }
         }
     });
 
@@ -131,5 +149,7 @@ module.exports = function(grunt) {
 
     grunt.registerTask('build', ['clean', 'cssmin', 'uglify', 'copy', 'filerev', 'filerev_assets']);
 
-    grunt.registerTask('default', ['verify', 'build', 'concurrent']);
+    grunt.registerTask('default', ['verify', 'concurrent']);
+
+    grunt.registerTask('prod', ['env:prod', 'verify', 'build', 'concurrent']);
 };

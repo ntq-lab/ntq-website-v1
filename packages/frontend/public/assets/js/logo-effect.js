@@ -1,5 +1,6 @@
-'use strict';
-(function () {
+;(function() {
+    'use strict';
+
     var helperFactory = function (data) {
         var loadTexture = function (block) {
             var promise = new Promise(function(resolve, reject) {
@@ -271,11 +272,13 @@
                 });
 
                 blocks.push(box);
-            }
 
-            for (i = 0; i < blocks.length; i++) {
                 Effect.bounceIn(blocks[i], i, data[i]);
             }
+
+            // for (i = 0; i < blocks.length; i++) {
+            //     Effect.bounceIn(blocks[i], i, data[i]);
+            // }
 
             new THREE.TextureLoader().load('/frontend/assets/texture/text.png', function (map) {
                 var m = new THREE.MeshBasicMaterial({
@@ -367,32 +370,11 @@
         show: function (fallback) {
             var dec = window.Detector;
 
-            if (dec.canvas || dec.webgl) {
-                var xhq = new XMLHttpRequest();
-
-                xhq.onreadystatechange = function () {
-                    if (xhq.readyState === 4) {
-                        if (xhq.status === 200) {
-                            try {
-                                var jsonData = JSON.parse(xhq.response);
-
-                                start(jsonData);
-                            } catch (e) {
-                                console.log(e);
-                                fallback();
-                            }
-                        } else {
-                            fallback();
-                        }
-                    }
-                };
-
-                xhq.open('get', '/frontend/assets/data/logo.json');
-
-                xhq.send();
+            if ((dec.canvas || dec.webgl) && window.__logo) {
+                start(window.__logo);
             } else {
                 fallback();
             }
         }
     };
-})();
+}());

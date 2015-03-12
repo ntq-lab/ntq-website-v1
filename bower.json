@@ -8,6 +8,7 @@
     "plupload": "~2.1.2",
     "jquery-ui": "1.10.3",
     "tweenjs": "r14",
-    "bluebird": "~2.9.13"
+    "bluebird": "~2.9.13",
+    "lodash": "~3.5.0"
   }
 }
