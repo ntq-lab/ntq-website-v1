@@ -38,7 +38,7 @@ module.exports = function (app, passport, db) {
     app.locals.cache = 'memory';
 
     // Only use logger for development environment
-    if (process.env.NODE_ENV !== 'production') {
+    if (process.env.NODE_ENV === 'development') {
         app.use(morgan('dev'));
         app.use(express.static(__dirname + '/../', {
             index: false,

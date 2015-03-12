@@ -1,6 +1,6 @@
 'use strict';
 
-var debug = process.env.NODE_ENV !== 'production';
+var debug = process.env.NODE_ENV === 'development';
 // var debug = false;
 var tempFolder = 'build/.tmp';
 var assets;

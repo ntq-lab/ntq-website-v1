@@ -135,8 +135,8 @@ module.exports = function(grunt) {
             }
         },
         env: {
-            prod: {
-                NODE_ENV: 'production'
+            test: {
+                NODE_ENV: 'test'
             }
         }
     });
@@ -151,5 +151,5 @@ module.exports = function(grunt) {
 
     grunt.registerTask('default', ['verify', 'concurrent']);
 
-    grunt.registerTask('prod', ['env:prod', 'verify', 'build', 'concurrent']);
+    grunt.registerTask('test', ['env:test', 'verify', 'build', 'concurrent']);
 };
