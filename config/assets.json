@@ -72,7 +72,7 @@
             "bower_components/tweenjs/build/tween.min.js",
             "packages/frontend/public/assets/data/logo-data.js",
             "packages/frontend/public/assets/js/libs/three.min.js",
-            "packages/frontend/public/assets/js/jquery.nav.js",
+            "packages/frontend/public/assets/js/libs/jquery.nav.js",
             "packages/frontend/public/assets/js/slideshow.js",
             "packages/frontend/public/assets/js/home.js",
             "packages/frontend/public/assets/js/detector.js",
@@ -92,7 +92,7 @@
         "build/.tmp/js/article.js": [
             "bower_components/jquery/dist/jquery.min.js",
             "bower_components/jquery-ui/ui/jquery-ui.js",
-            "packages/frontend/public/assets/js/jquery-tabs-rotate.js",
+            "packages/frontend/public/assets/js/libs/jquery-tabs-rotate.js",
             "packages/frontend/public/assets/js/main-nav.js",
             "packages/frontend/public/assets/js/article.js"
         ],
@@ -107,12 +107,12 @@
         ],
         "build/.tmp/js/contract-models.js": [
             "bower_components/jquery/dist/jquery.min.js",
-            "packages/frontend/public/assets/js/jquery.nav.js",
+            "packages/frontend/public/assets/js/libs/jquery.nav.js",
             "packages/frontend/public/assets/js/main-nav.js"
         ],
         "build/.tmp/js/domains.js": [
             "bower_components/jquery/dist/jquery.min.js",
-            "packages/frontend/public/assets/js/jquery.nav.js",
+            "packages/frontend/public/assets/js/libs/jquery.nav.js",
             "packages/frontend/public/assets/js/main-nav.js",
             "packages/frontend/public/assets/js/scroll-jumpto-fixed.js",
             "packages/frontend/public/assets/js/services.js"
@@ -123,7 +123,7 @@
         ],
         "build/.tmp/js/services.js": [
             "bower_components/jquery/dist/jquery.min.js",
-            "packages/frontend/public/assets/js/jquery.nav.js",
+            "packages/frontend/public/assets/js/libs/jquery.nav.js",
             "packages/frontend/public/assets/js/main-nav.js",
             "packages/frontend/public/assets/js/scroll-jumpto-fixed.js",
             "packages/frontend/public/assets/js/services.js"
@@ -131,7 +131,7 @@
         "build/.tmp/js/success-stories.js": [
             "bower_components/jquery/dist/jquery.min.js",
             "bower_components/jquery-ui/ui/jquery-ui.js",
-            "packages/frontend/public/assets/js/jquery.nav.js",
+            "packages/frontend/public/assets/js/libs/jquery.nav.js",
             "packages/frontend/public/assets/js/main-nav.js",
             "packages/frontend/public/assets/js/scroll-jumpto-fixed.js",
             "packages/frontend/public/assets/js/max-height-element.js",
@@ -139,7 +139,7 @@
         ],
         "build/.tmp/js/technologies.js": [
             "bower_components/jquery/dist/jquery.min.js",
-            "packages/frontend/public/assets/js/jquery.nav.js",
+            "packages/frontend/public/assets/js/libs/jquery.nav.js",
             "packages/frontend/public/assets/js/main-nav.js",
             "packages/frontend/public/assets/js/scroll-jumpto-fixed.js",
             "packages/frontend/public/assets/js/services.js"

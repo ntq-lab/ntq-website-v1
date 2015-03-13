@@ -16,5 +16,8 @@
 	"text-indent": false,
 	"unique-headings": false,
 	"universal-selector": false,
-	"unqualified-attributes": false
+	"unqualified-attributes": false,
+	"underscore-property-hack": false,
+	"star-property-hack": false,
+	"duplicate-background-images": false
 }

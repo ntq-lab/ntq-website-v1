@@ -1,147 +1,150 @@
-'use strict';
-(function() {
-    var currentPage = 1;
-    function loadMoreData() {
-        currentPage = 1; //track user click on "load more" button, righ now it is 0 click
-    }
+;(function() {
+	'use strict';
 
-    function filterDataArticles (categoryID) {
-        var isFilterArticles = false;
+	var currentPage = 1;
 
-        if(isFilterArticles) {
-            return;
-        }
-        isFilterArticles = true;
+	function loadMoreData() {
+		currentPage = 1; //track user click on "load more" button, righ now it is 0 click
+	}
 
-        var dataProcess = {};
+	function filterDataArticles (categoryID) {
+		var isFilterArticles = false;
 
-        if(categoryID !== null) {
-            dataProcess.categoryID = categoryID;
-        }
+		if(isFilterArticles) {
+			return;
+		}
+		isFilterArticles = true;
 
-        if($('#display-month-year li a.active').hasClass('year')) {
-            dataProcess.year = $('#display-month-year li a.active').attr('data-date');
-        } else if($('#display-month-year li a.active').hasClass('month')) {
-            dataProcess.month = $('#display-month-year li a.active').attr('data-date');
-        }
+		var dataProcess = {};
 
-        $.ajax({
-            type: 'GET',
-            url: '/api/filter-articles',
-            data: dataProcess,
-            success: function (data) {
-                $('#list-article').html('').fadeOut(100);
-                $('#list-article').html(data).fadeIn(300);
+		if(categoryID !== null) {
+			dataProcess.categoryID = categoryID;
+		}
 
-                var dataPage = $('#total-page').attr('data-count');
+		if($('#display-month-year li a.active').hasClass('year')) {
+			dataProcess.year = $('#display-month-year li a.active').attr('data-date');
+		} else if($('#display-month-year li a.active').hasClass('month')) {
+			dataProcess.month = $('#display-month-year li a.active').attr('data-date');
+		}
 
-                if(dataPage > 1) {
-                    $('#load-more').attr('data-page', dataPage);
-                    $('#load-more').fadeIn();
-                    loadMoreData();
-                }
-            },
-            error: function () {
-                console.log('500 Internal Server Error');
-            },
-            complete: function () {
-                isFilterArticles = false;
-            }
-        });
-    }
+		$.ajax({
+			type: 'GET',
+			url: '/api/filter-articles',
+			data: dataProcess,
+			success: function (data) {
+				$('#list-article').html('').fadeOut(100);
+				$('#list-article').html(data).fadeIn(300);
 
-    function loadArticles() {
-        $('#display-month-year li a').click(function (e) {
-            e.preventDefault();
+				var dataPage = $('#total-page').attr('data-count');
 
-            var categoryID = null;
+				if(dataPage > 1) {
+					$('#load-more').attr('data-page', dataPage);
+					$('#load-more').fadeIn();
+					loadMoreData();
+				}
+			},
+			error: function () {
+				console.log('500 Internal Server Error');
+			},
+			complete: function () {
+				isFilterArticles = false;
+			}
+		});
+	}
 
-            //Get categoryID 
-            if(!!$('#filter-articles').val()) {
-                categoryID = $('#filter-articles').val();
-            }
+	function loadArticles() {
+		$('#display-month-year li a').click(function (e) {
+			e.preventDefault();
 
-            $('#display-month-year li a').removeClass('active');
-            $(this).addClass('active');
+			var categoryID = null;
 
-            filterDataArticles(categoryID);
-        });
-    }
+			//Get categoryID
+			if(!!$('#filter-articles').val()) {
+				categoryID = $('#filter-articles').val();
+			}
 
-    function filterArticles() {
-        $('#filter-articles').change(function () {
-            var categoryID = null;
+			$('#display-month-year li a').removeClass('active');
+			$(this).addClass('active');
 
-            if(!!$(this).val()) {
-                categoryID = $(this).val();
-            }
+			filterDataArticles(categoryID);
+		});
+	}
 
-            filterDataArticles(categoryID);
-        });
-    }
+	function filterArticles() {
+		$('#filter-articles').change(function () {
+			var categoryID = null;
 
-    $(function () {
-        var isLoadingMore = false;
+			if(!!$(this).val()) {
+				categoryID = $(this).val();
+			}
 
-        $('#load-more').click(function (e) {
-            e.preventDefault();
+			filterDataArticles(categoryID);
+		});
+	}
 
-            if (isLoadingMore) {
-                return;
-            }
-            isLoadingMore = true;
-            
-            var dataProcess = {},
-                categoryID = $('#filter-articles').val(),
-                totalPages = $(this).attr('data-page');
+	$(function () {
+		var isLoadingMore = false;
 
-            dataProcess.categoryID = categoryID;
+		$('#load-more').click(function (e) {
+			e.preventDefault();
 
-            if($('#display-month-year li a.active').hasClass('year')) {
-                dataProcess.year = $('#display-month-year li a.active').attr('data-date');
-            } else if($('#display-month-year li a.active').hasClass('month')) {
-                dataProcess.month = $('#display-month-year li a.active').attr('data-date');
-            }
+			if (isLoadingMore) {
+				return;
+			}
+			isLoadingMore = true;
 
-            //$('.animation_image').show(); //show loading image
+			var dataProcess = {},
+				categoryID = $('#filter-articles').val(),
+				totalPages = $(this).attr('data-page');
 
-            //make sure user clicks are still less than total pages
-            if (currentPage < totalPages) {
-                dataProcess.currentPage = currentPage;
+			dataProcess.categoryID = categoryID;
 
-                //post page number and load returned data into result element
-                $.ajax({
-                    type: 'GET',
-                    url: '/api/filter-articles',
-                    data: dataProcess,
-                    success: function (data) {
-                        $('#list-article').append(data); //append data received from server
+			if($('#display-month-year li a.active').hasClass('year')) {
+				dataProcess.year = $('#display-month-year li a.active').attr('data-date');
+			} else if($('#display-month-year li a.active').hasClass('month')) {
+				dataProcess.month = $('#display-month-year li a.active').attr('data-date');
+			}
 
-                        //scroll page to button element
-                        //$("html, body").animate({scrollTop: $("#load_more_button").offset().top}, 500);
+			//$('.animation_image').show(); //show loading image
 
-                        currentPage++;
-                    },
-                    error: function () {
-                        console.log('500 Internal Server Error');
-                    },
-                    complete: function() {
-                        isLoadingMore = false;
-                    }
-                });
+			//make sure user clicks are still less than total pages
+			if (currentPage < totalPages) {
+				dataProcess.currentPage = currentPage;
 
-                //if (currentPage >= totalPages - 1) {
-                //    //reached end of the page yet? disable load button
-                //    $('#load-more').attr('disabled', 'disabled');
-                //    //$('.animation_image').hide();
-                //}
-            }
+				//post page number and load returned data into result element
+				$.ajax({
+					type: 'GET',
+					url: '/api/filter-articles',
+					data: dataProcess,
+					success: function (data) {
+						$('#list-article').append(data); //append data received from server
 
-        });
+						//scroll page to button element
+						//$("html, body").animate({scrollTop: $("#load_more_button").offset().top}, 500);
 
-        $('#slideshow-news').tabs().tabs('rotate', 3000, true).addClass('ui-tabs-vertical ui-helper-clearfix');
-        loadArticles();
-        filterArticles();
-        loadMoreData();
-    });
-})();
+						currentPage++;
+					},
+					error: function () {
+						console.log('500 Internal Server Error');
+					},
+					complete: function() {
+						isLoadingMore = false;
+					}
+				});
+
+				//if (currentPage >= totalPages - 1) {
+				//    //reached end of the page yet? disable load button
+				//    $('#load-more').attr('disabled', 'disabled');
+				//    //$('.animation_image').hide();
+				//}
+			}
+
+		});
+
+		$('#slideshow-news').tabs().tabs('rotate', 3000, true).addClass('ui-tabs-vertical ui-helper-clearfix');
+		loadArticles();
+		filterArticles();
+		loadMoreData();
+	});
+
+}());

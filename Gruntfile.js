@@ -1,14 +1,20 @@
 'use strict';
 
 var paths = {
-    js: [
-        '*.js',
-        '!bower_components/**',
-        'packages/**/*.js',
-        '!packages/**/node_modules/**',
-        '!packages/**/public/assets/js/libs/**',
-        '!**/logo-data.js'
-    ],
+    js: {
+        client: [
+            'packages/*/public/**/*.js',
+            '!packages/*/public/assets/js/libs/**/*.js',
+            '!**/logo-data.js'
+        ],
+        server: [
+            'packages/*/app.js',
+            'packages/*/server/**/*.js',
+            'config/**/*.js',
+            'server.js',
+            '!node_modules/**'
+        ]
+    },
     html: [
         'packages/**/public/**/views/**',
         'packages/**/server/views/**'
@@ -50,10 +56,16 @@ module.exports = function(grunt) {
             }
         },
         jshint: {
-            all: {
-                src: paths.js,
+            client: {
+                src: paths.js.client,
                 options: {
-                    jshintrc: true
+                    jshintrc: 'config/rules/.jshintrc-client'
+                }
+            },
+            server: {
+                src: paths.js.server,
+                options: {
+                    jshintrc: 'config/rules/.jshintrc-server'
                 }
             }
         },
@@ -67,7 +79,7 @@ module.exports = function(grunt) {
         },
         csslint: {
             options: {
-                csslintrc: '.csslintrc'
+                csslintrc: 'config/rules/.csslintrc'
             },
             src: paths.css
         },

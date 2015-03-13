@@ -4,120 +4,121 @@
  * Module dependencies.
  */
 var mean = require('meanio'),
-    compression = require('compression'),
-    morgan = require('morgan'),
-    consolidate = require('consolidate'),
-    cookieParser = require('cookie-parser'),
-    expressValidator = require('express-validator'),
-    bodyParser = require('body-parser'),
-    methodOverride = require('method-override'),
-    session = require('express-session'),
-    mongoStore = require('connect-mongo')(session),
-    helpers = require('view-helpers'),
-    flash = require('connect-flash'),
-    locale = require('./locale'),
-    express = require('express'),
-    path = require('path'),
-    config = mean.loadConfig();
+	compression = require('compression'),
+	morgan = require('morgan'),
+	consolidate = require('consolidate'),
+	cookieParser = require('cookie-parser'),
+	expressValidator = require('express-validator'),
+	bodyParser = require('body-parser'),
+	methodOverride = require('method-override'),
+	session = require('express-session'),
+	mongoStore = require('connect-mongo')(session),
+	helpers = require('view-helpers'),
+	flash = require('connect-flash'),
+	locale = require('./locale'),
+	express = require('express'),
+	path = require('path'),
+	config = mean.loadConfig();
 
 module.exports = function (app, passport, db) {
-    // Should be placed before express.static
-    // To ensure that all assets and data are compressed (utilize bandwidth)
-    //app.use(compression({
-    //    // Levels are specified in a range of 0 to 9, where-as 0 is
-    //    // no compression and 9 is best compression, but slowest
-    //    level: 9
-    //}));
+	app.set('showStackError', true);
 
-    app.set('showStackError', true);
+	// Prettify HTML
+	// app.locals.pretty = true;
 
-    // Prettify HTML
-    // app.locals.pretty = true;
+	// cache=memory or swig dies in NODE_ENV=production
+	app.locals.cache = 'memory';
 
-    // cache=memory or swig dies in NODE_ENV=production
-    app.locals.cache = 'memory';
+	// Only use logger for development environment
+	if (process.env.NODE_ENV === 'development') {
+		app.use(morgan('dev'));
 
-    // Only use logger for development environment
-    if (process.env.NODE_ENV === 'development') {
-        app.use(morgan('dev'));
-        app.use(express.static(__dirname + '/../', {
-            index: false,
-            dotfiles: 'allow'
-        }));
-    }
+		// Should be placed before express.static
+		// To ensure that all assets and data are compressed (utilize bandwidth)
+		app.use(compression({
+		   // Levels are specified in a range of 0 to 9, where-as 0 is
+		   // no compression and 9 is best compression, but slowest
+		   level: 9
+		}));
 
-    // assign the template engine to .html files
-    app.engine('html', consolidate[config.templateEngine]);
+		app.use(express.static(__dirname + '/../', {
+			index: false,
+			dotfiles: 'allow'
+		}));
+	}
 
-    // set .html as the default extension
-    app.set('view engine', 'html');
+	// assign the template engine to .html files
+	app.engine('html', consolidate[config.templateEngine]);
 
-    // set root view-directory
-    app.set('views', 'packages');
+	// set .html as the default extension
+	app.set('view engine', 'html');
 
-    // The cookieParser should be above session
-    app.use(cookieParser());
+	// set root view-directory
+	app.set('views', 'packages');
 
-    // Request body parsing middleware should be above methodOverride
-    app.use(expressValidator());
-    app.use(bodyParser.json());
-    app.use(bodyParser.urlencoded({
-        extended: true
-    }));
-    app.use(methodOverride());
+	// The cookieParser should be above session
+	app.use(cookieParser());
 
-    // Import the assets file and add to locals
-    var assets = require('./assets');
+	// Request body parsing middleware should be above methodOverride
+	app.use(expressValidator());
+	app.use(bodyParser.json());
+	app.use(bodyParser.urlencoded({
+		extended: true
+	}));
+	app.use(methodOverride());
 
-    // Add assets to local variables
-    app.use(function (req, res, next) {
-        res.locals.assets = assets;
+	// Import the assets file and add to locals
+	var assets = require('./assets');
 
-        next();
-    });
+	// Add assets to local variables
+	app.use(function (req, res, next) {
+		res.locals.assets = assets;
 
-    // Express/Mongo session storage
-    app.use(session({
-        secret: config.sessionSecret,
-        store: new mongoStore({
-            db: db.connection.db,
-            collection: config.sessionCollection
-        }),
-        cookie: config.sessionCookie,
-        name: config.sessionName,
-        resave: true,
-        saveUninitialized: true
-    }));
+		next();
+	});
 
-    // Dynamic helpers
-    app.use(helpers(config.app.name));
+	// Express/Mongo session storage
+	app.use(session({
+		secret: config.sessionSecret,
+		store: new mongoStore({
+			db: db.connection.db,
+			collection: config.sessionCollection
+		}),
+		cookie: config.sessionCookie,
+		name: config.sessionName,
+		resave: true,
+		saveUninitialized: true
+	}));
 
-    // Use passport session
-    app.use(passport.initialize());
-    app.use(passport.session());
+	// Dynamic helpers
+	app.use(helpers(config.app.name));
 
-    //mean middleware from modules before routes
-    app.use(mean.chainware.before);
+	// Use passport session
+	app.use(passport.initialize());
+	app.use(passport.session());
 
-    // Connect flash for flash messages
-    app.use(flash());
+	//mean middleware from modules before routes
+	app.use(mean.chainware.before);
 
-    // Add i18n
-    app.use(locale.init);
+	// Connect flash for flash messages
+	app.use(flash());
 
-    // Parse sub-domain to get preffered language
-    app.use(locale.handleSubDomain);
+	// Add i18n
+	app.use(locale.init);
 
-    // Inject useful information
-    app.use(function (req, res, next) {
-        res.locals = res.locals || {};
-        res.locals.timezoneOffset = new Date().getTimezoneOffset();
-        res.locals.autoSaveLatency = 1000;
+	// Parse sub-domain to get preffered language
+	app.use(locale.handleSubDomain);
 
-        req.__uploadDir = path.resolve(config.root, 'upload');
+	// Inject useful information
+	app.use(function (req, res, next) {
+		res.locals = res.locals || {};
+		res.locals.timezoneOffset = new Date().getTimezoneOffset();
+		res.locals.autoSaveLatency = 1000;
 
-        next();
-    });
+		req.__uploadDir = path.resolve(config.root, 'upload');
 
-    app.disable('x-powered-by');
+		next();
+	});
+
+	app.disable('x-powered-by');
 };

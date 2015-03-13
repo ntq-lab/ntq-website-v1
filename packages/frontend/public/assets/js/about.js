@@ -1,34 +1,37 @@
-'use strict';
+;(function() {
+	'use strict';
 
-$(function () {
-    $('#main-nav-about-content').tabs({
-        event: 'mouseover'
-    });
+	$(function () {
+		$('#main-nav-about-content').tabs({
+			event: 'mouseover'
+		});
 
-    //Set max height for element about
-    new window.SetMaxHeightElement({
-        element: '.main-nav-about-content-slide'
-    });
+		//Set max height for element about
+		new window.SetMaxHeightElement({
+			element: '.main-nav-about-content-slide'
+		});
 
-    // Play video
-    $('#play-video').click(function (e) {
-        e.preventDefault();
+		// Play video
+		$('#play-video').click(function (e) {
+			e.preventDefault();
 
-        var elementVideo = '<div class="video-box" id="video-box">';
-        elementVideo += '<div class="video-box-container">';
-        elementVideo += '<div class="video">';
-        elementVideo += '<iframe width="640" height="480" src="//www.youtube.com/embed/DD1xnGubRI8" frameborder="0" allowfullscreen></iframe>';
-        elementVideo += '</div>';
-        elementVideo += '</div>';
-        elementVideo += '</div>';
+			var elementVideo = '<div class="video-box" id="video-box">';
+			elementVideo += '<div class="video-box-container">';
+			elementVideo += '<div class="video">';
+			elementVideo += '<iframe width="640" height="480" src="//www.youtube.com/embed/DD1xnGubRI8" frameborder="0" allowfullscreen></iframe>';
+			elementVideo += '</div>';
+			elementVideo += '</div>';
+			elementVideo += '</div>';
 
-        $('body').append(elementVideo);
+			$('body').append(elementVideo);
 
-        $('#video-box').fadeIn(300);
+			$('#video-box').fadeIn(300);
 
-        $('#video-box').click(function () {
-            $(this).fadeOut(100);
-            $(this).remove();
-        });
-    });
-});
+			$('#video-box').click(function () {
+				$(this).fadeOut(100);
+				$(this).remove();
+			});
+		});
+	});
+
+}());

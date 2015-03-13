@@ -1,251 +1,254 @@
-'use strict';
-var ArticleController = function ($scope, $timeout, $q, Article, Category, Global) {
-    var saveDraftDelay;
-    var saveExtractDelay = {};
-    // private function
-    function addExtract(extract) {
-        Article.createExtract(extract).then(function (extract) {
-            $scope.article.extracts.push(extract);
-        });
-    }
+;(function() {
 
-    $scope.saveExtract = function (extract, immediate) {
-        saveExtractDelay[extract._id] = saveExtractDelay[extract._id] || {};
+	'use strict';
+	var ArticleController = function ($scope, $timeout, $q, Article, Category, Global) {
+		var saveDraftDelay;
+		var saveExtractDelay = {};
+		// private function
+		function addExtract(extract) {
+			Article.createExtract(extract).then(function (extract) {
+				$scope.article.extracts.push(extract);
+			});
+		}
 
-        saveExtractDelay[extract._id].defer = $q.defer();
+		$scope.saveExtract = function (extract, immediate) {
+			saveExtractDelay[extract._id] = saveExtractDelay[extract._id] || {};
 
-        $timeout.cancel(saveExtractDelay[extract._id].timeout);
+			saveExtractDelay[extract._id].defer = $q.defer();
 
-        saveExtractDelay[extract._id].timeout = $timeout(function () {
-            Article.updateExtract(extract).then(function (updatedExtract) {
-                extract = updatedExtract;
-                saveExtractDelay[extract._id].defer.resolve();
-            });
-        }, !!immediate ? 0 : Global.autoSaveLatency);
+			$timeout.cancel(saveExtractDelay[extract._id].timeout);
 
-        return saveExtractDelay[extract._id].defer.promise;
-    };
+			saveExtractDelay[extract._id].timeout = $timeout(function () {
+				Article.updateExtract(extract).then(function (updatedExtract) {
+					extract = updatedExtract;
+					saveExtractDelay[extract._id].defer.resolve();
+				});
+			}, !!immediate ? 0 : Global.autoSaveLatency);
 
-    $scope.saveChanges = function (immediate) {
-        $timeout.cancel(saveDraftDelay);
+			return saveExtractDelay[extract._id].defer.promise;
+		};
 
-        saveDraftDelay = $timeout(function () {
-            Article.saveDraft($scope.article).then(function () {
-                $scope.article.enabled = false;
-            });
-        }, !!immediate ? 0 : Global.autoSaveLatency);
-    };
+		$scope.saveChanges = function (immediate) {
+			$timeout.cancel(saveDraftDelay);
 
-    // --------------- Controller logic below ---------------
+			saveDraftDelay = $timeout(function () {
+				Article.saveDraft($scope.article).then(function () {
+					$scope.article.enabled = false;
+				});
+			}, !!immediate ? 0 : Global.autoSaveLatency);
+		};
 
-    Article.get().then(function (article) {
-        $scope.article = article;
+		// --------------- Controller logic below ---------------
 
-        // bind languages
-        $scope.languages = [];
-        for (var index in Global.languages) {
-            var language = Global.languages[index];
+		Article.get().then(function (article) {
+			$scope.article = article;
 
-            var data = {
-                selected: $scope.article.languages.indexOf(language) > -1,
-                text: language
-            };
+			// bind languages
+			$scope.languages = [];
+			for (var index in Global.languages) {
+				var language = Global.languages[index];
 
-            $scope.languages.push(data);
-        }
+				var data = {
+					selected: $scope.article.languages.indexOf(language) > -1,
+					text: language
+				};
 
-        // bind categories
-        Category.getAll().then(function (categories) {
-            $scope.categories = [];
+				$scope.languages.push(data);
+			}
 
-            for (var index in categories) {
-                var category = categories[index];
-                category.selected = $scope.article.categories.indexOf(category._id) > -1;
-                $scope.categories.push(category);
-            }
-        });
+			// bind categories
+			Category.getAll().then(function (categories) {
+				$scope.categories = [];
 
-        $scope.article.extracts.sort(function (extract1, extract2) {
-            return extract1.identifier - extract2.identifier;
-        });
-    });
+				for (var index in categories) {
+					var category = categories[index];
+					category.selected = $scope.article.categories.indexOf(category._id) > -1;
+					$scope.categories.push(category);
+				}
+			});
 
-    $scope.onLanguagesChange = function () {
-        var arr = [];
+			$scope.article.extracts.sort(function (extract1, extract2) {
+				return extract1.identifier - extract2.identifier;
+			});
+		});
 
-        for (var index in $scope.languages) {
-            var language = $scope.languages[index];
-            if (language.selected) {
-                arr.push(language.text);
-            }
-        }
+		$scope.onLanguagesChange = function () {
+			var arr = [];
 
-        $scope.article.languages = arr;
+			for (var index in $scope.languages) {
+				var language = $scope.languages[index];
+				if (language.selected) {
+					arr.push(language.text);
+				}
+			}
 
-        $scope.saveChanges(true);
-    };
+			$scope.article.languages = arr;
 
-    $scope.onCategoriesChange = function () {
-        var arr = [];
+			$scope.saveChanges(true);
+		};
 
-        for (var index in $scope.categories) {
-            var category = $scope.categories[index];
-            if (category.selected) {
-                arr.push(category._id);
-            }
-        }
+		$scope.onCategoriesChange = function () {
+			var arr = [];
 
-        $scope.article.categories = arr;
+			for (var index in $scope.categories) {
+				var category = $scope.categories[index];
+				if (category.selected) {
+					arr.push(category._id);
+				}
+			}
 
-        $scope.saveChanges(true);
-    };
+			$scope.article.categories = arr;
 
-    // add logics
-    $scope.addSmallHeading = function () {
-        addExtract({
-            style: 0,
-            text: 'Small Heading'
-        });
-    };
+			$scope.saveChanges(true);
+		};
 
-    $scope.addParagraphTextOnly = function () {
-        addExtract({
-            style: 1,
-            text: 'Text only'
-        });
-    };
+		// add logics
+		$scope.addSmallHeading = function () {
+			addExtract({
+				style: 0,
+				text: 'Small Heading'
+			});
+		};
 
-    $scope.addParagraphTextLeft = function () {
-        addExtract({
-            style: 2,
-            text: 'Text left'
-        });
-    };
+		$scope.addParagraphTextOnly = function () {
+			addExtract({
+				style: 1,
+				text: 'Text only'
+			});
+		};
 
-    $scope.addParagraphTextRight = function () {
-        addExtract({
-            style: 3,
-            text: 'Text right'
-        });
-    };
+		$scope.addParagraphTextLeft = function () {
+			addExtract({
+				style: 2,
+				text: 'Text left'
+			});
+		};
 
-    $scope.addParagraphImageOnly = function () {
-        addExtract({
-            style: 4
-        });
-    };
+		$scope.addParagraphTextRight = function () {
+			addExtract({
+				style: 3,
+				text: 'Text right'
+			});
+		};
 
-    $scope.moveUp = function (extract) {
-        var index = $scope.article.extracts.indexOf(extract);
-        if (index > 0) {
-            var downExtract = $scope.article.extracts[index - 1];
+		$scope.addParagraphImageOnly = function () {
+			addExtract({
+				style: 4
+			});
+		};
 
-            // swap identifier
-            var temp = downExtract.identifier;
-            downExtract.identifier = extract.identifier;
-            extract.identifier = temp;
+		$scope.moveUp = function (extract) {
+			var index = $scope.article.extracts.indexOf(extract);
+			if (index > 0) {
+				var downExtract = $scope.article.extracts[index - 1];
 
-            $q.all([
-                $scope.saveExtract(extract, true),
-                $scope.saveExtract(downExtract, true)
-            ]).then(function () {
-                $scope.article.extracts.sort(function (extract1, extract2) {
-                    return extract1.identifier - extract2.identifier;
-                });
-            });
-        }
-    };
+				// swap identifier
+				var temp = downExtract.identifier;
+				downExtract.identifier = extract.identifier;
+				extract.identifier = temp;
 
-    $scope.moveDown = function (extract) {
-        var index = $scope.article.extracts.indexOf(extract);
-        if (index < $scope.article.extracts.length - 1) {
-            var upExtract = $scope.article.extracts[index + 1];
-            // swap identifier
-            var temp = upExtract.identifier;
-            upExtract.identifier = extract.identifier;
-            extract.identifier = temp;
+				$q.all([
+					$scope.saveExtract(extract, true),
+					$scope.saveExtract(downExtract, true)
+				]).then(function () {
+					$scope.article.extracts.sort(function (extract1, extract2) {
+						return extract1.identifier - extract2.identifier;
+					});
+				});
+			}
+		};
 
-            $q.all([
-                $scope.saveExtract(extract, true),
-                $scope.saveExtract(upExtract, true)
-            ]).then(function () {
-                $scope.article.extracts.sort(function (extract1, extract2) {
-                    return extract1.identifier - extract2.identifier;
-                });
-            });
-        }
-    };
+		$scope.moveDown = function (extract) {
+			var index = $scope.article.extracts.indexOf(extract);
+			if (index < $scope.article.extracts.length - 1) {
+				var upExtract = $scope.article.extracts[index + 1];
+				// swap identifier
+				var temp = upExtract.identifier;
+				upExtract.identifier = extract.identifier;
+				extract.identifier = temp;
 
-    $scope.removeExtract = function (extract) {
-        Article.removeExtract(extract).then(function () {
-            var index = $scope.article.extracts.indexOf(extract);
-            $scope.article.extracts.splice(index, 1);
-        });
-    };
+				$q.all([
+					$scope.saveExtract(extract, true),
+					$scope.saveExtract(upExtract, true)
+				]).then(function () {
+					$scope.article.extracts.sort(function (extract1, extract2) {
+						return extract1.identifier - extract2.identifier;
+					});
+				});
+			}
+		};
 
-    $scope.onImageUpload = function (extract, image) {
-        extract.image = image;
-        $scope.saveExtract(extract, true);
-    };
+		$scope.removeExtract = function (extract) {
+			Article.removeExtract(extract).then(function () {
+				var index = $scope.article.extracts.indexOf(extract);
+				$scope.article.extracts.splice(index, 1);
+			});
+		};
 
-    $scope.onImageRemove = function (extract) {
-        Article.removeImage(extract.image);
-        extract.image = null;
-        $scope.saveExtract(extract, true);
-    };
+		$scope.onImageUpload = function (extract, image) {
+			extract.image = image;
+			$scope.saveExtract(extract, true);
+		};
 
-    var clientImages = {};
+		$scope.onImageRemove = function (extract) {
+			Article.removeImage(extract.image);
+			extract.image = null;
+			$scope.saveExtract(extract, true);
+		};
 
-    $scope.onGalleryImageAdd = function (id, image) {
-        $scope.article.gallery[clientImages[id]] = image;
-        delete clientImages[id];
-        $scope.saveChanges(true);
-    };
+		var clientImages = {};
 
-    $scope.onGalleryImageClientAdd = function (images) {
-        for (var i = 0; i < images.length; i++) {
-            clientImages[images[i].id] = $scope.article.gallery.length;
-            $scope.article.gallery.push('');
-        }
-    };
+		$scope.onGalleryImageAdd = function (id, image) {
+			$scope.article.gallery[clientImages[id]] = image;
+			delete clientImages[id];
+			$scope.saveChanges(true);
+		};
 
-    $scope.onGalleryImageUpdate = function (image, index) {
-        Article.removeImage($scope.article.gallery[index]);
+		$scope.onGalleryImageClientAdd = function (images) {
+			for (var i = 0; i < images.length; i++) {
+				clientImages[images[i].id] = $scope.article.gallery.length;
+				$scope.article.gallery.push('');
+			}
+		};
 
-        $scope.article.gallery[index] = image;
+		$scope.onGalleryImageUpdate = function (image, index) {
+			Article.removeImage($scope.article.gallery[index]);
 
-        $scope.saveChanges(true);
-    };
+			$scope.article.gallery[index] = image;
 
-    $scope.onGalleryImageRemove = function (index) {
-        Article.removeImage($scope.article.gallery[index]);
+			$scope.saveChanges(true);
+		};
 
-        $scope.article.gallery.splice(index, 1);
+		$scope.onGalleryImageRemove = function (index) {
+			Article.removeImage($scope.article.gallery[index]);
 
-        $scope.saveChanges(true);
-    };
+			$scope.article.gallery.splice(index, 1);
 
-    $scope.onAvatarUpdate = function (image) {
-        if (!!$scope.article.avatar) {
-            Article.removeImage($scope.article.avatar);
-        }
+			$scope.saveChanges(true);
+		};
 
-        $scope.article.avatar = image;
+		$scope.onAvatarUpdate = function (image) {
+			if (!!$scope.article.avatar) {
+				Article.removeImage($scope.article.avatar);
+			}
 
-        $scope.saveChanges(true);
-    };
+			$scope.article.avatar = image;
 
-    $scope.onAvatarRemove = function () {
-        if (!!$scope.article.avatar) {
-            Article.removeImage($scope.article.avatar);
-        }
+			$scope.saveChanges(true);
+		};
 
-        $scope.article.avatar = null;
+		$scope.onAvatarRemove = function () {
+			if (!!$scope.article.avatar) {
+				Article.removeImage($scope.article.avatar);
+			}
 
-        $scope.saveChanges(true);
-    };
-};
+			$scope.article.avatar = null;
 
-ArticleController.$inject = ['$scope', '$timeout', '$q', 'Article', 'Category', 'Global'];
+			$scope.saveChanges(true);
+		};
+	};
 
-angular.module('backend.article').controller('ArticleController', ArticleController);
+	ArticleController.$inject = ['$scope', '$timeout', '$q', 'Article', 'Category', 'Global'];
+
+	angular.module('backend.article').controller('ArticleController', ArticleController);
+}());

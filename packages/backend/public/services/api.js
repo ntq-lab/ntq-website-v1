@@ -1,22 +1,25 @@
-'use strict';
-angular.module('backend').factory('API', ['$http', 'Enhance', function ($http, Enhance) {
-    return {
-        call: function (method, url, data) {
-            $('.mark').show();
+;(function() {
+	'use strict';
+	angular.module('backend').factory('API', ['$http', 'Enhance', function($http, Enhance) {
 
-            data = data || {};
-            data._time = new Date().getTime();
+		return {
+			call: function (method, url, data) {
+				$('.mark').show();
 
-            return $http({
-                url: Enhance.mount('/api' + url),
-                method: method,
-                data: data
-            }).then(function (res) {
-                $('.mark').hide();
-                return res.data;
-            }, function (err) {
-                console.log(err);
-            });
-        }
-    };
-} ]);
+				data = data || {};
+				data._time = new Date().getTime();
+
+				return $http({
+					url: Enhance.mount('/api' + url),
+					method: method,
+					data: data
+				}).then(function (res) {
+					$('.mark').hide();
+					return res.data;
+				}, function (err) {
+					console.log(err);
+				});
+			}
+		};
+	}]);
+}());
