@@ -34,7 +34,11 @@ module.exports = function(grunt) {
         clean: ['build'],
         watch: {
             js: {
-                files: paths.js,
+                files: [
+                    paths.js.client,
+                    paths.js.server,
+                    '!build/**'
+                ],
                 tasks: ['jshint'],
                 options: {
                     livereload: true
