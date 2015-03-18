@@ -11,11 +11,8 @@ module.exports.render = function (req, res) {
 
     Article.find({
         enabled: true,
-        languages: res.locals.locale
-    }).sort({
-        highlighted: -1,
-        time: 1
-    }).limit(5).exec().then(function (articles) {
+        languages: res.locals.locale,
+    }).sort('-highlighted -time').limit(5).exec().then(function (articles) {
         res.render(req.__enhance.view('index'), {
             articles: articles,
             color: color
