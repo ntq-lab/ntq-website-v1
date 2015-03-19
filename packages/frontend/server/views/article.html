@@ -8,21 +8,14 @@
 {% for file in assets['/css/article.css'] %}
     <link href="{{file}}" rel="stylesheet">
 {% endfor %}
-<!--
-<link href="/frontend/assets/css/article.css" rel="stylesheet">
--->
+
 {% endblock %}
 
 {% block script %}
 {% for file in assets['/js/article.js'] %}
     <script src="{{file}}"></script>
 {% endfor %}
-<!--
-<script src="/bower_components/jquery-ui/ui/jquery-ui.js"></script>
-<script src="/frontend/assets/js/jquery-tabs-rotate.js"></script>
-<script src="/frontend/assets/js/main-nav.js"></script>
-<script src="/frontend/assets/js/article.js"></script>
--->
+
 {% endblock %}
 
 {% block content %}

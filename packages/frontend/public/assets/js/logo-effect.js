@@ -2,19 +2,6 @@
     'use strict';
 
     var helperFactory = function (data) {
-        var loadTexture = function (block) {
-            var promise = new Promise(function(resolve, reject) {
-                loader.load('/frontend/assets/texture/' + block.link.texture, function (map) {
-                    block.link.map = map;
-
-                    resolve();
-                });
-
-            });
-
-            textureLoadingJobs.push(promise);
-        };
-
         var lineMaterial = function () {
             return new THREE.LineBasicMaterial({
                 color: 0xffffff,
@@ -36,8 +23,6 @@
             y2: -9999999
         };
 
-        var loader = new THREE.TextureLoader();
-
         var textureLoadingJobs = [];
 
         for (var i = 0; i < data.length; i++) {
@@ -45,10 +30,6 @@
             boundary.y1 = boundary.y1 > data[i].y ? data[i].y : boundary.y1;
             boundary.x2 = boundary.x2 < data[i].x + data[i].width ? data[i].x + data[i].width : boundary.x2;
             boundary.y2 = boundary.y2 < data[i].y + data[i].height ? data[i].y + data[i].width : boundary.y2;
-
-            if (data[i].link && data[i].link.texture) {
-                loadTexture(data[i]);
-            }
         }
 
         return {
@@ -246,7 +227,6 @@
         createScene();
 
         var blocks = [];
-        var links = [];
         var text;
 
         helper.ready.then(function () {
@@ -276,11 +256,7 @@
                 Effect.bounceIn(blocks[i], i, data[i]);
             }
 
-            // for (i = 0; i < blocks.length; i++) {
-            //     Effect.bounceIn(blocks[i], i, data[i]);
-            // }
-
-            new THREE.TextureLoader().load('/frontend/assets/texture/text.png', function (map) {
+            new THREE.TextureLoader().load('/img/texture/text.png', function (map) {
                 var m = new THREE.MeshBasicMaterial({
                     map: map,
                     transparent: true
@@ -292,8 +268,6 @@
                 }, 486, 33, {
                     material: m
                 });
-
-                // scene.add(text);
 
                 animate();
             });
@@ -329,8 +303,8 @@
                     Effect.active--;
 
                     if (Effect.active === 0) {
-                        // show link + text
-                        finishSplash();
+                        // show text
+                        Effect.fadeIn(text);
                     }
                 }).easing(TWEEN.Easing.Bounce.Out)
                 .delay(order * 5 + data.width * 70)
@@ -354,16 +328,6 @@
                 .start();
             }
         };
-
-        function finishSplash() {
-            Effect.fadeIn(text);
-            for (var i = 0; i < links.length; i++) {
-                Effect.fadeIn(links[i].block);
-                Effect.fadeIn(links[i].text);
-                Effect.fadeIn(links[i].line);
-                Effect.fadeIn(links[i].circle);
-            }
-        }
     }
 
     window.LOGO = {

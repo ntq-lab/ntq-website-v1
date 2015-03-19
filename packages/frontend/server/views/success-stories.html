@@ -8,25 +8,14 @@
 {% for file in assets['/css/success-stories.css'] %}
     <link href="{{file}}" rel="stylesheet">
 {% endfor %}
-<!--
-<link href="/frontend/assets/css/menu-white.css" rel="stylesheet">
-<link href="/frontend/assets/css/submenu-common.css" rel="stylesheet">
-<link href="/frontend/assets/css/success-stories.css" rel="stylesheet">
--->
+
 {% endblock %}
 
 {% block script %}
 {% for file in assets['/js/success-stories.js'] %}
     <script src="{{file}}"></script>
 {% endfor %}
-<!--
-<script src="/bower_components/jquery-ui/ui/jquery-ui.js"></script>
-<script src="/frontend/assets/js/jquery.nav.js"></script>
-<script src="/frontend/assets/js/main-nav.js"></script>
-<script src="/frontend/assets/js/scroll-jumpto-fixed.js"></script>
-<script src="/frontend/assets/js/max-height-element.js"></script>
-<script src="/frontend/assets/js/success-stories.js"></script>
--->
+
 {% endblock %}
 
 {% block content %}
@@ -154,7 +143,7 @@
                                         <p>{{__('page-success-stories.box3.result.paragraph1')}}</p>
                                         <p>{{__('page-success-stories.box3.result.paragraph2')}}</p>
                                     </div>
-                                    <div class="image"><img src="/img/certificate.png" alt="Spicy Cinnamon Pte. Ltd." /></div>
+                                    <div class="image"><img src="{{assets._('/img/certificate.png')}}" alt="Spicy Cinnamon Pte. Ltd." /></div>
                                 </div><!-- /text-image -->
                             </div>
                         </div>

@@ -8,22 +8,14 @@
 {% for file in assets['/css/technologies.css'] %}
     <link href="{{file}}" rel="stylesheet">
 {% endfor %}
-<!--
-<link href="/frontend/assets/css/services.css" rel="stylesheet">
-<link href="/frontend/assets/css/menu-black.css" rel="stylesheet">
--->
+
 {% endblock %}
 
 {% block script %}
 {% for file in assets['/js/technologies.js'] %}
     <script src="{{file}}"></script>
 {% endfor %}
-<!--
-<script src="/frontend/assets/js/jquery.nav.js"></script>
-<script src="/frontend/assets/js/main-nav.js"></script>
-<script src="/frontend/assets/js/scroll-jumpto-fixed.js"></script>
-<script src="/frontend/assets/js/services.js"></script>
--->
+
 {% endblock %}
 
 {% block content %}
@@ -61,22 +53,22 @@
                             </tr>
                             <tr>
                                 <td>
-                                    <img src="/img/technology/java/java.png" alt="{{__('page-technologies.java-enterprise-edition')}}" />
+                                    <img src="{{assets._('/img/technology/java/java.png')}}" alt="{{__('page-technologies.java-enterprise-edition')}}" />
                                 </td>
                                 <td class="border-right">
-                                    <img src="/img/technology/java/google.png" alt="{{__('page-technologies.google-app-engine')}}" />
+                                    <img src="{{assets._('/img/technology/java/google.png')}}" alt="{{__('page-technologies.google-app-engine')}}" />
                                 </td>
                                 <td>
-                                    <img src="/img/technology/java/spring.png" alt="{{__('page-technologies.spring')}}" />
+                                    <img src="{{assets._('/img/technology/java/spring.png')}}" alt="{{__('page-technologies.spring')}}" />
                                 </td>
                                 <td class="border-right">
-                                    <img src="/img/technology/java/jboss.png" alt="{{__('page-technologies.jboss')}}" />
+                                    <img src="{{assets._('/img/technology/java/jboss.png')}}" alt="{{__('page-technologies.jboss')}}" />
                                 </td>
                                 <td>
-                                    <img src="/img/technology/java/netbeans.png" alt="{{__('page-technologies.netbeans')}}" />
+                                    <img src="{{assets._('/img/technology/java/netbeans.png')}}" alt="{{__('page-technologies.netbeans')}}" />
                                 </td>
                                 <td>
-                                    <img src="/img/technology/java/eclipse.png" alt="{{__('page-technologies.eclipse')}}" />
+                                    <img src="{{assets._('/img/technology/java/eclipse.png')}}" alt="{{__('page-technologies.eclipse')}}" />
                                 </td>
                             </tr>
                             <tr>
@@ -88,10 +80,10 @@
                             <tr>
                                 <td colspan="2"></td>
                                 <td class="border-left">
-                                    <img src="/img/technology/java/hibernate.png" alt="{{__('page-technologies.hibernate')}}" />
+                                    <img src="{{assets._('/img/technology/java/hibernate.png')}}" alt="{{__('page-technologies.hibernate')}}" />
                                 </td>
                                 <td class="border-right">
-                                    <img src="/img/technology/java/struts.png" alt="{{__('page-technologies.struts')}}" />
+                                    <img src="{{assets._('/img/technology/java/struts.png')}}" alt="{{__('page-technologies.struts')}}" />
                                 </td>
                                 <td colspan="2"></td>
                             </tr>
@@ -116,13 +108,13 @@
                             </tr>
                             <tr>
                                 <td>
-                                    <img src="/img/technology/javascript/angular.png" alt="{{__('page-technologies.angularjs')}}" />
+                                    <img src="{{assets._('/img/technology/javascript/angular.png')}}" alt="{{__('page-technologies.angularjs')}}" />
                                 </td>
                                 <td class="border-right">
-                                    <img src="/img/technology/javascript/meanio.png" alt="{{__('page-technologies.mean-io')}}" />
+                                    <img src="{{assets._('/img/technology/javascript/meanio.png')}}" alt="{{__('page-technologies.mean-io')}}" />
                                 </td>
                                 <td>
-                                    <img src="/img/technology/javascript/jquery.png" alt="{{__('page-technologies.jquery')}}" />
+                                    <img src="{{assets._('/img/technology/javascript/jquery.png')}}" alt="{{__('page-technologies.jquery')}}" />
                                 </td>
                             </tr>
                         </tbody>
@@ -149,22 +141,22 @@
                             </tr>
                             <tr>
                                 <td class="border-right">
-                                    <img src="/img/technology/dotnet/window.png" alt="{{__('page-technologies.windows')}}" />
+                                    <img src="{{assets._('/img/technology/dotnet/window.png')}}" alt="{{__('page-technologies.windows')}}" />
                                 </td>
                                 <td>
-                                    <img src="/img/technology/dotnet/aspnetmvc.png" alt="{{__('page-technologies.asp-net-mvc')}}" />
+                                    <img src="{{assets._('/img/technology/dotnet/aspnetmvc.png')}}" alt="{{__('page-technologies.asp-net-mvc')}}" />
                                 </td>
                                 <td>
-                                    <img src="/img/technology/dotnet/aspnet.png" alt="{{__('page-technologies.asp-net')}}" />
+                                    <img src="{{assets._('/img/technology/dotnet/aspnet.png')}}" alt="{{__('page-technologies.asp-net')}}" />
                                 </td>
                                 <td>
-                                    <img src="/img/technology/dotnet/C.png" alt="{{__('page-technologies.c-net')}}" />
+                                    <img src="{{assets._('/img/technology/dotnet/C.png')}}" alt="{{__('page-technologies.c-net')}}" />
                                 </td>
                                 <td>
-                                    <img src="/img/technology/dotnet/ADO.png" alt="{{__('page-technologies.ado-net')}}" />
+                                    <img src="{{assets._('/img/technology/dotnet/ADO.png')}}" alt="{{__('page-technologies.ado-net')}}" />
                                 </td>
                                 <td>
-                                    <img src="/img/technology/dotnet/wcf.png" alt="{{__('page-technologies.wcf')}}" />
+                                    <img src="{{assets._('/img/technology/dotnet/wcf.png')}}" alt="{{__('page-technologies.wcf')}}" />
                                 </td>
                             </tr>
                             <tr>
@@ -179,13 +171,13 @@
                             </tr>
                             <tr>
                                 <td class="border-right">
-                                    <img src="/img/technology/dotnet/visual.png" alt="{{__('page-technologies.visual-studio')}}" />
+                                    <img src="{{assets._('/img/technology/dotnet/visual.png')}}" alt="{{__('page-technologies.visual-studio')}}" />
                                 </td>
                                 <td>
-                                    <img src="/img/technology/dotnet/entity.png" alt="{{__('page-technologies.entity-framework')}}" />
+                                    <img src="{{assets._('/img/technology/dotnet/entity.png')}}" alt="{{__('page-technologies.entity-framework')}}" />
                                 </td>
                                 <td>
-                                    <img src="/img/technology/dotnet/linq.png" alt="{{__('page-technologies.linq-library')}}" />
+                                    <img src="{{assets._('/img/technology/dotnet/linq.png')}}" alt="{{__('page-technologies.linq-library')}}" />
                                 </td>
                                 <td colspan="3"></td>
                             </tr>
@@ -214,22 +206,22 @@
                             </tr>
                             <tr>
                                 <td>
-                                    <img src="/img/technology/php/window.png" alt="{{__('page-technologies.windows')}}" />
+                                    <img src="{{assets._('/img/technology/php/window.png')}}" alt="{{__('page-technologies.windows')}}" />
                                 </td>
                                 <td class="border-right">
-                                    <img src="/img/technology/php/linux.png" alt="{{__('page-technologies.linux')}}" />
+                                    <img src="{{assets._('/img/technology/php/linux.png')}}" alt="{{__('page-technologies.linux')}}" />
                                 </td>
                                 <td>
-                                    <img src="/img/technology/php/cakephp.png" alt="{{__('page-technologies.cakephp')}}" />
+                                    <img src="{{assets._('/img/technology/php/cakephp.png')}}" alt="{{__('page-technologies.cakephp')}}" />
                                 </td>
                                 <td class="border-right">
-                                    <img src="/img/technology/php/codeigniter.png" alt="{{__('page-technologies.codeignitor')}}" />
+                                    <img src="{{assets._('/img/technology/php/codeigniter.png')}}" alt="{{__('page-technologies.codeignitor')}}" />
                                 </td>
                                 <td>
-                                    <img src="/img/technology/php/netbeans.png" alt="{{__('page-technologies.netbeans')}}" />
+                                    <img src="{{assets._('/img/technology/php/netbeans.png')}}" alt="{{__('page-technologies.netbeans')}}" />
                                 </td>
                                 <td>
-                                    <img src="/img/technology/php/eclipse.png" alt="{{__('page-technologies.eclipse')}}" />
+                                    <img src="{{assets._('/img/technology/php/eclipse.png')}}" alt="{{__('page-technologies.eclipse')}}" />
                                 </td>
                             </tr>
                             <tr>
@@ -241,16 +233,16 @@
                             </tr>
                             <tr>
                                 <td>
-                                    <img src="/img/technology/php/macos.png" alt="{{__('page-technologies.macosx')}}" />
+                                    <img src="{{assets._('/img/technology/php/macos.png')}}" alt="{{__('page-technologies.macosx')}}" />
                                 </td>
                                 <td class="border-right">
-                                    <img src="/img/technology/php/solaris.png" alt="{{__('page-technologies.solaris')}}" />
+                                    <img src="{{assets._('/img/technology/php/solaris.png')}}" alt="{{__('page-technologies.solaris')}}" />
                                 </td>
                                 <td>
-                                    <img src="/img/technology/php/laravel.png" alt="{{__('page-technologies.laravel')}}" />
+                                    <img src="{{assets._('/img/technology/php/laravel.png')}}" alt="{{__('page-technologies.laravel')}}" />
                                 </td>
                                 <td class="border-right">
-                                    <img src="/img/technology/php/symphony.png" alt="{{__('page-technologies.symphony')}}" />
+                                    <img src="{{assets._('/img/technology/php/symphony.png')}}" alt="{{__('page-technologies.symphony')}}" />
                                 </td>
                                 <td colspan="2"></td>
                             </tr>
@@ -272,13 +264,13 @@
                             </tr>
                             <tr>
                                 <td>
-                                    <img src="/img/technology/php/prestashop.png" alt="{{__('page-technologies.prestashop')}}" />
+                                    <img src="{{assets._('/img/technology/php/prestashop.png')}}" alt="{{__('page-technologies.prestashop')}}" />
                                 </td>
                                 <td>
-                                    <img src="/img/technology/php/wordpress.png" alt="{{__('page-technologies.wordpress')}}" />
+                                    <img src="{{assets._('/img/technology/php/wordpress.png')}}" alt="{{__('page-technologies.wordpress')}}" />
                                 </td>
                                 <td>
-                                    <img src="/img/technology/php/magento.png" alt="{{__('page-technologies.magento')}}" />
+                                    <img src="{{assets._('/img/technology/php/magento.png')}}" alt="{{__('page-technologies.magento')}}" />
                                 </td>
                             </tr>
                         </tbody>
@@ -305,22 +297,22 @@
                             </tr>
                             <tr>
                                 <td>
-                                    <img src="/img/technology/ios/iossdk.png" alt="{{__('page-technologies.ios-sdk')}}" />
+                                    <img src="{{assets._('/img/technology/ios/iossdk.png')}}" alt="{{__('page-technologies.ios-sdk')}}" />
                                 </td>
                                 <td>
-                                    <img src="/img/technology/ios/googleadmob.png" alt="{{__('page-technologies.google-admob')}}" />
+                                    <img src="{{assets._('/img/technology/ios/googleadmob.png')}}" alt="{{__('page-technologies.google-admob')}}" />
                                 </td>
                                 <td>
-                                    <img src="/img/technology/ios/facebooksdk.png" alt="{{__('page-technologies.facebook-sdk')}}" />
+                                    <img src="{{assets._('/img/technology/ios/facebooksdk.png')}}" alt="{{__('page-technologies.facebook-sdk')}}" />
                                 </td>
                                 <td>
-                                    <img src="/img/technology/ios/twittersdk.png" alt="{{__('page-technologies.twitter-sdk')}}" />
+                                    <img src="{{assets._('/img/technology/ios/twittersdk.png')}}" alt="{{__('page-technologies.twitter-sdk')}}" />
                                 </td>
                                 <td>
-                                    <img src="/img/technology/ios/afnetworking.png" alt="{{__('page-technologies.af-networking')}}" />
+                                    <img src="{{assets._('/img/technology/ios/afnetworking.png')}}" alt="{{__('page-technologies.af-networking')}}" />
                                 </td>
                                 <td>
-                                    <img src="/img/technology/ios/sdwebimage.png" alt="{{__('page-technologies.sd-web-image')}}" />
+                                    <img src="{{assets._('/img/technology/ios/sdwebimage.png')}}" alt="{{__('page-technologies.sd-web-image')}}" />
                                 </td>
                             </tr>
                             <tr class="line-height-60">
@@ -333,22 +325,22 @@
                             </tr>
                             <tr>
                                 <td>
-                                    <img src="/img/technology/ios/gpuimage.png" alt="{{__('page-technologies.gpu-image')}}" />
+                                    <img src="{{assets._('/img/technology/ios/gpuimage.png')}}" alt="{{__('page-technologies.gpu-image')}}" />
                                 </td>
                                 <td>
-                                    <img src="/img/technology/ios/icarousel.png" alt="{{__('page-technologies.i-carousel')}}" />
+                                    <img src="{{assets._('/img/technology/ios/icarousel.png')}}" alt="{{__('page-technologies.i-carousel')}}" />
                                 </td>
                                 <td>
-                                    <img src="/img/technology/ios/pathfastimagecache.png" alt="{{__('page-technologies.path-fast-image-cache')}}" />
+                                    <img src="{{assets._('/img/technology/ios/pathfastimagecache.png')}}" alt="{{__('page-technologies.path-fast-image-cache')}}" />
                                 </td>
                                 <td>
-                                    <img src="/img/technology/ios/linphone.png" alt="{{__('page-technologies.linphone')}}" />
+                                    <img src="{{assets._('/img/technology/ios/linphone.png')}}" alt="{{__('page-technologies.linphone')}}" />
                                 </td>
                                 <td>
-                                    <img src="/img/technology/ios/portsip.png" alt="{{__('page-technologies.port-sip')}}" />
+                                    <img src="{{assets._('/img/technology/ios/portsip.png')}}" alt="{{__('page-technologies.port-sip')}}" />
                                 </td>
                                 <td>
-                                    <img src="/img/technology/ios/iad.png" alt="{{__('page-technologies.iad')}}" />
+                                    <img src="{{assets._('/img/technology/ios/iad.png')}}" alt="{{__('page-technologies.iad')}}" />
                                 </td>
                             </tr>
                             <tr class="line-height-60">
@@ -358,10 +350,10 @@
                             </tr>
                             <tr>
                                 <td>
-                                    <img src="/img/technology/ios/paypal.png" alt="{{__('page-technologies.paypal-sdk')}}" />
+                                    <img src="{{assets._('/img/technology/ios/paypal.png')}}" alt="{{__('page-technologies.paypal-sdk')}}" />
                                 </td>
                                 <td>
-                                    <img src="/img/technology/ios/qrbarcodesdk.png" alt="{{__('page-technologies.qr-barcode-sdk')}}" />
+                                    <img src="{{assets._('/img/technology/ios/qrbarcodesdk.png')}}" alt="{{__('page-technologies.qr-barcode-sdk')}}" />
                                 </td>
                                 <td colspan="4"></td>
                             </tr>
@@ -383,13 +375,13 @@
                             </tr>
                             <tr>
                                 <td class="border-right">
-                                    <img src="/img/technology/ios/xcodeide.png" alt="{{__('page-technologies.x-code-ide')}}" />
+                                    <img src="{{assets._('/img/technology/ios/xcodeide.png')}}" alt="{{__('page-technologies.x-code-ide')}}" />
                                 </td>
                                 <td>
-                                    <img src="/img/technology/ios/instruments.png" alt="{{__('page-technologies.instruments')}}" />
+                                    <img src="{{assets._('/img/technology/ios/instruments.png')}}" alt="{{__('page-technologies.instruments')}}" />
                                 </td>
                                 <td>
-                                    <img src="/img/technology/ios/testflight.png" alt="{{__('page-technologies.testflight')}}" />
+                                    <img src="{{assets._('/img/technology/ios/testflight.png')}}" alt="{{__('page-technologies.testflight')}}" />
                                 </td>
                             </tr>
                         </tbody>
@@ -416,19 +408,19 @@
                             </tr>
                             <tr>
                                 <td class="border-right">
-                                    <img src="/img/technology/android/coronasdk.png" alt="{{__('page-technologies.corona-sdk')}}" />
+                                    <img src="{{assets._('/img/technology/android/coronasdk.png')}}" alt="{{__('page-technologies.corona-sdk')}}" />
                                 </td>
                                 <td>
-                                    <img src="/img/technology/android/twittersdk.png" alt="{{__('page-technologies.twitter-sdk')}}" />
+                                    <img src="{{assets._('/img/technology/android/twittersdk.png')}}" alt="{{__('page-technologies.twitter-sdk')}}" />
                                 </td>
                                 <td>
-                                    <img src="/img/technology/android/googleadmob.png" alt="{{__('page-technologies.google-admob')}}" />
+                                    <img src="{{assets._('/img/technology/android/googleadmob.png')}}" alt="{{__('page-technologies.google-admob')}}" />
                                 </td>
                                 <td class="border-right">
-                                    <img src="/img/technology/android/paypal.png" alt="{{__('page-technologies.paypal-sdk')}}" />
+                                    <img src="{{assets._('/img/technology/android/paypal.png')}}" alt="{{__('page-technologies.paypal-sdk')}}" />
                                 </td>
                                 <td>
-                                    <img src="/img/technology/android/elipse.png" alt="{{__('page-technologies.eclipse-adt')}}" />
+                                    <img src="{{assets._('/img/technology/android/elipse.png')}}" alt="{{__('page-technologies.eclipse-adt')}}" />
                                 </td>
                             </tr>
                             <tr>
@@ -440,17 +432,17 @@
                             </tr>
                             <tr>
                                 <td class="border-right">
-                                    <img src="/img/technology/android/titanium.png" alt="{{__('page-technologies.titanium')}}" />
+                                    <img src="{{assets._('/img/technology/android/titanium.png')}}" alt="{{__('page-technologies.titanium')}}" />
                                 </td>
                                 <td>
-                                    <img src="/img/technology/android/facebooksdk.png" alt="{{__('page-technologies.facebook-sdk')}}" />
+                                    <img src="{{assets._('/img/technology/android/facebooksdk.png')}}" alt="{{__('page-technologies.facebook-sdk')}}" />
                                 </td>
                                 <td>
-                                    <img src="/img/technology/android/qrbarcodesdk.png" alt="{{__('page-technologies.qr-barcode-sdk')}}" />
+                                    <img src="{{assets._('/img/technology/android/qrbarcodesdk.png')}}" alt="{{__('page-technologies.qr-barcode-sdk')}}" />
                                 </td>
                                 <td class="border-right"></td>
                                 <td>
-                                    <img src="/img/technology/android/androidstudio.png" alt="{{__('page-technologies.android-studio')}}" />
+                                    <img src="{{assets._('/img/technology/android/androidstudio.png')}}" alt="{{__('page-technologies.android-studio')}}" />
                                 </td>
                             </tr>
                         </tbody>
@@ -475,16 +467,16 @@
                             </tr>
                             <tr>
                                 <td>
-                                    <img src="/img/technology/dart/window.png" alt="{{__('page-technologies.windows')}}" />
+                                    <img src="{{assets._('/img/technology/dart/window.png')}}" alt="{{__('page-technologies.windows')}}" />
                                 </td>
                                 <td>
-                                    <img src="/img/technology/dart/linux.png" alt="{{__('page-technologies.linux')}}" />
+                                    <img src="{{assets._('/img/technology/dart/linux.png')}}" alt="{{__('page-technologies.linux')}}" />
                                 </td>
                                 <td class="border-right">
-                                    <img src="/img/technology/dart/macos.png" alt="{{__('page-technologies.macosx')}}" />
+                                    <img src="{{assets._('/img/technology/dart/macos.png')}}" alt="{{__('page-technologies.macosx')}}" />
                                 </td>
                                 <td>
-                                    <img src="/img/technology/dart/dart.png" alt="{{__('page-technologies.dart-sdk-dart-editor')}}" />
+                                    <img src="{{assets._('/img/technology/dart/dart.png')}}" alt="{{__('page-technologies.dart-sdk-dart-editor')}}" />
                                 </td>
                             </tr>
                         </tbody>
@@ -502,13 +494,13 @@
                             </tr>
                             <tr>
                                 <td>
-                                    <img src="/img/technology/servers/tomcat.png" alt="{{__('page-technologies.apache-tomcat')}}" />
+                                    <img src="{{assets._('/img/technology/servers/tomcat.png')}}" alt="{{__('page-technologies.apache-tomcat')}}" />
                                 </td>
                                 <td>
-                                    <img src="/img/technology/servers/oracle.png" alt="{{__('page-technologies.weblogic')}}" />
+                                    <img src="{{assets._('/img/technology/servers/oracle.png')}}" alt="{{__('page-technologies.weblogic')}}" />
                                 </td>
                                 <td>
-                                    <img src="/img/technology/servers/iis.png" alt="{{__('page-technologies.iis')}}" />
+                                    <img src="{{assets._('/img/technology/servers/iis.png')}}" alt="{{__('page-technologies.iis')}}" />
                                 </td>
                             </tr>
                         </tbody>
@@ -529,22 +521,22 @@
                             </tr>
                             <tr>
                                 <td>
-                                    <img src="/img/technology/databases/oracle.png" alt="{{__('page-technologies.oracle')}}" />
+                                    <img src="{{assets._('/img/technology/databases/oracle.png')}}" alt="{{__('page-technologies.oracle')}}" />
                                 </td>
                                 <td>
-                                    <img src="/img/technology/databases/sqlserver.png" alt="{{__('page-technologies.sql-server')}}" />
+                                    <img src="{{assets._('/img/technology/databases/sqlserver.png')}}" alt="{{__('page-technologies.sql-server')}}" />
                                 </td>
                                 <td>
-                                    <img src="/img/technology/databases/mysql.png" alt="{{__('page-technologies.mysql')}}" />
+                                    <img src="{{assets._('/img/technology/databases/mysql.png')}}" alt="{{__('page-technologies.mysql')}}" />
                                 </td>
                                 <td>
-                                    <img src="/img/technology/databases/postgreSQL.png" alt="{{__('page-technologies.postgre-sql')}}" />
+                                    <img src="{{assets._('/img/technology/databases/postgreSQL.png')}}" alt="{{__('page-technologies.postgre-sql')}}" />
                                 </td>
                                 <td>
-                                    <img src="/img/technology/databases/db2.png" alt="{{__('page-technologies.db2')}}" />
+                                    <img src="{{assets._('/img/technology/databases/db2.png')}}" alt="{{__('page-technologies.db2')}}" />
                                 </td>
                                 <td>
-                                    <img src="/img/technology/databases/mongodb.png" alt="{{__('page-technologies.mongodb')}}" />
+                                    <img src="{{assets._('/img/technology/databases/mongodb.png')}}" alt="{{__('page-technologies.mongodb')}}" />
                                 </td>
                             </tr>
                         </tbody>
@@ -568,16 +560,16 @@
                             </tr>
                             <tr>
                                 <td>
-                                    <img src="/img/technology/others/google.png" alt="{{__('page-technologies.chrome-app-extension')}}" />
+                                    <img src="{{assets._('/img/technology/others/google.png')}}" alt="{{__('page-technologies.chrome-app-extension')}}" />
                                 </td>
                                 <td>
-                                    <img src="/img/technology/others/html5.png" alt="{{__('page-technologies.html5')}}" />
+                                    <img src="{{assets._('/img/technology/others/html5.png')}}" alt="{{__('page-technologies.html5')}}" />
                                 </td>
                                 <td>
-                                    <img src="/img/technology/others/css.png" alt="{{__('page-technologies.css')}}" />
+                                    <img src="{{assets._('/img/technology/others/css.png')}}" alt="{{__('page-technologies.css')}}" />
                                 </td>
                                 <td>
-                                    <img src="/img/technology/others/bootstrap.png" alt="{{__('page-technologies.bootstraps')}}" />
+                                    <img src="{{assets._('/img/technology/others/bootstrap.png')}}" alt="{{__('page-technologies.bootstraps')}}" />
                                 </td>
                             </tr>
                         </tbody>

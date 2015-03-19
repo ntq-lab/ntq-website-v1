@@ -8,19 +8,14 @@
 {% for file in assets['/css/download.css'] %}
     <link href="{{file}}" rel="stylesheet">
 {% endfor %}
-<!--
-<link href="/frontend/assets/css/menu-black.css" rel="stylesheet">
-<link href="/frontend/assets/css/download.css" rel="stylesheet">
--->
+
 {% endblock %}
 
 {% block script %}
 {% for file in assets['/js/download.js'] %}
     <script src="{{file}}"></script>
 {% endfor %}
-<!--
-<script src="/frontend/assets/js/main-nav.js"></script>
--->
+
 {% endblock %}
 
 {% block content %}

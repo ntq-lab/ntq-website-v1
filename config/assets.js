@@ -6,7 +6,11 @@ var url = require('url');
 
 var debug = process.env.NODE_ENV === 'development';
 // var debug = false;
-var tempFolder = 'build/.tmp';
+var tempFolders = [
+	'build/.tmp',
+	'packages/frontend/public/assets',
+	'packages/backend/public/assets'
+];
 var assets;
 
 if (debug) {
@@ -18,7 +22,11 @@ if (debug) {
 
 	[assets.css, assets.js].forEach(function iterate(collection) {
 		Object.keys(collection).forEach(function iterate(key) {
-			var optKey = key.replace(tempFolder, '');
+			var optKey = key;
+
+			tempFolders.forEach(function(folder) {
+				optKey = optKey.replace(folder, '');
+			});
 
 			assets[optKey] = collection[key];
 
@@ -38,10 +46,24 @@ if (debug) {
 	assets = {};
 
 	Object.keys(rev).forEach(function iterate(key) {
-		var optKey = key.replace(tempFolder, '');
+		var optKey = key;
+
+		tempFolders.forEach(function(folder) {
+			optKey = optKey.replace(folder, '');
+		});
 
 		assets[optKey] = [url.resolve('/', rev[key])];
 	});
 }
+
+// add helpers
+
+assets._ = function(original) {
+	if (assets[original]) {
+		return assets[original][0];
+	} else {
+		return original + '?' + Date.now();
+	}
+};
 
 module.exports = assets;

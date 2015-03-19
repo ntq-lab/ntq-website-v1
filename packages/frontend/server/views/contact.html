@@ -8,19 +8,14 @@
 {% for file in assets['/css/contact.css'] %}
     <link href="{{file}}" rel="stylesheet">
 {% endfor %}
-<!--
-<link href="/frontend/assets/css/menu-black.css" rel="stylesheet">
-<link href="/frontend/assets/css/contact.css" rel="stylesheet">
--->
+
 {% endblock %}
 
 {% block script %}
 {% for file in assets['/js/contact.js'] %}
     <script src="{{file}}"></script>
 {% endfor %}
-<!--
-<script src="/frontend/assets/js/main-nav.js"></script>
--->
+
 {% endblock %}
 
 {% block content %}
@@ -47,9 +42,9 @@
                 <p>{{__('common.address.hanoi.tel')}}: (+84) 985 529 229</p>
                 <p>{{__('common.address.hanoi.email')}}: son.pham@ntq-solution.com.vn</p>
                 <div class="map">
-                    <img src="/img/map-contact.png" alt="map company"/>
+                    <img src="{{assets._('/img/map-contact.png')}}" alt="map company"/>
                     <div class="img-company">
-                        <img src="/img/img-hh3building.png" alt="map company"/>
+                        <img src="{{assets._('/img/img-hh3building.png')}}" alt="map company"/>
                     </div>
                 </div>
             </div><!-- /contact-address-box -->
@@ -60,9 +55,9 @@
                 <p>{{__('common.address.japan.tel')}}: (+81) 80 3409 8663</p>
                 <p>{{__('common.address.japan.email')}}: cong.to@ntq-solution.com.vn</p>
                 <div class="map">
-                    <img src="/img/map-contact.png" alt="map company"/>
+                    <img src="{{assets._('/img/map-contact.png')}}" alt="map company"/>
                     <div class="img-company">
-                        <img src="/img/img-japan.png" alt="map company"/>
+                        <img src="{{assets._('/img/img-japan.png')}}" alt="map company"/>
                     </div>
                 </div>
             </div><!-- /contact-address-box -->

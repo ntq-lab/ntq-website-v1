@@ -8,23 +8,14 @@
 {% for file in assets['/css/about.css'] %}
     <link href="{{file}}" rel="stylesheet">
 {% endfor %}
-<!--
-<link href="/frontend/assets/css/menu-white.css" rel="stylesheet">
-<link href="/frontend/assets/css/submenu-common.css" rel="stylesheet">
-<link href="/frontend/assets/css/about-20150129.css" rel="stylesheet">
--->
+
 {% endblock %}
 
 {% block script %}
 {% for file in assets['/js/about.js'] %}
     <script src="{{file}}"></script>
 {% endfor %}
-<!--
-<script src="/bower_components/jquery-ui/ui/jquery-ui.js"></script>
-<script src="/frontend/assets/js/main-nav.js"></script>
-<script src="/frontend/assets/js/max-height-element.js"></script>
-<script src="/frontend/assets/js/about.js"></script>
--->
+
 {% endblock %}
 
 {% block content %}
@@ -84,7 +75,7 @@
 			<div class="strategic-box pull-left">
 				<div class="strategic-box-image pull-left">
 					<div class="strategic-box-image-container">
-						<img src="/img/icon-about-total-revenue.png" alt="Total revenue" width="48" height="52">
+						<img src="{{assets._('/img/icon-about-total-revenue.png')}}" alt="Total revenue" width="48" height="52">
 					</div>
 				</div><!-- /strategic-box-image -->
 				<div class="strategic-box-text pull-left">
@@ -96,7 +87,7 @@
 			<div class="strategic-box pull-left">
 				 <div class="strategic-box-image pull-left">
 					<div class="strategic-box-image-container">
-						<img src="/img/icon-about-human-resources.png" alt="Human resources" width="59" height="56">
+						<img src="{{assets._('/img/icon-about-human-resources.png')}}" alt="Human resources" width="59" height="56">
 					</div>
 				 </div><!-- /strategic-box-image -->
 				<div class="strategic-box-text pull-left">
@@ -133,7 +124,7 @@
 							<div class="strategic-box-image pull-left">
 								<div class="strategic-box-image-container">
 									<a href="/download">
-										<img src="/img/icon-about-document.png" alt="Total revenue" width="48" height="52">
+										<img src="{{assets._('/img/icon-about-document.png')}}" alt="Total revenue" width="48" height="52">
 									</a>
 								</div>
 							</div><!-- /strategic-box-image -->
@@ -146,12 +137,12 @@
 					<p>{{__('page-about.box7.description.paragraph2')}}</p>
 				</div>
 				<div class="tv-box-image">
-					<a href="#" id="play-video"><img src="/img/img-video.png" alt="TV" width="240" height="159"></a>
+					<a href="#" id="play-video"><img src="{{assets._('/img/img-video.png')}}" alt="TV" width="240" height="159"></a>
 				</div>
 			</div>
 		</div><!-- /tv-box -->
 		<div class="image-people-company-box">
-			<img src="/img/img-people-about.png" alt="Image people company" width="1000" height="496">
+			<img src="{{assets._('/img/img-people-about.png')}}" alt="Image people company" width="1000" height="496">
 		</div><!-- /image-people-company-box -->
 		<div class="information-company clearfix">
 			<div class="information-address pull-left">

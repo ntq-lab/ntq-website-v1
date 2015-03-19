@@ -5,7 +5,7 @@
  */
 var mean = require('meanio'),
 	compression = require('compression'),
-	morgan = require('morgan'),
+	// morgan = require('morgan'),
 	consolidate = require('consolidate'),
 	cookieParser = require('cookie-parser'),
 	expressValidator = require('express-validator'),
@@ -31,7 +31,7 @@ module.exports = function (app, passport, db) {
 
 	// Only use logger for development environment
 	if (process.env.NODE_ENV === 'development') {
-		app.use(morgan('dev'));
+		// app.use(morgan('dev'));
 
 		// Should be placed before express.static
 		// To ensure that all assets and data are compressed (utilize bandwidth)
