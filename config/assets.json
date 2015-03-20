@@ -15,7 +15,7 @@
         "build/.tmp/css/about.css": [
             "packages/frontend/public/assets/css/menu-white.css",
             "packages/frontend/public/assets/css/submenu-common.css",
-            "packages/frontend/public/assets/css/about-20150129.css"
+            "packages/frontend/public/assets/css/about.css"
         ],
         "build/.tmp/css/article-detail.css": [
             "packages/frontend/public/assets/css/article.css"
