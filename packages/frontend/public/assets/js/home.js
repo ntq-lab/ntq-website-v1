@@ -158,7 +158,7 @@
 		$(logo).css('opacity', 0);
 	}
 
-	$(window).ready(function () {
+	$(document).ready(function () {
 		var heightMenu = $('.main-nav-container-fluid').outerHeight();
 
 		// Set full height
@@ -200,7 +200,6 @@
 
 			if (window.LOGO && window.LOGO.show) {
 				window.LOGO.show(logoFallback);
-				//logoFallback();
 			}
 		});
 	});
