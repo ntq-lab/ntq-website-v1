@@ -205,6 +205,24 @@ module.exports = function(grunt) {
 			test: {
 				NODE_ENV: 'test'
 			}
+		},
+		imagemin: {
+			build: {
+				files: [{
+					expand: true,
+					cwd: 'build/public/img',
+					src: ['**/*.{png,jpg,gif}'],
+					dest: 'build/public/img'
+				}]
+			},
+			upload: {
+				files: [{
+					expand: true,
+					cwd: 'upload/img',
+					src: ['**/*.{png,jpg,gif}'],
+					dest: 'upload/img'
+				}]
+			}
 		}
 	});
 
@@ -214,7 +232,7 @@ module.exports = function(grunt) {
 	//Default task(s).
 	grunt.registerTask('verify', ['jshint', 'csslint']);
 
-	grunt.registerTask('build', ['verify', 'clean', 'copy:common', 'cssmin', 'uglify', 'filerev:frontend', 'filerev:backend', 'copy:replace', 'filerev:min', 'filerev_assets']);
+	grunt.registerTask('build', ['verify', 'clean', 'copy:common', 'cssmin', 'uglify', 'filerev:frontend', 'filerev:backend', 'copy:replace', 'filerev:min', 'filerev_assets', 'imagemin:build']);
 
 	grunt.registerTask('default', ['verify', 'copy:common', 'copy:frontend', 'copy:backend', 'concurrent']);
 
