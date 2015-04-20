@@ -247,7 +247,8 @@
             },
             "founders": "Founders",
             "staffs": "Staffs",
-            "founded-on": "13/6/2011"
+            "founded-on": "13/6/2011",
+            "present": "2015"
         },
         "page-partners": {
             "title": "Our Partners",
@@ -375,7 +376,7 @@
                 "cco-title": "CCO",
                 "cco-content": "Nguyễn Kim Soan (Soan Nguyen Kim)",
                 "human-resources-title": "Human resources",
-                "human-resources-content": "70 staffs"
+                "human-resources-content": "85 staffs"
             }
         }
     },

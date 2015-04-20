@@ -44,6 +44,33 @@
 
     <div class="first-page fullpage" id="first-page"></div>
 
+    <div class="container-fluid about-us-container-fluid section fullpage" id="about">
+        <div class="container about-us-container">
+            <span class="line-black"></span>
+            <hgroup>
+                <h1 class="h2 text-center">{{__('page-home.page-about-us.title')}}</h1>
+                <h1 class="h2 text-center"><strong>{{__('page-home.page-about-us.description.paragraph1')}} </strong> {{__('page-home.page-about-us.description.paragraph2')}} <br/>{{__('page-home.page-about-us.description.paragraph3')}}</h1>
+            </hgroup>
+            <div class="timeline">
+                <div class="year year-2011">
+                    <strong>5</strong>
+                    <p>{{__('page-home.page-about-us.founders')}}</p>
+                    <span>{{__('page-home.page-about-us.founded-on')}}</span>
+                </div>
+                <div class="year year-2014">
+                    <strong>85</strong>
+                    <p>{{__('page-home.page-about-us.staffs')}}</p>
+                    <span>{{__('page-home.page-about-us.present')}}</span>
+                </div>
+            </div><!-- /timeline -->
+        </div><!-- /about-us-container -->
+        <div class="founder-image">
+            <div class="founder-image-content text-center">
+                <img src="{{assets._('/img/home-about-us.png')}}" alt="About us" width="890" height="443">
+            </div>
+        </div><!-- /founder-image -->
+    </div><!-- /about-us-container-fluid -->
+
     <div class="container-fluid services-container-fluid section fullpage" id="services">
         <div class="container services-container">
             <span class="line-black"></span>
@@ -272,33 +299,6 @@
         </div><!-- /technology-container -->
     </div><!-- /technology-container-fluid -->
 
-    <div class="container-fluid about-us-container-fluid section fullpage" id="about">
-        <div class="container about-us-container">
-            <span class="line-black"></span>
-            <hgroup>
-                <h1 class="h2 text-center">{{__('page-home.page-about-us.title')}}</h1>
-                <h1 class="h2 text-center"><strong>{{__('page-home.page-about-us.description.paragraph1')}} </strong> {{__('page-home.page-about-us.description.paragraph2')}} <br/>{{__('page-home.page-about-us.description.paragraph3')}}</h1>
-            </hgroup>
-            <div class="timeline">
-                <div class="year year-2011">
-                    <strong>5</strong>
-                    <p>{{__('page-home.page-about-us.founders')}}</p>
-                    <span>{{__('page-home.page-about-us.founded-on')}}</span>
-                </div>
-                <div class="year year-2014">
-                    <strong>85</strong>
-                    <p>{{__('page-home.page-about-us.staffs')}}</p>
-                    <span>2015</span>
-                </div>
-            </div><!-- /timeline -->
-        </div><!-- /about-us-container -->
-        <div class="founder-image">
-            <div class="founder-image-content text-center">
-                <img src="{{assets._('/img/home-about-us.png')}}" alt="About us" width="890" height="443">
-            </div>
-        </div><!-- /founder-image -->
-    </div><!-- /about-us-container-fluid -->
-
     <div class="container-fluid partner-container-fluid section fullpage" id="partner">
         <div class="container partner-container">
             <div class="partner-top">
@@ -320,9 +320,8 @@
                 </div><!-- /partner-map -->
                 <div class="clear"></div>
                 <div class="partner-right pull-right">
-                    <p class="text-right"><strong>{{__('common.company-name')}}</strong>
-        {{__('page-home.page-partners.slogan')}}</p>
-                    <a href="{{__enhance.mount('/download')}}" title="{{__('page-home.download-brochure')}}" class="download-brochure pull-right">{{__('page-home.download-brochure')}}</a></a>
+                    <p class="text-right"><strong>{{__('common.company-name')}}</strong>{{__('page-home.page-partners.slogan')}}</p>
+                    <a href="{{__enhance.mount('/download')}}" title="{{__('page-home.download-brochure')}}" class="download-brochure pull-right">{{__('page-home.download-brochure')}}</a>
                 </div><!-- /partner-right -->
             </div>
 
@@ -390,9 +389,9 @@
     <div class="clear"></div>-->
     <ul>
         <li><span class="tooltip">{{__('page-home.tooltip.home')}}</span><a href="#first-page"><span class="icon"></span></a></li>
+        <li><span class="tooltip">{{__('page-home.tooltip.about')}}</span><a href="#about"><span class="icon"></span></a></li>
         <li id="newsJumpTo"><span class="tooltip">{{__('page-home.tooltip.services')}}</span><a href="#services"><span class="icon"></span></a></li>
         <li><span class="tooltip">{{__('page-home.tooltip.technology')}}</span><a href="#technology"><span class="icon"></span></a></li>
-        <li><span class="tooltip">{{__('page-home.tooltip.about')}}</span><a href="#about"><span class="icon"></span></a></li>
         <li><span class="tooltip">{{__('page-home.tooltip.partner')}}</span><a href="#partner"><span class="icon"></span></a></li>
         <li><span class="tooltip">{{__('page-home.tooltip.news')}}</span><a href="#news"><span class="icon"></span></a></li>
         <li><span class="tooltip">{{__('page-home.tooltip.testimonials')}}</span><a href="#testimonials"><span class="icon"></span></a></li>
