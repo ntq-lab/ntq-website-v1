@@ -2,7 +2,6 @@
     "css": {
         "build/.tmp/css/base.css": [
             "packages/frontend/public/assets/css/bootstrap/bootstrap.css",
-            "packages/frontend/public/assets/font/meiryo.css",
             "packages/frontend/public/assets/css/header.css",
             "packages/frontend/public/assets/css/footer.css",
             "packages/frontend/public/assets/css/common.css"
