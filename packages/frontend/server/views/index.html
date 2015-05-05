@@ -240,17 +240,30 @@
                 </div><!-- /slide-container -->
             </div>
             <ul class="btn-slideshow" id="sevices-pagination">
-                <li><a href="#" class="active" rel="0"></a></li>
-                <li><a href="#" rel="1"></a></li>
+                <li class="btn-slideshow-left"><a href="#" class="active" rel="0"><img src="{{assets._('/img/button-slide-left.png')}}" alt="{{__('page-home.page-services.domains.box4.title')}}" width="30" height="81"></a></li>
+                <li class="btn-slideshow-right"><a href="#" rel="1"><img src="{{assets._('/img/button-slide-right.png')}}" alt="{{__('page-home.page-services.domains.box4.title')}}" width="30" height="81"></a></li>
             </ul>
         </div><!-- /services-container -->
     </div><!-- /services-container-fluid -->
+
+    <div class="container-fluid learn-more-container-fluid section fullpage" id="learn-more">
+        <div class="container learn-more-container">
+            <div class="learn-more-container-top">
+                <span class="line-white line-white-top"></span>
+                <h2 class="h1 text-learn-more">{{__('page-home.page-about-us.learn-more')}}</h2>
+            </div>
+            <div class="button-learn-more">
+                <img src="{{assets._('/img/buttton-video.gif')}}" alt="TV" width="216" height="88">
+                <a href="#" id="play-video"><button class="bt--video">{{__('page-home.page-about-us.watch-video')}}</button></a>
+            </div>
+        </div><!-- /learn-more-container -->
+    </div><!-- /learn-more-container-fluid -->
 
     <div class="container-fluid technology-container-fluid section fullpage" id="technology">
         <div class="container technology-container">
             <div class="technology-container-top">
                 <span class="line-white line-white-top"></span>
-                <h2 class="h1 text-center">{{__('page-home.page-technologies.title')}}</h2>
+                <h2 class="text-center">{{__('page-home.page-technologies.title')}}</h2>
 
                 <div class="technologies clearfix">
                     <div class="technology-box clearfix">
@@ -264,10 +277,10 @@
                     <div class="technology-box clearfix">
                         <h4>{{__('page-home.page-technologies.box2.title-large')}}</h4>
                         <div class="technology-box-container clearfix">
-                            <a class="technology-sm" href="{{__enhance.mount('/technologies')}}"><img src="{{assets._('/img/technology/java.png')}}" alt="Java" width="115" height="135"></a>
+                            <a class="technology-sm" href="{{__enhance.mount('/technologies')}}"><img src="{{assets._('/img/technology/java.png')}}" alt="Java" width="95" height="115"></a>
                             <a class="technology-md" href="{{__enhance.mount('/technologies')}}"><img src="{{assets._('/img/technology/dotnet.png')}}" alt=".NET" width="158" height="135"></a>
-                            <a class="technology-md" href="{{__enhance.mount('/technologies')}}"><img src="{{assets._('/img/technology/php.png')}}" alt="php" width="158" height="135"></a>
-                            <a class="technology-sm" href="{{__enhance.mount('/technologies')}}"><img src="{{assets._('/img/technology/html5.png')}}" alt="HTML5" width="115" height="135"></a>
+                            <a class="technology-md" href="{{__enhance.mount('/technologies')}}"><img src="{{assets._('/img/technology/php.png')}}" alt="php" width="128" height="105"></a>
+                            <a class="technology-sm" href="{{__enhance.mount('/technologies')}}"><img src="{{assets._('/img/technology/html5.png')}}" alt="HTML5" width="95" height="115"></a>
                         </div>
                     </div><!-- /technology-box -->
 
@@ -275,7 +288,7 @@
                         <h4>{{__('page-home.page-technologies.box3.title-large')}} <span>{{__('page-home.page-technologies.box3.title-small')}}</span></h4>
                         <div class="technology-box-container clearfix">
                             <a class="technology-lg" href="{{__enhance.mount('/technologies')}}"><img src="{{assets._('/img/technology/amazonws.png')}}" alt="AWS" width="170" height="100"></a>
-                            <a class="technology-lg" href="{{__enhance.mount('/technologies')}}"><img src="{{assets._('/img/technology/google.png')}}" alt="GAE" width="170" height="140"></a>
+                            <a class="technology-lg" href="{{__enhance.mount('/technologies')}}"><img src="{{assets._('/img/technology/google.png')}}" alt="GAE" width="140" height="110"></a>
                         </div>
                     </div><!-- /technology-box -->
 
@@ -314,7 +327,9 @@
                         <p class="dot-england"><span></span></p>
                         <p class="dot-belarus"><span></span></p>
                         <p class="dot-japan"><span></span></p>
+                        <p class="dot-thailand"><span></span></p>
                         <p class="dot-vietnam"><span></span></p>
+                        <p class="dot-singapore"><span></span></p>
                         <p class="dot-australia"><span></span></p>
                     </div><!-- /partner-map-dot-strong -->
                 </div><!-- /partner-map -->

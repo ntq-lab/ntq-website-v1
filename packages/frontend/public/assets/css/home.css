@@ -294,9 +294,47 @@
     vertical-align: bottom;
 }
 
+/* Learn more about*/
+.learn-more-container-fluid {
+    min-height: 310px;
+    background: #0c4da2;
+    z-index: 1;
+    position: relative;
+    color: #fff;
+}
+.text-learn-more {
+    font-family: sans-serif;
+    font-size: 55px;
+    padding-top: 90px;
+    text-align: center;
+}
+.button-learn-more {
+    width: 216px;
+    height: 88px;
+    background: #dfd;
+    margin: 28px auto 0px auto;
+    position: relative;
+}
+.bt--video {
+    -webkit-transition: all .15s;
+    -moz-transition: all .15s;
+    transition: all .15s;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    width: 196px;
+    height: 68px;
+    color: #000;
+    border: none;
+}
+.bt--video:hover {
+    box-shadow: 0 0 0 5px #fff;
+    background: #fff;
+}
+
 /* Page 4: Services */
 .services-container-fluid {
-    background: #f6da40;
+    background: #ebebeb;
     min-height: 800px;
     z-index: 1;
     position: relative;
@@ -376,16 +414,27 @@
     bottom: 20px;
     text-align: center;
     width: 100%;
+    position: relative;
 }
 .services-container .btn-slideshow li:last-child a {
     margin-right: 0;
 }
-.services-container .btn-slideshow a {
-    background: url('../img/button-slide-service.png') no-repeat center center;
+.btn-slideshow-left {
+    position: absolute;
+    left: -180px;
+    top: -350px;
+}
+.btn-slideshow-right {
+    position: absolute;
+    right: -180px;
+    top: -350px;
+}
+/*.services-container .btn-slideshow a {
+    background: url('../img/button-slide-left.png') no-repeat center center;
 }
 .services-container .btn-slideshow .active {
-    background: url('../img/button-slide-service-active.png') no-repeat center center;
-}
+    background: url('../img/button-slide-right.png') no-repeat center center;
+}*/
 .services-container .slide {
     width: 1024px;
 }
@@ -467,7 +516,7 @@
 /* Page 5: Technology */
 .technology-container-fluid {
     min-height: 800px;
-    background: #00af43;
+    background: #ffffff;
     z-index: 1;
     position: relative;
     color: #fff;
@@ -510,6 +559,7 @@
 }
 .technology-container .technology-box:nth-child(2) a {
     margin-right: 10px;
+    margin-top: -15px;
 }
 .technology-container .technology-box:nth-child(2) a:nth-child(2n+2) {
     margin-right: 0;
@@ -517,7 +567,6 @@
 .technology-container .technology-box:nth-child(2) .technology-box-container,
 .technology-container .technology-box:nth-child(3) .technology-box-container,
 .technology-container .technology-box:nth-child(4) .technology-box-container {
-    background: url('../img/border-technology.png') repeat-y top left;
     padding-left: 31px;
     height: 280px;
 }
@@ -677,6 +726,7 @@
     width: 610px;
     padding-right: 8px;
     margin-right: 340px;
+    color: #000;
 }
 .technology-post h3 {
     font-weight: 300;
@@ -690,10 +740,10 @@
     font-weight: 300;
 }
 .technology-post .download-brochure {
-    background: #fff;
+    background: #00aeef;
     line-height: 29px;
     height: 29px;
-    color: #00af43;
+    color: #ffffff;
 }
 
 /* Page 6: Partner */
@@ -791,7 +841,25 @@
     animation-delay: 6s;
 }
 .partner-container .partner-map .partner-map-dot-strong .dot-vietnam {
+    top: 119px;
+    left: 432px;
+    -webkit-animation-delay: 8s;
+    -moz-animation-delay: 8s;
+    -ms-animation-delay: 8s;
+    -o-animation-delay: 8s;
+    animation-delay: 8s;
+}
+.partner-container .partner-map .partner-map-dot-strong .dot-thailand {
     top: 115px;
+    left: 462px;
+    -webkit-animation-delay: 8s;
+    -moz-animation-delay: 8s;
+    -ms-animation-delay: 8s;
+    -o-animation-delay: 8s;
+    animation-delay: 8s;
+}
+.partner-container .partner-map .partner-map-dot-strong .dot-singapore {
+    top: 155px;
     left: 462px;
     -webkit-animation-delay: 8s;
     -moz-animation-delay: 8s;

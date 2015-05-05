@@ -223,6 +223,17 @@ module.exports = function(grunt) {
 					dest: 'upload/img'
 				}]
 			}
+		},
+		po2json_angular_translate: {
+			options: {
+				pretty: true,
+				upperCaseId: false
+			},
+			translate: {
+				files: {
+					'build/translates': ['config/locales/**/*.po']
+				}
+			}
 		}
 	});
 

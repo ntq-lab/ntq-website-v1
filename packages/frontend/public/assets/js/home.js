@@ -202,6 +202,28 @@
 				window.LOGO.show(logoFallback);
 			}
 		});
+
+		// Play video
+		$('#play-video').click(function (e) {
+			e.preventDefault();
+
+			var elementVideo = '<div class="video-box" id="video-box">';
+			elementVideo += '<div class="video-box-container">';
+			elementVideo += '<div class="video">';
+			elementVideo += '<iframe width="640" height="480" src="//www.youtube.com/embed/DD1xnGubRI8?autoplay=1" frameborder="0" allowfullscreen></iframe>';
+			elementVideo += '</div>';
+			elementVideo += '</div>';
+			elementVideo += '</div>';
+
+			$('body').append(elementVideo);
+
+			$('#video-box').fadeIn(300);
+
+			$('#video-box').click(function () {
+				$(this).fadeOut(100);
+				$(this).remove();
+			});
+		});
 	});
 
 }());

@@ -44,11 +44,11 @@
     /*font-size: 16px;*/
     font-size: 1em;
     width: 190px;
-    -webkit-border-radius: 15px;
-    -moz-border-radius: 15px;
-    -ms-border-radius: 15px;
-    -o-border-radius: 15px;
-    border-radius: 15px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
     text-align: center;
     display: block;
 }
@@ -174,7 +174,7 @@
 }
 
 /* List Background */
-.bg-pingo { 
+.bg-pingo {
     background: #d73e3e !important;
 }
 .bg-orange {
@@ -248,6 +248,8 @@
 }
 .partner-map .american .country,
 .partner-map .england .country,
+.partner-map .thailand .country,
+.partner-map .singapore .country,
 .partner-map .vietnam .country {
     /*font-size: 25px;*/
     font-size: 1.563em;
@@ -278,6 +280,8 @@
 }
 
 .partner-map .japan .number,
+.partner-map .thailand .number,
+.partner-map .singapore .number,
 .partner-map .vietnam .number {
     /*font-size: 28px;*/
     font-size: 1.750em;
@@ -302,6 +306,14 @@
     left: 552px;*/
     top: 152px;
     left: 679px;
+}
+.partner-map .thailand {
+    top: 158px;
+    left: 436px;
+}
+.partner-map .singapore {
+    top: 208px;
+    left: 458px;
 }
 .partner-map .vietnam .country {
     margin-top: 3px;

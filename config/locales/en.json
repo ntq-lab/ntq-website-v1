@@ -12,7 +12,8 @@
         "about": "About us",
         "domains": "Development Domains",
         "technologies": "Technologies",
-        "contract-models": "Contract Models"
+        "contract-models": "Contract Models",
+        "rd": "R&D"
     },
     "title-website": {
         "home": "Vietnam software development company | Software outsourcing company | NTQ Solution",
@@ -54,7 +55,9 @@
             "belarus": "Belarus",
             "japan": "Japan",
             "vietnam": "Vietnam",
-            "australia": "Australia"
+            "australia": "Australia",
+            "thailand": "Thailand",
+            "singapore": "Singapore"
         },
         "company-name": "NTQ Solution",
         "read-more": "Read more",
@@ -249,7 +252,9 @@
             "founders": "Founders",
             "staffs": "Staffs",
             "founded-on": "13/6/2011",
-            "present": "2015"
+            "present": "2015",
+            "learn-more": "LEARN MORE ABOUT US",
+            "watch-video": "WATCH THE VIDEO"
         },
         "page-partners": {
             "title": "Our Partners",
@@ -932,5 +937,13 @@
         "html5": "HTML5",
         "css": "CSS",
         "bootstraps": "Bootstraps"
+    },
+    "page-rd": {
+        "title": {
+            "title-large": "R&D Center"
+        },
+        "description": {
+
+        }
     }
 }
