@@ -264,15 +264,18 @@
             "title": "Client Testimonials",
             "description": {
                 "box1": {
-                    "name": "Dean Sutcliffe – CIO, iMyVenue, Australia.",
+                    "name": "Dean Sutcliffe",
+                    "position": "CIO, iMyVenue, Australia.",
                     "content": "“iMyVenue has worked with NTQ on some projects. I have found NTQ technically sound, and reliable. The quality of work is of a standard that matches our expectation, and is equal to that of local developers in Australia. They are cost effective and efficient solution for our needs.“"
                 },
                 "box2": {
-                    "name": "Linh Nguyen – Technical Manager, ROI Marketing Solutions Ltd , UK.",
+                    "name": "Linh Nguyen",
+                    "position": "Technical Manager, ROI Marketing Solutions Ltd , UK.",
                     "content": "“ROI Marketing Solutions Ltd has worked with NTQ Solutions to develop an online marketing application over the past 1 year. During this time, NTQ has demonstrated good technical and communication skills over different parts of the software development cycle such requirement gathers and development. I would not hesitate recommending NTQ Solution for software development.”"
                 },
                 "box3": {
-                    "name": "Yusuke Akinaga – Account Manager, ITSherpa - Japan.",
+                    "name": "Yusuke Akinaga",
+                    "position": "Account Manager, ITSherpa - Japan.",
                     "content": "“Staffs of NTQ Solution are very dynamic. They create a fun atmosphere while working. About quality, they have captured our Japanese psyche and produced good software products. Nowadays, many Japanese companies are looking for foreign partners in software industry. Our company has luckily found a good partner like NTQ Solution.“"
                 }
             }

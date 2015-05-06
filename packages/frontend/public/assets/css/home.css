@@ -541,6 +541,7 @@
 .technology-container h2 {
     margin-bottom: 35px;
     font-weight: 300;
+    color: #000000;
 }
 .technology-container .technology-box {
     float: left;
@@ -915,30 +916,42 @@
 }
 .testimonials-container {
     position: relative;
-    background: url('../img/testimonials.png') no-repeat left bottom;
+    /*background: url('../img/testimonials.png') no-repeat left bottom;*/
     padding-bottom: 52px;
 }
 .slides-testimonials {
     overflow: hidden;
 }
 .slides-testimonials {
-    margin-left: 335px;
+    /*margin-left: 335px;*/
+    /*background: #ffd;*/
 }
 .testimonial-box {
-    width: 345px;
+    width: 1024px;
     overflow: hidden;
     min-height: 363px;
     padding: 34px 20px 0 10px;
+}
+.testimonial-box p {
+    text-align: center;
+}
+.testimonial-box h3 {
+    text-align: center;
+}
+.testimonial-box-image {
+    margin: 0 auto;
+    margin-left: 434px;
+    margin-top: 30px;
 }
 .slides-testimonials .slide-container {
     display: table
 }
 .slides-testimonials .slide-container .slide-testimonials {
     display: table-cell;
-    min-width: 698px;
+    min-width: 1024px;
 }
 .testimonial-box .testimonial-box-image {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 .testimonial-box h3 {
     font-weight: 700;
@@ -955,10 +968,22 @@
     left: 339px;
 }
 .testimonials-container .btn-slideshow a {
-    background: url('../img/button-slideshow.png') no-repeat center center;
+    /*background: url('../img/button-slideshow.png') no-repeat center center;*/
 }
 .testimonials-container .btn-slideshow .active {
-    background: url('../img/button-slideshow-active.png') no-repeat center center;
+    /*background: url('../img/button-slideshow-active.png') no-repeat center center;*/
+}
+
+.btn-slideshow-pre {
+    position: absolute;
+    left: -380px;
+    top: -230px;
+}
+
+.btn-slideshow-next {
+    position: absolute;
+    right: -726px;
+    top: -230px;
 }
 
 /* Jump to*/

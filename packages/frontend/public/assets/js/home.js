@@ -188,7 +188,7 @@
 
 		//Slideshow testimonials
 		new window.SlideShow({
-			slideWidth: 698,
+			slideWidth: 1024,
 			slides: '.slide-testimonials',
 			paginationID: 'testimonials-pagination',
 			slideHolder: 'slidesHolderTestimonials',
