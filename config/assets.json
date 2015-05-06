@@ -158,6 +158,8 @@
             "packages/backend/public/*/**/*.js"
         ],
         "build/.tmp/js/rd.js": [
+            "bower_components/jquery/dist/jquery.min.js",
+            "packages/frontend/public/assets/js/main-nav.js",
             "packages/backend/public/init.js"
         ]
     },

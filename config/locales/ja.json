@@ -12,7 +12,8 @@
         "about": "企業情報",
         "domains": "開発ドメイン",
         "technologies": "技術",
-        "contract-models": "契約モデル"
+        "contract-models": "契約モデル",
+        "rd": "R&D"
     },
     "title-website": {
         "home": "ベトナムのソフトウェア開発会社｜ソフトウェア開発会社 | NTQ Solution",
@@ -54,7 +55,9 @@
             "belarus": "ベラルーシ",
             "japan": "日本",
             "vietnam": "ベトナム",
-            "australia": "オーストラリア"
+            "australia": "オーストラリア",
+            "thailand": "Thailand",
+            "singapore": "Singapore"
         },
         "company-name": "NTQ Solution",
         "read-more": "もっと見る",
@@ -249,7 +252,9 @@
             "founders": "設立者",
             "staffs": "従業員",
             "founded-on": "2011年6月13日",
-            "present": "2015年"
+            "present": "2015年",
+            "learn-more": "LEARN MORE ABOUT US",
+            "watch-video": "WATCH THE VIDEO"
         },
         "page-partners": {
             "title": "NTQ Solutionの得意先",
@@ -259,15 +264,18 @@
             "title": "顧客からの評価",
             "description": {
                 "box1": {
-                    "name": "Dean Sutcliffe – CIO, iMyVenue, Australia.",
+                    "name": "Dean Sutcliffe",
+                    "position": "CIO, iMyVenue, Australia.",
                     "content": "“「iMyVenue」 は幾つかの案件でNTQと協業しました。NTQは高技術を備えており、製品品質はオーストラリアの開発会社に劣らず、我々の期待を裏切りませんでした。低コストかつ効果的なソリューションはとても魅力的で、信頼できる会社です。大変満足致しました。”"
                 },
                 "box2": {
-                    "name": "Linh Nguyen – Technical Manager, ROI Marketing Solutions Ltd , UK.",
+                    "name": "Linh Nguyen",
+                    "position": "Technical Manager, ROI Marketing Solutions Ltd , UK.",
                     "content": "“1年間にわたって、ROI Marketing Solutions は NTQ Solution JSCと協業し、オンラインマーケティングアプリを開発しました。技術面やコミュニケーション能力など、他のソフト開発会社に比べてもNTQ Solution JSCは素晴らしかったです。今後ソフト開発を委託する際NTQ Solution JSCを第一候補として、私は迷わず推薦します。”"
                 },
                 "box3": {
-                    "name": "Yusuke Akinaga – Account Manager, ITSherpa - Japan.",
+                    "name": "Yusuke Akinaga",
+                    "position": "Account Manager, ITSherpa - Japan.",
                     "content": "“NTQ Solutionのメンバーは皆活発であり、楽しい仕事環境を作っています。品質については日本人の習慣を熟知していますので、素晴らしい製品を提供しています。現在、多くの日本企業はソフト分野で海外の取引先を探していますが、NTQ Solutionがすでにパートナーであることに大変嬉しく思います”"
                 }
             }
