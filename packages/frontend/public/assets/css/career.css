@@ -1,6 +1,6 @@
 /* Career Top Page */
 .career-page-top-container-fluid {
-    background: url('../img/bg-top-career.jpg') no-repeat;
+    background: url('../img/bg-career.png') no-repeat center bottom;
     background-size: cover
 }
 .career-page-top-container-fluid h1 {

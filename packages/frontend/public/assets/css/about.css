@@ -7,7 +7,7 @@
 }*/
 /*----------- About Page Top -----------*/
 .about-page-top-container-fluid {
-    background: #00b3e3 url('../img/bg-about.jpg') no-repeat bottom center;
+    /*background: #00b3e3 url('../img/bg-about.jpg') no-repeat bottom center;*/
     background-size: cover;
 }
 .about-page-top-container-fluid h1 {
@@ -302,6 +302,12 @@
 }
 .information-company .information-members dt {
     width: 125px;
+}
+#pretzel-video {
+    bottom: 250px;
+    position: absolute;
+    width: 100%;
+    z-index: -1;
 }
 /*.information-company .information-founded-day strong {
     display: block;

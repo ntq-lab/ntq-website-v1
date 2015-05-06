@@ -1,6 +1,6 @@
 /* Success Stories Top Page */
 .success-stories-page-top-container-fluid {
-    background: url('../img/bg-success-stories.jpg') no-repeat bottom center;
+    background: url('../img/bg-success-stories.png') no-repeat bottom center;
     background-size: cover;
 }
 .success-stories-page-top-container-fluid h1 {
