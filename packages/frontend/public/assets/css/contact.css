@@ -66,3 +66,17 @@
     top: 25px;
     left: 15px;
 }
+/*.container {
+    position: relative !important;
+}
+.box-social {
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+}
+.box-social ul li{
+    float: left;
+    list-style: none;
+    margin-left: 10px;
+}
+*/

@@ -455,10 +455,13 @@
                 "paragraph1": "NTQ Solution built our own complicated algorithms based on bitwise operators. More specifically we moved all data and store them in memory, implemented indexing for faster queries, after that we processed the data in bit-wise operators. And to improve disk I/O performance, simple cache file mechanics was implemented."
             },
             "technologies": {
-                "paragraph1": "ASP.NET",
-                "paragraph2": "JQuery",
-                "paragraph3": "MySQL",
-                "paragraph4": "MongoDB"
+                "paragraph1": "Java",
+                "paragraph2": "NodeJS",
+                "paragraph3": "Redis",
+                "paragraph4": "Google Engine",
+                "paragraph5": "Google API",
+                "paragraph6": "Play Framework",
+                "paragraph7": "Jetty"
             },
             "result": {
                 "paragraph1": "We went through the challenge by obtaining a speed of 0.1 to 0.5 seconds from proceeding a search request to returning results and our results impressed customers as all other competitors came out with slower performance. Thanks to that, NTQ Solution was selected and has been collaborating with ROI Marketing Solutions in a long period of time in the current OSDC contract."
