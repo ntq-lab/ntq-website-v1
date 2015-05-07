@@ -295,24 +295,21 @@
 }
 
 /* Learn more about*/
-.learn-more-container-fluid {
-    min-height: 310px;
+.learn-more-container {
     background: #0c4da2;
-    z-index: 1;
-    position: relative;
-    color: #fff;
+    width: 100%;
+    padding: 15px 0;
 }
 .text-learn-more {
     font-family: sans-serif;
     font-size: 55px;
-    padding-top: 90px;
     text-align: center;
 }
 .button-learn-more {
     width: 216px;
     height: 88px;
     background: #dfd;
-    margin: 28px auto 0px auto;
+    margin: 28px auto 0 auto;
     position: relative;
 }
 .bt--video {
@@ -326,6 +323,9 @@
     height: 68px;
     color: #000;
     border: none;
+}
+.bt--video:focus {
+    outline: none;
 }
 .bt--video:hover {
     box-shadow: 0 0 0 5px #fff;
@@ -522,8 +522,8 @@
     color: #fff;
 }
 .technology-container .line-white-top {
-    height: 47px;
-    margin-bottom: 8px;
+    height: 40px;
+    /*margin-bottom: 8px;*/
 }
 .technology-container .line-white-bottom {
     height: 100px;
@@ -534,12 +534,12 @@
     left: 0;
 }
 .technology-container {
-    min-height: 800px;
-    background: url('../img/img-girl.png') no-repeat bottom right;
+    min-height: 706px;
+    /*background: url('../img/img-girl.png') no-repeat bottom right;*/
     position: relative;
 }
 .technology-container h2 {
-    margin-bottom: 35px;
+    margin-bottom: -20px;
     font-weight: 300;
     color: #000000;
 }
@@ -725,8 +725,8 @@
 .technology-post {
     margin-top: 60px;
     width: 610px;
-    padding-right: 8px;
-    margin-right: 340px;
+    margin-right: 226px;
+    text-align: center;
     color: #000;
 }
 .technology-post h3 {
@@ -745,6 +745,7 @@
     line-height: 29px;
     height: 29px;
     color: #ffffff;
+    margin: 0 auto;
 }
 
 /* Page 6: Partner */
@@ -922,10 +923,6 @@
 .slides-testimonials {
     overflow: hidden;
 }
-.slides-testimonials {
-    /*margin-left: 335px;*/
-    /*background: #ffd;*/
-}
 .testimonial-box {
     width: 1024px;
     overflow: hidden;
@@ -966,12 +963,6 @@
 .testimonials-container .btn-slideshow {
     bottom: 45px;
     left: 339px;
-}
-.testimonials-container .btn-slideshow a {
-    /*background: url('../img/button-slideshow.png') no-repeat center center;*/
-}
-.testimonials-container .btn-slideshow .active {
-    /*background: url('../img/button-slideshow-active.png') no-repeat center center;*/
 }
 
 .btn-slideshow-pre {

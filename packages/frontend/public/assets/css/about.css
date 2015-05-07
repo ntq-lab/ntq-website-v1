@@ -9,6 +9,7 @@
 .about-page-top-container-fluid {
     /*background: #00b3e3 url('../img/bg-about.jpg') no-repeat bottom center;*/
     background-size: cover;
+    overflow: hidden;
 }
 .about-page-top-container-fluid h1 {
     color: #fff;
@@ -20,6 +21,8 @@
 .about-page-bottom-container-fluid {
     background: #f3f3f3;
     padding-bottom: 60px;
+    z-index: 1;
+    position: relative;
 }
 /* Main Nav */
 .main-nav-about {
@@ -303,11 +306,17 @@
 .information-company .information-members dt {
     width: 125px;
 }
-#pretzel-video {
-    bottom: 250px;
-    position: absolute;
-    width: 100%;
+.pretzel-video {
+    top: -250px;
+    position: relative;
+    /*width: 100%;*/
     z-index: -1;
+    margin-left: -999px;
+    margin-right: -999px;
+}
+.pretzel-video video{
+    margin: 0 auto;
+    display: block;
 }
 /*.information-company .information-founded-day strong {
     display: block;

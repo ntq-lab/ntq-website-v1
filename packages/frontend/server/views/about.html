@@ -20,9 +20,11 @@
 
 {% block content %}
 <div class="container-fluid page-top-container-fluid about-page-top-container-fluid">
-	<video id="pretzel-video" class="video-playing" autoplay loop>
-		<source src="{{assets._('/img/video.mp4')}}" type="video/mp4">
-	</video>
+	<div class="pretzel-video">
+		<video width="1920" height="1080" autoplay loop>
+			<source src="{{assets._('/img/video.mp4')}}" type="video/mp4">
+		</video>
+	</div>
 	<div class="container">
 		<h1 class="text-center">{{__('page-about.title')}}</h1>
 	</div>

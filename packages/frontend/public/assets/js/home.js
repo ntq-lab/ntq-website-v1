@@ -62,10 +62,10 @@
 		if (heightWindow > heightDefault.technology) {
 			$('#technology').css({ 'height': heightWindow + 'px' });
 			$('#technology .container').css({ 'height': heightWindow + 'px' });
-			var heightTechnologyTop = $('#technology .technology-container-top').height();
+			// var heightTechnologyTop = $('#technology .technology-container-top').height();
 			//var heightLineBottomTechnology = $('#technology .line-white-bottom').height();
-			var heightTechnologyPost = $('#technology .technology-post').height();
-			$('#technology .technology-post').css({ 'margin-top': (heightWindow - heightTechnologyTop - heightTechnologyPost) / 2 + 'px' });
+			// var heightTechnologyPost = $('#technology .technology-post').height();
+			// $('#technology .technology-post').css({ 'margin-top': (heightWindow - heightTechnologyTop - heightTechnologyPost) / 2 + 'px' });
 			//$('#technology .line-white-bottom').css({ 'height': (heightWindow - heightTechnologyTop - heightTechnologyPost) / 2 + 'px' });
 		}
 
