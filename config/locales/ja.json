@@ -12,7 +12,8 @@
         "about": "企業情報",
         "domains": "開発ドメイン",
         "technologies": "技術",
-        "contract-models": "契約モデル"
+        "contract-models": "契約モデル",
+        "rd": "R&D"
     },
     "title-website": {
         "home": "ベトナムのソフトウェア開発会社｜ソフトウェア開発会社 | NTQ Solution",
@@ -32,7 +33,7 @@
             "hanoi": {
                 "title": "在ベトナムの本社",
                 "address": "6th Floor, Sudico Building (HH3)<br>Me Tri Street, Nam Tu Liem District<br>Hanoi City, Vietnam",
-                "name": "Pham Thai Son",
+                "name": "ファム・タイ・ソン",
                 "position": "代表取締役社長",
                 "tel": "電話番号",
                 "email": "メール"
@@ -40,7 +41,7 @@
             "japan": {
                 "title": "在日の代表者",
                 "address": "〒150-0043<br>東京都渋谷区道玄坂1-20-2<br>アライアンスビル渋谷壱番館5F",
-                "name": "To Quang Cong",
+                "name": "ト・クア・コン",
                 "position": "代表者",
                 "tel": "電話番号",
                 "email": "メール"
@@ -54,7 +55,9 @@
             "belarus": "ベラルーシ",
             "japan": "日本",
             "vietnam": "ベトナム",
-            "australia": "オーストラリア"
+            "australia": "オーストラリア",
+            "thailand": "タイ",
+            "singapore": "シンガポール"
         },
         "company-name": "NTQ Solution",
         "read-more": "もっと見る",
@@ -249,7 +252,9 @@
             "founders": "設立者",
             "staffs": "従業員",
             "founded-on": "2011年6月13日",
-            "present": "2015年"
+            "present": "2015年",
+            "learn-more": "会社紹介動画",
+            "watch-video": "動画を見る"
         },
         "page-partners": {
             "title": "NTQ Solutionの得意先",
@@ -259,15 +264,18 @@
             "title": "顧客からの評価",
             "description": {
                 "box1": {
-                    "name": "Dean Sutcliffe – CIO, iMyVenue, Australia.",
+                    "name": "Dean Sutcliffe",
+                    "position": "CIO, iMyVenue, Australia.",
                     "content": "“「iMyVenue」 は幾つかの案件でNTQと協業しました。NTQは高技術を備えており、製品品質はオーストラリアの開発会社に劣らず、我々の期待を裏切りませんでした。低コストかつ効果的なソリューションはとても魅力的で、信頼できる会社です。大変満足致しました。”"
                 },
                 "box2": {
-                    "name": "Linh Nguyen – Technical Manager, ROI Marketing Solutions Ltd , UK.",
+                    "name": "Linh Nguyen",
+                    "position": "Technical Manager, ROI Marketing Solutions Ltd , UK.",
                     "content": "“1年間にわたって、ROI Marketing Solutions は NTQ Solution JSCと協業し、オンラインマーケティングアプリを開発しました。技術面やコミュニケーション能力など、他のソフト開発会社に比べてもNTQ Solution JSCは素晴らしかったです。今後ソフト開発を委託する際NTQ Solution JSCを第一候補として、私は迷わず推薦します。”"
                 },
                 "box3": {
-                    "name": "Yusuke Akinaga – Account Manager, ITSherpa - Japan.",
+                    "name": "Yusuke Akinaga",
+                    "position": "Account Manager, ITSherpa - Japan.",
                     "content": "“NTQ Solutionのメンバーは皆活発であり、楽しい仕事環境を作っています。品質については日本人の習慣を熟知していますので、素晴らしい製品を提供しています。現在、多くの日本企業はソフト分野で海外の取引先を探していますが、NTQ Solutionがすでにパートナーであることに大変嬉しく思います”"
                 }
             }
@@ -428,32 +436,35 @@
         },
         "menu-tab-right": {
             "the-challenge": "チャレンジ",
-            "competition": "競争",
+            "competition": "競合",
             "solution": "ソリューション",
             "technologies": "テクノロジー",
             "result": "結果"
         },
         "box1": {
-            "title": "イギリス・ROIマーケティングソリューション株式会社の「個人化マーケティング材料システム」の開発事例",
-            "description": "ROIマーケティングソリューション株式会社は、イギリスにて印刷、変数データ印行ウェブと、クロスメディアソフトウェアを提供する一流企業です。Perivan Solutions, Platinum Print, Northend Creative Print, Creazyなどの印刷提供者・代理者・マーケティング機関に対して、操作の有効性の確認や、新事業のお客様の信頼獲得などを支援しています。",
+            "title": "日本の株式会社システナのクラウドシステムの開発事例",
+            "description": "株式会社システナは、1983年に設立された東証一部上場のIT関連企業です。サービスソリューション事業、クオリティデザイン事業、フレームワークデザイン事業、クラウド事業などを手掛けております。株式会社システナがオフショア開発の実施、拡大を考え、弊社にアプローチをかけて頂き、取引が始まりました。",
             "the-challenge": {
-                "paragraph1": "ROIマーケティングソリューション株式会社は、英国のお客様、3700万件のデータ一覧を企業経営者やマーケティング担当者に提供できる個人化マーケティング材料システムを保有しています。",
-                "paragraph2": "しかし、データが膨大であっため、以前のシステムでは検索結果の表示が非常に遅れていました。 (2-10分) また、同時にROIマーケティングソリューション株式会社は、前記システムを評価し、性能を常に更新できるような会社を探していました。"
+                "paragraph1": "第一の挑戦としては技術の問題でした。10万人のユーザーに対応できるクラウドシステムを求められ、一時的な集中アクセスに関しては2万件に対応しなければなりませんでした。その上、各画面の処理時間は1秒以内に抑えなければならず、Googleのサービスに対応できるようにしなければなりませんでした。",
+                "paragraph2": "第二の挑戦としては、既存のシステムに対してどのようにメンテナンスを行うか、という点でした。"
             },
             "competition": {
-                "paragraph1": "NTQ Solutionの競合他社は5社存在し、ベトナムに2社・イギリスに2社、そしてチェコに1社ありました。"
+                "paragraph1": "弊社を含めてオフショア開発会社5社が競合しておりました。"
             },
             "solution": {
-                "paragraph1": "NTQ Solutionはビット演算子に基づいて複雑な演算法をオリジナルで構築しました。具体的には、速いクリエーションの索引を作成したり、メモリーへのデータ（全体）の移動・格納などを行い、ビット演算子にデータを上書きし、ディスクI/Oパフォーマンスを更新させるようにシンプルキャッシュファイルの組合せを実現しました。"
+                "paragraph1": "AWS EC2, RDS, ElasticCache, ElasticBalancerなどのクラウドベースインフラを利用しました。また、Redisを使用することでパフォーマンスを向上させ、NodeJSとJavaを組み合わせることで集中的なアクセスに対応できるようしました。"
             },
             "technologies": {
-                "paragraph1": "ASP.NET",
-                "paragraph2": "JQuery",
-                "paragraph3": "MySQL",
-                "paragraph4": "MongoDB"
+                "paragraph1": "Java",
+                "paragraph2": "NodeJS",
+                "paragraph3": "Redis",
+                "paragraph4": "Google Engine",
+                "paragraph5": "Google API",
+                "paragraph6": "Play Framework",
+                "paragraph7": "Jetty"
             },
             "result": {
-                "paragraph1": "検索を始めてサーバーにフィードバックが届くまでの時間を約0.1～0.5秒にまで縮めることができました。また、他の競合他社のパフォーマンスより優れていたことから、お客様に良い評価を頂いています。これを機に、NTQ SolutionとROI Marketing Solutionsは長期的な協業を維持し、現在ではオフショアソフトウェア開発センターでの契約をしていただいております。"
+                "paragraph1": "弊社を含む競合5社のうち、パイロットプロジェクトを最後まで遂行できたのは弊社のみでした。そのことから、弊社に仕事をより任せていただけるようになり、1人月規模の案件から取引を開始したのに対し、現在では10人月規模の案件を任されています。開発分野において、設計、技術、結合テスト、ソリューション、対策など、ほとんどの開発を担当しており、株式会社システナのクラウド分野に関しては全て弊社が開発をしております。"
             }
         },
         "box2": {
@@ -932,5 +943,27 @@
         "html5": "HTML5",
         "css": "CSS",
         "bootstraps": "Bootstraps"
+    },
+    "page-rd": {
+        "title": {
+            "title": "R＆Dセンター",
+            "title-large": "R&Dセンターはビッグデータ、組み込み、クラウドベースソフトを中心に活躍しています。",
+            "title-medium": "弊社の組み込みソフトウェア•チームは、現在、2つの製品の開発プロジェクトに取り組んでいます。",
+            "title-small": "ひとつは、:",
+            "title-small2": "二つ: RF制御モデルの空飛ぶ車",
+            "name": "Nguyen Xuan Viet Tuan 〈埋め込みソフト案件の技術チームの課長〉",
+            "link": "http://www.newyorker.com/reporting/2013/02/04/130204fa_fact_higginbotham"
+        },
+        "description": {
+            "paragraph1": "更にソーシャルネットワークアプリ開発に関する、音声通話、グループ通話などの技術に対しても取り組んでいます。",
+            "paragraph2": "弊社のR＆Dセンター内の組み込みソフトウェアチームがリモートコントロールの飛行機を作成しました。この飛行機は自社で開発した安定機能を保つソフトウェアが組み込まれ、飛行機自体が自動で垂直・平行にバランスを保つことができます。",
+            "paragraph3": "さらに、Wi-Fiを使って飛行機からパソコンにリアルタイムでビデオを伝送する、ストリーミング•ソフトウェアも開発しました。",
+            "paragraph4": "ヤモリのように移動し塔や高い建物の全体の窓をきれいにすることができる清掃ロボット「Elder」を開発予定です。そしてもうひとつのプロジェトでは、RF制御モデルを組み込んだ「空飛ぶ車」を作る予定です。",
+            "paragraph5": "塔や高い建物の窓掃除ができるロボット「Elder」を開発しています。実際の清掃作業（ニューヨークにおける高層ビル）の事例",
+            "paragraph6": ":高層ビルの清掃作業は非常に危険で、労力がかかる仕事です。天気の良い日を選ばなければならず、上から下までの全タワーを清掃するためには約1ヶ月の月日を要します。また、清掃用の設備を構築するには莫大なコストが発生し、Heartsタワー (ニューヨーク)の清掃用装置には3年間で300万ドルのコストがかかりました。しかしながら、作業の難しさゆえ、ほとんどの清掃者は移動の際にガラスに傷を残してしまうのです。そこで私たちはスタンダード大学の sticky botにヒントを得、Elderを作るためにヤモリの動きを慎重に分析しました。そして以下のような特徴を兼ね備えたElderを計画中です。",
+            "paragraph7": "ガラス、コンクリート、石、木の上を速く走り、超音波によって導かれるポジショニングとパスに反応します。ホールの効果センサーによりElderは地面の状態を予測することができ、前進するか引き返すかを決定します。加速度計が落下した状態を検出することで、緊急用パラシュートが開き着陸できます。",
+            "paragraph8": "都市環境においても「空飛ぶ車」は安全に離陸、飛行、着陸が可能です。しかし、非常に強力なエンジンを必要とするがゆえに、実際に多くの「空飛ぶ車」は安定性を簡単に失ったり、長時間飛べなかったり、大きな騒音が出てしまう、などの問題があります。現在、私たちはRF制御モデルによって、魅力的かつパワフルに移動する「空飛ぶ車」の コンセプトを設計し、具体化しようとしています。",
+            "paragraph9": "機械の使い方の変革こそが、私たちの遺伝子の変革だと思います。新たな価値を持つ機械の製造は人間の進化だと確信しています。"
+        }
     }
 }

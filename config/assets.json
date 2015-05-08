@@ -9,9 +9,12 @@
         "build/.tmp/css/index.css": [
             "packages/frontend/public/assets/css/animate-home.css",
             "packages/frontend/public/assets/css/home.css",
-            "packages/frontend/public/assets/css/logo.css"
+            "packages/frontend/public/assets/css/logo.css",
+            "packages/frontend/public/assets/css/about.css"
         ],
         "build/.tmp/css/about.css": [
+            "packages/frontend/public/assets/css/animate-home.css",
+            "packages/frontend/public/assets/css/home.css",
             "packages/frontend/public/assets/css/menu-white.css",
             "packages/frontend/public/assets/css/submenu-common.css",
             "packages/frontend/public/assets/css/about.css"
@@ -62,11 +65,19 @@
             "bower_components/foundation/css/foundation.css",
             "bower_components/foundation-icon-fonts/foundation-icons.css",
             "packages/backend/public/assets/css/common.css"
+        ],
+        "build/.tmp/css/rd.css": [
+            "packages/frontend/public/assets/css/menu-white.css",
+            "packages/frontend/public/assets/css/bootstrap/bootstrap.css",
+            "packages/frontend/public/assets/css/rd.css",
+            "packages/frontend/public/assets/css/common.css"
         ]
     },
     "js": {
         "build/.tmp/js/index.js": [
             "bower_components/jquery/dist/jquery.min.js",
+            "bower_components/jquery-ui/ui/jquery-ui.js",
+            "packages/frontend/public/assets/js/main-nav.js",
             "bower_components/bluebird/js/browser/bluebird.min.js",
             "bower_components/tweenjs/build/tween.min.js",
             "packages/frontend/public/assets/data/logo-data.js",
@@ -75,7 +86,8 @@
             "packages/frontend/public/assets/js/slideshow.js",
             "packages/frontend/public/assets/js/home.js",
             "packages/frontend/public/assets/js/detector.js",
-            "packages/frontend/public/assets/js/logo-effect.js"
+            "packages/frontend/public/assets/js/logo-effect.js",
+            "packages/frontend/public/assets/js/max-height-element.js"
         ],
         "build/.tmp/js/about.js": [
             "bower_components/jquery/dist/jquery.min.js",
@@ -146,6 +158,11 @@
         "build/.tmp/js/backend.js": [
             "packages/backend/public/init.js",
             "packages/backend/public/*/**/*.js"
+        ],
+        "build/.tmp/js/rd.js": [
+            "bower_components/jquery/dist/jquery.min.js",
+            "packages/frontend/public/assets/js/main-nav.js",
+            "packages/backend/public/init.js"
         ]
     },
     "copy": {

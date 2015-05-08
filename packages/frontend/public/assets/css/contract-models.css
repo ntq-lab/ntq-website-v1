@@ -1,6 +1,6 @@
 /* Contract model */
 .contract-models-page-top-container-fluid {
-    background: url('../img/bg-contract-model.jpg') no-repeat;
+    background: url('../img/bg-contract-models.png') no-repeat center bottom;
     background-size: cover;
 }
 .contract-models-page-top-container-fluid h1 {
@@ -10,7 +10,7 @@
     background: #f3f3f3;
 }
 .contract-models-container {
-    top: -60px;
+    top: -80px;
 }
 .contract-models-container table th {
     font-weight: 600 !important;

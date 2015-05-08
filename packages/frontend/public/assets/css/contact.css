@@ -1,6 +1,6 @@
 /* Contact Page Top  */
 .contact-page-top-container-fluid {
-    background: #f6f1ee url('../img/bg-contact.jpg') no-repeat bottom center;
+    background: #f6f1ee url('../img/bg-contact.png') no-repeat bottom center;
     background-size: cover;
 }
 .contact-page-top-container-fluid h1 {
@@ -66,3 +66,17 @@
     top: 25px;
     left: 15px;
 }
+/*.container {
+    position: relative !important;
+}
+.box-social {
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+}
+.box-social ul li{
+    float: left;
+    list-style: none;
+    margin-left: 10px;
+}
+*/

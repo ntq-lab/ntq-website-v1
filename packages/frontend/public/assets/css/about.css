@@ -7,8 +7,10 @@
 }*/
 /*----------- About Page Top -----------*/
 .about-page-top-container-fluid {
-    background: #00b3e3 url('../img/bg-about.jpg') no-repeat bottom center;
+    /*background: #00b3e3 url('../img/bg-about.jpg') no-repeat bottom center;*/
     background-size: cover;
+    overflow: hidden;
+    position: relative;
 }
 .about-page-top-container-fluid h1 {
     color: #fff;
@@ -20,6 +22,8 @@
 .about-page-bottom-container-fluid {
     background: #f3f3f3;
     padding-bottom: 60px;
+    z-index: 1;
+    position: relative;
 }
 /* Main Nav */
 .main-nav-about {
@@ -302,6 +306,150 @@
 }
 .information-company .information-members dt {
     width: 125px;
+}
+.pretzel-video {
+    top: -250px;
+    position: relative;
+    /*width: 100%;*/
+    z-index: -1;
+    margin-left: -999px;
+    margin-right: -999px;
+}
+.pretzel-video video{
+    margin: 0 auto;
+    display: block;
+}
+/*.about-partner-container {
+    min-height: 798px;
+    background: url('../img/pin-map-partner.png') no-repeat 57px bottom;
+}*/
+.about-partner-container .partner-map {
+  margin-bottom: 60px;
+}
+.about-partner-container .line-white {
+    height: 64px;
+}
+.about-partner-container h2 {
+    margin-top: 15px;
+    color: #fff;
+    margin-bottom: 30px;
+}
+.about-partner-container .partner-map {
+    margin-bottom: 60px;
+}
+.about-partner-container .partner-map .partner-map-dot-strong {
+    float: left;
+    position: relative;
+    width: 622px;
+    height: 293px;
+    margin-left: 152px;
+    margin-top: 37px;
+}
+.about-partner-container .partner-map .partner-map-dot-strong p {
+    width: 23px;
+    height: 23px;
+    position: absolute;
+    background: #fff;
+    background: rgba(0, 34, 242, 0.2);
+    text-align: center;
+    line-height: 23px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+    -webkit-animation: fadeInOut 1s ease-out infinite;
+    -moz-animation: fadeInOut 1s ease-out infinite;
+    -ms-animation: fadeInOut 1s ease-out infinite;
+    -o-animation: fadeInOut 1s ease-out infinite;
+    animation: fadeInOut 1s ease-out infinite;
+    -webkit-animation-play-state: initial;
+    animation-play-state: initial;
+}
+.about-partner-container .partner-map .partner-map-dot-strong p span {
+    background: #fff;
+    width: 8px;
+    display: block;
+    height: 8px;
+    margin: 7px auto;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+}
+.about-partner-container .partner-map .partner-map-dot-strong .dot-american {
+    top: 40px;
+    left: 65px;
+}
+.about-partner-container .partner-map .partner-map-dot-strong .dot-england {
+    top: 41px;
+    left: 251px;
+    -webkit-animation-delay: 2s;
+    -moz-animation-delay: 2s;
+    -ms-animation-delay: 2s;
+    -o-animation-delay: 2s;
+    animation-delay: 2s;
+}
+.about-partner-container .partner-map .partner-map-dot-strong .dot-belarus {
+    top: 28px;
+    left: 328px;
+    -webkit-animation-delay: 4s;
+    -moz-animation-delay: 4s;
+    -ms-animation-delay: 4s;
+    -o-animation-delay: 4s;
+    animation-delay: 4s;
+}
+.about-partner-container .partner-map .partner-map-dot-strong .dot-japan {
+    top: 74px;
+    left: 517px;
+    -webkit-animation-delay: 6s;
+    -moz-animation-delay: 6s;
+    -ms-animation-delay: 6s;
+    -o-animation-delay: 6s;
+    animation-delay: 6s;
+}
+.about-partner-container .partner-map .partner-map-dot-strong .dot-vietnam {
+    top: 119px;
+    left: 432px;
+    -webkit-animation-delay: 8s;
+    -moz-animation-delay: 8s;
+    -ms-animation-delay: 8s;
+    -o-animation-delay: 8s;
+    animation-delay: 8s;
+}
+.about-partner-container .partner-map .partner-map-dot-strong .dot-thailand {
+    top: 115px;
+    left: 462px;
+    -webkit-animation-delay: 12s;
+    -moz-animation-delay: 12s;
+    -ms-animation-delay: 12s;
+    -o-animation-delay: 12s;
+    animation-delay: 12s;
+}
+.about-partner-container .partner-map .partner-map-dot-strong .dot-singapore {
+    top: 155px;
+    left: 462px;
+    -webkit-animation-delay: 14s;
+    -moz-animation-delay: 14s;
+    -ms-animation-delay: 14s;
+    -o-animation-delay: 14s;
+    animation-delay: 14s;
+}
+.about-partner-container .partner-map .partner-map-dot-strong .dot-australia {
+    top: 220px;
+    left: 528px;
+    -webkit-animation-delay: 10s;
+    -moz-animation-delay: 10s;
+    -ms-animation-delay: 10s;
+    -o-animation-delay: 10s;
+    animation-delay: 10s;
+}
+.about-title-container {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
 }
 /*.information-company .information-founded-day strong {
     display: block;

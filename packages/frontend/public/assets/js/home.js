@@ -62,10 +62,10 @@
 		if (heightWindow > heightDefault.technology) {
 			$('#technology').css({ 'height': heightWindow + 'px' });
 			$('#technology .container').css({ 'height': heightWindow + 'px' });
-			var heightTechnologyTop = $('#technology .technology-container-top').height();
+			// var heightTechnologyTop = $('#technology .technology-container-top').height();
 			//var heightLineBottomTechnology = $('#technology .line-white-bottom').height();
-			var heightTechnologyPost = $('#technology .technology-post').height();
-			$('#technology .technology-post').css({ 'margin-top': (heightWindow - heightTechnologyTop - heightTechnologyPost) / 2 + 'px' });
+			// var heightTechnologyPost = $('#technology .technology-post').height();
+			// $('#technology .technology-post').css({ 'margin-top': (heightWindow - heightTechnologyTop - heightTechnologyPost) / 2 + 'px' });
 			//$('#technology .line-white-bottom').css({ 'height': (heightWindow - heightTechnologyTop - heightTechnologyPost) / 2 + 'px' });
 		}
 
@@ -188,7 +188,7 @@
 
 		//Slideshow testimonials
 		new window.SlideShow({
-			slideWidth: 698,
+			slideWidth: 1024,
 			slides: '.slide-testimonials',
 			paginationID: 'testimonials-pagination',
 			slideHolder: 'slidesHolderTestimonials',
@@ -201,6 +201,28 @@
 			if (window.LOGO && window.LOGO.show) {
 				window.LOGO.show(logoFallback);
 			}
+		});
+
+		// Play video
+		$('#play-video').click(function (e) {
+			e.preventDefault();
+
+			var elementVideo = '<div class="video-box" id="video-box">';
+			elementVideo += '<div class="video-box-container">';
+			elementVideo += '<div class="video">';
+			elementVideo += '<iframe width="640" height="480" src="//www.youtube.com/embed/DD1xnGubRI8?autoplay=1" frameborder="0" allowfullscreen></iframe>';
+			elementVideo += '</div>';
+			elementVideo += '</div>';
+			elementVideo += '</div>';
+
+			$('body').append(elementVideo);
+
+			$('#video-box').fadeIn(300, function() {
+				$(this).click(function () {
+					var self = $(this);
+					self.fadeOut(150, self.remove);
+				});
+			});
 		});
 	});
 

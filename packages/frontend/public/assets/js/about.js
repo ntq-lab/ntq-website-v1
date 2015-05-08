@@ -25,11 +25,11 @@
 
 			$('body').append(elementVideo);
 
-			$('#video-box').fadeIn(300);
-
-			$('#video-box').click(function () {
-				$(this).fadeOut(100);
-				$(this).remove();
+			$('#video-box').fadeIn(300, function() {
+				$(this).click(function () {
+					var self = $(this);
+					self.fadeOut(150, self.remove);
+				});
 			});
 		});
 	});

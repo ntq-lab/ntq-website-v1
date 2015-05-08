@@ -1,6 +1,7 @@
 /* Download Top Page */
 .download-page-top-container-fluid {
-    background: url('../img/bg-top-download.jpg') #35bbe5 no-repeat center bottom;
+    background: url('../img/bg-download.png') no-repeat center bottom;
+    background-size: cover;
 }
 .download-page-top-container-fluid h1 {
     color: #000;
@@ -8,7 +9,7 @@
 
 /* Success Stories Bottom Page */
 .download-page-bottom-container-fluid .download-container {
-    top: -60px;
+    top: -80px;
     background: #fff url('../img/bg-footer-download.png') no-repeat bottom center;
 }
 .page-bottom-container-fluid {

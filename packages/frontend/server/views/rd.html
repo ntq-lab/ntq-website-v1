@@ -1,0 +1,64 @@
+{% extends 'layout/base.html' %}
+
+{% block title %}
+{{__('title-website.articles')}}
+{% endblock %}
+
+{% block stylesheet %}
+{% for file in assets['/css/rd.css'] %}
+    <link href="{{file}}" rel="stylesheet">
+{% endfor %}
+
+{% endblock %}
+
+{% block script %}
+{% for file in assets['/js/rd.js'] %}
+    <script src="{{file}}"></script>
+{% endfor %}
+
+{% endblock %}
+
+{% block content %}
+<div class="container-fluid page-top-container-fluid rd-page-top-container-fluid">
+    <div class="container">
+        <h1 class="text-center">{{__('page-rd.title.title')}}</h1>
+    </div>
+</div><!-- /R&D-page-top-container-fluid -->
+<div class="container-fluid page-bottom-container-fluid">
+    <div class="container">
+    	<div class="rd-page-container">
+    		<h2>{{__('page-rd.title.title-large')}}</h2>
+    		<p>{{__('page-rd.description.paragraph1')}}</p>
+    		<p>{{__('page-rd.description.paragraph2')}}</p>
+    		<p>{{__('page-rd.description.paragraph3')}}</p>
+    		<div class="rd-page-container-img-1">
+    			<div class="rd-left-img">
+    				<img src="{{assets._('/img/rd-img1.png')}}">
+    			</div>
+    			<div class="rd-right-img">
+                    <img src="{{assets._('/img/rd-img2.png')}}">
+                    <img src="{{assets._('/img/rd-img3.png')}}">
+    			</div>
+    		</div>
+    		<h3>{{__('page-rd.title.title-medium')}}</h3>
+    		<p><b>{{__('page-rd.title.title-small')}}</b>{{__('page-rd.description.paragraph4')}}</p>
+    		<div class="rd-page-container-img-2">
+    			<img src="{{assets._('/img/rd-img4.png')}}">
+                <img src="{{assets._('/img/rd-img5.png')}}">
+    		</div>
+    		<p>{{__('page-rd.description.paragraph5')}}</p>
+    		<p><a href="{{__('page-rd.title.link')}}">{{__('page-rd.title.link')}}</a>{{__('page-rd.description.paragraph6')}}</p>
+            <p>{{__('page-rd.description.paragraph7')}}</p>
+    		<b>{{__('page-rd.title.title-small2')}}</b><p>{{__('page-rd.description.paragraph8')}}</p>
+    		<div class="rd-page-container-img-3">
+    			<img src="{{assets._('/img/rd-img6.png')}}">
+    		</div>
+    		<div class="rd-page-container-bottom">
+    			<img src="{{assets._('/img/rd-img7.png')}}">
+    			<p><b>{{__('page-rd.title.name')}}</b><br><br>{{__('page-rd.description.paragraph9')}}</p>
+    		</div>
+    	</div>
+    </div>
+</div><!-- /rd-page-bottom-container-fluid -->
+<div class="clear"></div>
+{% endblock %}

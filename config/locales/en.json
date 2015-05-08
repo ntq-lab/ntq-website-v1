@@ -12,7 +12,8 @@
         "about": "About us",
         "domains": "Development Domains",
         "technologies": "Technologies",
-        "contract-models": "Contract Models"
+        "contract-models": "Contract Models",
+        "rd": "R&D"
     },
     "title-website": {
         "home": "Vietnam software development company | Software outsourcing company | NTQ Solution",
@@ -54,7 +55,9 @@
             "belarus": "Belarus",
             "japan": "Japan",
             "vietnam": "Vietnam",
-            "australia": "Australia"
+            "australia": "Australia",
+            "thailand": "Thailand",
+            "singapore": "Singapore"
         },
         "company-name": "NTQ Solution",
         "read-more": "Read more",
@@ -119,7 +122,7 @@
         "tooltip": {
             "home": "Home",
             "services": "Services",
-            "about": "About us",
+            "about": "About Us",
             "technology": "Technologies",
             "partner": "Partners",
             "news": "News",
@@ -249,7 +252,9 @@
             "founders": "Founders",
             "staffs": "Staffs",
             "founded-on": "13/6/2011",
-            "present": "2015"
+            "present": "2015",
+            "learn-more": "LEARN MORE ABOUT US",
+            "watch-video": "WATCH THE VIDEO"
         },
         "page-partners": {
             "title": "Our Partners",
@@ -259,16 +264,19 @@
             "title": "Client Testimonials",
             "description": {
                 "box1": {
-                    "name": "Dean Sutcliffe – CIO, iMyVenue, Australia.",
-                    "content": "“iMyVenue has worked with NTQ on some projects. I have found NTQ technically sound, and reliable. The quality of work is of a standard that matches our expectation, and is equal to that of local developers in Australia. They are cost effective and efficient solution for our needs.“"
+                    "name": "Dean Sutcliffe",
+                    "position": "CIO, iMyVenue, Australia.",
+                    "content": "“iMyVenue has worked with NTQ on some projects. I have found NTQ technically sound, and reliable. The quality of work is of a standard that matches our expectation, and is equal to that of local developers in Australia. They are cost effective and efficient solution for our needs.”"
                 },
                 "box2": {
-                    "name": "Linh Nguyen – Technical Manager, ROI Marketing Solutions Ltd , UK.",
+                    "name": "Linh Nguyen",
+                    "position": "Technical Manager, ROI Marketing Solutions Ltd , UK.",
                     "content": "“ROI Marketing Solutions Ltd has worked with NTQ Solutions to develop an online marketing application over the past 1 year. During this time, NTQ has demonstrated good technical and communication skills over different parts of the software development cycle such requirement gathers and development. I would not hesitate recommending NTQ Solution for software development.”"
                 },
                 "box3": {
-                    "name": "Yusuke Akinaga – Account Manager, ITSherpa - Japan.",
-                    "content": "“Staffs of NTQ Solution are very dynamic. They create a fun atmosphere while working. About quality, they have captured our Japanese psyche and produced good software products. Nowadays, many Japanese companies are looking for foreign partners in software industry. Our company has luckily found a good partner like NTQ Solution.“"
+                    "name": "Yusuke Akinaga",
+                    "position": "Account Manager, ITSherpa - Japan.",
+                    "content": "“Staffs of NTQ Solution are very dynamic. They create a fun atmosphere while working. About quality, they have captured our Japanese psyche and produced good software products. Nowadays, many Japanese companies are looking for foreign partners in software industry. Our company has luckily found a good partner like NTQ Solution.”"
                 }
             }
         }
@@ -447,10 +455,13 @@
                 "paragraph1": "NTQ Solution built our own complicated algorithms based on bitwise operators. More specifically we moved all data and store them in memory, implemented indexing for faster queries, after that we processed the data in bit-wise operators. And to improve disk I/O performance, simple cache file mechanics was implemented."
             },
             "technologies": {
-                "paragraph1": "ASP.NET",
-                "paragraph2": "JQuery",
-                "paragraph3": "MySQL",
-                "paragraph4": "MongoDB"
+                "paragraph1": "Java",
+                "paragraph2": "NodeJS",
+                "paragraph3": "Redis",
+                "paragraph4": "Google Engine",
+                "paragraph5": "Google API",
+                "paragraph6": "Play Framework",
+                "paragraph7": "Jetty"
             },
             "result": {
                 "paragraph1": "We went through the challenge by obtaining a speed of 0.1 to 0.5 seconds from proceeding a search request to returning results and our results impressed customers as all other competitors came out with slower performance. Thanks to that, NTQ Solution was selected and has been collaborating with ROI Marketing Solutions in a long period of time in the current OSDC contract."
@@ -932,5 +943,27 @@
         "html5": "HTML5",
         "css": "CSS",
         "bootstraps": "Bootstraps"
+    },
+    "page-rd": {
+        "title": {
+            "title": "R&D Center",
+            "title-large": "R&D center, we focus on studying about the solution for Big data, Embedded and Cloud-based software.",
+            "title-medium": "Currently our embedded software team is now working on 2 embedded software projects to develop 2 products for ourselves",
+            "title-small": "First:",
+            "title-small2": "Second: RF controlled flying car",
+            "name": "Nguyen Xuan Viet Tuan 〈Technical leader of Embedded Project Team〉",
+            "link": "http://www.newyorker.com/reporting/2013/02/04/130204fa_fact_higginbotham"
+        },
+        "description": {
+            "paragraph1": "Besides, in order to develop our own social network application, we also study deeply about technologies related to voice call, group call, etc.",
+            "paragraph2": "Our embedded software team has successfully created a remote control airplane. Our team wrote stabilizer software for this plane and with its own stabilizer, the plane can auto balance vertically and horizontally.",
+            "paragraph3": "In addition, the team has also developed streaming software that transmits real-time video from the airplane to personal computer through Wi-Fi signal",
+            "paragraph4": "The objective of one project is to produce a robot which can move like a gecko and clean the whole windows of a tower or building. In the other project, we are going to build a conceptual design for a flying car.",
+            "paragraph5": "Elder is built with the purpose of reducing the time and efforts to clean high buildings from outside. The fact of a cleaning job (a skyscraper in New York)",
+            "paragraph6": ":Cleaning windows on skyscraper building is very dangerous and heavy works for human.  This work must be done in only a good weather condition and it takes about a month to clean the whole tower from top to bottom.  Besides, in the Hearts Tower case (New York), it took $ 3,000,000 to build its own cleaning rig but most window cleaners left out scratches on windows glass while moving.  Then, we got a clue from Stanford’s sticky bot and carefully analyze gecko’s movement.  Currently, we are planning to develop Elder’s function as below.",
+            "paragraph7": "It can run quickly on the vertical glass, concrete, rock, wood surface and react to position and path guiding by ultrasonic sound. A hall-effect sensor helps Elder predict the reliability of the surface. Then it determines to step forward or turn back. Accelerometer detects the free fall state, and then the emergency parachute is landed.",
+            "paragraph8": "A flying car would have to be capable of safely taking off, flying and landing throughout urban environments; it would also require very powerful engines. In reality, many designs of fly car have suffered from problems such as easily losing stability, not being able to travel far and big noises. In the other project, we are going to build a conceptual design for a flying car - a RF controlled model, which moves sophisticatedly but powerfully.",
+            "paragraph9": "I truly believe that changing the way we are using machine is changing our GENE. Making machines is making human evolution."
+        }
     }
 }

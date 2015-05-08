@@ -294,9 +294,48 @@
     vertical-align: bottom;
 }
 
+/* Learn more about*/
+.learn-more-container {
+    background: #0c4da2;
+    width: 100%;
+    padding: 30px 0;
+}
+.text-learn-more {
+    font-family: sans-serif;
+    font-size: 35px;
+    text-align: center;
+}
+.button-learn-more {
+    width: 200px;
+    height: 60px;
+    background: #dfd;
+    margin: 15px auto 0 auto;
+    position: relative;
+}
+.bt--video {
+    -webkit-transition: all .15s;
+    -moz-transition: all .15s;
+    transition: all .15s;
+    position: absolute;
+    left: 6px;
+    top: 6px;
+    width: 188px;
+    height: 48px;
+    color: #000;
+    border: none;
+    font-weight: bold;
+}
+.bt--video:focus {
+    outline: none;
+}
+.bt--video:hover {
+    box-shadow: 0 0 0 3px #fff;
+    background: #fff;
+}
+
 /* Page 4: Services */
 .services-container-fluid {
-    background: #f6da40;
+    background: #ebebeb;
     min-height: 800px;
     z-index: 1;
     position: relative;
@@ -376,16 +415,27 @@
     bottom: 20px;
     text-align: center;
     width: 100%;
+    position: relative;
 }
 .services-container .btn-slideshow li:last-child a {
     margin-right: 0;
 }
-.services-container .btn-slideshow a {
-    background: url('../img/button-slide-service.png') no-repeat center center;
+.btn-slideshow-left {
+    position: absolute;
+    left: -80px;
+    top: -350px;
+}
+.btn-slideshow-right {
+    position: absolute;
+    right: -80px;
+    top: -350px;
+}
+/*.services-container .btn-slideshow a {
+    background: url('../img/button-slide-left.png') no-repeat center center;
 }
 .services-container .btn-slideshow .active {
-    background: url('../img/button-slide-service-active.png') no-repeat center center;
-}
+    background: url('../img/button-slide-right.png') no-repeat center center;
+}*/
 .services-container .slide {
     width: 1024px;
 }
@@ -467,14 +517,14 @@
 /* Page 5: Technology */
 .technology-container-fluid {
     min-height: 800px;
-    background: #00af43;
+    background: #ffffff;
     z-index: 1;
     position: relative;
     color: #fff;
 }
 .technology-container .line-white-top {
-    height: 47px;
-    margin-bottom: 8px;
+    height: 64px;
+    /*margin-bottom: 8px;*/
 }
 .technology-container .line-white-bottom {
     height: 100px;
@@ -485,13 +535,15 @@
     left: 0;
 }
 .technology-container {
-    min-height: 800px;
-    background: url('../img/img-girl.png') no-repeat bottom right;
+    min-height: 706px;
+    /*background: url('../img/img-girl.png') no-repeat bottom right;*/
     position: relative;
 }
 .technology-container h2 {
-    margin-bottom: 35px;
+    margin-bottom: 0px;
+    margin-top: 50px;
     font-weight: 300;
+    color: #000000;
 }
 .technology-container .technology-box {
     float: left;
@@ -510,6 +562,7 @@
 }
 .technology-container .technology-box:nth-child(2) a {
     margin-right: 10px;
+    margin-top: -15px;
 }
 .technology-container .technology-box:nth-child(2) a:nth-child(2n+2) {
     margin-right: 0;
@@ -517,7 +570,6 @@
 .technology-container .technology-box:nth-child(2) .technology-box-container,
 .technology-container .technology-box:nth-child(3) .technology-box-container,
 .technology-container .technology-box:nth-child(4) .technology-box-container {
-    background: url('../img/border-technology.png') repeat-y top left;
     padding-left: 31px;
     height: 280px;
 }
@@ -673,10 +725,11 @@
 }*/
 
 .technology-post {
-    margin-top: 60px;
-    width: 610px;
-    padding-right: 8px;
-    margin-right: 340px;
+    /*margin-top: 60px;*/
+    width: 680px;
+    margin-right: 172px;
+    text-align: center;
+    color: #000;
 }
 .technology-post h3 {
     font-weight: 300;
@@ -690,10 +743,11 @@
     font-weight: 300;
 }
 .technology-post .download-brochure {
-    background: #fff;
+    background: #00aeef;
     line-height: 29px;
     height: 29px;
-    color: #00af43;
+    color: #ffffff;
+    margin: 0 auto;
 }
 
 /* Page 6: Partner */
@@ -791,13 +845,31 @@
     animation-delay: 6s;
 }
 .partner-container .partner-map .partner-map-dot-strong .dot-vietnam {
-    top: 115px;
-    left: 462px;
+    top: 119px;
+    left: 432px;
     -webkit-animation-delay: 8s;
     -moz-animation-delay: 8s;
     -ms-animation-delay: 8s;
     -o-animation-delay: 8s;
     animation-delay: 8s;
+}
+.partner-container .partner-map .partner-map-dot-strong .dot-thailand {
+    top: 115px;
+    left: 462px;
+    -webkit-animation-delay: 12s;
+    -moz-animation-delay: 12s;
+    -ms-animation-delay: 12s;
+    -o-animation-delay: 12s;
+    animation-delay: 12s;
+}
+.partner-container .partner-map .partner-map-dot-strong .dot-singapore {
+    top: 155px;
+    left: 462px;
+    -webkit-animation-delay: 14s;
+    -moz-animation-delay: 14s;
+    -ms-animation-delay: 14s;
+    -o-animation-delay: 14s;
+    animation-delay: 14s;
 }
 .partner-container .partner-map .partner-map-dot-strong .dot-australia {
     top: 220px;
@@ -847,30 +919,38 @@
 }
 .testimonials-container {
     position: relative;
-    background: url('../img/testimonials.png') no-repeat left bottom;
+    /*background: url('../img/testimonials.png') no-repeat left bottom;*/
     padding-bottom: 52px;
 }
 .slides-testimonials {
     overflow: hidden;
 }
-.slides-testimonials {
-    margin-left: 335px;
-}
 .testimonial-box {
-    width: 345px;
+    width: 1024px;
     overflow: hidden;
     min-height: 363px;
     padding: 34px 20px 0 10px;
+}
+.testimonial-box p {
+    text-align: center;
+}
+.testimonial-box h3 {
+    text-align: center;
+}
+.testimonial-box-image {
+    margin: 0 auto;
+    margin-left: 445px;
+    margin-top: 30px;
 }
 .slides-testimonials .slide-container {
     display: table
 }
 .slides-testimonials .slide-container .slide-testimonials {
     display: table-cell;
-    min-width: 698px;
+    min-width: 1024px;
 }
 .testimonial-box .testimonial-box-image {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 .testimonial-box h3 {
     font-weight: 700;
@@ -880,17 +960,23 @@
 }
 .testimonial-box p {
     font-weight: 300;
-    line-height: 1.2em;
+    line-height: 1.5em;
 }
 .testimonials-container .btn-slideshow {
     bottom: 45px;
     left: 339px;
 }
-.testimonials-container .btn-slideshow a {
-    background: url('../img/button-slideshow.png') no-repeat center center;
+
+.btn-slideshow-pre {
+    position: absolute;
+    left: -380px;
+    top: -230px;
 }
-.testimonials-container .btn-slideshow .active {
-    background: url('../img/button-slideshow-active.png') no-repeat center center;
+
+.btn-slideshow-next {
+    position: absolute;
+    right: -726px;
+    top: -230px;
 }
 
 /* Jump to*/

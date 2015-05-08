@@ -20,7 +20,12 @@
 
 {% block content %}
 <div class="container-fluid page-top-container-fluid about-page-top-container-fluid">
-	<div class="container">
+	<div class="pretzel-video">
+		<video width="1920" height="1080" autoplay loop>
+			<source src="{{assets._('/img/video.mp4')}}" type="video/mp4">
+		</video>
+	</div>
+	<div class="about-title-container">
 		<h1 class="text-center">{{__('page-about.title')}}</h1>
 	</div>
 </div><!-- /about-page-top-container-fluid -->
@@ -64,9 +69,30 @@
 		<div class="map-box clearfix">
 			<p class="quote">{{__('page-about.box3.title')}}</p>
 			<div class="clear"></div>
-			<div class="partner-map">
-				{% include "./partner-map.html" %}
-			</div>
+
+	        <div class="about-partner-container">
+	            <div class="partner-bottom clearfix">
+	                <div class="partner-map clearfix">
+	                    {% include "./partner-map.html" %}
+
+	                    <div class="partner-map-dot-strong">
+	                        <p class="dot-american"><span></span></p>
+	                        <p class="dot-england"><span></span></p>
+	                        <p class="dot-belarus"><span></span></p>
+	                        <p class="dot-japan"><span></span></p>
+	                        <p class="dot-thailand"><span></span></p>
+	                        <p class="dot-vietnam"><span></span></p>
+	                        <p class="dot-singapore"><span></span></p>
+	                        <p class="dot-australia"><span></span></p>
+	                    </div><!-- /partner-map-dot-strong -->
+	                </div><!-- /partner-map -->
+	                <div class="clear"></div>
+	                <div class="partner-right pull-right">
+	                </div><!-- /partner-right -->
+	            </div>
+
+	        </div><!-- /partner-container -->
+
 		</div><!-- /map-box -->
 
 		<div class="strategic clearfix">
@@ -75,7 +101,7 @@
 			<div class="strategic-box pull-left">
 				<div class="strategic-box-image pull-left">
 					<div class="strategic-box-image-container">
-						<img src="{{assets._('/img/icon-about-total-revenue.png')}}" alt="Total revenue" width="48" height="52">
+						<img src="{{assets._('/img/icon-about-total-revenue.png')}}" alt="Total revenue" width="48" height="46">
 					</div>
 				</div><!-- /strategic-box-image -->
 				<div class="strategic-box-text pull-left">
@@ -173,4 +199,5 @@
 
 	</div>
 </div><!-- /about-page-bottom-container-fluid -->
+<div class="clear"></div>
 {% endblock %}
