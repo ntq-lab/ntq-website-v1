@@ -28,10 +28,11 @@
 			$('#video-box').fadeIn(300, function() {
 				$(this).click(function () {
 					var self = $(this);
-					self.fadeOut(150, self.remove);
+					self.fadeOut(150, function() {
+						$('.video-box').remove();
+					});
 				});
 			});
 		});
 	});
-
 }());

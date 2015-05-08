@@ -8,15 +8,15 @@
     padding-bottom: 0;
 }
 .services-page-top-container-fluid {
-    background: url('../img/bg-services.png') no-repeat center bottom;
+    background: url('../img/bg-services.jpg') no-repeat center bottom;
     background-size: cover;
 }
 .domains-page-top-container-fluid {
-    background: url('../img/bg-domains.png') no-repeat center bottom;
+    background: url('../img/bg-domains.jpg') no-repeat center bottom;
     background-size: cover;
 }
 .technologies-page-top-container-fluid {
-    background: url('../img/bg-technologies.png') no-repeat center bottom;
+    background: url('../img/bg-technologies.jpg') no-repeat center bottom;
     background-size: cover;
 }
 .services-page-top-container-fluid h1 {

@@ -188,7 +188,7 @@
 
                     var vector = new THREE.Vector3(
                         ((e.clientX + window.scrollX) / container.offsetWidth) * 2 - 1,
-                        -((e.clientY) / container.offsetHeight) * 2 + 1,
+                        -((e.clientY + window.scrollY) / container.offsetHeight) * 2 + 1,
                         0.5
                     );
 
