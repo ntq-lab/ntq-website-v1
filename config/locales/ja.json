@@ -56,8 +56,8 @@
             "japan": "日本",
             "vietnam": "ベトナム",
             "australia": "オーストラリア",
-            "thailand": "Thailand",
-            "singapore": "Singapore"
+            "thailand": "タイ",
+            "singapore": "シンガポール"
         },
         "company-name": "NTQ Solution",
         "read-more": "もっと見る",
@@ -253,8 +253,8 @@
             "staffs": "従業員",
             "founded-on": "2011年6月13日",
             "present": "2015年",
-            "learn-more": "LEARN MORE ABOUT US",
-            "watch-video": "WATCH THE VIDEO"
+            "learn-more": "会社紹介動画",
+            "watch-video": "動画を見る"
         },
         "page-partners": {
             "title": "NTQ Solutionの得意先",
@@ -946,10 +946,11 @@
     },
     "page-rd": {
         "title": {
+            "title": "R＆Dセンター",
             "title-large": "R&Dセンターはビッグデータ、組み込み、クラウドベースソフトを中心に活躍しています。",
             "title-medium": "弊社の組み込みソフトウェア•チームは、現在、2つの製品の開発プロジェクトに取り組んでいます。",
             "title-small": "ひとつは、:",
-            "title-small2": "二つ: RF controlled flying car",
+            "title-small2": "二つ: RF制御モデルの空飛ぶ車",
             "name": "Nguyen Xuan Viet Tuan 〈埋め込みソフト案件の技術チームの課長〉",
             "link": "http://www.newyorker.com/reporting/2013/02/04/130204fa_fact_higginbotham"
         },

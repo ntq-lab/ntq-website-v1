@@ -298,18 +298,18 @@
 .learn-more-container {
     background: #0c4da2;
     width: 100%;
-    padding: 15px 0;
+    padding: 30px 0;
 }
 .text-learn-more {
     font-family: sans-serif;
-    font-size: 55px;
+    font-size: 35px;
     text-align: center;
 }
 .button-learn-more {
-    width: 216px;
-    height: 88px;
+    width: 200px;
+    height: 60px;
     background: #dfd;
-    margin: 28px auto 0 auto;
+    margin: 15px auto 0 auto;
     position: relative;
 }
 .bt--video {
@@ -317,18 +317,19 @@
     -moz-transition: all .15s;
     transition: all .15s;
     position: absolute;
-    left: 10px;
-    top: 10px;
-    width: 196px;
-    height: 68px;
+    left: 6px;
+    top: 6px;
+    width: 188px;
+    height: 48px;
     color: #000;
     border: none;
+    font-weight: bold;
 }
 .bt--video:focus {
     outline: none;
 }
 .bt--video:hover {
-    box-shadow: 0 0 0 5px #fff;
+    box-shadow: 0 0 0 3px #fff;
     background: #fff;
 }
 
@@ -421,12 +422,12 @@
 }
 .btn-slideshow-left {
     position: absolute;
-    left: -180px;
+    left: -80px;
     top: -350px;
 }
 .btn-slideshow-right {
     position: absolute;
-    right: -180px;
+    right: -80px;
     top: -350px;
 }
 /*.services-container .btn-slideshow a {
@@ -522,7 +523,7 @@
     color: #fff;
 }
 .technology-container .line-white-top {
-    height: 40px;
+    height: 64px;
     /*margin-bottom: 8px;*/
 }
 .technology-container .line-white-bottom {
@@ -539,7 +540,8 @@
     position: relative;
 }
 .technology-container h2 {
-    margin-bottom: -20px;
+    margin-bottom: 0px;
+    margin-top: 50px;
     font-weight: 300;
     color: #000000;
 }
@@ -723,9 +725,9 @@
 }*/
 
 .technology-post {
-    margin-top: 60px;
-    width: 610px;
-    margin-right: 226px;
+    /*margin-top: 60px;*/
+    width: 680px;
+    margin-right: 172px;
     text-align: center;
     color: #000;
 }
@@ -854,20 +856,20 @@
 .partner-container .partner-map .partner-map-dot-strong .dot-thailand {
     top: 115px;
     left: 462px;
-    -webkit-animation-delay: 8s;
-    -moz-animation-delay: 8s;
-    -ms-animation-delay: 8s;
-    -o-animation-delay: 8s;
-    animation-delay: 8s;
+    -webkit-animation-delay: 12s;
+    -moz-animation-delay: 12s;
+    -ms-animation-delay: 12s;
+    -o-animation-delay: 12s;
+    animation-delay: 12s;
 }
 .partner-container .partner-map .partner-map-dot-strong .dot-singapore {
     top: 155px;
     left: 462px;
-    -webkit-animation-delay: 8s;
-    -moz-animation-delay: 8s;
-    -ms-animation-delay: 8s;
-    -o-animation-delay: 8s;
-    animation-delay: 8s;
+    -webkit-animation-delay: 14s;
+    -moz-animation-delay: 14s;
+    -ms-animation-delay: 14s;
+    -o-animation-delay: 14s;
+    animation-delay: 14s;
 }
 .partner-container .partner-map .partner-map-dot-strong .dot-australia {
     top: 220px;
@@ -937,7 +939,7 @@
 }
 .testimonial-box-image {
     margin: 0 auto;
-    margin-left: 434px;
+    margin-left: 445px;
     margin-top: 30px;
 }
 .slides-testimonials .slide-container {
@@ -958,7 +960,7 @@
 }
 .testimonial-box p {
     font-weight: 300;
-    line-height: 1.2em;
+    line-height: 1.5em;
 }
 .testimonials-container .btn-slideshow {
     bottom: 45px;

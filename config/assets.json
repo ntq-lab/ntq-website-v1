@@ -13,6 +13,8 @@
             "packages/frontend/public/assets/css/about.css"
         ],
         "build/.tmp/css/about.css": [
+            "packages/frontend/public/assets/css/animate-home.css",
+            "packages/frontend/public/assets/css/home.css",
             "packages/frontend/public/assets/css/menu-white.css",
             "packages/frontend/public/assets/css/submenu-common.css",
             "packages/frontend/public/assets/css/about.css"
@@ -65,8 +67,8 @@
             "packages/backend/public/assets/css/common.css"
         ],
         "build/.tmp/css/rd.css": [
+            "packages/frontend/public/assets/css/menu-white.css",
             "packages/frontend/public/assets/css/bootstrap/bootstrap.css",
-            "packages/frontend/public/assets/css/header.css",
             "packages/frontend/public/assets/css/rd.css",
             "packages/frontend/public/assets/css/common.css"
         ]

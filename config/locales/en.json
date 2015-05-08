@@ -122,7 +122,7 @@
         "tooltip": {
             "home": "Home",
             "services": "Services",
-            "about": "About us",
+            "about": "About Us",
             "technology": "Technologies",
             "partner": "Partners",
             "news": "News",
@@ -946,23 +946,24 @@
     },
     "page-rd": {
         "title": {
-            "title-large": "R&Dセンターはビッグデータ、組み込み、クラウドベースソフトを中心に活躍しています。",
-            "title-medium": "弊社の組み込みソフトウェア•チームは、現在、2つの製品の開発プロジェクトに取り組んでいます。",
-            "title-small": "ひとつは、:",
-            "title-small2": "二つ: RF controlled flying car",
-            "name": "Nguyen Xuan Viet Tuan 〈埋め込みソフト案件の技術チームの課長〉",
+            "title": "R&D Center",
+            "title-large": "R&D center, we focus on studying about the solution for Big data, Embedded and Cloud-based software.",
+            "title-medium": "Currently our embedded software team is now working on 2 embedded software projects to develop 2 products for ourselves",
+            "title-small": "First:",
+            "title-small2": "Second: RF controlled flying car",
+            "name": "Nguyen Xuan Viet Tuan 〈Technical leader of Embedded Project Team〉",
             "link": "http://www.newyorker.com/reporting/2013/02/04/130204fa_fact_higginbotham"
         },
         "description": {
-            "paragraph1": "更にソーシャルネットワークアプリ開発に関する、音声通話、グループ通話などの技術に対しても取り組んでいます。",
-            "paragraph2": "弊社のR＆Dセンター内の組み込みソフトウェアチームがリモートコントロールの飛行機を作成しました。この飛行機は自社で開発した安定機能を保つソフトウェアが組み込まれ、飛行機自体が自動で垂直・平行にバランスを保つことができます。",
-            "paragraph3": "さらに、Wi-Fiを使って飛行機からパソコンにリアルタイムでビデオを伝送する、ストリーミング•ソフトウェアも開発しました。",
-            "paragraph4": "ヤモリのように移動し塔や高い建物の全体の窓をきれいにすることができる清掃ロボット「Elder」を開発予定です。そしてもうひとつのプロジェトでは、RF制御モデルを組み込んだ「空飛ぶ車」を作る予定です。",
-            "paragraph5": "塔や高い建物の窓掃除ができるロボット「Elder」を開発しています。実際の清掃作業（ニューヨークにおける高層ビル）の事例",
-            "paragraph6": ":高層ビルの清掃作業は非常に危険で、労力がかかる仕事です。天気の良い日を選ばなければならず、上から下までの全タワーを清掃するためには約1ヶ月の月日を要します。また、清掃用の設備を構築するには莫大なコストが発生し、Heartsタワー (ニューヨーク)の清掃用装置には3年間で300万ドルのコストがかかりました。しかしながら、作業の難しさゆえ、ほとんどの清掃者は移動の際にガラスに傷を残してしまうのです。そこで私たちはスタンダード大学の sticky botにヒントを得、Elderを作るためにヤモリの動きを慎重に分析しました。そして以下のような特徴を兼ね備えたElderを計画中です。",
-            "paragraph7": "ガラス、コンクリート、石、木の上を速く走り、超音波によって導かれるポジショニングとパスに反応します。ホールの効果センサーによりElderは地面の状態を予測することができ、前進するか引き返すかを決定します。加速度計が落下した状態を検出することで、緊急用パラシュートが開き着陸できます。",
-            "paragraph8": "都市環境においても「空飛ぶ車」は安全に離陸、飛行、着陸が可能です。しかし、非常に強力なエンジンを必要とするがゆえに、実際に多くの「空飛ぶ車」は安定性を簡単に失ったり、長時間飛べなかったり、大きな騒音が出てしまう、などの問題があります。現在、私たちはRF制御モデルによって、魅力的かつパワフルに移動する「空飛ぶ車」の コンセプトを設計し、具体化しようとしています。",
-            "paragraph9": "機械の使い方の変革こそが、私たちの遺伝子の変革だと思います。新たな価値を持つ機械の製造は人間の進化だと確信しています。"
+            "paragraph1": "Besides, in order to develop our own social network application, we also study deeply about technologies related to voice call, group call, etc.",
+            "paragraph2": "Our embedded software team has successfully created a remote control airplane. Our team wrote stabilizer software for this plane and with its own stabilizer, the plane can auto balance vertically and horizontally.",
+            "paragraph3": "In addition, the team has also developed streaming software that transmits real-time video from the airplane to personal computer through Wi-Fi signal",
+            "paragraph4": "The objective of one project is to produce a robot which can move like a gecko and clean the whole windows of a tower or building. In the other project, we are going to build a conceptual design for a flying car.",
+            "paragraph5": "Elder is built with the purpose of reducing the time and efforts to clean high buildings from outside. The fact of a cleaning job (a skyscraper in New York)",
+            "paragraph6": ":Cleaning windows on skyscraper building is very dangerous and heavy works for human.  This work must be done in only a good weather condition and it takes about a month to clean the whole tower from top to bottom.  Besides, in the Hearts Tower case (New York), it took $ 3,000,000 to build its own cleaning rig but most window cleaners left out scratches on windows glass while moving.  Then, we got a clue from Stanford’s sticky bot and carefully analyze gecko’s movement.  Currently, we are planning to develop Elder’s function as below.",
+            "paragraph7": "It can run quickly on the vertical glass, concrete, rock, wood surface and react to position and path guiding by ultrasonic sound. A hall-effect sensor helps Elder predict the reliability of the surface. Then it determines to step forward or turn back. Accelerometer detects the free fall state, and then the emergency parachute is landed.",
+            "paragraph8": "A flying car would have to be capable of safely taking off, flying and landing throughout urban environments; it would also require very powerful engines. In reality, many designs of fly car have suffered from problems such as easily losing stability, not being able to travel far and big noises. In the other project, we are going to build a conceptual design for a flying car - a RF controlled model, which moves sophisticatedly but powerfully.",
+            "paragraph9": "I truly believe that changing the way we are using machine is changing our GENE. Making machines is making human evolution."
         }
     }
 }

@@ -79,7 +79,7 @@
     padding: 0 30px 0 25px;
     height: 50px;
     line-height: 50px;
-    color: #385dae;
+    color: #00a1e0;
     text-align: center;
     /*font-size: 18px;*/
     font-size: 1.125em;
@@ -101,7 +101,7 @@
 }
 .success-stories-content .success-stories-right .success-stories-right-box-slide ul li:hover a,
 .success-stories-content .success-stories-right .success-stories-right-box-slide ul li.ui-state-active a {
-    background: #385dae;
+    background: #00a1e0;
     color: #fff;
 }
 .success-stories-content .success-stories-right .success-stories-right-box-slide ul li a:focus,
@@ -122,7 +122,7 @@
     padding: 35px;
     min-height: 150px;
     color: #fff;
-    background: #385dae;
+    background: #00a1e0;
 }
 .success-stories-content .success-stories-right .list-technologies li {
     float: none !important;
