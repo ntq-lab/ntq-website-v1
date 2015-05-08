@@ -10,14 +10,12 @@
     /*background: #00b3e3 url('../img/bg-about.jpg') no-repeat bottom center;*/
     background-size: cover;
     overflow: hidden;
+    position: relative;
 }
 .about-page-top-container-fluid h1 {
     color: #fff;
     line-height: 400px;
     padding-top: 0 !important;
-    position: absolute;
-    right: 48%;
-    top: 307px;
 }
 
 /*----------- About Page Bottom -----------*/
@@ -447,7 +445,12 @@
     -o-animation-delay: 10s;
     animation-delay: 10s;
 }
-
+.about-title-container {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+}
 /*.information-company .information-founded-day strong {
     display: block;
     font-weight: 300;
