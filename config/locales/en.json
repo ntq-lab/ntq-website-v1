@@ -447,7 +447,7 @@
             "description": "Systena Corporation is a Japanese IT company listed with first section of the Tokyo Stock Exchange and was founded in 1983.  This company covers many businesses such as service solutions, quality designs, framework designs, cloud systems and so on.  Systena Corporation was thinking of extending offshoring business and approaching our company.",
             "the-challenge": {
                 "paragraph1": "The first challenge was technical requirement that we need to create a cloud system that is compatible with 100,000 users and 20,000 heavy accesses.  Moreover, this system should be compatible with Google services and each screen should be dealt with within 1 second. The second challenge was how to maintain existing systems.",
-                "paragraph2": "There were 5 competitors including our company."
+                "paragraph2": " "
             },
             "competition": {
                 "paragraph1": "There were 5 competitors including our company."
