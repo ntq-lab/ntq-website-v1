@@ -430,6 +430,7 @@
     "page-success-stories": {
         "title": "Success Stories",
         "menu-left": {
+            "systena-marketing-solutions": "Systena",
             "roi-marketing-solutions": "ROI Marketing Solutions",
             "it-sherpa-ltd": "IT Sherpa Ltd",
             "spicy-cinnamon-pte-ltd": "Spicy Cinnamon Pte. Ltd."
@@ -442,6 +443,32 @@
             "result": "Result"
         },
         "box1": {
+            "title": "Development of a cloud system for Systena Corporation from Japan",
+            "description": "Systena Corporation is a Japanese IT company listed with first section of the Tokyo Stock Exchange and was founded in 1983.  This company covers many businesses such as service solutions, quality designs, framework designs, cloud systems and so on.  Systena Corporation was thinking of extending offshoring business and approaching our company.",
+            "the-challenge": {
+                "paragraph1": "The first challenge was technical requirement that we need to create a cloud system that is compatible with 100,000 users and 20,000 heavy accesses.  Moreover, this system should be compatible with Google services and each screen should be dealt with within 1 second. The second challenge was how to maintain existing systems.",
+                "paragraph2": " "
+            },
+            "competition": {
+                "paragraph1": "There were 5 competitors including our company."
+            },
+            "solution": {
+                "paragraph1": "We utilized cloud-based infrastructure such as AWS EC2, RDS, ElasticCache, ElasticBalancer and so on.  Also, we improved performance using Redis and dealt with heavy traffic integrating NodeJS and Java."
+            },
+            "technologies": {
+                "paragraph1": "Java",
+                "paragraph2": "NodeJS",
+                "paragraph3": "Redis",
+                "paragraph4": "Google Engine",
+                "paragraph5": "Google API",
+                "paragraph6": "Play Framework",
+                "paragraph7": "Jetty"
+            },
+            "result": {
+                "paragraph1": "The company which successfully ended this pilot project was only our company among the 5 companies.  Thanks to this achievement, Systena Corporation has ordered us more projects.  Although we began to do business with the only 1-man-month project, now we are managing a 10-man-month project.  In development filed, our company is in charge of almost all parts of development such as designs, technology, join tests, solutions, measure and in charge of all the projects of cloud system development from Systena Corporation."
+            }
+        },
+        "box2": {
             "title": "Development of “Personalized marketing materials system” for ROI Marketing Solutions from UK.",
             "description": "ROI Marketing Solutions – a leading provider of web to print, variable data publishing and cross media software based in UK. ROI Marketing Solutions has helped over 500 print providers, agencies and marketing departments to win new business, secure customers loyalty and improve operational efficiencies such as Perivan Solutions, Platinum Print, Northend Creative Print, Creazy and others.",
             "the-challenge": {
@@ -455,19 +482,16 @@
                 "paragraph1": "NTQ Solution built our own complicated algorithms based on bitwise operators. More specifically we moved all data and store them in memory, implemented indexing for faster queries, after that we processed the data in bit-wise operators. And to improve disk I/O performance, simple cache file mechanics was implemented."
             },
             "technologies": {
-                "paragraph1": "Java",
-                "paragraph2": "NodeJS",
-                "paragraph3": "Redis",
-                "paragraph4": "Google Engine",
-                "paragraph5": "Google API",
-                "paragraph6": "Play Framework",
-                "paragraph7": "Jetty"
+                "paragraph1": "ASP.NET",
+                "paragraph2": "JQuery",
+                "paragraph3": "MySQL",
+                "paragraph4": "MongoDB"
             },
             "result": {
                 "paragraph1": "We went through the challenge by obtaining a speed of 0.1 to 0.5 seconds from proceeding a search request to returning results and our results impressed customers as all other competitors came out with slower performance. Thanks to that, NTQ Solution was selected and has been collaborating with ROI Marketing Solutions in a long period of time in the current OSDC contract."
             }
         },
-        "box2": {
+        "box3": {
             "title": "Development of a mobile social network system (SNS) for IT Sherpa Ltd a Japanese Company.",
             "description": "IT Sherpa is a software company based in Japan and was established in 2000. Their main focus is providing internet solutions, hosting & system consulting service, ASP (Application service provider) service and mobile/smartphone application development. NTQ Solution participated in a business matching conference in Japan and we became aware of IT Sherpa Company at the conference. After that NTQ Solution paid a visit to IT Sherpa office.",
             "the-challenge": {
@@ -485,7 +509,7 @@
                 "paragraph1": "NTQ Solution built for ITSherpa a complete state of the art Social Network System."
             }
         },
-        "box3": {
+        "box4": {
             "title": "Development of photo sharing iOS and Android applications for Spicy Cinnamon Pte. Ltd.",
             "description": "Spicy Cinnamon is a software company based in Thailand specializing development of software for interactive digital media. The company was established in 2012. Came up with idea of a photo group sharing application, Cinnamon was seeking for a software development partner. By that time via a mutual friend, Cinnamon was introduced to NTQ Solution, and right after that Spicy Cinnamon decided to visit NTQ Solution office in Vietnam and requested us to build the photo sharing app.",
             "the-challenge": {
