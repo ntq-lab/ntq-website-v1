@@ -430,6 +430,7 @@
     "page-success-stories": {
         "title": "開発事例",
         "menu-left": {
+            "systena-marketing-solutions": "Systena",
             "roi-marketing-solutions": "ROI Marketing Solutions",
             "it-sherpa-ltd": "IT Sherpa Ltd",
             "spicy-cinnamon-pte-ltd": "Spicy Cinnamon Pte. Ltd."
@@ -468,6 +469,29 @@
             }
         },
         "box2": {
+            "title": "イギリス・ROIマーケティングソリューション株式会社の「個人化マーケティング材料システム」の開発事例",
+            "description": "ROIマーケティングソリューション株式会社は、イギリスにて印刷、変数データ印行ウェブと、クロスメディアソフトウェアを提供する一流企業です。Perivan",
+            "the-challenge": {
+                "paragraph1": "ROIマーケティングソリューション株式会社は、英国のお客様、3700万件のデータ一覧を企業経営者やマーケティング担当者に提供できる個人化マーケティング材料システムを保有しています。",
+                "paragraph2": "しかし、データが膨大であっため、以前のシステムでは検索結果の表示が非常に遅れていました。"
+            },
+            "competition": {
+                "paragraph1": "NTQ Solutionの競合他社は5社存在し、ベトナムに2社・イギリスに2社、そしてチェコに1社ありました。"
+            },
+            "solution": {
+                "paragraph1": "NTQ Solutionはビット演算子に基づいて複雑な演算法をオリジナルで構築しました。具体的には、速いクリエーションの索引を作成したり、メモリーへのデータ（全体）の移動・格納などを行い、ビット演算子にデータを上書きし、ディスクI"
+            },
+            "technologies": {
+                "paragraph1": "ASP.NET",
+                "paragraph2": "JQuery",
+                "paragraph3": "MySQL",
+                "paragraph4": "MongoDB"
+            },
+            "result": {
+                "paragraph1": "検索を始めてサーバーにフィードバックが届くまでの時間を約0.1～0.5秒にまで縮めることができました。また、他の競合他社のパフォーマンスより優れていたことから、お客様に良い評価を頂いています。これを機に、NTQ SolutionとROI Marketing Solutionsは長期的な協業を維持し、現在ではオフショアソフトウェア開発センターでの契約をしていただいております。"
+            }
+        },
+        "box3": {
             "title": "日本のIT Sherpa,.Ltdのモバイルソーシャルネットワークシステム開発事例（SNS)",
             "description": "IT Sherpa（株）は日本において2000年に設立されたソフトウェア会社です。インターネットソリューション、ホスティング・コンサルティングサービスシステム、ASP（アプリケーションサービスプロバイダ）サービス、モバイル・スマートフォンアプリケーション開発などを主に提供しています。NTQ Solutionは日本で開催されたビジネスマッチングイベントにおいて、IT Sherpa（株）と面識を持ち、後日IT Sherpa（株）本部を訪問いたしました。",
             "the-challenge": {
@@ -485,7 +509,7 @@
                 "paragraph1": "NTQ SolutionはIT Sherpa,.Ltdにソーシャルネットワークシステムを提供し、多くのユーザーに快適に利用していただけるシステムを構築することができました。その他にも、このプロジェクトの成功をきっかけに、もう2つのクローンシステムの案件を発注していただき、結果としては3つのソーシャルネットワークシステムを開発しました。また、この実績が評価され、この3つのシステムのアフターケアに関する保守契約も締結致しました。"
             }
         },
-        "box3": {
+        "box4": {
             "title": "Spice Cinnamon Pte.Ltd のスマートフォン写真共有のソーシャルアプリ開発事例",
             "description": "Spice Cinnamon Pte.Ltd はメディアアプリを開発しているタイ国の会社です。Spice Cinnamon Pte.Ltd は2012年に設立され、写真共有アイデアのソフトウェア開発パートナーを探していました。共通の友人の紹介により知り合い、NTQのオフィスに訪問された後、仕事を発注しました。",
             "the-challenge": {
