@@ -9,7 +9,7 @@ module.exports = function (Backend, app, auth, passport, database, enhance) {
 			'https://www.googleapis.com/auth/userinfo.profile',
             'https://www.googleapis.com/auth/userinfo.email'
 		],
-		hostedDomain: 'ntqsoft.com.vn'
+		hostedDomain: 'ntq-solution.com.vn'
 	}));
 
 	app.route('/oauth/google/callback').get(passport.authenticate('google'), function(req, res, next) {
