@@ -31,10 +31,6 @@
     "type": "git",
     "url": "https://github.com/linnovate/mean.git"
   },
-  "engines": {
-    "node": "0.10.x",
-    "npm": "1.3.x"
-  },
   "scripts": {
     "start": "node node_modules/grunt-cli/bin/grunt",
     "test": "node node_modules/grunt-cli/bin/grunt test",
@@ -43,7 +39,7 @@
   "dependencies": {
     "assetmanager": "^1.1.2",
     "async": "^0.9.0",
-    "bluebird": "^2.9.13",
+    "bluebird": "2.9.34",
     "body-parser": "^1.12.0",
     "compression": "^1.0.1",
     "connect-flash": "^0.1.1",
@@ -59,10 +55,10 @@
     "formidable": "^1.0.17",
     "gridfs-stream": "^0.5.1",
     "i18n": "^0.5.0",
-    "lodash": "^3.5.0",
+    "lodash": "3.10.1",
     "meanio": "~0.5.2",
     "method-override": "^1.0.0",
-    "mongoose": "^3.8.24",
+    "mongoose": "3.9.7",
     "morgan": "^1.5.1",
     "nodemailer": "^0.7.1",
     "passport": "^0.2.1",
@@ -72,7 +68,7 @@
     "passport-linkedin": "^0.1.3",
     "passport-local": "^1.0.0",
     "passport-twitter": "^1.0.2",
-    "q": "^1.2.0",
+    "q": "1.4.1",
     "serve-favicon": "^2.0.0",
     "swig": "^1.4.2",
     "view-helpers": "^0.1.4"
