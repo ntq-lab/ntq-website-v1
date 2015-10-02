@@ -1,6 +1,6 @@
 'use strict';
 
 exports = module.exports = {
-    mount: '/backend',
+    mount: '/manage',
     viewDir: 'backend/server/views/'
 };

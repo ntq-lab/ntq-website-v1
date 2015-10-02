@@ -23,7 +23,7 @@ module.exports = {
     google: {
         clientID: '544651093698-v8hpj0qni0tqbpekeh8jlusde94mp734.apps.googleusercontent.com',
         clientSecret: 'cou8wkscVcAhdfp2b-A8EEFh',
-        callbackURL: 'http://jp.ntq-solution.com.vn/oauth/google/callback'
+        callbackURL: 'http://backend.ntq.solutions/oauth/google/callback'
     },
     // linkedin: {
     //     clientID: 'API_KEY',
